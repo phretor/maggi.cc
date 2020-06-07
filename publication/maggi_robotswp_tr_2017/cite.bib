@@ -1,0 +1,93 @@
+
+@TechReport{	  maggi_robotswp_tr_2017,
+  abstract	= {Vulnerabilities in protocols and software running
+		  industrial robots are by now widely known, but to date,
+		  there has been no in-depth, hands-on research that
+		  demonstrates to what extent robots can actually be
+		  compromised. For the first time, with this research—a
+		  collaboration between Politecnico di Milano (POLIMI) and
+		  the Trend Micro Forward-Looking Threat Research (FTR)
+		  Team—we have been able to analyze the impact of
+		  system-specific attacks and demonstrate attack scenarios on
+		  actual standard industrial robots in a controlled
+		  environment. In industrial devices, the impact of a single,
+		  simple software vulnerability can already have serious
+		  consequences. Depending on the actual setup and security
+		  posture of the targeted smart factory, attackers could
+		  trigger attacks that could amount to massive financial
+		  damage to the company in question or at worst, even affect
+		  critical goods. Almost all industry sectors that are
+		  critical for a nation are potentially at risk.
+		  
+		  Unfortunately, the Industry 4.0 revolution is just bringing
+		  industrial robots closer to the forefront. As improvements
+		  in the way industrial robots work and communicate increase
+		  their complexity and interconnectedness, the industrial
+		  robots sector unlocks a broader attack surface. In our
+		  security analysis, we found that the software running on
+		  these devices is outdated; based on vulnerable OSs and
+		  libraries, sometimes relying on obsolete or cryptographic
+		  libraries; and have weak authentication systems with
+		  default, unchangeable credentials. Additionally, the Trend
+		  Micro FTR Team found tens of thousands of industrial
+		  devices residing on public IP addresses, which could
+		  include exposed industrial robots, further increasing the
+		  risk that an attacker can access and hack them.
+		  
+		  The impact of vulnerabilities, for example on robots, is
+		  what makes our findings a very loud wake-up call for the
+		  industrial control systems (ICS) sector. To quantify such
+		  impact, our security analysis revealed that industrial
+		  robots must follow three fundamental laws—accurately
+		  “read” from the physical world through sensors and
+		  “write” (i.e., perform actions) through motors and
+		  tools, refuse to execute self-damaging control logic, and
+		  most importantly, echo one of the “Laws of Robotics”
+		  (devised by Isaac Asimov, a popular science writer) to
+		  never harm humans. Then, by combining the set of
+		  vulnerabilities that we discovered on a real, standard
+		  robot installed in our laboratory, we demonstrated how
+		  remote attackers can violate such fundamental laws up to
+		  the point where they can alter or introduce minor defects
+		  in the manufactured product, physically damage the robot,
+		  steal industry secrets, or injure humans. We then
+		  considered some threat scenarios on how attackers
+		  capitalized on these attacks, as in an act of sabotage or a
+		  ransomware-like scheme.
+		  
+		  On the one hand, industrial devices are designed according
+		  to strict physical security and safety standards in order
+		  to work in rough conditions with extreme temperature
+		  ranges, vibrations, and electromagnetic noise. On the
+		  other, because of the ubiquity and flexibility demanded by
+		  the Industry 4.0 trend, industrial devices are being
+		  designed to be flexible, easy to deploy, and to not
+		  necessarily require any special security or IT skills.
+		  These opposing design requirements make producers very
+		  prone to introducing software bugs.
+		  
+		  Rather than concluding this paper with a classic checklist
+		  for ICS vendors, we reflected on reasons why the situation
+		  has not changed much over the years. Thus, we provided a
+		  series of research and engineering challenges that we
+		  believe will make a difference in the journey to secure the
+		  Industry 4.0 ecosystem. On this journey toward improving
+		  the security posture of robots in the Industry 4.0 setting,
+		  we also began reaching out to vendors, among whom ABB
+		  Robotics stood out in that it readily welcomed suggestions
+		  we had to offer and even started working on a response plan
+		  that will affect its current product line without losing
+		  time.},
+  author	= {Maggi, Federico and Quarta, Davide and Pogliani, Marcello
+		  and Polino, Mario and Zanchettin, Andrea M. and Zanero,
+		  Stefano},
+  date		= {2017-05},
+  file		= {files/papers/reports/maggi_robotswp_tr_2017.pdf},
+  institution	= {Trend Micro, Inc.},
+  publisher	= {TrendLabs},
+  series	= {Research Papers},
+  shorttitle	= {RobotsWP},
+  title		= {Rogue Robots: Testing the Limits of an Industrial
+		  Robot’s Security},
+  url		= {https://documents.trendmicro.com/assets/wp/wp-industrial-robot-security.pdf}
+}
