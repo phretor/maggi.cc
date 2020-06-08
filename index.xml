@@ -1237,6 +1237,33 @@ LinkedIn&lt;/a&gt;. Feel free to check those out, FWIW.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Guida Galattica di Autodifesa Digitale</title>
+      <link>/post/ggad/</link>
+      <pubDate>Thu, 29 Aug 2019 07:55:41 +0200</pubDate>
+      <guid>/post/ggad/</guid>
+      <description>&lt;p&gt;Un giorno decisi di fare un breve seminario divulgativo per raccontare la punta dell&amp;rsquo;iceberg del mondo in cui lavoro: ho parlato di video orribili autogenerati, pubblicati su YouTube solo per generare profitto, deepfake, dati rubati, bullismo e adescamento online, eccetera. Al termine del seminario, qualcuno dal pubblico mi chiede &lt;strong&gt;&lt;em&gt;&amp;ldquo;e quindi, cosa possiamo fare?&amp;quot;&lt;/em&gt;&lt;/strong&gt; Purtroppo non avevo una risposta breve. Non c&amp;rsquo;è una risposta breve, perché consapevolezza e sicurezza informatica sono un processo, un percorso. Sono un processo nelle aziende e nelle organizzazioni, ma anche per l&amp;rsquo;individuo. Io ho deciso di puntare sugli individui, notoriamente i più difficili da raggiungere. Questa guida è il mio primo passo concreto in questa direzione.&lt;/p&gt;
+&lt;p&gt;Buona lettura!&lt;/p&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;Guida%20Galattica%20di%20Autodifesa%20Digitale.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;Guida%20Galattica%20di%20Autodifesa%20Digitale.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;Guida%20Galattica%20di%20Autodifesa%20Digitale.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;paternità&#34;&gt;Paternità&lt;/h1&gt;
+&lt;p&gt;Questa prima versione guida è fortemente basata sulla 
+&lt;a href=&#34;https://ssd.eff.org/en/playlist/want-security-starter-pack#your-security-plan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Surveillance Self-Defense&lt;/a&gt; dell&amp;rsquo;EFF, un’ottima risorsa alla portata di tutti. Dopo un po&amp;rsquo; di ricerche sono venuto a conoscenza di 
+&lt;a href=&#34;https://selfence.altervista.org/elementi-di-autodifesa-digitale/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;varie&lt;/a&gt; 
+&lt;a href=&#34;https://numerique.noblogs.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;inziative&lt;/a&gt; di 
+&lt;a href=&#34;https://www.repubblica.it/tecnologia/social-network/2017/03/27/foto/manuale_autodifesa_digitale-161528909/1/#1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;traduzione&lt;/a&gt;, ma non esattamente in linea con quello che avevo in mente. Pertanto ho deciso di iniziare a tradurre e adattare all’italiano una selezione dei suoi contenuti. In questa prima versione ho arricchito solo con alcuni esempi, per velocizzare i tempi, ma in futuro aggiungerò altri contenuti e probabilmente stravolgerò completamente la struttura e la guida originale da cui sono partito.&lt;/p&gt;
+&lt;p&gt;Rispetto alla 
+&lt;a href=&#34;https://ssd.eff.org/en/playlist/want-security-starter-pack#your-security-plan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Surveillance Self-Defense&lt;/a&gt; dell&amp;rsquo;EFF ho aggiunto degli adattamenti per la lingua italiana e qualche esempio per chiarire ove necessario. L&amp;rsquo;opera originale è rilasciata con licenza 
+&lt;a href=&#34;https://creativecommons.org/licenses/by/3.0/it/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Creative Commons Attribution (CC-BY)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Vulnerabilita non risolte (non gravi) in WhatsApp</title>
       <link>/post/vulnerabilita-non-risolte-non-gravi-in-whatsapp/</link>
       <pubDate>Fri, 09 Aug 2019 06:48:28 +0200</pubDate>
