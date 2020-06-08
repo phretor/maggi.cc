@@ -29,7 +29,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-06-07T14:55:01+00:00</lastmod>
+    <lastmod>2020-09-24T07:06:04+02:00</lastmod>
   </url>
   
   <url>
@@ -73,6 +73,16 @@
   </url>
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2020-09-24T07:06:04+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/smart-manufacturing-security/</loc>
+    <lastmod>2020-06-08T07:19:15+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/advisories/</loc>
     <lastmod>2020-06-07T15:51:48+02:00</lastmod>
   </url>
@@ -95,6 +105,11 @@
   <url>
     <loc>/publication/maggi_smartfactorywp_tr_2020/</loc>
     <lastmod>2020-06-07T14:43:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/smart-working-figli-tecnologia-didattica/</loc>
+    <lastmod>2020-03-09T07:13:29+02:00</lastmod>
   </url>
   
   <url>
@@ -128,6 +143,66 @@
   </url>
   
   <url>
+    <loc>/post/al-lupo-al-lupo-tutti-gli-smartphone-non-sono-sotto-attacco/</loc>
+    <lastmod>2019-10-01T07:08:30+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/smart-un-lock/</loc>
+    <lastmod>2020-09-24T07:06:04+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/conferenze-dalle-vulnerabilita-nei-protocolli-di-comunicazione-via-radio-ai-video-pericolosi-su-youtube/</loc>
+    <lastmod>2019-09-11T06:57:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/facebook-trapelati-numeri-di-telefono-di-419-milioni-di-utenti/</loc>
+    <lastmod>2019-09-05T06:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/vulnerabilita-non-risolte-non-gravi-in-whatsapp/</loc>
+    <lastmod>2019-08-09T06:48:28+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/nuove-vulnerabilita-in-ios-e-android/</loc>
+    <lastmod>2019-08-07T06:43:44+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/rischi-di-sicurezza-e-reti-wifi-gratuite/</loc>
+    <lastmod>2019-08-02T06:41:44+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/stanford-internet-observatory/</loc>
+    <lastmod>2019-07-25T06:38:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/faceapp-e-privacy/</loc>
+    <lastmod>2019-07-22T06:36:01+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/telegram-e-sorveglianza/</loc>
+    <lastmod>2019-07-15T06:28:36+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/nazionale-italiana-sicurezza-informatica/</loc>
+    <lastmod>2019-07-10T06:26:08+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/sicurezza-dei-minori-su-youtube/</loc>
+    <lastmod>2019-07-05T06:23:34+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/maggi_industrialradios_2019/</loc>
     <lastmod>2020-06-05T08:21:22+00:00</lastmod>
   </url>
@@ -145,6 +220,11 @@
   <url>
     <loc>/author/philippe-lin/</loc>
     <lastmod>2020-06-05T09:10:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/dietro-lo-schermo/</loc>
+    <lastmod>2019-05-17T06:09:03+02:00</lastmod>
   </url>
   
   <url>
@@ -180,11 +260,6 @@
   <url>
     <loc>/publication/pogliani_article_2019/</loc>
     <lastmod>2020-06-07T09:07:56+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-06-05T12:16:11+02:00</lastmod>
   </url>
   
   <url>
