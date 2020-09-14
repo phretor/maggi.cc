@@ -52,13 +52,21 @@ There&amp;rsquo;s a lot of &amp;ldquo;backstage&amp;rdquo; work done by the engi
 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;In this second episode I show you how future smart factories could be infected via malicious software extensions, a new way to deliver software for industrial automation. Malicious software extensions and future industrial &amp;ldquo;app stores&amp;rdquo; represent a relevant but overlooked attack vector for smart factory environments.&lt;/p&gt;
 &lt;p&gt;Thanks to our research ABB&amp;rsquo;s RobotApps Store has fixed an upload bypass vulnerability that would have allowed anyone to upload (malicious) software extensions that could cripple into the engineering workstation, a critical endpoint used to program industrial machines such as robots.&lt;/p&gt;
+&lt;h2 id=&#34;extra-episode-lateral-movements-via-industrial-automation-scripts&#34;&gt;Extra Episode: Lateral Movements via Industrial Automation Scripts&lt;/h2&gt;
+&lt;p&gt;In this video we focus on two questions: What if a perfectly patched industrial manufacturing machine can still harbor for vulnerabilities where no one is looking? What if the powerful programming languages used to program these machines can go beyond simple movement instructions, and actually allow threat actors to hide malware into the logic?&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/g2h2EQWan3E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;In this unplanned, extra episode you can see the entire picture, from entry point (already glanced at in the second episode) to vulnerability exploitation and complete system compromise.&lt;/p&gt;
+&lt;p&gt;And of course we conclude with an overview of the short-, medium-, and long-term remediation approaches.&lt;/p&gt;
 &lt;h2 id=&#34;upcoming-videos&#34;&gt;Upcoming Videos&lt;/h2&gt;
 &lt;p&gt;In the following videos we&amp;rsquo;ll see:&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;how an attacker can access a smart manufacuring system through a trojanized IoT library,&lt;/li&gt;
 &lt;li&gt;then we&amp;rsquo;ll see how a weak mobile HMI could facilitate the job of an attacker,&lt;/li&gt;
-&lt;li&gt;and last, we&amp;rsquo;ll see what attackers could do once they&amp;rsquo;re in.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 
   &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
@@ -100,6 +108,69 @@ There&amp;rsquo;s a lot of &amp;ldquo;backstage&amp;rdquo; work done by the engi
 
 &lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
         data-filename=&#34;/publication/maggi_smartfactorywp_tr_2020/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Marcello Pogliani&lt;/span&gt;, &lt;span&gt;Martino, Vittone&lt;/span&gt;, &lt;span&gt;Davide Quarta&lt;/span&gt;, &lt;span&gt;Stefano Zanero&lt;/span&gt;, &lt;span&gt;Marco Balduzzi&lt;/span&gt;, &lt;span&gt;Rainer Vosseler&lt;/span&gt;, &lt;span&gt;Martin Rösler&lt;/span&gt;
+  &lt;/span&gt;
+  (2020).
+  &lt;a href=&#34;/publication/maggi_rogueautomationwp_tr_2020/&#34;&gt;Rogue Automation: Vulnerable and Malicious Code in Industrial Programming&lt;/a&gt;.
+  &lt;em&gt;Trend Micro Research&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.trendmicro.com/vinfo/us/security/news/internet-of-things/unveiling-the-hidden-risks-of-industrial-automation-programming&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/maggi_rogueautomationwp_tr_2020/cite.bib&#34;&gt;
   Cite
 &lt;/button&gt;
 
@@ -1178,6 +1249,14 @@ know before. I think this figure speaks by itself.&lt;/p&gt;
 
 
 
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=DILbSXYpiMU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Video
+&lt;/a&gt;
+
 
 
 
@@ -1307,6 +1386,14 @@ point.&lt;/p&gt;
 
 
 
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=RKLUWnzIaP4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Video
+&lt;/a&gt;
+
 
 
 
@@ -1367,6 +1454,14 @@ point.&lt;/p&gt;
 
 
 
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=X3fUNWRgeao&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Video
+&lt;/a&gt;
 
 
 
