@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Because of the ad hoc nature of web applications, intrusion detection systems that leverage machine learning techniques are particularly well-suited for protecting websites. The reason is that these systems are able to characterize the applications&#39; normal behavior in an automated fashion. However, anomaly-based detectors for web applications suffer from false positives that are generated whenever the applications being protected change. These false positives need to be analyzed by the security officer who then has to interact with the web application developers to confirm that the reported alerts were indeed erroneous detections. In this paper, we propose a novel technique for the automatic detection of changes in web applications, which allows for the selective retraining of the affected anomaly detection models. We demonstrate that, by correctly identifying legitimate changes in web applications, we can reduce false positives and allow for the automated retraining of the anomaly models. We have evaluated our approach by analyzing a number of real-world applications. Our analysis shows that web applications indeed change substantially over time, and that our technique is able to effectively detect changes and automatically adapt the anomaly detection models to the new structure of the changed web applications.">
+  <meta name="description" content="Last year we performed a security analysis on a testbed smart manufacturing system using a variety of &#34;unconventional&#34; attack vectors. Striving to think very much outside the box, we wanted to understand which overlooked conditions and attacker capabilities make certain attacks possible, and their consequences.  Through concrete PoCs, we&#39;ll describe what unconventional attack vectors and very creative attackers can achieve, as well as how they can be stopped by current security solutions.  We&#39;ll first show how a remote attacker can indirectly compromise an engineering workstation to backdoor the automation logic of an industrial robot. Then, we&#39;ll reveal how the attack has been carried out via a malicious software extension that targets the simulation and offline programming (OLP) platform. The attendees will learn that such malicious extensions have full capabilities on the target system, but we&#39;ll explain what they are and how they can be stopped.  Our second entry point is an industry-grade embedded device. These devices, often dubbed as &#34;IIoT devices&#34; offer great programming flexibility—compared to, say, PLCs—at the price of more responsibility for the programmers. The proliferation of customizable IIoT devices along with the many 3rd-party development libraries are the perfect target for software supply-chain attacks. We&#39;ll show how we trojanized a simple temperature-measurement library to implement an ARP-based DoS attack, along with inaccurate temperature data-points, which can cause cascade effects down the data-processing pipeline. We&#39;ll argue that detecting violations in the software supply-chain is hard in large, distributed enterprises, but their effects can be mitigated with proper network partitioning.  The last step of our security analysis focused on lateral movements to complex, programmable machines such as industrial robots. We observe that, movement-instructions aside, industrial robot programming languages have statements, loops, conditions, network sockets, serial communication, etc. With access to low-level system resources like files, network, memory, and peripherals, task programs are a powerful, overlooked payload. Not only we show that task programs are susceptible to input-validation vulnerabilities, we also show that they&#39;re rich enough to implement malware-like functionalities, given that the runtime environment provides no resource isolation. As a result, task programs have unmediated access to the entire system.  We&#39;ll share cases of vulnerable and malicious task programs, and how to discover such patterns, including some vulnerabilities we found in real-world code.  We conclude by discussing the remediation steps that can be adopted by developers and vendors to mitigate our findings in the medium and long term.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/maggi_conceptdrift_2009/">
+  <link rel="alternate" hreflang="en-us" href="/talk/maggi_smscs3sthlm_talk_2020/">
 
   
 
@@ -258,7 +258,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/publication/maggi_conceptdrift_2009/">
+  <link rel="canonical" href="/talk/maggi_smscs3sthlm_talk_2020/">
 
   
   
@@ -277,26 +277,23 @@
   <meta property="twitter:creator" content="@phretor">
   
   <meta property="og:site_name" content="Federico Maggi">
-  <meta property="og:url" content="/publication/maggi_conceptdrift_2009/">
-  <meta property="og:title" content="Protecting a Moving Target: Addressing Web Application Concept Drift | Federico Maggi">
-  <meta property="og:description" content="Because of the ad hoc nature of web applications, intrusion detection systems that leverage machine learning techniques are particularly well-suited for protecting websites. The reason is that these systems are able to characterize the applications&#39; normal behavior in an automated fashion. However, anomaly-based detectors for web applications suffer from false positives that are generated whenever the applications being protected change. These false positives need to be analyzed by the security officer who then has to interact with the web application developers to confirm that the reported alerts were indeed erroneous detections. In this paper, we propose a novel technique for the automatic detection of changes in web applications, which allows for the selective retraining of the affected anomaly detection models. We demonstrate that, by correctly identifying legitimate changes in web applications, we can reduce false positives and allow for the automated retraining of the anomaly models. We have evaluated our approach by analyzing a number of real-world applications. Our analysis shows that web applications indeed change substantially over time, and that our technique is able to effectively detect changes and automatically adapt the anomaly detection models to the new structure of the changed web applications."><meta property="og:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="/talk/maggi_smscs3sthlm_talk_2020/">
+  <meta property="og:title" content="Hidden Attack Surfaces of Modern Industrial Automation Systems | Federico Maggi">
+  <meta property="og:description" content="Last year we performed a security analysis on a testbed smart manufacturing system using a variety of &#34;unconventional&#34; attack vectors. Striving to think very much outside the box, we wanted to understand which overlooked conditions and attacker capabilities make certain attacks possible, and their consequences.  Through concrete PoCs, we&#39;ll describe what unconventional attack vectors and very creative attackers can achieve, as well as how they can be stopped by current security solutions.  We&#39;ll first show how a remote attacker can indirectly compromise an engineering workstation to backdoor the automation logic of an industrial robot. Then, we&#39;ll reveal how the attack has been carried out via a malicious software extension that targets the simulation and offline programming (OLP) platform. The attendees will learn that such malicious extensions have full capabilities on the target system, but we&#39;ll explain what they are and how they can be stopped.  Our second entry point is an industry-grade embedded device. These devices, often dubbed as &#34;IIoT devices&#34; offer great programming flexibility—compared to, say, PLCs—at the price of more responsibility for the programmers. The proliferation of customizable IIoT devices along with the many 3rd-party development libraries are the perfect target for software supply-chain attacks. We&#39;ll show how we trojanized a simple temperature-measurement library to implement an ARP-based DoS attack, along with inaccurate temperature data-points, which can cause cascade effects down the data-processing pipeline. We&#39;ll argue that detecting violations in the software supply-chain is hard in large, distributed enterprises, but their effects can be mitigated with proper network partitioning.  The last step of our security analysis focused on lateral movements to complex, programmable machines such as industrial robots. We observe that, movement-instructions aside, industrial robot programming languages have statements, loops, conditions, network sockets, serial communication, etc. With access to low-level system resources like files, network, memory, and peripherals, task programs are a powerful, overlooked payload. Not only we show that task programs are susceptible to input-validation vulnerabilities, we also show that they&#39;re rich enough to implement malware-like functionalities, given that the runtime environment provides no resource isolation. As a result, task programs have unmediated access to the entire system.  We&#39;ll share cases of vulnerable and malicious task programs, and how to discover such patterns, including some vulnerabilities we found in real-world code.  We conclude by discussing the remediation steps that can be adopted by developers and vendors to mitigate our findings in the medium and long term."><meta property="og:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2009-09-23T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-10-21T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-05T08:21:22&#43;00:00">
+    <meta property="article:modified_time" content="2020-09-14T12:08:12&#43;00:00">
   
 
   
 
 
+
+  
     
-
-
-
-
-
 
 
 
@@ -304,34 +301,30 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "Event",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/publication/maggi_conceptdrift_2009/"
+    "@id": "/talk/maggi_smscs3sthlm_talk_2020/"
   },
-  "headline": "Protecting a Moving Target: Addressing Web Application Concept Drift",
+  "name": "Hidden Attack Surfaces of Modern Industrial Automation Systems",
   
-  "datePublished": "2009-09-23T00:00:00Z",
-  "dateModified": "2020-06-05T08:21:22Z",
+  "location": {
+    "@type": "Place",
+    "name": "Stocholm, Sweden"
+  },
   
-  "author": {
+  
+  "startDate": "2020-10-21T00:00:00Z",
+  
+  
+  "performer": {
     "@type": "Person",
     "name": "Federico Maggi"
   },
   
-  "publisher": {
-    "@type": "Organization",
-    "name": "Federico Maggi",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_2.png"
-    }
-  },
-  "description": "Because of the ad hoc nature of web applications, intrusion detection systems that leverage machine learning techniques are particularly well-suited for protecting websites. The reason is that these systems are able to characterize the applications' normal behavior in an automated fashion. However, anomaly-based detectors for web applications suffer from false positives that are generated whenever the applications being protected change. These false positives need to be analyzed by the security officer who then has to interact with the web application developers to confirm that the reported alerts were indeed erroneous detections. In this paper, we propose a novel technique for the automatic detection of changes in web applications, which allows for the selective retraining of the affected anomaly detection models. We demonstrate that, by correctly identifying legitimate changes in web applications, we can reduce false positives and allow for the automated retraining of the anomaly models. We have evaluated our approach by analyzing a number of real-world applications. Our analysis shows that web applications indeed change substantially over time, and that our technique is able to effectively detect changes and automatically adapt the anomaly detection models to the new structure of the changed web applications."
+  "description": "Last year we performed a security analysis on a testbed smart manufacturing system using a variety of \"unconventional\" attack vectors. Striving to think very much outside the box, we wanted to understand which overlooked conditions and attacker capabilities make certain attacks possible, and their consequences.  Through concrete PoCs, we'll describe what unconventional attack vectors and very creative attackers can achieve, as well as how they can be stopped by current security solutions.  We'll first show how a remote attacker can indirectly compromise an engineering workstation to backdoor the automation logic of an industrial robot. Then, we'll reveal how the attack has been carried out via a malicious software extension that targets the simulation and offline programming (OLP) platform. The attendees will learn that such malicious extensions have full capabilities on the target system, but we'll explain what they are and how they can be stopped.  Our second entry point is an industry-grade embedded device. These devices, often dubbed as \"IIoT devices\" offer great programming flexibility—compared to, say, PLCs—at the price of more responsibility for the programmers. The proliferation of customizable IIoT devices along with the many 3rd-party development libraries are the perfect target for software supply-chain attacks. We'll show how we trojanized a simple temperature-measurement library to implement an ARP-based DoS attack, along with inaccurate temperature data-points, which can cause cascade effects down the data-processing pipeline. We'll argue that detecting violations in the software supply-chain is hard in large, distributed enterprises, but their effects can be mitigated with proper network partitioning.  The last step of our security analysis focused on lateral movements to complex, programmable machines such as industrial robots. We observe that, movement-instructions aside, industrial robot programming languages have statements, loops, conditions, network sockets, serial communication, etc. With access to low-level system resources like files, network, memory, and peripherals, task programs are a powerful, overlooked payload. Not only we show that task programs are susceptible to input-validation vulnerabilities, we also show that they're rich enough to implement malware-like functionalities, given that the runtime environment provides no resource isolation. As a result, task programs have unmediated access to the entire system.  We'll share cases of vulnerable and malicious task programs, and how to discover such patterns, including some vulnerabilities we found in real-world code.  We conclude by discussing the remediation steps that can be adopted by developers and vendors to mitigate our findings in the medium and long term."
 }
 </script>
-
-  
 
   
 
@@ -375,7 +368,7 @@
 
 
 
-  <title>Protecting a Moving Target: Addressing Web Application Concept Drift | Federico Maggi</title>
+  <title>Hidden Attack Surfaces of Modern Industrial Automation Systems | Federico Maggi</title>
 
 </head>
 
@@ -509,7 +502,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link  active" href="/publication"><span>Publications</span></a>
+          <a class="nav-link " href="/publication"><span>Publications</span></a>
         </li>
 
         
@@ -531,7 +524,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/talk"><span>Talks</span></a>
+          <a class="nav-link  active" href="/talk"><span>Talks</span></a>
         </li>
 
         
@@ -652,7 +645,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Protecting a Moving Target: Addressing Web Application Concept Drift</h1>
+  <h1>Hidden Attack Surfaces of Modern Industrial Automation Systems</h1>
 
   
 
@@ -670,19 +663,11 @@
     
 
   
-  <span>Federico Maggi</span>, <span>William Robertson</span>, <span>Christopher Kruegel</span>, <span>Giovanni Vigna</span>
+  <span>Federico Maggi</span>
   </div>
   
   
 
-  
-  <span class="article-date">
-    
-    
-      
-    
-    September 2009
-  </span>
   
 
   
@@ -707,8 +692,6 @@
 
 
 
-  
-
 
 
 
@@ -731,14 +714,10 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="/publication/maggi_conceptdrift_2009/maggi_conceptdrift_2009.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/maggi_conceptdrift_2009/cite.bib">
+        data-filename="/talk/maggi_smscs3sthlm_talk_2020/cite.bib">
   Cite
 </button>
 
@@ -767,23 +746,34 @@
   <div class="article-container">
 
     
-    <h3>Abstract</h3>
-    <p class="pub-abstract">Because of the ad hoc nature of web applications, intrusion detection systems that leverage machine learning techniques are particularly well-suited for protecting websites. The reason is that these systems are able to characterize the applications' normal behavior in an automated fashion. However, anomaly-based detectors for web applications suffer from false positives that are generated whenever the applications being protected change. These false positives need to be analyzed by the security officer who then has to interact with the web application developers to confirm that the reported alerts were indeed erroneous detections. In this paper, we propose a novel technique for the automatic detection of changes in web applications, which allows for the selective retraining of the affected anomaly detection models. We demonstrate that, by correctly identifying legitimate changes in web applications, we can reduce false positives and allow for the automated retraining of the anomaly models. We have evaluated our approach by analyzing a number of real-world applications. Our analysis shows that web applications indeed change substantially over time, and that our technique is able to effectively detect changes and automatically adapt the anomaly detection models to the new structure of the changed web applications.</p>
+      <h3>Abstract</h3>
+      <p class="pub-abstract">Last year we performed a security analysis on a testbed smart manufacturing system using a variety of &ldquo;unconventional&rdquo; attack vectors. Striving to think very much outside the box, we wanted to understand which overlooked conditions and attacker capabilities make certain attacks possible, and their consequences.  Through concrete PoCs, we&rsquo;ll describe what unconventional attack vectors and very creative attackers can achieve, as well as how they can be stopped by current security solutions.  We&rsquo;ll first show how a remote attacker can indirectly compromise an engineering workstation to backdoor the automation logic of an industrial robot. Then, we&rsquo;ll reveal how the attack has been carried out via a malicious software extension that targets the simulation and offline programming (OLP) platform. The attendees will learn that such malicious extensions have full capabilities on the target system, but we&rsquo;ll explain what they are and how they can be stopped.  Our second entry point is an industry-grade embedded device. These devices, often dubbed as &ldquo;IIoT devices&rdquo; offer great programming flexibility—compared to, say, PLCs—at the price of more responsibility for the programmers. The proliferation of customizable IIoT devices along with the many 3rd-party development libraries are the perfect target for software supply-chain attacks. We&rsquo;ll show how we trojanized a simple temperature-measurement library to implement an ARP-based DoS attack, along with inaccurate temperature data-points, which can cause cascade effects down the data-processing pipeline. We&rsquo;ll argue that detecting violations in the software supply-chain is hard in large, distributed enterprises, but their effects can be mitigated with proper network partitioning.  The last step of our security analysis focused on lateral movements to complex, programmable machines such as industrial robots. We observe that, movement-instructions aside, industrial robot programming languages have statements, loops, conditions, network sockets, serial communication, etc. With access to low-level system resources like files, network, memory, and peripherals, task programs are a powerful, overlooked payload. Not only we show that task programs are susceptible to input-validation vulnerabilities, we also show that they&rsquo;re rich enough to implement malware-like functionalities, given that the runtime environment provides no resource isolation. As a result, task programs have unmediated access to the entire system.  We&rsquo;ll share cases of vulnerable and malicious task programs, and how to discover such patterns, including some vulnerabilities we found in real-world code.  We conclude by discussing the remediation steps that can be adopted by developers and vendors to mitigate our findings in the medium and long term.</p>
     
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Date</div>
+          <div class="col-12 col-md-9">
+            Oct 21, 2020 12:00 AM
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
 
     
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-3 pub-row-heading">Event</div>
           <div class="col-12 col-md-9">
-            
-            
-            <a href="/publication/#1">
-              Conference paper
+            <a href="https://cs3sthlm.se/agenda/" target="_blank" rel="noopener">
+            <em>CS3STHLM</em>
             </a>
-            
           </div>
         </div>
       </div>
@@ -797,8 +787,9 @@
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>Proceedings of the International Symposium on Recent Advances in Intrusion Detection (RAID)</em></div>
+          <div class="col-12 col-md-3 pub-row-heading">Location</div>
+          <div class="col-12 col-md-9">Stocholm, Sweden</div>
+          
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -806,11 +797,11 @@
     <div class="d-md-none space-below"></div>
     
 
-    
-
     <div class="space-below"></div>
 
-    <div class="article-style"></div>
+    <div class="article-style">
+      
+    </div>
 
     
 
@@ -831,7 +822,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/publication/maggi_conceptdrift_2009/&amp;text=Protecting%20a%20Moving%20Target:%20Addressing%20Web%20Application%20Concept%20Drift" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/talk/maggi_smscs3sthlm_talk_2020/&amp;text=Hidden%20Attack%20Surfaces%20of%20Modern%20Industrial%20Automation%20Systems" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -844,7 +835,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/publication/maggi_conceptdrift_2009/&amp;t=Protecting%20a%20Moving%20Target:%20Addressing%20Web%20Application%20Concept%20Drift" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/talk/maggi_smscs3sthlm_talk_2020/&amp;t=Hidden%20Attack%20Surfaces%20of%20Modern%20Industrial%20Automation%20Systems" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -857,7 +848,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Protecting%20a%20Moving%20Target:%20Addressing%20Web%20Application%20Concept%20Drift&amp;body=/publication/maggi_conceptdrift_2009/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Hidden%20Attack%20Surfaces%20of%20Modern%20Industrial%20Automation%20Systems&amp;body=/talk/maggi_smscs3sthlm_talk_2020/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -870,7 +861,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/publication/maggi_conceptdrift_2009/&amp;title=Protecting%20a%20Moving%20Target:%20Addressing%20Web%20Application%20Concept%20Drift" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/talk/maggi_smscs3sthlm_talk_2020/&amp;title=Hidden%20Attack%20Surfaces%20of%20Modern%20Industrial%20Automation%20Systems" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -883,7 +874,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Protecting%20a%20Moving%20Target:%20Addressing%20Web%20Application%20Concept%20Drift%20/publication/maggi_conceptdrift_2009/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Hidden%20Attack%20Surfaces%20of%20Modern%20Industrial%20Automation%20Systems%20/talk/maggi_smscs3sthlm_talk_2020/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -896,7 +887,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/publication/maggi_conceptdrift_2009/&amp;title=Protecting%20a%20Moving%20Target:%20Addressing%20Web%20Application%20Concept%20Drift" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/talk/maggi_smscs3sthlm_talk_2020/&amp;title=Hidden%20Attack%20Surfaces%20of%20Modern%20Industrial%20Automation%20Systems" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -927,39 +918,6 @@
 
 
   
-    
-    
-
-
-
-
-
-  
-
-
-  
-    
-    
-
-
-
-
-
-  
-
-
-  
-    
-    
-
-
-
-
-
-  
-
-
-  
 
 
 
@@ -971,15 +929,6 @@
 
 
   
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/publication/robertson_longtail_2010/">Effective Anomaly Detection with Scarce Training Data</a></li>
-      
-    </ul>
-  </div>
   
 
 

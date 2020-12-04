@@ -3,23 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/publication-type/1/</loc>
-    <lastmod>2020-06-07T14:55:01+00:00</lastmod>
+    <loc>/publication-type/3/</loc>
+    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
     <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/davide-quarta/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/pogliani_otrazor_2020/</loc>
-    <lastmod>2020-06-07T14:55:01+00:00</lastmod>
   </url>
   
   <url>
@@ -33,17 +23,42 @@
   </url>
   
   <url>
+    <loc>/talk/maggi_smscs3sthlm_talk_2020/</loc>
+    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/1/</loc>
+    <lastmod>2020-06-07T14:55:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/davide-quarta/</loc>
+    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/pogliani_otrazor_2020/</loc>
+    <lastmod>2020-06-07T14:55:01+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/author/marcello-pogliani/</loc>
     <lastmod>2020-09-14T12:08:12+00:00</lastmod>
   </url>
   
   <url>
     <loc>/author/marco-balduzzi/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
     <lastmod>2020-09-14T12:08:12+00:00</lastmod>
   </url>
   
@@ -58,17 +73,7 @@
   </url>
   
   <url>
-    <loc>/publication-type/3/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/talk/maggi_otrazorhitcon_talk_2020/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
     <lastmod>2020-09-14T12:08:12+00:00</lastmod>
   </url>
   
