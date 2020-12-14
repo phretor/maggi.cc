@@ -3,32 +3,117 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2020-12-14T17:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-12-14T17:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/motivation/</loc>
+    <lastmod>2020-12-14T17:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/psychology/</loc>
+    <lastmod>2020-12-14T17:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/reading/</loc>
+    <lastmod>2020-12-14T17:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/reading-aloud/</loc>
+    <lastmod>2020-12-14T17:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-12-14T17:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/1/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/davide-quarta/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/federico-maggi/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/giacomo-tavola/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/marcello-pogliani/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/marco-balduzzi/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/martin-rosler/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/rainer-vosseler/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/maggi_smsec_2020/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/stefano-zanero/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/walter-quadrini/</loc>
+    <lastmod>2020-12-14T16:18:12+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication-type/3/</loc>
     <lastmod>2020-09-14T12:08:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/federico-maggi/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-09-24T07:06:04+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/talk/maggi_smscs3sthlm_talk_2020/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
     <lastmod>2020-09-14T12:08:12+00:00</lastmod>
   </url>
   
@@ -38,38 +123,8 @@
   </url>
   
   <url>
-    <loc>/publication-type/1/</loc>
-    <lastmod>2020-06-07T14:55:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/davide-quarta/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/pogliani_otrazor_2020/</loc>
     <lastmod>2020-06-07T14:55:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/marcello-pogliani/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/marco-balduzzi/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2020-09-14T10:53:35+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/stefano-zanero/</loc>
-    <lastmod>2020-09-14T12:08:12+00:00</lastmod>
   </url>
   
   <url>
@@ -88,28 +143,13 @@
   </url>
   
   <url>
-    <loc>/author/martin-rosler/</loc>
-    <lastmod>2020-09-14T10:53:35+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/author/martino-vittone/</loc>
-    <lastmod>2020-09-14T10:53:35+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/rainer-vosseler/</loc>
     <lastmod>2020-09-14T10:53:35+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/maggi_rogueautomationwp_tr_2020/</loc>
     <lastmod>2020-09-14T10:53:35+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-09-24T07:06:04+02:00</lastmod>
   </url>
   
   <url>
@@ -310,11 +350,6 @@
   <url>
     <loc>/tag/sdr/</loc>
     <lastmod>2019-01-16T16:01:50+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-06-05T12:16:11+02:00</lastmod>
   </url>
   
   <url>
