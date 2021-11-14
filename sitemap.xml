@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/cyberfacts/</loc>
+    <lastmod>2021-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/cyberfacts/issue-6/</loc>
+    <lastmod>2021-11-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/publication-type/3/</loc>
     <lastmod>2021-08-30T13:48:23+00:00</lastmod>
   </url><url>
@@ -14,9 +23,6 @@
     <loc>/author/federico-maggi/</loc>
     <lastmod>2021-08-30T13:48:23+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2021-11-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/publication_types/</loc>
     <lastmod>2021-08-30T13:48:23+00:00</lastmod>
   </url><url>
@@ -28,9 +34,6 @@
   </url><url>
     <loc>/talk/yen_ddsbheu_talk_2021/</loc>
     <lastmod>2021-08-30T13:48:23+00:00</lastmod>
-  </url><url>
-    <loc>/cyberfacts/</loc>
-    <lastmod>2021-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/cyberfacts/issue-5/</loc>
     <lastmod>2021-11-05T00:00:00+00:00</lastmod>
