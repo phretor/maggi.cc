@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stephen Hilt | Federico Maggi</title>
+    <link>/author/stephen-hilt/</link>
+      <atom:link href="/author/stephen-hilt/index.xml" rel="self" type="application/rss+xml" />
+    <description>Stephen Hilt</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Stephen Hilt</title>
+      <link>/author/stephen-hilt/</link>
+    </image>
+    
+    <item>
+      <title>Caught in the Act: Running a Realistic Factory Honeypot to Capture Real Threats</title>
+      <link>/publication/hilt_factoryhoneypotwp_tr_2020/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/hilt_factoryhoneypotwp_tr_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Security Evaluation of Industrial Radio Remote Controllers</title>
+      <link>/publication/maggi_industrialradios_2019/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_industrialradios_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Security Analysis of Radio Remote Controllers for Industrial Applications</title>
+      <link>/publication/andersson_industrialradioswp_tr_2019/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/andersson_industrialradioswp_tr_2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

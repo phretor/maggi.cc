@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mila Dalla Preda | Federico Maggi</title>
+    <link>/author/mila-dalla-preda/</link>
+      <atom:link href="/author/mila-dalla-preda/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mila Dalla Preda</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Sat, 01 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Mila Dalla Preda</title>
+      <link>/author/mila-dalla-preda/</link>
+    </image>
+    
+    <item>
+      <title>On-Chip System Call Tracing: A Feasibility Study and Open Prototype</title>
+      <link>/publication/zheng_openst_2016/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/zheng_openst_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing android malware detectors against code obfuscation: a systematization of knowledge and unified methodology</title>
+      <link>/publication/dalla-preda_aamo_article_2016/</link>
+      <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/dalla-preda_aamo_article_2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

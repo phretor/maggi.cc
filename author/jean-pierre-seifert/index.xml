@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jean-Pierre Seifert | Federico Maggi</title>
+    <link>/author/jean-pierre-seifert/</link>
+      <atom:link href="/author/jean-pierre-seifert/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jean-Pierre Seifert</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Jean-Pierre Seifert</title>
+      <link>/author/jean-pierre-seifert/</link>
+    </image>
+    
+    <item>
+      <title>Leveraging Flawed Tutorials for Seeding Large-Scale Web Vulnerability Discovery</title>
+      <link>/publication/unruh_joernphp_2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/unruh_joernphp_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Exploration of Taint-Style Vulnerabilities Found by Fuzzing</title>
+      <link>/publication/shastry_hybridstaticfuzzing_2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/shastry_hybridstaticfuzzing_2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

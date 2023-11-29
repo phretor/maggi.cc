@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sdr | Federico Maggi</title>
+    <link>/tag/sdr/</link>
+      <atom:link href="/tag/sdr/index.xml" rel="self" type="application/rss+xml" />
+    <description>sdr</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Wed, 16 Jan 2019 16:01:50 +0200</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>sdr</title>
+      <link>/tag/sdr/</link>
+    </image>
+    
+    <item>
+      <title>Radio Killed the Radio Stars: Security Analysis of RF Protocols for Industrial Applications</title>
+      <link>/post/ir-security/</link>
+      <pubDate>Wed, 16 Jan 2019 16:01:50 +0200</pubDate>
+      <guid>/post/ir-security/</guid>
+      <description>&lt;p&gt;After having analyzed the several RF protocols for industrial applications,
+distributed by global vendors, we discovered that none of them had
+sufficient security features to prevent an attacker from hijacking the
+communication and manoeuvre the controlled connected machines.&lt;/p&gt;
+&lt;p&gt;In Summer 2016 the condo we live in went through some renovation work. We had
+construction workers here for the about half a year. This was around the time
+when I was getting into software-defined radio (SDR) technology, and had
+a spectrum analyzer open all the time on my computer. Just for fun. After
+a while I&amp;rsquo;ve noticed some peaks of energy around 434MHz. I didn&amp;rsquo;t pay
+attention, until when I saw one of the workers holding what looked like
+a rugged remote controller with a tiny antenna. I rushed back in my office and
+took a closer look at the spectrum: I could clearly see that the peaks were
+showing in perfect sync with the noise of the huge crane swinging over my roof.&lt;/p&gt;
+&lt;p&gt;I had a little chat with the worker and asked him: &amp;ldquo;Is there any safety
+mechanism? Like, if I push a button to make the load go down, and someone is
+under that load, what happens?&amp;rdquo; In the local dialect, he answered something
+that I could roughly translate as&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;🤬  if you do that, you must have some serious problems.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This sounded like the perfect project idea to pitch to my colleagues! So I did.
+After some back and forth, brainstorming, and someone in the team having
+related ideas, we&amp;rsquo;ve decided to go after this, map the market, reverse engineer
+the protocols, look in depth into the embedded systems inside these remotes,
+and perform an all-around security analysis.&lt;/p&gt;
+&lt;p&gt;So here we are. After a long break in the middle, hard research work, and
+a challenging disclosure process, I&amp;rsquo;m very happy to share the results of what
+my colleagues in Trend Micro Research and I have produced.&lt;/p&gt;
+&lt;p&gt;Meanwhile, the renovation work is done and we&amp;rsquo;re enjoying a shiny new stone
+paver.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;condo.jpg&#34; alt=&#34;End of the renovation work.&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;radio-frequency-technology&#34;&gt;Radio-frequency Technology&lt;/h2&gt;
+&lt;p&gt;Sub-gigaherz radio-frequency (RF) protocols are widely adopted for both
+consumer and &lt;strong&gt;industrial applications&lt;/strong&gt;. From simple garage-door openers to
+remote controllers that manoeuvre huge mining drillers or overhead cranes that
+can lift tons of loads. So, way beyond construction cranes. These RF protocols
+operate in the ISM bands (e.g., 433, 868, 915 MHz, depending on the region),
+have a &lt;strong&gt;range up to several hundreds meters&lt;/strong&gt;, can easily go through
+obstacles, are very low priced, and are very flexible.&lt;/p&gt;
+&lt;h2 id=&#34;industrial-rf-remote-control-systems&#34;&gt;Industrial RF Remote Control Systems&lt;/h2&gt;
+&lt;p&gt;These industrial remote-control systems usually comprise a receiver (RX) with
+a few relay switches (e.g., to power up the controlled motor or other
+electrical loads), and a transmitter (TX) that looks like a rugged remote
+controller with buttons. Both RX and TX have an &lt;strong&gt;embedded digital radio chip&lt;/strong&gt;
+and a micro-controller that implements the actual application-level protocol
+(e.g., structure of messages, CRCs, pairing, addressing). Each transmitted
+message carries a distinct &lt;strong&gt;command&lt;/strong&gt; that the RX actuates, usually by
+triggering the relay switches in a given, configurable way.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;ir-system.jpg&#34; alt=&#34;Industrial Radio Remote Control System in a Nutshell&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;security-angle&#34;&gt;Security Angle&lt;/h2&gt;
+&lt;p&gt;Despite the simplicity of these systems, &lt;strong&gt;there is no standardization&lt;/strong&gt; in the
+application-level protocol, nor security best practices that go beyond the use
+of rolling-code to avoid replay attacks (in the best case).&lt;/p&gt;
+&lt;p&gt;After having analyzed the systems produced by several global vendors, in our
+research we discovered that none of the implementations had any robust security
+features (not even rolling codes) that would prevent an attacker from hijacking
+the communication and take control of the heavy industrial machines connected
+to the RX unit. After having responsibly disclosed our findings through 
+&lt;a href=&#34;https://www.zerodayinitiative.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trend
+Micro&amp;rsquo;s ZDI&lt;/a&gt; (
+&lt;a href=&#34;/advisories/&#34;&gt;10 advisories and 3 ICS-CERT
+alerts&lt;/a&gt;, some of which resulted in security firmware updates), we&amp;rsquo;ve drawn
+a list of recommendations for end users, system integrators, and vendors, to
+ensure that current-generation systems get properly secured, and that
+next-generation systems will be secure by design.&lt;/p&gt;
+&lt;h2 id=&#34;details-nope&#34;&gt;Details? Nope!&lt;/h2&gt;
+&lt;p&gt;This has been the hard part. Digging into custom protocols and figuring out
+all the bits that travel on the SPI bus (to make sure that we&amp;rsquo;re looking
+at the right data on the RX side) was challenging, yet a lot, lot of fun!&lt;/p&gt;
+&lt;p&gt;No, this blog post won&amp;rsquo;t go into the details. There&amp;rsquo;s the white paper (below)
+for that! Plus 
+&lt;a href=&#34;https://www.trendmicro.com/vinfo/us/security/news/vulnerabilities-and-exploits/attacks-against-industrial-machines-via-vulnerable-radio-remote-controllers-security-analysis-and-recommendations&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this interactive page with demo videos&lt;/a&gt;, and 
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/demonstrating-command-injection-and-e-stop-abuse-against-industrial-radio-remote-controllers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this blog post that describes a little RF dongle we&amp;rsquo;ve built for this research&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve presented this research at 
+&lt;a href=&#34;https://direction.trendmicro.com/sess/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Direction Tokyo last
+November&lt;/a&gt; (by the way, my first
+encounter with the Japanese culture was stellar!), my colleague
+
+&lt;a href=&#34;https://twitter.com/miaoski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Philippe&lt;/a&gt; has presented 
+&lt;a href=&#34;https://hitcon.org/2018/pacific/downloads/1213-R1/1610-1650.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;it at HITCON
+pacific&lt;/a&gt;
+focusing on the firmware reverse-engineering, and my colleagues
+
+&lt;a href=&#34;https://www.linkedin.com/in/jonathan-andersson-b516b9/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jonathan&lt;/a&gt;
+(
+&lt;a href=&#34;https://www.engadget.com/2016/10/28/icarus-hijack-dmsx-drones/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt;
+Jonathan) and 
+&lt;a href=&#34;https://twitter.com/sjhilt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stephen&lt;/a&gt; have just presented the
+white paper today at 
+&lt;a href=&#34;https://s4xevents.com/sessions/the-industrial-radio-project/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the S4
+conference&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;media&#34;&gt;Media&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m not attempting to keep track of the media activity around this research, sorry!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://monoist.atmarkit.co.jp/mn/articles/1811/19/news054.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;あなたの機械、安易につなげて大丈夫？　リスクと攻撃手法を知る&lt;/a&gt;, Nov 19th, 2018&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/1811/29/news027.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;クレーンを不正に遠隔操作、10年前より「攻撃しやすい」？　専門家が注意喚起&lt;/a&gt;, Nov 29th, 2018&lt;/li&gt;
+&lt;li&gt;Scott Shuey, Gulf News, 
+&lt;a href=&#34;https://gulfnews.com/technology/the-next-cyber-threat-wont-be-over-the-internet-its-on-the-radio-1.61093289&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The next cyber threat won’t be over the internet, it’s on the radio&lt;/a&gt; (
+&lt;a href=&#34;http://gulfnews.newspaperdirect.com/epaper/viewer.aspx?issue=11252019010400000000001001&amp;amp;page=18&amp;amp;article=47eb5960-bdd2-487e-a806-eca02e63fc0e&amp;amp;key=KkfY%2BCKWAUSFjN6c%2Fj%2Bzmg%3D%3D&amp;amp;feed=rss&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;print version&lt;/a&gt;). Jan 5th, 2019&lt;/li&gt;
+&lt;li&gt;Thomas Brewster, Forbes, 
+&lt;a href=&#34;https://www.forbes.com/sites/thomasbrewster/2019/01/15/exclusive-watch-hackers-take-control-of-giant-construction-cranes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Watch Hackers Take Control Of Giant Construction Cranes&lt;/a&gt;. Jan 15th, 2019&lt;/li&gt;
+&lt;li&gt;Sean Lyngaas, CyberScoop, 
+&lt;a href=&#34;https://www.cyberscoop.com/crane-hack-radio-frequency-trend-micro-s4x19/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look to the sky: How hackers could control cranes by abusing radio frequencies&lt;/a&gt;, Jan 15th, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Marco Balduzzi&lt;/span&gt;, &lt;span&gt;Jonathan Andersson&lt;/span&gt;, &lt;span&gt;Philippe Lin&lt;/span&gt;, &lt;span&gt;Stephen Hilt&lt;/span&gt;, &lt;span&gt;Akira Urano&lt;/span&gt;, &lt;span&gt;Rainer Vosseler&lt;/span&gt;
+  &lt;/span&gt;
+  (2019).
+  &lt;a href=&#34;/publication/maggi_industrialradios_2019/&#34;&gt;A Security Evaluation of Industrial Radio Remote Controllers&lt;/a&gt;.
+  &lt;em&gt;Proceedings of the 16th International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/maggi_industrialradios_2019/maggi_industrialradios_2019.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/maggi_industrialradios_2019/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Jonathan Andersson&lt;/span&gt;, &lt;span&gt;Marco Balduzzi&lt;/span&gt;, &lt;span&gt;Stephen Hilt&lt;/span&gt;, &lt;span&gt;Philippe Lin&lt;/span&gt;, &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Akira Urano&lt;/span&gt;, &lt;span&gt;Rainer Vosseler&lt;/span&gt;
+  &lt;/span&gt;
+  (2019).
+  &lt;a href=&#34;/publication/andersson_industrialradioswp_tr_2019/&#34;&gt;A Security Analysis of Radio Remote Controllers for Industrial Applications&lt;/a&gt;.
+  &lt;em&gt;Trend Micro Research&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/andersson_industrialradioswp_tr_2019/andersson_industrialradioswp_tr_2019.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/andersson_industrialradioswp_tr_2019/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

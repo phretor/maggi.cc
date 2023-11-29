@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>workshop | Federico Maggi</title>
+    <link>/tag/workshop/</link>
+      <atom:link href="/tag/workshop/index.xml" rel="self" type="application/rss+xml" />
+    <description>workshop</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>workshop</title>
+      <link>/tag/workshop/</link>
+    </image>
+    
+    <item>
+      <title>Leveraging Flawed Tutorials for Seeding Large-Scale Web Vulnerability Discovery</title>
+      <link>/publication/unruh_joernphp_2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/unruh_joernphp_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Exploration of Taint-Style Vulnerabilities Found by Fuzzing</title>
+      <link>/publication/shastry_hybridstaticfuzzing_2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/shastry_hybridstaticfuzzing_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security and Privacy Measurements on Social Networks: Experiences and Lessons Learned</title>
+      <link>/publication/polakis_osnresearch_2014/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/polakis_osnresearch_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AndroTotal: A Flexible, Scalable Toolbox and Service for Testing Mobile Malware Detectors</title>
+      <link>/publication/maggi_andrototal_2013/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_andrototal_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Security research at Politecnico di Milano</title>
+      <link>/publication/maggi_syssecpolimi_2011/</link>
+      <pubDate>Wed, 06 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_syssecpolimi_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A social-engineering-centric data collection initiative to study phishing</title>
+      <link>/publication/maggi_phonephishinghoneypot_2011/</link>
+      <pubDate>Sun, 10 Apr 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_phonephishinghoneypot_2011/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

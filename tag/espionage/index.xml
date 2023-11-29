@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>espionage | Federico Maggi</title>
+    <link>/tag/espionage/</link>
+      <atom:link href="/tag/espionage/index.xml" rel="self" type="application/rss+xml" />
+    <description>espionage</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Wed, 18 Jan 2017 12:16:11 +0200</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>espionage</title>
+      <link>/tag/espionage/</link>
+    </image>
+    
+    <item>
+      <title>What we Know About Eyepyramid</title>
+      <link>/post/eyepyramid/</link>
+      <pubDate>Wed, 18 Jan 2017 12:16:11 +0200</pubDate>
+      <guid>/post/eyepyramid/</guid>
+      <description>&lt;p&gt;The day before the EyePyramid case exploded, I received a confidential email
+with a PDF. It was the scanned copy of the court order for the law enforcement
+to proceed and arrest the Occhionero brothers. In a few minutes, I noticed that
+this leaked document was also circulating on various private mailing lists and
+chat groups I&amp;rsquo;m part of. At some point, I received a non-redacted copy.&lt;/p&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;ordinanza-occhionero.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;ordinanza-occhionero.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;ordinanza-occhionero.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I typically do not work on e-crime investigation cases, but while reading the
+court order I felt that something was not completely right. Moreover, the case
+was in Italy, my home country, which motivated me to look at it. Then, some
+colleagues from Trend Micro Italy contacted me with questions coming from our
+clients (for which, back then, I couldn&amp;rsquo;t answer yet). So, at the end of the
+day I decided to dive in!&lt;/p&gt;
+&lt;h3 id=&#34;puzzling-facts-in-the-court-order&#34;&gt;Puzzling Facts in the Court Order&lt;/h3&gt;
+&lt;p&gt;I skimmed through the court order and was surprised by the vast amount of
+technical evidence provided to support the accusations. Email addresses (in
+clear or easy to guess when redacted), IP addresses, domain names. So detailed
+that I could basically write a Yara rule to hunt for malware samples, without
+even looking at a single binary.&lt;/p&gt;
+&lt;p&gt;And then, the part that puzzled me most. The author of the malware used
+a licensed software library and allegedly &lt;em&gt;purchased the license under the name
+of Giulio Occhionero&lt;/em&gt; (one of the two brothers). It&amp;rsquo;s like, leaving your name
+on the crime scene!&lt;/p&gt;
+&lt;h3 id=&#34;almost-live-reversing&#34;&gt;(Almost) Live Reversing&lt;/h3&gt;
+&lt;p&gt;After getting my hands on some samples (yes, with Yara hunting rules based on
+the court order), things escalated quickly, and found myself looking at nearly
+250 samples. With the help of my fine colleagues, we&amp;rsquo;ve drawn rough, big
+picture of the whole scheme and started to find confirmatory evidence.&lt;/p&gt;
+&lt;p&gt;In a few hours, people on Twitter and other social networks started to follow
+the case closely, comment on it, give their own views. Given some confusion,
+I felt the urge to publish a list of &amp;ldquo;cold, simple, yet true&amp;rdquo; technical facts.
+So I&amp;rsquo;ve spun up a GitHub Gist (now deleted), which then evolved in a 
+&lt;a href=&#34;https://github.com/eyepyramid/eyepyramid&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;full
+repository&lt;/a&gt; (now not updated
+anymore), and finally 
+&lt;a href=&#34;https://medium.com/@phretor/cosa-sappiamo-su-eyepyramid-61b5b88c63b8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a post on Medium (in
+Italian)&lt;/a&gt;.
+Results were popping up rapidly, so I found myself unable to keep up with the
+pace, and decided to stop &amp;ldquo;live reversing&amp;rdquo; the samples, set aside some time and
+prepare two comprehensive posts for TrendLab&amp;rsquo;s Intelligence Blog, which my
+employer was very happy to release in no time.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jan 18, 2017 - 
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/uncovering-inner-workings-eyepyramid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Uncovering the Inner Workings of EyePyramid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jan 11, 2017 - 
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/eye-storm-look-eyepyramid-malware-supposedly-used-high-profile-hacks-italy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Eye of the Storm: A Look at EyePyramid, the Malware Supposedly Used in High-Profile Hacks in Italy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;summary-of-the-case&#34;&gt;Summary of the Case&lt;/h3&gt;
+&lt;p&gt;On the one hand, the original source code had gone through only very mild
+modifications (e.g., not all variants are able to exfiltrate Skype
+conversations, C&amp;amp;C and dropzones, compiler version, and protection mechanisms).
+On the other hand, the computer(s) used to build the various versions over the
+years seemed to be in line with the evolution of Microsoft developer tools
+(based on the progression of the compiler version) and software-protection
+tools (as seen on the recent substitution of Skater plus Dotfuscator with the
+more powerful ConfuserEx). This indicates that the actors behind this operation
+knew what they were doing. Of course, this was (and still) far from being an advanced
+or targeted piece of malware.&lt;/p&gt;
+&lt;p&gt;Apart from this, the origins of EyePyramid’s malware and its attribution remain
+a mystery. While the license key registered to Giulio Occhionero’s name can be
+considered as strong evidence, it is unclear why a malware author would bother
+using (simple yet not so trivial) mechanisms to cover their traces (e.g.,
+obfuscation, packing, encryption, disabling security tools), and then
+mistakenly embed the license key under his name in all of the main variants.
+Moreover, an analysis of the domain-to-IP historical data of the domain names
+listed in the court order reveals domains named &lt;code&gt;occhionero.com&lt;/code&gt; and
+&lt;code&gt;occhionero.info&lt;/code&gt;, which is again another oddity.&lt;/p&gt;
+&lt;h3 id=&#34;latest-update-just-another-oddity&#34;&gt;Latest Update (Just Another Oddity)&lt;/h3&gt;
+&lt;p&gt;I received an unexpected email message from someone I&amp;rsquo;ve never heard before.
+Despite the author of this email is not known in the cyber security community
+(he presented himself as a PhD Student in medicine at Stanford), he took the
+time (and money) to verify every single email address written in my analysis
+and in the court order.&lt;/p&gt;
+&lt;p&gt;Using LeakedSource (now taken down) he had found that one of the compromised
+email addresses (&lt;code&gt;lu_1974[@]hotmail.com&lt;/code&gt;, which is linked to EyePyramid) was
+used to register on various dating sites. LeakedSource was borderline websites
+that hosted stolen information, including usernames and
+passwords.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“this is probably just a coincidence”&lt;/em&gt; he said but &lt;em&gt;“Giulio also used his
+&lt;code&gt;@westlands.com&lt;/code&gt; address to register to the same dating sites.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Anyways, I&amp;rsquo;ve replied back, thanking him for his work. Then I&amp;rsquo;ve asked him why
+a Stanford PhD Student in medicine was so interested in such “niche” case
+(unfolded from the other side of the world), and how he knew that Giulio
+Occhionero had used his &lt;code&gt;@westlands.com&lt;/code&gt; address to register to the same dating
+sites, because I could not find any evidence about it&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve never gotten a reply.&lt;/p&gt;
+&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
+&lt;p&gt;After getting in touch with 
+&lt;a href=&#34;https://twitter.com/carolafrediani&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Carola
+Frediani&lt;/a&gt;, who did a very good job
+consolidating all the facts for La Stampa (
+&lt;a href=&#34;http://www.lastampa.it/2017/01/12/italia/cronache/tutti-i-dettagli-e-i-misteri-di-eyepyramid-S3vOtTe6smhbJbBlrogpcJ/pagina.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tutti i dettagli e i misteri di
+EyePyramid&lt;/a&gt;),
+I happily joined the hacker&amp;rsquo;s corner at the International Journalism Festival
+2017 in Perugia, a few months later, in a panel moderated by Carola. Here&amp;rsquo;s
+the recording of the panel.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/icgJavQqICM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

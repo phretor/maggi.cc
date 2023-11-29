@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alberto Coletta | Federico Maggi</title>
+    <link>/author/alberto-coletta/</link>
+      <atom:link href="/author/alberto-coletta/index.xml" rel="self" type="application/rss+xml" />
+    <description>Alberto Coletta</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 01 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Alberto Coletta</title>
+      <link>/author/alberto-coletta/</link>
+    </image>
+    
+    <item>
+      <title>DroydSeuss: A Mobile Banking Trojan Tracker - Short Paper</title>
+      <link>/publication/coletta_droydseuss_2016/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/coletta_droydseuss_2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

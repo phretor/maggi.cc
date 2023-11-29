@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ransomware | Federico Maggi</title>
+    <link>/tag/ransomware/</link>
+      <atom:link href="/tag/ransomware/index.xml" rel="self" type="application/rss+xml" />
+    <description>ransomware</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Thu, 08 Dec 2016 01:32:15 +0200</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>ransomware</title>
+      <link>/tag/ransomware/</link>
+    </image>
+    
+    <item>
+      <title>Mobile (Android) Ransomware</title>
+      <link>/post/mobile-ransomware/</link>
+      <pubDate>Thu, 08 Dec 2016 01:32:15 +0200</pubDate>
+      <guid>/post/mobile-ransomware/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve started this project while advising a Master student who was interested
+in machine learning. As I&amp;rsquo;ve been using machine learning since around 2006, I
+was immediately hooked by the idea of using it to determine whether an
+Android app was trying to lock the target device as part of a ransomware
+scheme.&lt;/p&gt;
+&lt;p&gt;There are three core characteristics that are unavoidable for any ransomware
+scheme, which can be all boiled down to the &amp;ldquo;business&amp;rdquo; need of &amp;ldquo;being noisy&amp;rdquo;
+and evident. It&amp;rsquo;s true right? For the first time we see malware that is no
+longer trying to hide. Instead, it needs to loudly announce its presence to the
+victim, in order for the business model to work. If the victim is not aware of
+what is happening and is not effectively guided to the payment screen, the
+infection is useless.&lt;/p&gt;
+&lt;p&gt;Therefore, any ransomware needs to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;encrypt or lock access to important data,&lt;/li&gt;
+&lt;li&gt;announce its presence to the user and,&lt;/li&gt;
+&lt;li&gt;guide them through the payment options.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These three features &lt;strong&gt;have to be implemented&lt;/strong&gt; by a ransomware sample, and
+thus have to be visible somehow in the code. Around this key observation,
+together with the evil genius 
+&lt;a href=&#34;https://www.andronio.me/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicolò Andronio&lt;/a&gt; (the
+aforementioned Master student) and my partner-in-crime
+
+&lt;a href=&#34;https://twitter.com/raistolo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stefano&lt;/a&gt;, we devised and open-sourced
+
+&lt;a href=&#34;https://github.com/necst/heldroid&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HelDroid&lt;/a&gt;, a fully automatic APK analyzer
+that, using static flow analysis, detects whether an app contains evidence of
+ransomware behavior.&lt;/p&gt;
+&lt;p&gt;Earlier this summer I&amp;rsquo;ve joined 
+&lt;a href=&#34;https://www.trendmicro.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trend Micro&lt;/a&gt;&amp;rsquo;s
+research team, and immediately got my hands onto MARS, its 
+&lt;a href=&#34;https://mars.trendmicro.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mobile App
+Reputation Service&lt;/a&gt;, which allowed me to build
+a good retrospective view of how Android ransomware have evolved.&lt;/p&gt;
+&lt;p&gt;This work granted me a speaking slot at the Black Hat Europe Briefings, where
+I had the opportunity to present the results to a room packed with attendees.
+Was a great experience!&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re curious, you can read a summarized version of the research in these
+two blog posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/mobile-ransomware-pocket-sized-badness/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mobile Ransomware: Pocket-Sized Badness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/mobile-ransomware-protect/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mobile Ransomware: How to Protect Against It&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s the 
+&lt;a href=&#34;https://web.archive.org/web/20180216035340/http://ransom.mobi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;web service (archived)&lt;/a&gt; in case you want to check it out.&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;p&gt;
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Chenghyu Zheng&lt;/span&gt;, &lt;span&gt;Nicola Della Rocca&lt;/span&gt;, &lt;span&gt;Niccolò Andronio&lt;/span&gt;, &lt;span&gt;Stefano Zanero&lt;/span&gt;, &lt;span&gt;Maggi Federico&lt;/span&gt;
+  &lt;/span&gt;
+  (2016).
+  &lt;a href=&#34;/publication/zheng_greateatlon_2016/&#34;&gt;GreatEatlon: Fast, Static Detection of Mobile Ransomware&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/zheng_greateatlon_2016/zheng_greateatlon_2016.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/zheng_greateatlon_2016/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Niccolò Andronio&lt;/span&gt;, &lt;span&gt;Stefano Zanero&lt;/span&gt;, &lt;span&gt;Federico Maggi&lt;/span&gt;
+  &lt;/span&gt;
+  (2015).
+  &lt;a href=&#34;/publication/andronio_heldroid_2015/&#34;&gt;HelDroid: Dissecting and Detecting Mobile Ransomware&lt;/a&gt;.
+  &lt;em&gt;International Symposium on Research in Attacks, Intrusions and Defenses (RAID)&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/andronio_heldroid_2015/andronio_heldroid_2015.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/andronio_heldroid_2015/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>routers | Federico Maggi</title>
+    <link>/tag/routers/</link>
+      <atom:link href="/tag/routers/index.xml" rel="self" type="application/rss+xml" />
+    <description>routers</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Wed, 03 May 2017 12:39:46 +0200</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>routers</title>
+      <link>/tag/routers/</link>
+    </image>
+    
+    <item>
+      <title>The Role of Industrial Routers in Keeping the Future Factory Secure</title>
+      <link>/post/industrial-routers/</link>
+      <pubDate>Wed, 03 May 2017 12:39:46 +0200</pubDate>
+      <guid>/post/industrial-routers/</guid>
+      <description>&lt;p&gt;Industrial routers play a very crucial role: a single vulnerability can grant
+the attacker access to an entire network of critical machines. In this
+research, I&amp;rsquo;ve looked at how easy it is for a hypothetical attacker to find
+and enumerate industrial routers, and the security posture of their vendors.&lt;/p&gt;
+&lt;p&gt;Industrial routers aren&amp;rsquo;t just regular routers in a rugged case. They are the
+gateway to networks of &lt;em&gt;machines&lt;/em&gt;, which usually end up interacting with the
+physical world. Think about connected vehicles, factories, robots, and so on.&lt;/p&gt;
+&lt;p&gt;While working on a remote access box (another name for &amp;ldquo;industrial router&amp;rdquo;),
+during our 
+&lt;a href=&#34;http://robosec.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;industrial robots research&lt;/a&gt;, we noticed that
+the web-admin panel had an authentication-bypass vulnerability. Upon reporting
+the 
+&lt;a href=&#34;https://websupport.ewon.biz/support/news/support/ewon-security-enhancement-fw-112s2-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vulnerability to the vendor, which patched it right
+away&lt;/a&gt;,
+we&amp;rsquo;ve wondered: are there other vendors? What&amp;rsquo;s the state of security in this
+area?&lt;/p&gt;
+&lt;p&gt;After going through the &amp;ldquo;Switches Get Stitches&amp;rdquo; talks (
+&lt;a href=&#34;https://www.slideshare.net/44Con/switches-getstitches&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;44CON 2014&lt;/a&gt;, 
+&lt;a href=&#34;https://media.ccc.de/v/31c3_-_6196_-_en_-_saal_1_-_201412281130_-_switches_get_stitches_-_eireann_leverett&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;31C3 2014&lt;/a&gt;, 
+&lt;a href=&#34;https://www.youtube.com/watch?v=urjKkQaspHQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Black Hat US 2015&lt;/a&gt;),
+we had some bad feelings about industrial routers too, so we&amp;rsquo;ve started to
+collect technical resources like manuals and firmware update files, and crafted
+Shodan and Censys search strings to see how many of these routers were directly
+exposed to a casual attacker.&lt;/p&gt;
+&lt;p&gt;The first thing that we&amp;rsquo;ve noticed was the abundance of technical information
+freely available to the public. Don&amp;rsquo;t get me wrong: I&amp;rsquo;m not advocating in favor
+of &amp;ldquo;security through obscurity&amp;rdquo; nor &amp;ldquo;closed source&amp;rdquo;. Once I believe in
+openness, I also believe that critical targets like industrial routers (which
+are put in front of supposedly critical machinery), shouldn&amp;rsquo;t be &lt;em&gt;that&lt;/em&gt; easy
+for a casual attacker to discover. Ironically, marketing brochures required
+a registration, whereas firmware and technical manuals were directly indexed by
+search engines and publicly accessible.&lt;/p&gt;
+&lt;p&gt;Given the security posture of some vendors, we&amp;rsquo;ve decided to take a broad look
+at all of them, both from a reconnaissance and vulnerability viewpoint.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re curious, head over to the 
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/compromising-industrial-robots/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;full article&lt;/a&gt; on TrendLab&amp;rsquo;s Security Intelligence Blog.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

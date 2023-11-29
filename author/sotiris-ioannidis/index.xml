@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sotiris Ioannidis | Federico Maggi</title>
+    <link>/author/sotiris-ioannidis/</link>
+      <atom:link href="/author/sotiris-ioannidis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sotiris Ioannidis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Thu, 01 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Sotiris Ioannidis</title>
+      <link>/author/sotiris-ioannidis/</link>
+    </image>
+    
+    <item>
+      <title>Face/Off: Preventing Privacy Leakage From Photos in Social Networks</title>
+      <link>/publication/ilia_faceoff_2015/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/ilia_faceoff_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faces in the Distorting Mirror: Revisiting Photo-based Social Authentication</title>
+      <link>/publication/polakis_resoauth_2014/</link>
+      <pubDate>Sat, 01 Nov 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/polakis_resoauth_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AndRadar: Fast Discovery of Android Applications in Alternative Markets</title>
+      <link>/publication/lindorfer_andradar_2014/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/lindorfer_andradar_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>All Your Face Are Belong to Us: Breaking Facebook&#39;s Social Authentication</title>
+      <link>/publication/polakis_soauth_2012/</link>
+      <pubDate>Mon, 03 Dec 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/polakis_soauth_2012/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

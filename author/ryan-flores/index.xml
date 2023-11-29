@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ryan Flores | Federico Maggi</title>
+    <link>/author/ryan-flores/</link>
+      <atom:link href="/author/ryan-flores/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ryan Flores</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Ryan Flores</title>
+      <link>/author/ryan-flores/</link>
+    </image>
+    
+    <item>
+      <title>Investigating Web Defacement Campaigns at Large</title>
+      <link>/publication/maggi_defplorex_2018/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_defplorex_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks</title>
+      <link>/publication/balduzzi_defplorexwp_tr_2018/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/balduzzi_defplorexwp_tr_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DefPloreX: A Machine Learning Toolkit for Large-scale e-Crime Forensics</title>
+      <link>/talk/balduzzi_defplorexbhus_talk_2017/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/balduzzi_defplorexbhus_talk_2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

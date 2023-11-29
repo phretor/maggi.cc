@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Giovanni Zingaro | Federico Maggi</title>
+    <link>/author/giovanni-zingaro/</link>
+      <atom:link href="/author/giovanni-zingaro/index.xml" rel="self" type="application/rss+xml" />
+    <description>Giovanni Zingaro</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Giovanni Zingaro</title>
+      <link>/author/giovanni-zingaro/</link>
+    </image>
+    
+    <item>
+      <title>ShieldFS: The Last Word in Ransomware-resilient File Systems</title>
+      <link>/talk/continella_shieldfsbhus_talk_2017/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/continella_shieldfsbhus_talk_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ShieldFS: A Self-healing, Ransomware-aware Filesystem</title>
+      <link>/publication/continella_shieldfs_2016/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/continella_shieldfs_2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

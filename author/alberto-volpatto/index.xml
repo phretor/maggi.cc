@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alberto Volpatto | Federico Maggi</title>
+    <link>/author/alberto-volpatto/</link>
+      <atom:link href="/author/alberto-volpatto/index.xml" rel="self" type="application/rss+xml" />
+    <description>Alberto Volpatto</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 05 Dec 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Alberto Volpatto</title>
+      <link>/author/alberto-volpatto/</link>
+    </image>
+    
+    <item>
+      <title>A Fast Eavesdropping Attack Against Touchscreens</title>
+      <link>/publication/maggi_iclearshot_2011/</link>
+      <pubDate>Mon, 05 Dec 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_iclearshot_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iSnoop: How to Steal Secrets From Touchscreen Devices</title>
+      <link>/talk/maggi_isnoop_talk_2011/</link>
+      <pubDate>Thu, 01 Dec 2011 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_isnoop_talk_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>POSTER: Fast, Automatic iPhone Shoulder Surfing</title>
+      <link>/publication/maggi_iclearshotposter_2011/</link>
+      <pubDate>Sat, 01 Oct 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_iclearshotposter_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effective Multimodel Anomaly Detection Using Cooperative Negotiation</title>
+      <link>/publication/volpatto_cooperativeids_2010/</link>
+      <pubDate>Mon, 22 Nov 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/volpatto_cooperativeids_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t touch a word! A practical input eavesdropping attack against mobile touchscreen devices</title>
+      <link>/publication/maggi_iclearshot_tr_2010/</link>
+      <pubDate>Mon, 01 Nov 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_iclearshot_tr_2010/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

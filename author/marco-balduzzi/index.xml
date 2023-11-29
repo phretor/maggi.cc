@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marco Balduzzi | Federico Maggi</title>
+    <link>/author/marco-balduzzi/</link>
+      <atom:link href="/author/marco-balduzzi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Marco Balduzzi</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 23 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Marco Balduzzi</title>
+      <link>/author/marco-balduzzi/</link>
+    </image>
+    
+    <item>
+      <title>Smart Factory Security: A Case Study on a Modular SmartManufacturing System</title>
+      <link>/publication/maggi_smsec_2020/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_smsec_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting Unsafe Code Patterns in Industrial Robot Programs</title>
+      <link>/publication/pogliani_otrazor_2020/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/pogliani_otrazor_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guarding the Factory Floor: Catching Insecure Industrial Robot Programs</title>
+      <link>/talk/maggi_otrazorhitcon_talk_2020/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_otrazorhitcon_talk_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OTRazor: Static Code Analysis for Vulnerability Discovery in Industrial Automation Scripts</title>
+      <link>/talk/maggi_otrazorbhus_talk_2020/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_otrazorbhus_talk_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rogue Automation: Vulnerable and Malicious Code in Industrial Programming</title>
+      <link>/publication/maggi_rogueautomationwp_tr_2020/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_rogueautomationwp_tr_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Security Evaluation of Industrial Radio Remote Controllers</title>
+      <link>/publication/maggi_industrialradios_2019/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_industrialradios_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hey Operator, Where’s Your Crane? Attacking Industrial Remote Controllers</title>
+      <link>/talk/balduzzi_industrialradioshitb_talk_2019/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/balduzzi_industrialradioshitb_talk_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Security Analysis of Radio Remote Controllers for Industrial Applications</title>
+      <link>/publication/andersson_industrialradioswp_tr_2019/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/andersson_industrialradioswp_tr_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigating Web Defacement Campaigns at Large</title>
+      <link>/publication/maggi_defplorex_2018/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_defplorex_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks</title>
+      <link>/publication/balduzzi_defplorexwp_tr_2018/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/balduzzi_defplorexwp_tr_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DefPloreX: A Machine Learning Toolkit for Large-scale e-Crime Forensics</title>
+      <link>/talk/balduzzi_defplorexbhus_talk_2017/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/balduzzi_defplorexbhus_talk_2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

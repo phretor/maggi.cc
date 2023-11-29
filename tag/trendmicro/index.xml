@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trendmicro | Federico Maggi</title>
+    <link>/tag/trendmicro/</link>
+      <atom:link href="/tag/trendmicro/index.xml" rel="self" type="application/rss+xml" />
+    <description>trendmicro</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Wed, 16 Jan 2019 16:01:50 +0200</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>trendmicro</title>
+      <link>/tag/trendmicro/</link>
+    </image>
+    
+    <item>
+      <title>Radio Killed the Radio Stars: Security Analysis of RF Protocols for Industrial Applications</title>
+      <link>/post/ir-security/</link>
+      <pubDate>Wed, 16 Jan 2019 16:01:50 +0200</pubDate>
+      <guid>/post/ir-security/</guid>
+      <description>&lt;p&gt;After having analyzed the several RF protocols for industrial applications,
+distributed by global vendors, we discovered that none of them had
+sufficient security features to prevent an attacker from hijacking the
+communication and manoeuvre the controlled connected machines.&lt;/p&gt;
+&lt;p&gt;In Summer 2016 the condo we live in went through some renovation work. We had
+construction workers here for the about half a year. This was around the time
+when I was getting into software-defined radio (SDR) technology, and had
+a spectrum analyzer open all the time on my computer. Just for fun. After
+a while I&amp;rsquo;ve noticed some peaks of energy around 434MHz. I didn&amp;rsquo;t pay
+attention, until when I saw one of the workers holding what looked like
+a rugged remote controller with a tiny antenna. I rushed back in my office and
+took a closer look at the spectrum: I could clearly see that the peaks were
+showing in perfect sync with the noise of the huge crane swinging over my roof.&lt;/p&gt;
+&lt;p&gt;I had a little chat with the worker and asked him: &amp;ldquo;Is there any safety
+mechanism? Like, if I push a button to make the load go down, and someone is
+under that load, what happens?&amp;rdquo; In the local dialect, he answered something
+that I could roughly translate as&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;🤬  if you do that, you must have some serious problems.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This sounded like the perfect project idea to pitch to my colleagues! So I did.
+After some back and forth, brainstorming, and someone in the team having
+related ideas, we&amp;rsquo;ve decided to go after this, map the market, reverse engineer
+the protocols, look in depth into the embedded systems inside these remotes,
+and perform an all-around security analysis.&lt;/p&gt;
+&lt;p&gt;So here we are. After a long break in the middle, hard research work, and
+a challenging disclosure process, I&amp;rsquo;m very happy to share the results of what
+my colleagues in Trend Micro Research and I have produced.&lt;/p&gt;
+&lt;p&gt;Meanwhile, the renovation work is done and we&amp;rsquo;re enjoying a shiny new stone
+paver.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;condo.jpg&#34; alt=&#34;End of the renovation work.&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;radio-frequency-technology&#34;&gt;Radio-frequency Technology&lt;/h2&gt;
+&lt;p&gt;Sub-gigaherz radio-frequency (RF) protocols are widely adopted for both
+consumer and &lt;strong&gt;industrial applications&lt;/strong&gt;. From simple garage-door openers to
+remote controllers that manoeuvre huge mining drillers or overhead cranes that
+can lift tons of loads. So, way beyond construction cranes. These RF protocols
+operate in the ISM bands (e.g., 433, 868, 915 MHz, depending on the region),
+have a &lt;strong&gt;range up to several hundreds meters&lt;/strong&gt;, can easily go through
+obstacles, are very low priced, and are very flexible.&lt;/p&gt;
+&lt;h2 id=&#34;industrial-rf-remote-control-systems&#34;&gt;Industrial RF Remote Control Systems&lt;/h2&gt;
+&lt;p&gt;These industrial remote-control systems usually comprise a receiver (RX) with
+a few relay switches (e.g., to power up the controlled motor or other
+electrical loads), and a transmitter (TX) that looks like a rugged remote
+controller with buttons. Both RX and TX have an &lt;strong&gt;embedded digital radio chip&lt;/strong&gt;
+and a micro-controller that implements the actual application-level protocol
+(e.g., structure of messages, CRCs, pairing, addressing). Each transmitted
+message carries a distinct &lt;strong&gt;command&lt;/strong&gt; that the RX actuates, usually by
+triggering the relay switches in a given, configurable way.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;ir-system.jpg&#34; alt=&#34;Industrial Radio Remote Control System in a Nutshell&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;security-angle&#34;&gt;Security Angle&lt;/h2&gt;
+&lt;p&gt;Despite the simplicity of these systems, &lt;strong&gt;there is no standardization&lt;/strong&gt; in the
+application-level protocol, nor security best practices that go beyond the use
+of rolling-code to avoid replay attacks (in the best case).&lt;/p&gt;
+&lt;p&gt;After having analyzed the systems produced by several global vendors, in our
+research we discovered that none of the implementations had any robust security
+features (not even rolling codes) that would prevent an attacker from hijacking
+the communication and take control of the heavy industrial machines connected
+to the RX unit. After having responsibly disclosed our findings through 
+&lt;a href=&#34;https://www.zerodayinitiative.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trend
+Micro&amp;rsquo;s ZDI&lt;/a&gt; (
+&lt;a href=&#34;/advisories/&#34;&gt;10 advisories and 3 ICS-CERT
+alerts&lt;/a&gt;, some of which resulted in security firmware updates), we&amp;rsquo;ve drawn
+a list of recommendations for end users, system integrators, and vendors, to
+ensure that current-generation systems get properly secured, and that
+next-generation systems will be secure by design.&lt;/p&gt;
+&lt;h2 id=&#34;details-nope&#34;&gt;Details? Nope!&lt;/h2&gt;
+&lt;p&gt;This has been the hard part. Digging into custom protocols and figuring out
+all the bits that travel on the SPI bus (to make sure that we&amp;rsquo;re looking
+at the right data on the RX side) was challenging, yet a lot, lot of fun!&lt;/p&gt;
+&lt;p&gt;No, this blog post won&amp;rsquo;t go into the details. There&amp;rsquo;s the white paper (below)
+for that! Plus 
+&lt;a href=&#34;https://www.trendmicro.com/vinfo/us/security/news/vulnerabilities-and-exploits/attacks-against-industrial-machines-via-vulnerable-radio-remote-controllers-security-analysis-and-recommendations&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this interactive page with demo videos&lt;/a&gt;, and 
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/demonstrating-command-injection-and-e-stop-abuse-against-industrial-radio-remote-controllers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this blog post that describes a little RF dongle we&amp;rsquo;ve built for this research&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve presented this research at 
+&lt;a href=&#34;https://direction.trendmicro.com/sess/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Direction Tokyo last
+November&lt;/a&gt; (by the way, my first
+encounter with the Japanese culture was stellar!), my colleague
+
+&lt;a href=&#34;https://twitter.com/miaoski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Philippe&lt;/a&gt; has presented 
+&lt;a href=&#34;https://hitcon.org/2018/pacific/downloads/1213-R1/1610-1650.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;it at HITCON
+pacific&lt;/a&gt;
+focusing on the firmware reverse-engineering, and my colleagues
+
+&lt;a href=&#34;https://www.linkedin.com/in/jonathan-andersson-b516b9/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jonathan&lt;/a&gt;
+(
+&lt;a href=&#34;https://www.engadget.com/2016/10/28/icarus-hijack-dmsx-drones/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt;
+Jonathan) and 
+&lt;a href=&#34;https://twitter.com/sjhilt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stephen&lt;/a&gt; have just presented the
+white paper today at 
+&lt;a href=&#34;https://s4xevents.com/sessions/the-industrial-radio-project/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the S4
+conference&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;media&#34;&gt;Media&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m not attempting to keep track of the media activity around this research, sorry!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://monoist.atmarkit.co.jp/mn/articles/1811/19/news054.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;あなたの機械、安易につなげて大丈夫？　リスクと攻撃手法を知る&lt;/a&gt;, Nov 19th, 2018&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/1811/29/news027.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;クレーンを不正に遠隔操作、10年前より「攻撃しやすい」？　専門家が注意喚起&lt;/a&gt;, Nov 29th, 2018&lt;/li&gt;
+&lt;li&gt;Scott Shuey, Gulf News, 
+&lt;a href=&#34;https://gulfnews.com/technology/the-next-cyber-threat-wont-be-over-the-internet-its-on-the-radio-1.61093289&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The next cyber threat won’t be over the internet, it’s on the radio&lt;/a&gt; (
+&lt;a href=&#34;http://gulfnews.newspaperdirect.com/epaper/viewer.aspx?issue=11252019010400000000001001&amp;amp;page=18&amp;amp;article=47eb5960-bdd2-487e-a806-eca02e63fc0e&amp;amp;key=KkfY%2BCKWAUSFjN6c%2Fj%2Bzmg%3D%3D&amp;amp;feed=rss&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;print version&lt;/a&gt;). Jan 5th, 2019&lt;/li&gt;
+&lt;li&gt;Thomas Brewster, Forbes, 
+&lt;a href=&#34;https://www.forbes.com/sites/thomasbrewster/2019/01/15/exclusive-watch-hackers-take-control-of-giant-construction-cranes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Watch Hackers Take Control Of Giant Construction Cranes&lt;/a&gt;. Jan 15th, 2019&lt;/li&gt;
+&lt;li&gt;Sean Lyngaas, CyberScoop, 
+&lt;a href=&#34;https://www.cyberscoop.com/crane-hack-radio-frequency-trend-micro-s4x19/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look to the sky: How hackers could control cranes by abusing radio frequencies&lt;/a&gt;, Jan 15th, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Marco Balduzzi&lt;/span&gt;, &lt;span&gt;Jonathan Andersson&lt;/span&gt;, &lt;span&gt;Philippe Lin&lt;/span&gt;, &lt;span&gt;Stephen Hilt&lt;/span&gt;, &lt;span&gt;Akira Urano&lt;/span&gt;, &lt;span&gt;Rainer Vosseler&lt;/span&gt;
+  &lt;/span&gt;
+  (2019).
+  &lt;a href=&#34;/publication/maggi_industrialradios_2019/&#34;&gt;A Security Evaluation of Industrial Radio Remote Controllers&lt;/a&gt;.
+  &lt;em&gt;Proceedings of the 16th International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/maggi_industrialradios_2019/maggi_industrialradios_2019.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/maggi_industrialradios_2019/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Jonathan Andersson&lt;/span&gt;, &lt;span&gt;Marco Balduzzi&lt;/span&gt;, &lt;span&gt;Stephen Hilt&lt;/span&gt;, &lt;span&gt;Philippe Lin&lt;/span&gt;, &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Akira Urano&lt;/span&gt;, &lt;span&gt;Rainer Vosseler&lt;/span&gt;
+  &lt;/span&gt;
+  (2019).
+  &lt;a href=&#34;/publication/andersson_industrialradioswp_tr_2019/&#34;&gt;A Security Analysis of Radio Remote Controllers for Industrial Applications&lt;/a&gt;.
+  &lt;em&gt;Trend Micro Research&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/andersson_industrialradioswp_tr_2019/andersson_industrialradioswp_tr_2019.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/andersson_industrialradioswp_tr_2019/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Large Scale Analysis of Defaced Web Pages</title>
+      <link>/post/large-scale-deface-page-analysis/</link>
+      <pubDate>Thu, 14 Jun 2018 15:21:19 +0200</pubDate>
+      <guid>/post/large-scale-deface-page-analysis/</guid>
+      <description>&lt;p&gt;Given the multiple releases around this topic and project, I&amp;rsquo;ve decided to
+put together a summary. So far, there is: a tool, a white paper, an
+academic paper, and (spoiler alert) another white paper coming soon.&lt;/p&gt;
+&lt;p&gt;You’d be surprised (I was!) how much the modus operandi and the motivation
+behind web defacement have evolved and mutated over the past ~20 years. From
+attackers interested in pointing their finger to vulnerable websites, to modern
+actors taking strong positions on real-world conflicts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/real-world-timeline.jpg&#34; alt=&#34;Timeline of real world events for which we have found evidence in web-deface pages.&#34; title=&#34;Timeline of Real World Events&#34;&gt;&lt;/p&gt;
+&lt;p&gt;How do we know what we know about this phenomenon? Let&amp;rsquo;s take a look!&lt;/p&gt;
+&lt;h2 id=&#34;the-tool&#34;&gt;The Tool&lt;/h2&gt;
+&lt;p&gt;Last year at 
+&lt;a href=&#34;https://twitter.com/toolswatch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Black Hat US Arsenal&lt;/a&gt; my
+colleagues and I released 
+&lt;a href=&#34;https://github.com/trendmicro/defplorex&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;part of the source code of
+DefPloreX&lt;/a&gt;, the tool-chain that we use
+to explore million of web-deface pages. DefPloreX is pretty flexible and, in
+principle, it could be used to process any web page, for instance those planted
+as a result of an attack, or to &amp;ldquo;cluster&amp;rdquo; together web pages of underground web
+sites, and any other e-crime forensics task that requires to &amp;ldquo;make sense&amp;rdquo; out
+of a large dataset of web pages.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/trendmicro/defplorex/blob/master/i/dpx-overall.png?raw=true&#34; alt=&#34;DefPloreX workflow&#34; title=&#34;DefPloreX workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;DefPloreX ingests plain and flat tabular files (e.g., CSV files) containing
+metadata records of web incidents under analysis (e.g., URLs), renders them and
+obtains a copy of their resources with headless browsers (we tried basically
+all of them, but then we settled with Chrome via
+
+&lt;a href=&#34;https://github.com/GoogleChrome/puppeteer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Puppeteer&lt;/a&gt;), extracts numerical
+features, and stores the resulting data to an Elastic index. We&amp;rsquo;ve designed any
+task to be distributed by default, using Celery to coordinate them.&lt;/p&gt;
+&lt;p&gt;On top of the Elastic back-end, I&amp;rsquo;ve cooked up a ReactJS-based web-app (which
+as of now is not part of the open-source release, mainly because the code is
+&lt;strong&gt;very&lt;/strong&gt; messy) to interactively explore, query, and dig into the data. This
+allows an analyst to easily investigate on campaigns, for example in
+discovering websites targeted by the same campaign or attributing one or more
+actors to the same hacking group. All of this without sacrificing the
+interactivity aspect of the investigation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/trendmicro/defplorex/blob/master/i/dpx-clusters-viz.png?raw=true&#34; alt=&#34;DefPloreX web app main screen&#34; title=&#34;DefPloreX web app main screen&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you want to see the web app in action, you can take yourself a 14 minutes coffee or tea break while watching this demo.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DILbSXYpiMU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;distributed-data-processing&#34;&gt;Distributed Data Processing&lt;/h3&gt;
+&lt;p&gt;Normally, to take full advantage of Elastic&amp;rsquo;s distributed data-processing
+functionality, you need to resort to
+
+&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-scripting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scripting&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Although scripting is quite powerful and handy for small data-manipulation
+tasks, it&amp;rsquo;s a bit cumbersome to deploy and handle requires; and, in addition,
+it requires full access to the Elastic&amp;rsquo;s client nodes. For example, if you need
+to process all the documents in an Elastic index (e.g., to enrich them by
+computing additional fields), you will have to choose one of the scripting
+languages supported by Elastic, write a script, deploy it and run it. Needless
+to say, your script will run within the context of the ES runtime, with all the
+limitations that this implies. For example, should you need to use Python,
+you&amp;rsquo;re forced to use the Jython Java implementation of Python, which is not the
+same as pure Python. For instance, some of the libraries that you may want to
+use may not be supported, and so on. In other words, we don&amp;rsquo;t want to depend on
+the Elastic&amp;rsquo;s scripting subsystem in our work :-)&lt;/p&gt;
+&lt;p&gt;Instead, we take a more &amp;ldquo;detached&amp;rdquo; approach. We decouple the data-processing
+part, making it independent from the Elastic runtime and architecture, and rely
+on ES exclusively as a data back-end to store, retrieve and modify JSON
+documents. The coordination of the distributed computation is delegated to
+a well-known and widely used distributed task queue:
+
+&lt;a href=&#34;http://www.celeryproject.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Celery&lt;/a&gt;. The friendliness of Celery is
+astonishing: from the programmer&amp;rsquo;s perspective, all it requires is to write
+your data-processing code by means of a function, and Celery will take care of
+offloading the (expensive and long-running) computation to one of the available
+workers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/trendmicro/defplorex/blob/master/i/dpx-celery.png?raw=true&#34; alt=&#34;DefPloreX distributed data processing via Celery&#34; title=&#34;DefPloreX distributed data processing via Celery&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For example, if you need to visit a web page with an automated headless
+browser, all you need to do is to wrap your code into a function, let&amp;rsquo;s say
+&lt;code&gt;visit_page&lt;/code&gt;, and decorate it with &lt;code&gt;@app.task&lt;/code&gt; to inform Celery that this is
+a task:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;@app.task
+def visit_page(url):
+    result = long_running_process(url)
+
+    return result
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Later on in your code, all you need to do is to call the function (almost) as
+you would normally do:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;visit_page.delay(url)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;.delay()&lt;/code&gt; function indicates that the function call will not execute
+immediately, but instead will be &amp;ldquo;pushed&amp;rdquo; into a task list, from which an
+available worker will pull it and do the work.&lt;/p&gt;
+&lt;p&gt;On the other end of the task list, you can launch as many workers as you need,
+by simply keeping the Celery daemon active:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;$ celery worker --autoscale=6,64
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Assuming a 64-core machine, this command spawns 6 concurrent processes, up to
+64 when more workload comes in. And of course you can add as many workers as
+needed, from a single computer with a few tenths of cores, to a full rack
+distributed across the globe. In our deployment, we have 5 machines, with
+a total of 128 cores. With these modest resources, we were able to visit the
+entire collection of over 13 million web pages in a week. Adding more cores
+would have made the analysis even faster.&lt;/p&gt;
+&lt;h3 id=&#34;document-transformations&#34;&gt;Document Transformations&lt;/h3&gt;
+&lt;p&gt;From this moment on, we have a solid foundation to efficiently transform JSON
+documents stored in the Elastic index. Therefore, we &amp;ldquo;encode&amp;rdquo; any operation
+that we need to perform in DefPloreX by means of a few lines of Python code. For
+example, we often need to &amp;ldquo;tag&amp;rdquo; JSON documents to mark those that have been
+processed. To this end, as exemplified in this repository, we use the
+&lt;code&gt;TagTransformer&lt;/code&gt; transformation. As any other transform, this function receives one JSON
+document and returns the newly added fields, or the modified fields.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;class TagTransformer(Transformer):
+    &amp;quot;&amp;quot;&amp;quot;
+    Example transform to append tag to a record.
+    &amp;quot;&amp;quot;&amp;quot;
+    _name = &#39;tag&#39;                   # unique name
+
+    def __call__(self, doc, *args, **kwargs):
+        doc = super(TagTransformer, self).__call__(
+                doc, *args, **kwargs)
+
+        tag = kwargs.get(&#39;tag&#39;)     # tag that we want to apply to the JSON
+
+        if not tag:
+            log.debug(&#39;No tags supplied, skipping&#39;)
+            return []
+
+        tags = doc.get(&#39;tags&#39;, [])  # get the &#39;tags&#39; field from the existing JSON doc
+
+        if tags:
+            log.debug(&#39;Found tags: %s&#39;, tags)
+
+        tags.append(tag)            # append the new tag
+        tags = list(set(tags))      # remove duplicates
+
+        log.debug(&#39;Updated tags: %s&#39;, tags)
+
+        return dict(tags=tags)      # return the enriched JSON
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The output of this transformation is automatically handled by our Elastic
+wrapper (see &lt;code&gt;backend.elastic.ESStorer&lt;/code&gt;) and the
+&lt;code&gt;transformer.Pipeline&lt;/code&gt; class, which merges the new (partial) document with the
+original one and saves it into the ES index. Actually, this is
+performed in bulk: that is, every worker consumes and processes a given amount
+of documents at each round (default is 1000). To summarize: given a query, we
+enqueue all the IDs of the documents that match that query. The queue consumers
+will pull 1000 IDs at a time, query Elastic for the respective documents,
+transform them, and push them back on Elastic as update operations.&lt;/p&gt;
+&lt;p&gt;Other transformations that we have implemented (briefly explained in
+the following) include for example visiting the web pages with an automated,
+headless browser, extracting information from the visited web pages,
+calculating numerical features, and so on. Every task is expressed by means of
+a subclass of &lt;code&gt;Transformer&lt;/code&gt;, which takes as input a document, and returns the
+enriched or modified fields.&lt;/p&gt;
+&lt;h2 id=&#34;the-white-paper&#34;&gt;The White Paper&lt;/h2&gt;
+&lt;p&gt;With the help of our great colleagues at TrendLabs, we prepared a 
+&lt;a href=&#34;https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/web-defacements-exploring-the-methods-of-hacktivists&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;white
+paper&lt;/a&gt;
+that focuses on the major campaigns, and how DefPloreX helped explore them. In
+particular, we look at 7 campaigns that have affected Israel, France,
+India, Syria, Kosovo, and countries surrounding the South China Sea. We dig
+into specific conflicts in those areas and the defacements that happened in the
+aftermath.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/wp.jpg&#34; alt=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34; title=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To &lt;del&gt;feed our curiosity and&lt;/del&gt;~ help CERTs understand better the origin of these
+attacks and modus-operandi of the groups, we also look how they are organized
+(some are formed across continents, and some are a loose collection of local
+hackers), as well as how their recruitment tools and the methods adopt.&lt;/p&gt;
+&lt;h2 id=&#34;the-devil-answer-is-in-the-details&#34;&gt;The &lt;del&gt;Devil&lt;/del&gt; Answer is in the Details&lt;/h2&gt;
+&lt;p&gt;You might be wondering how exactly the data-mining workflow works, what
+features we use, what clustering algorithm and so on. For the impatient, here&amp;rsquo;s a quick overview of the data that we process and the features that we extract:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/data.jpg&#34; alt=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34; title=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/features.jpg&#34; alt=&#34;Clustering features that we extract from each deface page.&#34; title=&#34;Clustering features that we extract from each deface page.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So, now, how do we use these features for clustering?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m very thankful to Roberto Perdisci for the valuable insights that he
+provided on this work about the machine-learning and data-mining part. What I&amp;rsquo;m
+most thankful about, however, is the suggestion to use BIRCH, which I didn&amp;rsquo;t
+know before. I think this figure speaks by itself.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/dbscan-vs-birch.jpg&#34; alt=&#34;BIRCH vs. DBSCAN.&#34; title=&#34;BIRCH vs. DBSCAN.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Impressive, huh?&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Marco Balduzzi&lt;/span&gt;, &lt;span&gt;Ryan Flores&lt;/span&gt;, &lt;span&gt;Lion Gu&lt;/span&gt;, &lt;span&gt;Vincenzo Ciancaglini&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;/publication/maggi_defplorex_2018/&#34;&gt;Investigating Web Defacement Campaigns at Large&lt;/a&gt;.
+  &lt;em&gt;Proceedings of the 2018 on Asia Conference on Computer and Communications Security&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/maggi_defplorex_2018/maggi_defplorex_2018.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/maggi_defplorex_2018/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Marco Balduzzi&lt;/span&gt;, &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Vincenzo Ciancaglini&lt;/span&gt;, &lt;span&gt;Ryan Flores&lt;/span&gt;, &lt;span&gt;Lion Gu&lt;/span&gt;
+  &lt;/span&gt;
+  (2017).
+  &lt;a href=&#34;/talk/balduzzi_defplorexbhus_talk_2017/&#34;&gt;DefPloreX: A Machine Learning Toolkit for Large-scale e-Crime Forensics&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/talk/balduzzi_defplorexbhus_talk_2017/balduzzi_defplorexbhus_talk_2017.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/talk/balduzzi_defplorexbhus_talk_2017/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=DILbSXYpiMU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Video
+&lt;/a&gt;
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dnsmasq and CVE-2017-1449*: A Reality Check and Remediation Practices</title>
+      <link>/post/dnsmasq/</link>
+      <pubDate>Sat, 07 Oct 2017 15:09:24 +0200</pubDate>
+      <guid>/post/dnsmasq/</guid>
+      <description>&lt;p&gt;Many vulnerabilities in one shot, yet several pre-conditions for a target to
+be actually exploitable. Here&amp;rsquo;s simple flowchart to check whether your
+Dnsmasq deployments are vulnerable.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.thekelleys.org.uk/dnsmasq/doc.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dnsmasq&lt;/a&gt; is the de-facto tool
+to implement DNS and DHCP services in small servers and embedded devices. Being
+Dnsmasq user, when 
+&lt;a href=&#34;https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Security researchers disclosed the CVE-2017-14491 to
+14496
+series&lt;/a&gt;,
+I quickly checked whether my installation was vulnerable.&lt;/p&gt;
+&lt;p&gt;Turned out that, despite I found a vast amount of devices running a vulnerable
+version of Dnsmasq, the chain of pre-conditions for these vulnerabilities to be
+exploitable are not super trivial. So I decided to write them down in
+a flowchart.&lt;/p&gt;
+&lt;p&gt;You can read 
+&lt;a href=&#34;http://blog.trendmicro.com/trendlabs-security-intelligence/dnsmasq-reality-check-remediation-practices/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the full blog post here&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>From a Bit-flipping to a Vulnerability in the CAN Standard</title>
+      <link>/post/candos/</link>
+      <pubDate>Wed, 16 Aug 2017 12:49:04 +0200</pubDate>
+      <guid>/post/candos/</guid>
+      <description>&lt;p&gt;CAN-based protocols are vulnerable to bit-flipping attacks at the link layer.
+In this collaborative research, Politecnico di Milano&amp;rsquo;s
+
+&lt;a href=&#34;https://necst.it&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NECSTLab&lt;/a&gt; and Trend Micro&amp;rsquo;s FTR analyze the protocol in
+depth and demonstrate the vulnerability on a real car, with PoC and so on.&lt;/p&gt;
+&lt;p&gt;This project started somewhere between 2015 and 2016. Back then, I was an
+Assistant Professor at Politecnico di Milano. Together with my colleague
+
+&lt;a href=&#34;https://twitter.com/raistolo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stefano&lt;/a&gt;, I was advising this bright Master
+student, 
+&lt;a href=&#34;https://www.linkedin.com/in/andreapalanca/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Andrea Palanca&lt;/a&gt;, who was
+basically &amp;ldquo;breathing cars,&amp;rdquo; and really passionate about car hacking. So it made
+a lot of sense to introduce him to 
+&lt;a href=&#34;http://www.evenchick.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eric Evencick&lt;/a&gt;,
+who then became part of the project.&lt;/p&gt;
+&lt;p&gt;Eric had this idea of looking at the link layer of the CAN protocol, given the
+numerous frame-injection attacks popping up here and there. However, we&amp;rsquo;ve
+thought, injecting frame in the CAN bus is pretty noisy, and also quite easy to
+detect with some smart monitoring. Indeed, knowing the network architecture and
+ECUs attached to it (and, let&amp;rsquo;s be honest, they don&amp;rsquo;t change that often even in
+a connected car), it&amp;rsquo;s fairly easy to figure out if a frame is out of order, or
+simply unexpected.&lt;/p&gt;
+&lt;p&gt;Andrea then started to dig into the CAN bus standard, using his own car as
+a playground, and quickly came up with a prototype testbed CAN deployment in
+the lab, on which he started to explore the effect of flipping &amp;ldquo;the right bit
+at the right time&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Alright, enough high-level talking! It&amp;rsquo;s time to take a look at the actual
+content.&lt;/p&gt;
+&lt;h2 id=&#34;gimme-da-video&#34;&gt;Gimme da Video!&lt;/h2&gt;
+&lt;p&gt;In the following short video you can see me presenting the work to an academic
+audience. True fact: I&amp;rsquo;ve recorded this while preparing my talk for 
+&lt;a href=&#34;https://itsec.cs.uni-bonn.de/dimva2017/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIMVA
+2017&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oajtDFw_t3Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;additional-material&#34;&gt;Additional Material&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;re curious to know more:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;for an intermediate-level description, you can read our 
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/connected-car-hack/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blog post&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;for a more in-depth piece, head over to the 
+&lt;a href=&#34;https://documents.trendmicro.com/assets/A-Vulnerability-in-Modern-Automotive-Standards-and-How-We-Exploited-It.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;technical brief (PDF)&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;if you&amp;rsquo;re using CAN in your products, you might be interested in our 
+&lt;a href=&#34;https://ics-cert.us-cert.gov/alerts/ICS-ALERT-17-209-01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;disclosure through the ICS-CERT (ICS-ALERT-17-209-01)&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Andrea Palanca&lt;/span&gt;, &lt;span&gt;Eric Evenchick&lt;/span&gt;, &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Stefano Zanero&lt;/span&gt;
+  &lt;/span&gt;
+  (2017).
+  &lt;a href=&#34;/publication/palanca_candos_2017/&#34;&gt;A Stealth, Selective, Link-Layer Denial-of-Service Attack Against Automotive Networks&lt;/a&gt;.
+  &lt;em&gt;Proceedings of the 14th International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/palanca_candos_2017/palanca_candos_2017.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/palanca_candos_2017/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Role of Industrial Routers in Keeping the Future Factory Secure</title>
+      <link>/post/industrial-routers/</link>
+      <pubDate>Wed, 03 May 2017 12:39:46 +0200</pubDate>
+      <guid>/post/industrial-routers/</guid>
+      <description>&lt;p&gt;Industrial routers play a very crucial role: a single vulnerability can grant
+the attacker access to an entire network of critical machines. In this
+research, I&amp;rsquo;ve looked at how easy it is for a hypothetical attacker to find
+and enumerate industrial routers, and the security posture of their vendors.&lt;/p&gt;
+&lt;p&gt;Industrial routers aren&amp;rsquo;t just regular routers in a rugged case. They are the
+gateway to networks of &lt;em&gt;machines&lt;/em&gt;, which usually end up interacting with the
+physical world. Think about connected vehicles, factories, robots, and so on.&lt;/p&gt;
+&lt;p&gt;While working on a remote access box (another name for &amp;ldquo;industrial router&amp;rdquo;),
+during our 
+&lt;a href=&#34;http://robosec.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;industrial robots research&lt;/a&gt;, we noticed that
+the web-admin panel had an authentication-bypass vulnerability. Upon reporting
+the 
+&lt;a href=&#34;https://websupport.ewon.biz/support/news/support/ewon-security-enhancement-fw-112s2-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vulnerability to the vendor, which patched it right
+away&lt;/a&gt;,
+we&amp;rsquo;ve wondered: are there other vendors? What&amp;rsquo;s the state of security in this
+area?&lt;/p&gt;
+&lt;p&gt;After going through the &amp;ldquo;Switches Get Stitches&amp;rdquo; talks (
+&lt;a href=&#34;https://www.slideshare.net/44Con/switches-getstitches&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;44CON 2014&lt;/a&gt;, 
+&lt;a href=&#34;https://media.ccc.de/v/31c3_-_6196_-_en_-_saal_1_-_201412281130_-_switches_get_stitches_-_eireann_leverett&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;31C3 2014&lt;/a&gt;, 
+&lt;a href=&#34;https://www.youtube.com/watch?v=urjKkQaspHQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Black Hat US 2015&lt;/a&gt;),
+we had some bad feelings about industrial routers too, so we&amp;rsquo;ve started to
+collect technical resources like manuals and firmware update files, and crafted
+Shodan and Censys search strings to see how many of these routers were directly
+exposed to a casual attacker.&lt;/p&gt;
+&lt;p&gt;The first thing that we&amp;rsquo;ve noticed was the abundance of technical information
+freely available to the public. Don&amp;rsquo;t get me wrong: I&amp;rsquo;m not advocating in favor
+of &amp;ldquo;security through obscurity&amp;rdquo; nor &amp;ldquo;closed source&amp;rdquo;. Once I believe in
+openness, I also believe that critical targets like industrial routers (which
+are put in front of supposedly critical machinery), shouldn&amp;rsquo;t be &lt;em&gt;that&lt;/em&gt; easy
+for a casual attacker to discover. Ironically, marketing brochures required
+a registration, whereas firmware and technical manuals were directly indexed by
+search engines and publicly accessible.&lt;/p&gt;
+&lt;p&gt;Given the security posture of some vendors, we&amp;rsquo;ve decided to take a broad look
+at all of them, both from a reconnaissance and vulnerability viewpoint.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re curious, head over to the 
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/compromising-industrial-robots/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;full article&lt;/a&gt; on TrendLab&amp;rsquo;s Security Intelligence Blog.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What we Know About Eyepyramid</title>
+      <link>/post/eyepyramid/</link>
+      <pubDate>Wed, 18 Jan 2017 12:16:11 +0200</pubDate>
+      <guid>/post/eyepyramid/</guid>
+      <description>&lt;p&gt;The day before the EyePyramid case exploded, I received a confidential email
+with a PDF. It was the scanned copy of the court order for the law enforcement
+to proceed and arrest the Occhionero brothers. In a few minutes, I noticed that
+this leaked document was also circulating on various private mailing lists and
+chat groups I&amp;rsquo;m part of. At some point, I received a non-redacted copy.&lt;/p&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;ordinanza-occhionero.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;ordinanza-occhionero.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;ordinanza-occhionero.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I typically do not work on e-crime investigation cases, but while reading the
+court order I felt that something was not completely right. Moreover, the case
+was in Italy, my home country, which motivated me to look at it. Then, some
+colleagues from Trend Micro Italy contacted me with questions coming from our
+clients (for which, back then, I couldn&amp;rsquo;t answer yet). So, at the end of the
+day I decided to dive in!&lt;/p&gt;
+&lt;h3 id=&#34;puzzling-facts-in-the-court-order&#34;&gt;Puzzling Facts in the Court Order&lt;/h3&gt;
+&lt;p&gt;I skimmed through the court order and was surprised by the vast amount of
+technical evidence provided to support the accusations. Email addresses (in
+clear or easy to guess when redacted), IP addresses, domain names. So detailed
+that I could basically write a Yara rule to hunt for malware samples, without
+even looking at a single binary.&lt;/p&gt;
+&lt;p&gt;And then, the part that puzzled me most. The author of the malware used
+a licensed software library and allegedly &lt;em&gt;purchased the license under the name
+of Giulio Occhionero&lt;/em&gt; (one of the two brothers). It&amp;rsquo;s like, leaving your name
+on the crime scene!&lt;/p&gt;
+&lt;h3 id=&#34;almost-live-reversing&#34;&gt;(Almost) Live Reversing&lt;/h3&gt;
+&lt;p&gt;After getting my hands on some samples (yes, with Yara hunting rules based on
+the court order), things escalated quickly, and found myself looking at nearly
+250 samples. With the help of my fine colleagues, we&amp;rsquo;ve drawn rough, big
+picture of the whole scheme and started to find confirmatory evidence.&lt;/p&gt;
+&lt;p&gt;In a few hours, people on Twitter and other social networks started to follow
+the case closely, comment on it, give their own views. Given some confusion,
+I felt the urge to publish a list of &amp;ldquo;cold, simple, yet true&amp;rdquo; technical facts.
+So I&amp;rsquo;ve spun up a GitHub Gist (now deleted), which then evolved in a 
+&lt;a href=&#34;https://github.com/eyepyramid/eyepyramid&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;full
+repository&lt;/a&gt; (now not updated
+anymore), and finally 
+&lt;a href=&#34;https://medium.com/@phretor/cosa-sappiamo-su-eyepyramid-61b5b88c63b8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a post on Medium (in
+Italian)&lt;/a&gt;.
+Results were popping up rapidly, so I found myself unable to keep up with the
+pace, and decided to stop &amp;ldquo;live reversing&amp;rdquo; the samples, set aside some time and
+prepare two comprehensive posts for TrendLab&amp;rsquo;s Intelligence Blog, which my
+employer was very happy to release in no time.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jan 18, 2017 - 
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/uncovering-inner-workings-eyepyramid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Uncovering the Inner Workings of EyePyramid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jan 11, 2017 - 
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/eye-storm-look-eyepyramid-malware-supposedly-used-high-profile-hacks-italy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Eye of the Storm: A Look at EyePyramid, the Malware Supposedly Used in High-Profile Hacks in Italy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;summary-of-the-case&#34;&gt;Summary of the Case&lt;/h3&gt;
+&lt;p&gt;On the one hand, the original source code had gone through only very mild
+modifications (e.g., not all variants are able to exfiltrate Skype
+conversations, C&amp;amp;C and dropzones, compiler version, and protection mechanisms).
+On the other hand, the computer(s) used to build the various versions over the
+years seemed to be in line with the evolution of Microsoft developer tools
+(based on the progression of the compiler version) and software-protection
+tools (as seen on the recent substitution of Skater plus Dotfuscator with the
+more powerful ConfuserEx). This indicates that the actors behind this operation
+knew what they were doing. Of course, this was (and still) far from being an advanced
+or targeted piece of malware.&lt;/p&gt;
+&lt;p&gt;Apart from this, the origins of EyePyramid’s malware and its attribution remain
+a mystery. While the license key registered to Giulio Occhionero’s name can be
+considered as strong evidence, it is unclear why a malware author would bother
+using (simple yet not so trivial) mechanisms to cover their traces (e.g.,
+obfuscation, packing, encryption, disabling security tools), and then
+mistakenly embed the license key under his name in all of the main variants.
+Moreover, an analysis of the domain-to-IP historical data of the domain names
+listed in the court order reveals domains named &lt;code&gt;occhionero.com&lt;/code&gt; and
+&lt;code&gt;occhionero.info&lt;/code&gt;, which is again another oddity.&lt;/p&gt;
+&lt;h3 id=&#34;latest-update-just-another-oddity&#34;&gt;Latest Update (Just Another Oddity)&lt;/h3&gt;
+&lt;p&gt;I received an unexpected email message from someone I&amp;rsquo;ve never heard before.
+Despite the author of this email is not known in the cyber security community
+(he presented himself as a PhD Student in medicine at Stanford), he took the
+time (and money) to verify every single email address written in my analysis
+and in the court order.&lt;/p&gt;
+&lt;p&gt;Using LeakedSource (now taken down) he had found that one of the compromised
+email addresses (&lt;code&gt;lu_1974[@]hotmail.com&lt;/code&gt;, which is linked to EyePyramid) was
+used to register on various dating sites. LeakedSource was borderline websites
+that hosted stolen information, including usernames and
+passwords.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“this is probably just a coincidence”&lt;/em&gt; he said but &lt;em&gt;“Giulio also used his
+&lt;code&gt;@westlands.com&lt;/code&gt; address to register to the same dating sites.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Anyways, I&amp;rsquo;ve replied back, thanking him for his work. Then I&amp;rsquo;ve asked him why
+a Stanford PhD Student in medicine was so interested in such “niche” case
+(unfolded from the other side of the world), and how he knew that Giulio
+Occhionero had used his &lt;code&gt;@westlands.com&lt;/code&gt; address to register to the same dating
+sites, because I could not find any evidence about it&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve never gotten a reply.&lt;/p&gt;
+&lt;h3 id=&#34;media&#34;&gt;Media&lt;/h3&gt;
+&lt;p&gt;After getting in touch with 
+&lt;a href=&#34;https://twitter.com/carolafrediani&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Carola
+Frediani&lt;/a&gt;, who did a very good job
+consolidating all the facts for La Stampa (
+&lt;a href=&#34;http://www.lastampa.it/2017/01/12/italia/cronache/tutti-i-dettagli-e-i-misteri-di-eyepyramid-S3vOtTe6smhbJbBlrogpcJ/pagina.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tutti i dettagli e i misteri di
+EyePyramid&lt;/a&gt;),
+I happily joined the hacker&amp;rsquo;s corner at the International Journalism Festival
+2017 in Perugia, a few months later, in a panel moderated by Carola. Here&amp;rsquo;s
+the recording of the panel.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/icgJavQqICM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mobile (Android) Ransomware</title>
+      <link>/post/mobile-ransomware/</link>
+      <pubDate>Thu, 08 Dec 2016 01:32:15 +0200</pubDate>
+      <guid>/post/mobile-ransomware/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve started this project while advising a Master student who was interested
+in machine learning. As I&amp;rsquo;ve been using machine learning since around 2006, I
+was immediately hooked by the idea of using it to determine whether an
+Android app was trying to lock the target device as part of a ransomware
+scheme.&lt;/p&gt;
+&lt;p&gt;There are three core characteristics that are unavoidable for any ransomware
+scheme, which can be all boiled down to the &amp;ldquo;business&amp;rdquo; need of &amp;ldquo;being noisy&amp;rdquo;
+and evident. It&amp;rsquo;s true right? For the first time we see malware that is no
+longer trying to hide. Instead, it needs to loudly announce its presence to the
+victim, in order for the business model to work. If the victim is not aware of
+what is happening and is not effectively guided to the payment screen, the
+infection is useless.&lt;/p&gt;
+&lt;p&gt;Therefore, any ransomware needs to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;encrypt or lock access to important data,&lt;/li&gt;
+&lt;li&gt;announce its presence to the user and,&lt;/li&gt;
+&lt;li&gt;guide them through the payment options.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These three features &lt;strong&gt;have to be implemented&lt;/strong&gt; by a ransomware sample, and
+thus have to be visible somehow in the code. Around this key observation,
+together with the evil genius 
+&lt;a href=&#34;https://www.andronio.me/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicolò Andronio&lt;/a&gt; (the
+aforementioned Master student) and my partner-in-crime
+
+&lt;a href=&#34;https://twitter.com/raistolo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stefano&lt;/a&gt;, we devised and open-sourced
+
+&lt;a href=&#34;https://github.com/necst/heldroid&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HelDroid&lt;/a&gt;, a fully automatic APK analyzer
+that, using static flow analysis, detects whether an app contains evidence of
+ransomware behavior.&lt;/p&gt;
+&lt;p&gt;Earlier this summer I&amp;rsquo;ve joined 
+&lt;a href=&#34;https://www.trendmicro.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trend Micro&lt;/a&gt;&amp;rsquo;s
+research team, and immediately got my hands onto MARS, its 
+&lt;a href=&#34;https://mars.trendmicro.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mobile App
+Reputation Service&lt;/a&gt;, which allowed me to build
+a good retrospective view of how Android ransomware have evolved.&lt;/p&gt;
+&lt;p&gt;This work granted me a speaking slot at the Black Hat Europe Briefings, where
+I had the opportunity to present the results to a room packed with attendees.
+Was a great experience!&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re curious, you can read a summarized version of the research in these
+two blog posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/mobile-ransomware-pocket-sized-badness/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mobile Ransomware: Pocket-Sized Badness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://blog.trendmicro.com/trendlabs-security-intelligence/mobile-ransomware-protect/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mobile Ransomware: How to Protect Against It&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s the 
+&lt;a href=&#34;https://web.archive.org/web/20180216035340/http://ransom.mobi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;web service (archived)&lt;/a&gt; in case you want to check it out.&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;p&gt;
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Chenghyu Zheng&lt;/span&gt;, &lt;span&gt;Nicola Della Rocca&lt;/span&gt;, &lt;span&gt;Niccolò Andronio&lt;/span&gt;, &lt;span&gt;Stefano Zanero&lt;/span&gt;, &lt;span&gt;Maggi Federico&lt;/span&gt;
+  &lt;/span&gt;
+  (2016).
+  &lt;a href=&#34;/publication/zheng_greateatlon_2016/&#34;&gt;GreatEatlon: Fast, Static Detection of Mobile Ransomware&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/zheng_greateatlon_2016/zheng_greateatlon_2016.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/zheng_greateatlon_2016/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Niccolò Andronio&lt;/span&gt;, &lt;span&gt;Stefano Zanero&lt;/span&gt;, &lt;span&gt;Federico Maggi&lt;/span&gt;
+  &lt;/span&gt;
+  (2015).
+  &lt;a href=&#34;/publication/andronio_heldroid_2015/&#34;&gt;HelDroid: Dissecting and Detecting Mobile Ransomware&lt;/a&gt;.
+  &lt;em&gt;International Symposium on Research in Attacks, Intrusions and Defenses (RAID)&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/andronio_heldroid_2015/andronio_heldroid_2015.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/andronio_heldroid_2015/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

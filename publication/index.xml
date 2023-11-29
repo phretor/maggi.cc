@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Federico Maggi</title>
+    <link>/publication/</link>
+      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>/publication/</link>
+    </image>
+    
+    <item>
+      <title>RFQuack: A Universal Hardware-Software Toolkit for Wireless Protocol (Security) Analysis and Research</title>
+      <link>/publication/maggi_rfquack_tr_2021/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_rfquack_tr_2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smart Factory Security: A Case Study on a Modular SmartManufacturing System</title>
+      <link>/publication/maggi_smsec_2020/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_smsec_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting Unsafe Code Patterns in Industrial Robot Programs</title>
+      <link>/publication/pogliani_otrazor_2020/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/pogliani_otrazor_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rogue Automation: Vulnerable and Malicious Code in Industrial Programming</title>
+      <link>/publication/maggi_rogueautomationwp_tr_2020/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_rogueautomationwp_tr_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attacks on Smart Manufactururing Systems: A Forward-looking Security Analysis</title>
+      <link>/publication/maggi_smartfactorywp_tr_2020/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_smartfactorywp_tr_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Caught in the Act: Running a Realistic Factory Honeypot to Capture Real Threats</title>
+      <link>/publication/hilt_factoryhoneypotwp_tr_2020/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/hilt_factoryhoneypotwp_tr_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Security Evaluation of Industrial Radio Remote Controllers</title>
+      <link>/publication/maggi_industrialradios_2019/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_industrialradios_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security of controlled manufacturing systems in the connected factory: the case of industrial robots</title>
+      <link>/publication/pogliani_article_2019/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/pogliani_article_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Security Analysis of Radio Remote Controllers for Industrial Applications</title>
+      <link>/publication/andersson_industrialradioswp_tr_2019/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/andersson_industrialradioswp_tr_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Fragility of Industrial IoT&#39;s Data Backbone: Security and Privacy Issues in MQTT and CoAP Protocols</title>
+      <link>/publication/maggi_mqttwp_tr_2018/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_mqttwp_tr_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigating Web Defacement Campaigns at Large</title>
+      <link>/publication/maggi_defplorex_2018/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_defplorex_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks</title>
+      <link>/publication/balduzzi_defplorexwp_tr_2018/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/balduzzi_defplorexwp_tr_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hiding Behind the Shoulders of Giants: Abusing Crawlers for Indirect Web Attacks</title>
+      <link>/publication/zarras_sqlbot_2017/</link>
+      <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/zarras_sqlbot_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Vulnerability in Modern Automotive Standards and How We Exploited It</title>
+      <link>/publication/maggi_candoswp_tr_2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_candoswp_tr_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leveraging Flawed Tutorials for Seeding Large-Scale Web Vulnerability Discovery</title>
+      <link>/publication/unruh_joernphp_2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/unruh_joernphp_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Exploration of Taint-Style Vulnerabilities Found by Fuzzing</title>
+      <link>/publication/shastry_hybridstaticfuzzing_2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/shastry_hybridstaticfuzzing_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Stealth, Selective, Link-Layer Denial-of-Service Attack Against Automotive Networks</title>
+      <link>/publication/palanca_candos_2017/</link>
+      <pubDate>Thu, 06 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/palanca_candos_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prometheus: Analyzing WebInject-based information stealers</title>
+      <link>/publication/continella_prometheus_article_2017/</link>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/continella_prometheus_article_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Experimental Security Analysis of an Industrial Robot Controller</title>
+      <link>/publication/quarta_robosec_2017/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/quarta_robosec_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rogue Robots: Testing the Limits of an Industrial Robot’s Security</title>
+      <link>/publication/maggi_robotswp_tr_2017/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_robotswp_tr_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Privacy and Security of the Ultrasound Ecosystem</title>
+      <link>/publication/mavroudis_ubeacsec_2017/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/mavroudis_ubeacsec_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ShieldFS: A Self-healing, Ransomware-aware Filesystem</title>
+      <link>/publication/continella_shieldfs_2016/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/continella_shieldfs_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GreatEatlon: Fast, Static Detection of Mobile Ransomware</title>
+      <link>/publication/zheng_greateatlon_2016/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/zheng_greateatlon_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On-Chip System Call Tracing: A Feasibility Study and Open Prototype</title>
+      <link>/publication/zheng_openst_2016/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/zheng_openst_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing android malware detectors against code obfuscation: a systematization of knowledge and unified methodology</title>
+      <link>/publication/dalla-preda_aamo_article_2016/</link>
+      <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/dalla-preda_aamo_article_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trellis: Privilege Separation for Multi-User Applications Made Easy</title>
+      <link>/publication/mambretti_trellis_2016/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/mambretti_trellis_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DroydSeuss: A Mobile Banking Trojan Tracker - Short Paper</title>
+      <link>/publication/coletta_droydseuss_2016/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/coletta_droydseuss_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grab &#39;n Run: Secure and Practical Dynamic Code Loading for Android Applications</title>
+      <link>/publication/falsina_grabnrun_2015/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/falsina_grabnrun_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable Testing of Mobile Antivirus Applications</title>
+      <link>/publication/valdi_andrototal_article_2015/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/valdi_andrototal_article_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Face/Off: Preventing Privacy Leakage From Photos in Social Networks</title>
+      <link>/publication/ilia_faceoff_2015/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/ilia_faceoff_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HelDroid: Dissecting and Detecting Mobile Ransomware</title>
+      <link>/publication/andronio_heldroid_2015/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/andronio_heldroid_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jackdaw: Towards Automatic Reverse Engineering of Large Datasets of Binaries</title>
+      <link>/publication/polino_jackdaw_2015/</link>
+      <pubDate>Thu, 09 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/polino_jackdaw_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BankSealer: A decision support system for online banking fraud analysis and investigation</title>
+      <link>/publication/carminati_banksealer_article_2015/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/carminati_banksealer_article_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>European Cyber-Security Research and Innovation</title>
+      <link>/publication/maggi_eusyssec_tr_2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_eusyssec_tr_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faces in the Distorting Mirror: Revisiting Photo-based Social Authentication</title>
+      <link>/publication/polakis_resoauth_2014/</link>
+      <pubDate>Sat, 01 Nov 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/polakis_resoauth_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XSS Peeker: A Systematic Analysis of Cross-site Scripting Vulnerability Scanners</title>
+      <link>/publication/bazzoli_xsspeeker_tr_2014/</link>
+      <pubDate>Wed, 15 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/bazzoli_xsspeeker_tr_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Practical Attack Against a KNX-based Building Automation System</title>
+      <link>/publication/antonini_knxmalware_2014/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/antonini_knxmalware_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security and Privacy Measurements on Social Networks: Experiences and Lessons Learned</title>
+      <link>/publication/polakis_osnresearch_2014/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/polakis_osnresearch_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AndRadar: Fast Discovery of Android Applications in Alternative Markets</title>
+      <link>/publication/lindorfer_andradar_2014/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/lindorfer_andradar_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phoenix: DGA-Based Botnet Tracking and Intelligence</title>
+      <link>/publication/schiavoni_phoenix_2014/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/schiavoni_phoenix_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zarathustra: Extracting WebInject Signatures from Banking Trojans</title>
+      <link>/publication/criscione_zarathustra_2014/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/criscione_zarathustra_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BankSealer: An Online Banking Fraud Analysis and Decision Support System</title>
+      <link>/publication/carminati_banksealer_2014/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/carminati_banksealer_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stranger Danger: Exploring the Ecosystem of Ad-based URL Shortening Services</title>
+      <link>/publication/nikiforakis_strangerdanger_2014/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/nikiforakis_strangerdanger_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BitIodine: Extracting Intelligence from the Bitcoin Network</title>
+      <link>/publication/spagnuolo_bitiodine_2014/</link>
+      <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/spagnuolo_bitiodine_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PuppetDroid: A User-Centric UI Exerciser for Automatic Dynamic Analysis of Similar Android Applications</title>
+      <link>/publication/gianazza_puppetdroid_tr_2014/</link>
+      <pubDate>Wed, 19 Feb 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/gianazza_puppetdroid_tr_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Comprehensive Black-box Methodology for Testing the Forensic Characteristics of Solid-state Drives</title>
+      <link>/publication/bonetti_ssdforensics_2013/</link>
+      <pubDate>Sun, 01 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/bonetti_ssdforensics_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tracking and Characterizing Botnets Using Automatically Generated Domains</title>
+      <link>/publication/schiavoni_phoenix_tr_2013/</link>
+      <pubDate>Thu, 21 Nov 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/schiavoni_phoenix_tr_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive and Flexible Smartphone Power Modeling</title>
+      <link>/publication/nacci_mpower_article_2013/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/nacci_mpower_article_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AndroTotal: A Flexible, Scalable Toolbox and Service for Testing Mobile Malware Detectors</title>
+      <link>/publication/maggi_andrototal_2013/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_andrototal_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Security Layer for Smartphone-to-Vehicle Communication over Bluetooth</title>
+      <link>/publication/dardanelli_cartox_article_2013/</link>
+      <pubDate>Fri, 21 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/dardanelli_cartox_article_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Two years of short URLs internet measurement: security threats and countermeasures</title>
+      <link>/publication/maggi_longshore_2013/</link>
+      <pubDate>Wed, 01 May 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_longshore_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>All Your Face Are Belong to Us: Breaking Facebook&#39;s Social Authentication</title>
+      <link>/publication/polakis_soauth_2012/</link>
+      <pubDate>Mon, 03 Dec 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/polakis_soauth_2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lines of Malicious Code: Insights Into the Malicious Software Industry</title>
+      <link>/publication/lindorfer_beagle_2012/</link>
+      <pubDate>Mon, 03 Dec 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/lindorfer_beagle_2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secure Integration of Mobile Devices for Automotive Services</title>
+      <link>/publication/kochanek_cartox_tr_2012/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/kochanek_cartox_tr_2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrated Detection of Anomalous Behavior of Computer Infrastructures</title>
+      <link>/publication/maggi_phdthesispaper_2012/</link>
+      <pubDate>Mon, 16 Apr 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_phdthesispaper_2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Finding Non-trivial Malware Naming Inconsistencies</title>
+      <link>/publication/maggi_avlabelling_2011/</link>
+      <pubDate>Thu, 15 Dec 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_avlabelling_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Fast Eavesdropping Attack Against Touchscreens</title>
+      <link>/publication/maggi_iclearshot_2011/</link>
+      <pubDate>Mon, 05 Dec 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_iclearshot_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>POSTER: Fast, Automatic iPhone Shoulder Surfing</title>
+      <link>/publication/maggi_iclearshotposter_2011/</link>
+      <pubDate>Sat, 01 Oct 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_iclearshotposter_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Security research at Politecnico di Milano</title>
+      <link>/publication/maggi_syssecpolimi_2011/</link>
+      <pubDate>Wed, 06 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_syssecpolimi_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BURN: Baring Unknown Rogue Networks</title>
+      <link>/publication/roveta_burn_2011/</link>
+      <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/roveta_burn_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Is the future Web more insecure? Distractions and solutions of new-old security issues and measures</title>
+      <link>/publication/maggi_cloudids_2011/</link>
+      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_cloudids_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A social-engineering-centric data collection initiative to study phishing</title>
+      <link>/publication/maggi_phonephishinghoneypot_2011/</link>
+      <pubDate>Sun, 10 Apr 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_phonephishinghoneypot_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effective Multimodel Anomaly Detection Using Cooperative Negotiation</title>
+      <link>/publication/volpatto_cooperativeids_2010/</link>
+      <pubDate>Mon, 22 Nov 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/volpatto_cooperativeids_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rethinking security in a cloudy world</title>
+      <link>/publication/maggi_cloudids_tr_2010/</link>
+      <pubDate>Thu, 11 Nov 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_cloudids_tr_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t touch a word! A practical input eavesdropping attack against mobile touchscreen devices</title>
+      <link>/publication/maggi_iclearshot_tr_2010/</link>
+      <pubDate>Mon, 01 Nov 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_iclearshot_tr_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Are the Con Artists Back? A Preliminary Analysis of Modern Phone Frauds</title>
+      <link>/publication/maggi_phonephishing_2010/</link>
+      <pubDate>Tue, 29 Jun 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_phonephishing_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Recognizer of Rational Trace Languages</title>
+      <link>/publication/maggi_traces_2010/</link>
+      <pubDate>Tue, 01 Jun 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_traces_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effective Anomaly Detection with Scarce Training Data</title>
+      <link>/publication/robertson_longtail_2010/</link>
+      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/robertson_longtail_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrated Detection of Anomalous Behavior of Computer Infrastructures</title>
+      <link>/publication/maggi_phdthesis_2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_phdthesis_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrated Detection of Attacks Against Browsers, Web Applications and Databases</title>
+      <link>/publication/criscione_masibty_2009/</link>
+      <pubDate>Mon, 09 Nov 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/criscione_masibty_2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reducing false positives in anomaly detectors through fuzzy alert aggregation</title>
+      <link>/publication/maggi_fuzzyalertaggregation_article_2009/</link>
+      <pubDate>Thu, 01 Oct 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_fuzzyalertaggregation_article_2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protecting a Moving Target: Addressing Web Application Concept Drift</title>
+      <link>/publication/maggi_conceptdrift_2009/</link>
+      <pubDate>Wed, 23 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_conceptdrift_2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selecting and Improving System Call Models for Anomaly Detection</title>
+      <link>/publication/frossi_hybridsyscalls_2009/</link>
+      <pubDate>Thu, 09 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/frossi_hybridsyscalls_2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting Intrusions through System Call Sequence and Argument Analysis</title>
+      <link>/publication/maggi_syscallseq_article_2008/</link>
+      <pubDate>Mon, 17 Nov 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_syscallseq_article_2008/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Specification and Evaluation of an Efficient Recognizer for Rational Trace Languages</title>
+      <link>/publication/maggi_traces_tr_2008/</link>
+      <pubDate>Sun, 01 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_traces_tr_2008/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Survey of Probabilistic Record Matching Models, Techniques and Tools</title>
+      <link>/publication/maggi_recordmatching_tr_2008/</link>
+      <pubDate>Tue, 01 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_recordmatching_tr_2008/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seeing the invisible: forensic uses of anomaly detection and machine learning</title>
+      <link>/publication/maggi_antiforensics_article_2008/</link>
+      <pubDate>Tue, 01 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_antiforensics_article_2008/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Use of Different Statistical Tests for Alert Correlation - Short Paper</title>
+      <link>/publication/maggi_alertcorrelation_2007/</link>
+      <pubDate>Wed, 05 Sep 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_alertcorrelation_2007/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ta-Lun Yen | Federico Maggi</title>
+    <link>/author/ta-lun-yen/</link>
+      <atom:link href="/author/ta-lun-yen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ta-Lun Yen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Ta-Lun Yen</title>
+      <link>/author/ta-lun-yen/</link>
+    </image>
+    
+    <item>
+      <title>The Data Distribution Service (DDS) Protocol is Critical: Let&#39;s Use it Securely!</title>
+      <link>/talk/yen_ddsbheu_talk_2021/</link>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>/talk/yen_ddsbheu_talk_2021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

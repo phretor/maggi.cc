@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michele Carminati | Federico Maggi</title>
+    <link>/author/michele-carminati/</link>
+      <atom:link href="/author/michele-carminati/index.xml" rel="self" type="application/rss+xml" />
+    <description>Michele Carminati</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Tue, 02 May 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Michele Carminati</title>
+      <link>/author/michele-carminati/</link>
+    </image>
+    
+    <item>
+      <title>Prometheus: Analyzing WebInject-based information stealers</title>
+      <link>/publication/continella_prometheus_article_2017/</link>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/continella_prometheus_article_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BankSealer: A decision support system for online banking fraud analysis and investigation</title>
+      <link>/publication/carminati_banksealer_article_2015/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/carminati_banksealer_article_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BankSealer: An Online Banking Fraud Analysis and Decision Support System</title>
+      <link>/publication/carminati_banksealer_2014/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/carminati_banksealer_2014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

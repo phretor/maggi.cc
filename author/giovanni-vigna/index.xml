@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Giovanni Vigna | Federico Maggi</title>
+    <link>/author/giovanni-vigna/</link>
+      <atom:link href="/author/giovanni-vigna/index.xml" rel="self" type="application/rss+xml" />
+    <description>Giovanni Vigna</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Tue, 04 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Giovanni Vigna</title>
+      <link>/author/giovanni-vigna/</link>
+    </image>
+    
+    <item>
+      <title>On the Privacy and Security of the Ultrasound Ecosystem</title>
+      <link>/publication/mavroudis_ubeacsec_2017/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/mavroudis_ubeacsec_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talking Behind Your Back: Attacks and Countermeasures of Ultrasonic Cross-Device Tracking</title>
+      <link>/talk/mavroudis_silverdogbh_talk_2016/</link>
+      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/mavroudis_silverdogbh_talk_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grab &#39;n Run: Secure and Practical Dynamic Code Loading for Android Applications</title>
+      <link>/publication/falsina_grabnrun_2015/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/falsina_grabnrun_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stranger Danger: Exploring the Ecosystem of Ad-based URL Shortening Services</title>
+      <link>/publication/nikiforakis_strangerdanger_2014/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/nikiforakis_strangerdanger_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Two years of short URLs internet measurement: security threats and countermeasures</title>
+      <link>/publication/maggi_longshore_2013/</link>
+      <pubDate>Wed, 01 May 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_longshore_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effective Anomaly Detection with Scarce Training Data</title>
+      <link>/publication/robertson_longtail_2010/</link>
+      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/robertson_longtail_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protecting a Moving Target: Addressing Web Application Concept Drift</title>
+      <link>/publication/maggi_conceptdrift_2009/</link>
+      <pubDate>Wed, 23 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/maggi_conceptdrift_2009/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

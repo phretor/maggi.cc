@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iot | Federico Maggi</title>
+    <link>/tag/iot/</link>
+      <atom:link href="/tag/iot/index.xml" rel="self" type="application/rss+xml" />
+    <description>iot</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 26 Jan 2015 11:53:30 +0200</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>iot</title>
+      <link>/tag/iot/</link>
+    </image>
+    
+    <item>
+      <title>Internet of Things. Applicazioni, sicurezza e riservatezza dei dati personali</title>
+      <link>/post/iot-sec-priv/</link>
+      <pubDate>Mon, 26 Jan 2015 11:53:30 +0200</pubDate>
+      <guid>/post/iot-sec-priv/</guid>
+      <description>&lt;p&gt;Sono stato invitato dal Garante per la Protezione dei Dati alla 
+&lt;a href=&#34;http://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/3654813&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;giornata europea della privacy&lt;/a&gt;, con richiesta di fare un po&amp;rsquo; di chiarezza sul fenomeno IoT. Questo articolo è una versione &amp;ldquo;verbosa&amp;rdquo; del mio intervento, che si incentra sui tre fattori che, secondo me, hanno contribuito a dar vita a questo fenomeno: tecnologia accessibile a basso costo, moltitudine di scenari applicativi e media.&lt;/p&gt;
+&lt;p&gt;Si tratta di un post piuttosto lungo: 
+&lt;a href=&#34;https://medium.com/@phretor/internet-of-things-sicurezza-e-riservatezza-dei-dati-personali-f18a13dbe1cf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lo trovate su Medium&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

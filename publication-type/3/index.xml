@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3 | Federico Maggi</title>
+    <link>/publication-type/3/</link>
+      <atom:link href="/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
+    <description>3</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>3</title>
+      <link>/publication-type/3/</link>
+    </image>
+    
+    <item>
+      <title>The Data Distribution Service (DDS) Protocol is Critical: Let&#39;s Use it Securely!</title>
+      <link>/talk/yen_ddsbheu_talk_2021/</link>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>/talk/yen_ddsbheu_talk_2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Small Wonder: Uncovering Planned Obsolescence Practices in Robotics and What This Means for Cybersecurity</title>
+      <link>/talk/mayoral-vilches_smallwonderbhus_talk_2021/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>/talk/mayoral-vilches_smallwonderbhus_talk_2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hidden Attack Surfaces of Modern Industrial Automation Systems</title>
+      <link>/talk/maggi_smscs3sthlm_talk_2020/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_smscs3sthlm_talk_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guarding the Factory Floor: Catching Insecure Industrial Robot Programs</title>
+      <link>/talk/maggi_otrazorhitcon_talk_2020/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_otrazorhitcon_talk_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OTRazor: Static Code Analysis for Vulnerability Discovery in Industrial Automation Scripts</title>
+      <link>/talk/maggi_otrazorbhus_talk_2020/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_otrazorbhus_talk_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hey Operator, Where’s Your Crane? Attacking Industrial Remote Controllers</title>
+      <link>/talk/balduzzi_industrialradioshitb_talk_2019/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/balduzzi_industrialradioshitb_talk_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RFQuack: The RF-Analysis Tool That Quacks</title>
+      <link>/talk/maggi_rfquack_talk_2019/</link>
+      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_rfquack_talk_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine-to-Machine Protocol Security: The Case of MQTT and CoAP</title>
+      <link>/talk/maggi_m2mhmi_talk_2019/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_m2mhmi_talk_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When Machines Can&#39;t Talk: Security and Privacy Issues of Machine-to-Machine Data Protocols</title>
+      <link>/talk/maggi_mqttbheu_talk_2018/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_mqttbheu_talk_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Machine-Learning to Investigate Web Campaigns at Large</title>
+      <link>/talk/maggi_webdefacementhitb_talk_2018/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_webdefacementhitb_talk_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Safety Risks and Threats in Industrial Automation Systems: The Case of Industrial Radio Remote Controllers</title>
+      <link>/talk/maggi_ir_talk_2018/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_ir_talk_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of legacy machines on future manufacturing cybersecurity</title>
+      <link>/talk/maggi_iiothmi_talk_2018/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_iiothmi_talk_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Breaking the Laws of Robotics: Attacking Industrial Robots</title>
+      <link>/talk/quarta_robosecbhus_talk_2017/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/quarta_robosecbhus_talk_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DefPloreX: A Machine Learning Toolkit for Large-scale e-Crime Forensics</title>
+      <link>/talk/balduzzi_defplorexbhus_talk_2017/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/balduzzi_defplorexbhus_talk_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ShieldFS: The Last Word in Ransomware-resilient File Systems</title>
+      <link>/talk/continella_shieldfsbhus_talk_2017/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/continella_shieldfsbhus_talk_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pocket-sized Badness: Why Ransomware Comes as a Plot Twist in the Cat-Mouse Game</title>
+      <link>/talk/maggi_greateatlonbheu_talk_2016/</link>
+      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_greateatlonbheu_talk_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talking Behind Your Back: Attacks and Countermeasures of Ultrasonic Cross-Device Tracking</title>
+      <link>/talk/mavroudis_silverdogbh_talk_2016/</link>
+      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/mavroudis_silverdogbh_talk_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast and Transparent Online Banking Fraud Detection and Investigation</title>
+      <link>/talk/maggi_banksealer_talk_2016/</link>
+      <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_banksealer_talk_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malware on Mobile: The What, The Why, and The How</title>
+      <link>/talk/maggi_mobilemalware_talk_2015/</link>
+      <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_mobilemalware_talk_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A walk through the construction of the first mobile malware tracker</title>
+      <link>/talk/maggi_droydseuss_talk_2015/</link>
+      <pubDate>Fri, 11 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_droydseuss_talk_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobile Ransomware</title>
+      <link>/talk/maggi_mobileransomware_talk_2015/</link>
+      <pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_mobileransomware_talk_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>From Cybercrime to Threat Analysis</title>
+      <link>/talk/maggi_cybercrimethreatanalysis_talk_2015/</link>
+      <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_cybercrimethreatanalysis_talk_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>From Cybercrime to Threat Analysis</title>
+      <link>/talk/maggi_threatanalysis_talk_2015/</link>
+      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_threatanalysis_talk_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Current and Future Cybercrime Tactics</title>
+      <link>/talk/maggi_cybercrime_talk_2014/</link>
+      <pubDate>Mon, 13 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_cybercrime_talk_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Come to the Dark Side: We have Apps!</title>
+      <link>/talk/maggi_andradar_talk_2014/</link>
+      <pubDate>Sat, 11 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_andradar_talk_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Analysis of Android Applications</title>
+      <link>/talk/maggi_androidre_talk_2014/</link>
+      <pubDate>Thu, 25 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_androidre_talk_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualization</title>
+      <link>/talk/maggi_virtualization_talk_2014/</link>
+      <pubDate>Sun, 27 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_virtualization_talk_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tracking and Characterizing Botnets Using Automatically Generated Domains</title>
+      <link>/talk/maggi_phoenixhoneynet_talk_2014/</link>
+      <pubDate>Wed, 14 May 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_phoenixhoneynet_talk_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phoenix &amp; Cerberus: Botnet Tracking via Precise DGA Characterization</title>
+      <link>/talk/maggi_phoenixgoogle_talk_2014/</link>
+      <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_phoenixgoogle_talk_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malicious Android Apps: Overview, Status and Dilemmas</title>
+      <link>/talk/maggi_androidmalware_talk_2014/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_androidmalware_talk_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AndroTotal: A Scalable Framework for Android Antivirus Testing</title>
+      <link>/talk/maggi_andrototalinfosek_talk_2013/</link>
+      <pubDate>Wed, 20 Nov 2013 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_andrototalinfosek_talk_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modern Botnets and the Rise of Automatically Generated Domains</title>
+      <link>/talk/maggi_phoenixinfosek_talk_2013/</link>
+      <pubDate>Wed, 20 Nov 2013 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_phoenixinfosek_talk_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AndroTotal: A Scalable Framework for Android Antimalware Testing</title>
+      <link>/talk/maggi_andrototalsecure_talk_2013/</link>
+      <pubDate>Wed, 09 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_andrototalsecure_talk_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AndroTotal: A Scalable Framework for Android Antimalware Testing</title>
+      <link>/talk/maggi_andrototalmit_talk_2013/</link>
+      <pubDate>Wed, 01 May 2013 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_andrototalmit_talk_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Our Face are Belong to us: Breaking Facebook&#39;s Social Authentication</title>
+      <link>/talk/maggi_soauth_talk_2013/</link>
+      <pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_soauth_talk_2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Long Story of Short URLs</title>
+      <link>/talk/maggi_longshore_talk_2012/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_longshore_talk_2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iSnoop: How to Steal Secrets From Touchscreen Devices</title>
+      <link>/talk/maggi_isnoop_talk_2011/</link>
+      <pubDate>Thu, 01 Dec 2011 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_isnoop_talk_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting Anomalous Behaviors in Computer Infrastructures</title>
+      <link>/talk/maggi_phdthesisfbk_talk_2010/</link>
+      <pubDate>Thu, 25 Feb 2010 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_phdthesisfbk_talk_2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Just-in-Time Training of Anomaly Detectors</title>
+      <link>/talk/maggi_justintime_talk_2010/</link>
+      <pubDate>Thu, 21 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_justintime_talk_2010/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

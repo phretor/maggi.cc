@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Claudio Criscione | Federico Maggi</title>
+    <link>/author/claudio-criscione/</link>
+      <atom:link href="/author/claudio-criscione/index.xml" rel="self" type="application/rss+xml" />
+    <description>Claudio Criscione</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Wed, 15 Oct 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Claudio Criscione</title>
+      <link>/author/claudio-criscione/</link>
+    </image>
+    
+    <item>
+      <title>XSS Peeker: A Systematic Analysis of Cross-site Scripting Vulnerability Scanners</title>
+      <link>/publication/bazzoli_xsspeeker_tr_2014/</link>
+      <pubDate>Wed, 15 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/bazzoli_xsspeeker_tr_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zarathustra: Extracting WebInject Signatures from Banking Trojans</title>
+      <link>/publication/criscione_zarathustra_2014/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/criscione_zarathustra_2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrated Detection of Attacks Against Browsers, Web Applications and Databases</title>
+      <link>/publication/criscione_masibty_2009/</link>
+      <pubDate>Mon, 09 Nov 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/criscione_masibty_2009/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

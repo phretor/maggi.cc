@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marco Viglione | Federico Maggi</title>
+    <link>/author/marco-viglione/</link>
+      <atom:link href="/author/marco-viglione/index.xml" rel="self" type="application/rss+xml" />
+    <description>Marco Viglione</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Sun, 01 Dec 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Marco Viglione</title>
+      <link>/author/marco-viglione/</link>
+    </image>
+    
+    <item>
+      <title>A Comprehensive Black-box Methodology for Testing the Forensic Characteristics of Solid-state Drives</title>
+      <link>/publication/bonetti_ssdforensics_2013/</link>
+      <pubDate>Sun, 01 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/bonetti_ssdforensics_2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

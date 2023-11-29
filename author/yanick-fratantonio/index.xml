@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yanick Fratantonio | Federico Maggi</title>
+    <link>/author/yanick-fratantonio/</link>
+      <atom:link href="/author/yanick-fratantonio/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yanick Fratantonio</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Tue, 04 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Yanick Fratantonio</title>
+      <link>/author/yanick-fratantonio/</link>
+    </image>
+    
+    <item>
+      <title>On the Privacy and Security of the Ultrasound Ecosystem</title>
+      <link>/publication/mavroudis_ubeacsec_2017/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/mavroudis_ubeacsec_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talking Behind Your Back: Attacks and Countermeasures of Ultrasonic Cross-Device Tracking</title>
+      <link>/talk/mavroudis_silverdogbh_talk_2016/</link>
+      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/talk/mavroudis_silverdogbh_talk_2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grab &#39;n Run: Secure and Practical Dynamic Code Loading for Android Applications</title>
+      <link>/publication/falsina_grabnrun_2015/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/falsina_grabnrun_2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malware on Mobile: The What, The Why, and The How</title>
+      <link>/talk/maggi_mobilemalware_talk_2015/</link>
+      <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/maggi_mobilemalware_talk_2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

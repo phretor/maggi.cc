@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gian Luigi Rizzo | Federico Maggi</title>
+    <link>/author/gian-luigi-rizzo/</link>
+      <atom:link href="/author/gian-luigi-rizzo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gian Luigi Rizzo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Thu, 09 Jul 2009 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>Gian Luigi Rizzo</title>
+      <link>/author/gian-luigi-rizzo/</link>
+    </image>
+    
+    <item>
+      <title>Selecting and Improving System Call Models for Anomaly Detection</title>
+      <link>/publication/frossi_hybridsyscalls_2009/</link>
+      <pubDate>Thu, 09 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/frossi_hybridsyscalls_2009/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

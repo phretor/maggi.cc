@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>measurement | Federico Maggi</title>
+    <link>/tag/measurement/</link>
+      <atom:link href="/tag/measurement/index.xml" rel="self" type="application/rss+xml" />
+    <description>measurement</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Thu, 14 Jun 2018 15:21:19 +0200</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>measurement</title>
+      <link>/tag/measurement/</link>
+    </image>
+    
+    <item>
+      <title>Large Scale Analysis of Defaced Web Pages</title>
+      <link>/post/large-scale-deface-page-analysis/</link>
+      <pubDate>Thu, 14 Jun 2018 15:21:19 +0200</pubDate>
+      <guid>/post/large-scale-deface-page-analysis/</guid>
+      <description>&lt;p&gt;Given the multiple releases around this topic and project, I&amp;rsquo;ve decided to
+put together a summary. So far, there is: a tool, a white paper, an
+academic paper, and (spoiler alert) another white paper coming soon.&lt;/p&gt;
+&lt;p&gt;You’d be surprised (I was!) how much the modus operandi and the motivation
+behind web defacement have evolved and mutated over the past ~20 years. From
+attackers interested in pointing their finger to vulnerable websites, to modern
+actors taking strong positions on real-world conflicts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/real-world-timeline.jpg&#34; alt=&#34;Timeline of real world events for which we have found evidence in web-deface pages.&#34; title=&#34;Timeline of Real World Events&#34;&gt;&lt;/p&gt;
+&lt;p&gt;How do we know what we know about this phenomenon? Let&amp;rsquo;s take a look!&lt;/p&gt;
+&lt;h2 id=&#34;the-tool&#34;&gt;The Tool&lt;/h2&gt;
+&lt;p&gt;Last year at 
+&lt;a href=&#34;https://twitter.com/toolswatch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Black Hat US Arsenal&lt;/a&gt; my
+colleagues and I released 
+&lt;a href=&#34;https://github.com/trendmicro/defplorex&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;part of the source code of
+DefPloreX&lt;/a&gt;, the tool-chain that we use
+to explore million of web-deface pages. DefPloreX is pretty flexible and, in
+principle, it could be used to process any web page, for instance those planted
+as a result of an attack, or to &amp;ldquo;cluster&amp;rdquo; together web pages of underground web
+sites, and any other e-crime forensics task that requires to &amp;ldquo;make sense&amp;rdquo; out
+of a large dataset of web pages.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/trendmicro/defplorex/blob/master/i/dpx-overall.png?raw=true&#34; alt=&#34;DefPloreX workflow&#34; title=&#34;DefPloreX workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;DefPloreX ingests plain and flat tabular files (e.g., CSV files) containing
+metadata records of web incidents under analysis (e.g., URLs), renders them and
+obtains a copy of their resources with headless browsers (we tried basically
+all of them, but then we settled with Chrome via
+
+&lt;a href=&#34;https://github.com/GoogleChrome/puppeteer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Puppeteer&lt;/a&gt;), extracts numerical
+features, and stores the resulting data to an Elastic index. We&amp;rsquo;ve designed any
+task to be distributed by default, using Celery to coordinate them.&lt;/p&gt;
+&lt;p&gt;On top of the Elastic back-end, I&amp;rsquo;ve cooked up a ReactJS-based web-app (which
+as of now is not part of the open-source release, mainly because the code is
+&lt;strong&gt;very&lt;/strong&gt; messy) to interactively explore, query, and dig into the data. This
+allows an analyst to easily investigate on campaigns, for example in
+discovering websites targeted by the same campaign or attributing one or more
+actors to the same hacking group. All of this without sacrificing the
+interactivity aspect of the investigation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/trendmicro/defplorex/blob/master/i/dpx-clusters-viz.png?raw=true&#34; alt=&#34;DefPloreX web app main screen&#34; title=&#34;DefPloreX web app main screen&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you want to see the web app in action, you can take yourself a 14 minutes coffee or tea break while watching this demo.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DILbSXYpiMU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;distributed-data-processing&#34;&gt;Distributed Data Processing&lt;/h3&gt;
+&lt;p&gt;Normally, to take full advantage of Elastic&amp;rsquo;s distributed data-processing
+functionality, you need to resort to
+
+&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-scripting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scripting&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Although scripting is quite powerful and handy for small data-manipulation
+tasks, it&amp;rsquo;s a bit cumbersome to deploy and handle requires; and, in addition,
+it requires full access to the Elastic&amp;rsquo;s client nodes. For example, if you need
+to process all the documents in an Elastic index (e.g., to enrich them by
+computing additional fields), you will have to choose one of the scripting
+languages supported by Elastic, write a script, deploy it and run it. Needless
+to say, your script will run within the context of the ES runtime, with all the
+limitations that this implies. For example, should you need to use Python,
+you&amp;rsquo;re forced to use the Jython Java implementation of Python, which is not the
+same as pure Python. For instance, some of the libraries that you may want to
+use may not be supported, and so on. In other words, we don&amp;rsquo;t want to depend on
+the Elastic&amp;rsquo;s scripting subsystem in our work :-)&lt;/p&gt;
+&lt;p&gt;Instead, we take a more &amp;ldquo;detached&amp;rdquo; approach. We decouple the data-processing
+part, making it independent from the Elastic runtime and architecture, and rely
+on ES exclusively as a data back-end to store, retrieve and modify JSON
+documents. The coordination of the distributed computation is delegated to
+a well-known and widely used distributed task queue:
+
+&lt;a href=&#34;http://www.celeryproject.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Celery&lt;/a&gt;. The friendliness of Celery is
+astonishing: from the programmer&amp;rsquo;s perspective, all it requires is to write
+your data-processing code by means of a function, and Celery will take care of
+offloading the (expensive and long-running) computation to one of the available
+workers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/trendmicro/defplorex/blob/master/i/dpx-celery.png?raw=true&#34; alt=&#34;DefPloreX distributed data processing via Celery&#34; title=&#34;DefPloreX distributed data processing via Celery&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For example, if you need to visit a web page with an automated headless
+browser, all you need to do is to wrap your code into a function, let&amp;rsquo;s say
+&lt;code&gt;visit_page&lt;/code&gt;, and decorate it with &lt;code&gt;@app.task&lt;/code&gt; to inform Celery that this is
+a task:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;@app.task
+def visit_page(url):
+    result = long_running_process(url)
+
+    return result
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Later on in your code, all you need to do is to call the function (almost) as
+you would normally do:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;visit_page.delay(url)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;.delay()&lt;/code&gt; function indicates that the function call will not execute
+immediately, but instead will be &amp;ldquo;pushed&amp;rdquo; into a task list, from which an
+available worker will pull it and do the work.&lt;/p&gt;
+&lt;p&gt;On the other end of the task list, you can launch as many workers as you need,
+by simply keeping the Celery daemon active:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;$ celery worker --autoscale=6,64
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Assuming a 64-core machine, this command spawns 6 concurrent processes, up to
+64 when more workload comes in. And of course you can add as many workers as
+needed, from a single computer with a few tenths of cores, to a full rack
+distributed across the globe. In our deployment, we have 5 machines, with
+a total of 128 cores. With these modest resources, we were able to visit the
+entire collection of over 13 million web pages in a week. Adding more cores
+would have made the analysis even faster.&lt;/p&gt;
+&lt;h3 id=&#34;document-transformations&#34;&gt;Document Transformations&lt;/h3&gt;
+&lt;p&gt;From this moment on, we have a solid foundation to efficiently transform JSON
+documents stored in the Elastic index. Therefore, we &amp;ldquo;encode&amp;rdquo; any operation
+that we need to perform in DefPloreX by means of a few lines of Python code. For
+example, we often need to &amp;ldquo;tag&amp;rdquo; JSON documents to mark those that have been
+processed. To this end, as exemplified in this repository, we use the
+&lt;code&gt;TagTransformer&lt;/code&gt; transformation. As any other transform, this function receives one JSON
+document and returns the newly added fields, or the modified fields.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;class TagTransformer(Transformer):
+    &amp;quot;&amp;quot;&amp;quot;
+    Example transform to append tag to a record.
+    &amp;quot;&amp;quot;&amp;quot;
+    _name = &#39;tag&#39;                   # unique name
+
+    def __call__(self, doc, *args, **kwargs):
+        doc = super(TagTransformer, self).__call__(
+                doc, *args, **kwargs)
+
+        tag = kwargs.get(&#39;tag&#39;)     # tag that we want to apply to the JSON
+
+        if not tag:
+            log.debug(&#39;No tags supplied, skipping&#39;)
+            return []
+
+        tags = doc.get(&#39;tags&#39;, [])  # get the &#39;tags&#39; field from the existing JSON doc
+
+        if tags:
+            log.debug(&#39;Found tags: %s&#39;, tags)
+
+        tags.append(tag)            # append the new tag
+        tags = list(set(tags))      # remove duplicates
+
+        log.debug(&#39;Updated tags: %s&#39;, tags)
+
+        return dict(tags=tags)      # return the enriched JSON
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The output of this transformation is automatically handled by our Elastic
+wrapper (see &lt;code&gt;backend.elastic.ESStorer&lt;/code&gt;) and the
+&lt;code&gt;transformer.Pipeline&lt;/code&gt; class, which merges the new (partial) document with the
+original one and saves it into the ES index. Actually, this is
+performed in bulk: that is, every worker consumes and processes a given amount
+of documents at each round (default is 1000). To summarize: given a query, we
+enqueue all the IDs of the documents that match that query. The queue consumers
+will pull 1000 IDs at a time, query Elastic for the respective documents,
+transform them, and push them back on Elastic as update operations.&lt;/p&gt;
+&lt;p&gt;Other transformations that we have implemented (briefly explained in
+the following) include for example visiting the web pages with an automated,
+headless browser, extracting information from the visited web pages,
+calculating numerical features, and so on. Every task is expressed by means of
+a subclass of &lt;code&gt;Transformer&lt;/code&gt;, which takes as input a document, and returns the
+enriched or modified fields.&lt;/p&gt;
+&lt;h2 id=&#34;the-white-paper&#34;&gt;The White Paper&lt;/h2&gt;
+&lt;p&gt;With the help of our great colleagues at TrendLabs, we prepared a 
+&lt;a href=&#34;https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/web-defacements-exploring-the-methods-of-hacktivists&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;white
+paper&lt;/a&gt;
+that focuses on the major campaigns, and how DefPloreX helped explore them. In
+particular, we look at 7 campaigns that have affected Israel, France,
+India, Syria, Kosovo, and countries surrounding the South China Sea. We dig
+into specific conflicts in those areas and the defacements that happened in the
+aftermath.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/wp.jpg&#34; alt=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34; title=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To &lt;del&gt;feed our curiosity and&lt;/del&gt;~ help CERTs understand better the origin of these
+attacks and modus-operandi of the groups, we also look how they are organized
+(some are formed across continents, and some are a loose collection of local
+hackers), as well as how their recruitment tools and the methods adopt.&lt;/p&gt;
+&lt;h2 id=&#34;the-devil-answer-is-in-the-details&#34;&gt;The &lt;del&gt;Devil&lt;/del&gt; Answer is in the Details&lt;/h2&gt;
+&lt;p&gt;You might be wondering how exactly the data-mining workflow works, what
+features we use, what clustering algorithm and so on. For the impatient, here&amp;rsquo;s a quick overview of the data that we process and the features that we extract:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/data.jpg&#34; alt=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34; title=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/features.jpg&#34; alt=&#34;Clustering features that we extract from each deface page.&#34; title=&#34;Clustering features that we extract from each deface page.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So, now, how do we use these features for clustering?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m very thankful to Roberto Perdisci for the valuable insights that he
+provided on this work about the machine-learning and data-mining part. What I&amp;rsquo;m
+most thankful about, however, is the suggestion to use BIRCH, which I didn&amp;rsquo;t
+know before. I think this figure speaks by itself.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;i/dbscan-vs-birch.jpg&#34; alt=&#34;BIRCH vs. DBSCAN.&#34; title=&#34;BIRCH vs. DBSCAN.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Impressive, huh?&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Marco Balduzzi&lt;/span&gt;, &lt;span&gt;Ryan Flores&lt;/span&gt;, &lt;span&gt;Lion Gu&lt;/span&gt;, &lt;span&gt;Vincenzo Ciancaglini&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;/publication/maggi_defplorex_2018/&#34;&gt;Investigating Web Defacement Campaigns at Large&lt;/a&gt;.
+  &lt;em&gt;Proceedings of the 2018 on Asia Conference on Computer and Communications Security&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/publication/maggi_defplorex_2018/maggi_defplorex_2018.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/maggi_defplorex_2018/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+  &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span&gt;Marco Balduzzi&lt;/span&gt;, &lt;span&gt;Federico Maggi&lt;/span&gt;, &lt;span&gt;Vincenzo Ciancaglini&lt;/span&gt;, &lt;span&gt;Ryan Flores&lt;/span&gt;, &lt;span&gt;Lion Gu&lt;/span&gt;
+  &lt;/span&gt;
+  (2017).
+  &lt;a href=&#34;/talk/balduzzi_defplorexbhus_talk_2017/&#34;&gt;DefPloreX: A Machine Learning Toolkit for Large-scale e-Crime Forensics&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;/talk/balduzzi_defplorexbhus_talk_2017/balduzzi_defplorexbhus_talk_2017.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/talk/balduzzi_defplorexbhus_talk_2017/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=DILbSXYpiMU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Video
+&lt;/a&gt;
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dnsmasq and CVE-2017-1449*: A Reality Check and Remediation Practices</title>
+      <link>/post/dnsmasq/</link>
+      <pubDate>Sat, 07 Oct 2017 15:09:24 +0200</pubDate>
+      <guid>/post/dnsmasq/</guid>
+      <description>&lt;p&gt;Many vulnerabilities in one shot, yet several pre-conditions for a target to
+be actually exploitable. Here&amp;rsquo;s simple flowchart to check whether your
+Dnsmasq deployments are vulnerable.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.thekelleys.org.uk/dnsmasq/doc.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dnsmasq&lt;/a&gt; is the de-facto tool
+to implement DNS and DHCP services in small servers and embedded devices. Being
+Dnsmasq user, when 
+&lt;a href=&#34;https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Security researchers disclosed the CVE-2017-14491 to
+14496
+series&lt;/a&gt;,
+I quickly checked whether my installation was vulnerable.&lt;/p&gt;
+&lt;p&gt;Turned out that, despite I found a vast amount of devices running a vulnerable
+version of Dnsmasq, the chain of pre-conditions for these vulnerabilities to be
+exploitable are not super trivial. So I decided to write them down in
+a flowchart.&lt;/p&gt;
+&lt;p&gt;You can read 
+&lt;a href=&#34;http://blog.trendmicro.com/trendlabs-security-intelligence/dnsmasq-reality-check-remediation-practices/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the full blog post here&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

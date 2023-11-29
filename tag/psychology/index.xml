@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>psychology | Federico Maggi</title>
+    <link>/tag/psychology/</link>
+      <atom:link href="/tag/psychology/index.xml" rel="self" type="application/rss+xml" />
+    <description>psychology</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 21 Dec 2020 17:36:57 +0100</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <title>psychology</title>
+      <link>/tag/psychology/</link>
+    </image>
+    
+    <item>
+      <title>Masked Emotions</title>
+      <link>/post/masked-emotions/</link>
+      <pubDate>Mon, 21 Dec 2020 17:36:57 +0100</pubDate>
+      <guid>/post/masked-emotions/</guid>
+      <description>&lt;p&gt;Despite this little beast known as 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/COVID-19_pandemic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;COVID-19 pandemic&lt;/a&gt; is about to turn 1 year old, many people still feel strange when wearing masks. While wearing a face mask we can&amp;rsquo;t speak properly and we can&amp;rsquo;t see others&amp;rsquo; mouth, so our experience of a conversation can change, especially if speaking is central in our lives (think of any public figure). Wearing a face mask impacts how we perceive others&amp;rsquo; emotions as well as our emotions (how we feel). Because our own understanding of our emotions can also influence such emotions in a continuous feedback loop, the effect can go beyond how we feel in that particular moment.&lt;/p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#how-we-decode-emotions-through-facial-expressions&#34;&gt;How we Decode Emotions Through Facial Expressions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#impact-on-our-ability-to-speak-and-understand&#34;&gt;Impact on our ability to speak and understand&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#my-little-funky-experiment&#34;&gt;My Little Funky Experiment&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#collecting-data-through-amazon-mechanical-turk&#34;&gt;Collecting data Through Amazon Mechanical Turk&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#the-importance-of-past-experience-people-we-dont-know&#34;&gt;The importance of past experience: People we don&amp;rsquo;t know&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#results-how-good-are-we-at-detecting-emotions-from-facial-expressions&#34;&gt;Results: How Good are we at Detecting Emotions from Facial Expressions?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#results-how-fast-do-we-process-facial-expressions-with-and-without-masks&#34;&gt;Results: How Fast do We Process Facial Expressions With and Without Masks?&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#survival-adaptation-and-crime&#34;&gt;Survival, adaptation, and crime&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#social-impact-of-wearing-masks-and-change-in-emotions&#34;&gt;Social impact of wearing masks and change in emotions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#a-face-mask-can-help-you-conceal-unauthentic-or-social-emotions&#34;&gt;A face mask can help you conceal unauthentic (or social) emotions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#is-eye-only-emotion-communication-possible&#34;&gt;Is Eye-only Emotion Communication Possible?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#how-to-better-communicate-when-wearing-masks&#34;&gt;How to better communicate when wearing masks?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#image-credits&#34;&gt;Image Credits&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Given the central role of verbal and non-verbal communication in social interactions, if wearing a mask affects our abilities to communicate, our social interactions may be affected as well. Fortunately, there&amp;rsquo;s more than just facial features when judging someone&amp;rsquo;s emotions: Voice and body language can convey a good deal of information, which experienced public speakers known how to use to engage with the audience. The impact on social interactions of wearing a mask is hard to assess, however.&lt;/p&gt;
+&lt;p&gt;I did a brief literature review and then decided to get my hands dirty and replicate some previous experiments on measuring our ability to assess others&amp;rsquo; emotions, using 45 participants that I recruited through the 
+&lt;a href=&#34;https://www.mturk.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon Mechanical Turk&lt;/a&gt; platform (for about $80), and 
+&lt;a href=&#34;https://github.com/phretor/masked-emotions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;publicly release&lt;/a&gt; the collected data (540 data points obtained from 6 headshots of a mid-age man wearing a mask and 6 headshots of a mid-age woman without mask).&lt;/p&gt;
+&lt;p&gt;The results are not completely in line with previous work: It seems that the batch of participants have performed better (10% better!) at assessing emotions &lt;em&gt;on masked faces&lt;/em&gt; than on non-masked faces. This difference may be explained by multiple factors explained below, but my best bet is that Amazon Mechanical Turk workers are mainly profit driven and opportunistic, so they may just randomly click to answer as fast as they could. However, only one participant has clicked the sentinel answer (a deliberately wrong answer I purposely inserted), so, at least they have read the options. Also, I wanted to put the participants under time pressure, giving them only 60 seconds to answer: Actually, our brain is way faster to assess emotions from facial expressions, to the point that it&amp;rsquo;s a subconscious decision.&lt;/p&gt;
+&lt;p&gt;Overall, when looking at faces, participants took 18.58394 ± 10.18913 seconds on average to take the wrong decision, about 3 seconds slower if compared to when they take a correct decision. The presence of a mask only slightly reflected on timing (16.46097 ± 8.86441 with mask vs. 16.23333 ± 9.44054 without mask), but &lt;em&gt;correct decisions are taken about 3 seconds faster&lt;/em&gt;. This uncertainty has been found in previous work, too. Just for my own comparison (can&amp;rsquo;t possibly draw any conclusions here!), my 5 year old son never missed a shot when I showed him 6 masked faces and 6 non-masked faces, and took him 3.202 ± 1.469 seconds to assess emotions of non-masked faces vs. 5.364 ± 1.8593 when I showed masked faces. I know, I&amp;rsquo;m a proud father (very strong bias!) and it&amp;rsquo;s only one data point. Anyhow, despite the difference in the overall performance, both previous (strong and rigorous) research and my little funky experiment confirm that we tend to confuse sadness and disgust for other emotions (including neutral), which are the emotions that are mainly expressed by the muscles around our mouth. And very preliminary data (would be interesting to expand here) on young individuals show that they may be way better than we are at this task.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stay safe and be happy:&lt;/strong&gt; Wearing mask is essential to protect others—and ourselves, but primarily others! The price at stake here is much higher than a little confusion about others&amp;rsquo; emotion. Emotions are important, but life is more important! Don&amp;rsquo;t be dumb, don&amp;rsquo;t jump to conclusions (Pytlik, Soll, and Mehl, 2020)! Don&amp;rsquo;t be fooled by this article! Just wear a mask whenever you&amp;rsquo;re in public, especially if you&amp;rsquo;re closed to others but even no-one is around you, because social context has big impact on habits formation! And remember, it&amp;rsquo;s very hard to confusion happiness with any other emotions, even when wearing a mask. So, put a smile beneath your mask!&lt;/p&gt;
+&lt;h2 id=&#34;how-we-decode-emotions-through-facial-expressions&#34;&gt;How we Decode Emotions Through Facial Expressions&lt;/h2&gt;
+&lt;p&gt;Although a recent study has identified up to 27 types of emotions (Cowen and Keltner, 2017), emotions can be roughly categorized into 6 buckets (Ekman, 1970): anger, disgust, fearless, happiness, neutral, sadness. We as humans process faces “as a whole,” rather than processing individual features individually, and quickly (subconsciously) recognize what emotion the person we&amp;rsquo;re looking at is expressing—whether it is the true emotion or not, that&amp;rsquo;s another story.&lt;/p&gt;
+&lt;p&gt;This happens even in cultures, such as Saudi Arabia, where veiling is the norm. Remember that certain people, like men and children, do not cover their faces, and women remove their veils at home or in female-only groups. So, humans of all cultures develop the same skills regardless of their public habits. But when we cannot see the whole face, such processing is forced to work with half the facial features (eye region).&lt;/p&gt;
+&lt;p&gt;Fortunately, each facial feature alone, however, can communicate certain emotions particularly well. The mouth region, for instance, is good for expressing feelings of happiness, although the eye region is also essential (as both previous work and my little experiment have showed). Interestingly, looking at the eye and mouth allows a finer-grained emotion categorization, ranging from sadness and fear (eyes are important here) to disgust and happiness (mouth is the dominant feature).&lt;/p&gt;
+&lt;h2 id=&#34;impact-on-our-ability-to-speak-and-understand&#34;&gt;Impact on our ability to speak and understand&lt;/h2&gt;
+&lt;p&gt;Another important aspect is that emotions are influenced by—and can influence—our ability to communicate. If we feel we can&amp;rsquo;t properly communicate, we may feel upset or simply uncomfortable that we can’t have a proper conversation because our words sound muffled. But audible speech is only one mean of communication: According to a recent article appeared on 
+&lt;a href=&#34;https://www.bbc.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BBC News&lt;/a&gt; (Carys Betteley, 2020), members of the deaf community and others with hearing problems struggle if face mask wearing becomes common and widespread. But, let&amp;rsquo;s not forget that millions of women around the world wear face veils every day, with few apparent problems (Ong, 2020). What can we learn from women who veil their faces about how to communicate effectively? I&amp;rsquo;m quoting a couple of interviews by BBC reporter (Ong, 2020):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Maria Ali, 34, a homemaker from Rawalpindi in Pakistan who wears a niqab, agrees. She says she has never had any problems communicating with other niqabi women, even ones who are strangers. “With their gestures and voice, you can understand what they mean.”&lt;/p&gt;
+&lt;p&gt;Marjaan Ali, 23, from Thuwal, Saudi Arabia observes that her facial expressions differ when she has the niqab on. “I’m a bit more exaggerated,” says the recent graduate. “And I’ve noticed that over the years, I’ve learnt to use my eyebrows quite expressively.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Although we can&amp;rsquo;t certainly generalize from these two quotes, it seems that as long as you learn to use (hand) gestures, voice, and eyes to emphasize your feelings, you can still communicate properly. I couple of times I noticing no reactions while smiling at someone during a conversation, to implicitly communicate my agreement. Moments later I realized I was wearing a mask, so I tried to use hands to do a “thumbs up” sign, or use my eyes to emphasize the masked, nodding smile.&lt;/p&gt;
+&lt;h2 id=&#34;my-little-funky-experiment&#34;&gt;My Little Funky Experiment&lt;/h2&gt;
+&lt;p&gt;All researches conducted so far seem to confirm that masks prevent us from correctly assessing others&amp;rsquo; emotions. (Mike Rinck et al., 2020) recruited 91 participants, which showed altered emotion recognition for masked faces when recognizing disgust, fear, surprise, sadness, and happiness, but not anger or neutral expressions. Most of the confusion is on those emotions that share activation of the visible muscles in the upper half of the face. Participants frequently misinterpreted disgust as anger, and fear as surprise. Similarly, (Carbon, 2020) recruited 41 participant assessed the emotional expressions displayed by 12 different faces. Each face was randomly presented with the expressions of the 6 basic emotions while being fully visible or partly covered by a face mask. The researchers have found lower accuracy and lower confidence in recognizing emotions, indicating that emotional reading was strongly impaired by the mask. Specific confusion patterns occur in the case of misinterpreting disgusted faces as being angry, plus wrongly assessing many other emotions as neutral.&lt;/p&gt;
+&lt;p&gt;After skimming through their results, I got intrigued and wanted to play around with some data as well. But reusing their data to draw the same pictures was not as exciting as repeating the experiment (on a smaller scale, of course). So I set off to work and prepared a survey.&lt;/p&gt;
+&lt;h3 id=&#34;collecting-data-through-amazon-mechanical-turk&#34;&gt;Collecting data Through Amazon Mechanical Turk&lt;/h3&gt;
+&lt;p&gt;This experiment does by no means substitute rigorous academic research, but after reading the work by (Mike Rinck et al., 2020) and (Carbon, 2020). I really became curious and wanted to create my own analysis. Of course the original survey by (Carbon, 2020) collected way more data than I did, and also made it 
+&lt;a href=&#34;https://osf.io/3j7q5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available publicly&lt;/a&gt;. Last time I used Amazon Mechanical Turk was in 2014, so it was time for a quick refresh. It&amp;rsquo;s a powerful platform that allows anyone to quickly collect prepare experiments that require human intelligence and collect data. In about 14 hours I collected 540 data points and that costed me only $80. Of course it&amp;rsquo;s not the same as running in-lab experiments. If you&amp;rsquo;re using Amazing Mechanical Turk, remember to insert test questions (to discard results clearly coming from random, profit-driven clicks) and by choosing to assign tasks only to so-called Master Workers—which are workers with a positive historical record of approved high-quality tasks. There&amp;rsquo;s a 
+&lt;a href=&#34;https://archive.is/in7QO&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;simple intro-level tutorial&lt;/a&gt; that guides you through all the technical steps required to setup and run a survey.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-facial-expressions-i-used-in-the-experiment-anger-disgust-fear-happyness-neutral-sad&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/featured_hua0d4d4b24f4da3a102e4452ac738b95f_538555_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Facial expressions I used in the experiment: anger, disgust, fear, happyness, neutral, sad.&#34;&gt;
+
+
+  &lt;img data-src=&#34;/post/masked-emotions/featured_hua0d4d4b24f4da3a102e4452ac738b95f_538555_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2744&#34; height=&#34;1114&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    Facial expressions I used in the experiment: anger, disgust, fear, happyness, neutral, sad.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;
+&lt;a href=&#34;#figure-facial-expressions-i-used-in-the-experiment-anger-disgust-fear-happyness-neutral-sad&#34;&gt;Figure 1&lt;/a&gt; shows the pictures I used in the experiment for each of the 6 universal emotions: anger, disgust, fear, happiness, neutral, sad. I know, I combined two controlled variables in a single experiment (sex and presence of a mask), and that&amp;rsquo;s not a recommended experimental protocol. However, my time and resources were limited, and most of all I&amp;rsquo;m doing this just for fun and to play around with some data collection and analysis tools. I obtained the data from the 
+&lt;a href=&#34;https://faces.mpdl.mpg.de&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FACES dataset&lt;/a&gt; (Ebner, Riediger, and Lindenberger, 2010) and I artificially applied a face mask on the pictures of the male model.&lt;/p&gt;
+&lt;h3 id=&#34;the-importance-of-past-experience-people-we-dont-know&#34;&gt;The importance of past experience: People we don&amp;rsquo;t know&lt;/h3&gt;
+&lt;p&gt;I decided to present images to each worker in random order, one at a time, not all at the same time. Why? Because I wanted to emulate the worst-case condition. Here&amp;rsquo;s the rationale: If I know a person I know their “normal” face or “angry” face very well. But if we look at the neutral face above (second from the right), are we 100% that couldn&amp;rsquo;t that be her angry or sad face? If I see the whole context then I have way more context to cast the correct decision—especially if I know there are 6 emotion types.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;imgs/stranger.jpg&#34; alt=&#34;A stranger walking on a vessel.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In other words, if I know a person, even when that person wears a mask, I can easily tell their emotions apart. But I was more interested in emulating the “random stranger” condition: Imagine you&amp;rsquo;re walking on the street and a person you&amp;rsquo;ve never seen before walks toward you with a sad-looking face—or angry-looking face, who knows! How good are you at telling those two very different emotions apart? Anger and sadness are quite different emotions, but because of the mask and the complete lack of past experience you simply can&amp;rsquo;t guess. It&amp;rsquo;s the worst-case condition and I wanted to emulate exactly that.&lt;/p&gt;
+&lt;p&gt;Following the same line of thought, I decided to impose a 60s time constrain for workers to complete each task (1 face). Why is timing important? Because when we glance at someone&amp;rsquo;s face we make unconscious decisions and those are quite fast. (Carbon, 2020) gave the participants “unlimited” time to complete the task and collected a conscious assessment of their “confidence” in their decision. I decided to focus on a fast task, because at the end of the day, that&amp;rsquo;s how our brain works when we see someone.&lt;/p&gt;
+&lt;h3 id=&#34;results-how-good-are-we-at-detecting-emotions-from-facial-expressions&#34;&gt;Results: How Good are we at Detecting Emotions from Facial Expressions?&lt;/h3&gt;
+&lt;p&gt;As the following figure shows, I obtained mixed results, sometimes opposite from what previous (and more thorough) work has found. In most of the times, as the green diagonal shows, the emotions where correctly classified, with more confusion in the masked case (bottom row). In particular, we notice that happiness is a “strong” emotion, in the sense that it almost never got misclassified (only 4 cases out of 270 in the masked condition, and zero cases in the unmasked condition). So, smile whenever you can! Sadness and disgust are particularly challenging emotions, especially in the masked condition, and neutral got misclassified 10% of the times for other emotions—mainly anger—in the unmasked condition. Surprisingly, neutral emotions appear more neutral in the masked condition. Does masks make us all appear more serious? Maybe!&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-confusion-matrix-showing-the-number-of-correct-detections-for-each-combination-of-real-detected-emotions-the-greener-the-better&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/confusion_hu79da99e9f5c11b2b53d7a599ac88ac31_381483_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Confusion matrix showing the number of correct detections for each combination of real-detected emotions. The greener, the better.&#34;&gt;
+
+
+  &lt;img data-src=&#34;/post/masked-emotions/imgs/confusion_hu79da99e9f5c11b2b53d7a599ac88ac31_381483_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    Confusion matrix showing the number of correct detections for each combination of real-detected emotions. The greener, the better.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The overall performance for correctly detecting facial emotions in faces without masks was 70.00% (while 89.5% in (Carbon, 2020)). Presenting a different face (to reduce the effects of learning, or simply cheating) resulted in a 79.25%. Yes, the workers—assuming they didn&amp;rsquo;t cheat (and that&amp;rsquo;s a big assumption)—performed better when presented with masked faces. This is the opposite of what (Carbon, 2020) found, but I&amp;rsquo;m skeptical of my own data. There may be various explanations and the only way to give a clear answer is to repeat the experiments several times, but I simply don&amp;rsquo;t have enough time to dig further, so I&amp;rsquo;m just providing some wild guesses. Maybe someone will do some followup work.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Small sample and multiple controlled variables:&lt;/strong&gt; to keep the investment below $100, I had to reduce the number of stimuli to 1 mid-age man for masked faces, 1 mid-age woman for non-masked faces, while the original study has employed all variants (male vs. female w/ and w/o mask): it&amp;rsquo;s an experimental mistake to combine multiple variables, because now we don&amp;rsquo;t know whether the reason is that the non-masked woman model was less expressive or, vice-versa, the masked man had very expressive eyes;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Time:&lt;/strong&gt; the time pressure may have forced the workers to simply cast a random choice or the workers may have taken the tasks in a very opportunistic way. However, if we pivot the data, we see that, overall, they make sense (see the timing analysis below).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;We&amp;rsquo;ve grown accustomed to this!&lt;/strong&gt; Hey, let&amp;rsquo;s look at the bright side of it: the 45 participants may have gotten better at assessing emotions by looking at the eyes only. Not really sure this is the case, but I gave it a thought for a moment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lots of open questions and little time to continue this research. But it was fun to learn how to deploy this type of studies from scratch. Next time I&amp;rsquo;ll certainly think twice and/or invest more resources to conduct wider studies. Let&amp;rsquo;s move onto the timing analysis now.&lt;/p&gt;
+&lt;h3 id=&#34;results-how-fast-do-we-process-facial-expressions-with-and-without-masks&#34;&gt;Results: How Fast do We Process Facial Expressions With and Without Masks?&lt;/h3&gt;
+&lt;p&gt;My 5 year old son never misclassified a facial expression when I showed him 6 masked faces and 6 non-masked faces, and took him 3.202 ± 1.469 seconds to assess emotions of non-masked faces vs. 5.364 ± 1.8593 when I showed masked faces. This initial home experiment got me into thinking I should look at the time spent by the workers to complete their task. Big warning: this time includes the time required to click on the next page, wait for the page to load, and finally click on the “submit” button. So, let&amp;rsquo;s look at it but take it with a grain of salt.&lt;/p&gt;
+&lt;p&gt;As we can see from 
+&lt;a href=&#34;#figure-overall-time-to-detect-facial-emotions-in-case-of-correct-blue-and-incorrect-false-detections&#34;&gt;Figure 3&lt;/a&gt;, regardless of whether one&amp;rsquo;s wearing a mask, correct detections overall take about 3 second less than incorrect ones (15.60794 ± 8.65164 versus 18.58394 ± 10.18913). Also, we can see that participants who didn&amp;rsquo;t detect the correct emotion from facial expressions spent a highly variable time staring at the picture, while timing for correct detections are more densely distributed around mean values.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-overall-time-to-detect-facial-emotions-in-case-of-correct-blue-and-incorrect-false-detections&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing_hud3f906394e33c42b903908d2e33c2bfb_35572_2000x2000_fit_q90_lanczos.jpeg&#34; data-caption=&#34;Overall time to detect facial emotions in case of correct (blue) and incorrect (false) detections.&#34;&gt;
+
+
+  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing_hud3f906394e33c42b903908d2e33c2bfb_35572_2000x2000_fit_q90_lanczos.jpeg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1000&#34; height=&#34;400&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    Overall time to detect facial emotions in case of correct (blue) and incorrect (false) detections.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Looking at the breakdown in 
+&lt;a href=&#34;#figure-breakdown-on-real-emotions-displayed-on-the-stimuli&#34;&gt;Figure 4&lt;/a&gt; we see that the mask condition (bottom row) almost always means the subject will spend some more time to look at the picture and still make the incorrect guess. Some facial expressions seem to create more confusion than others: look at fear or neutral for example. When presented with unmasked facial expressions (upper row), the subject will spend roughly the same amount of time, regardless of the outcome (correct vs. incorrect), while in the bottom row we see more diverse cases.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-breakdown-on-real-emotions-displayed-on-the-stimuli&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing-detailed_hu79da99e9f5c11b2b53d7a599ac88ac31_546558_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Breakdown on real emotions displayed on the stimuli.&#34;&gt;
+
+
+  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing-detailed_hu79da99e9f5c11b2b53d7a599ac88ac31_546558_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    Breakdown on real emotions displayed on the stimuli.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;survival-adaptation-and-crime&#34;&gt;Survival, adaptation, and crime&lt;/h2&gt;
+&lt;p&gt;Since our earliest days, human beings have been incredibly attuned to reading the facial expressions of others. This ability likely conferred upon us an evolutionary advantage, Charles Darwin (Darwin, 1872)Learning how to read emotions from a face could aid social interaction, reduce misunderstandings and help a group function efficiently and harmoniously for the greater good, said (Ong, 2020).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;imgs/malice.jpg&#34; alt=&#34;Dark scenery with unrecognizable person.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://pure.hud.ac.uk/en/persons/eilidh-garvey&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eilidh Noyes&lt;/a&gt;, lecturer in cognitive psychology at the 
+&lt;a href=&#34;https://hud.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Huddersfield&lt;/a&gt; in northern England said that&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When you see a face you do two things at once. You try to work out the identity: Do I know them? How do I know them? And you try to read their emotions. [&amp;hellip;] Emotion recognition is important from an evolutionary perspective as it helps us gauge threat and can also facilitate positive social interactions. That’s true of both people we know well and those we have never met.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Similarly, 
+&lt;a href=&#34;https://www.tcd.ie/research/profiles/?profile=iroberts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ian H. Robertson&lt;/a&gt;, professor of psychology at 
+&lt;a href=&#34;https://www.tcd.ie&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trinity College Dublin&lt;/a&gt; said that&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For survival reasons, you need to know what someone’s intentions are when you meet them. Not being able to do that easily will naturally make people more cautious and defensive, which in some cases could, unfortunately, lead to violent confrontations.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Source: (CORDIS, 2020).&lt;/p&gt;
+&lt;p&gt;Understanding others&amp;rsquo; emotion has been a matter of survival, but not as much as in ancient times. So there&amp;rsquo;s no doubt it&amp;rsquo;s important to assess emotions correctly, but only in certain, very extreme situations, when normally there are other clues available: A loud screaming voice to signal emergency would be understood as fear no matter what. So, overall, I don&amp;rsquo;t agree with this line of thoughts and I consider it very borderline if not biased.&lt;/p&gt;
+&lt;p&gt;I do agree with the fact that with mask becoming the norm there is the potential for exploitation by those with criminal intentions.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The main problem that people wearing masks throws up is the sheer volume of people suddenly covering their faces&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;said 
+&lt;a href=&#34;https://www.kingston.ac.uk/staff/profile/dr-francis-dodsworth-241/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Francis Dodsworth&lt;/a&gt;, senior lecturer in criminology at 
+&lt;a href=&#34;https://www.kingston.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kingston University London&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It could create opportunities for people who want to cover their face for nefarious reasons. They could potentially now do so without raising suspicion.&lt;/p&gt;
+&lt;p&gt;Concealing faces will also have widespread implications for crime and security. A lot of witnessing is already problematic. Even when a group of people witness the same crime, one person will see someone with a mustache and a hat, while another will see someone with a beard and sunglasses.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Source: (CORDIS, 2020)&lt;/p&gt;
+&lt;h2 id=&#34;social-impact-of-wearing-masks-and-change-in-emotions&#34;&gt;Social impact of wearing masks and change in emotions&lt;/h2&gt;
+&lt;p&gt;I still feel a little strange when wearing a mask, but my rational part is now in full control of those mixed emotion, and I simply forget I&amp;rsquo;m wearing a mask at times. In May, 
+&lt;a href=&#34;https://www.reading.ac.uk/pcls/staff/katie-gray&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kate Gray&lt;/a&gt;, who researches emotion processing at the 
+&lt;a href=&#34;https://www.reading.ac.uk/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Reading&lt;/a&gt; in the UK, mentioned that adapting to a faceless society will be a smooth process: &lt;em&gt;“[&amp;hellip;] we’ll quite quickly get used to picking up social and emotional cues from voice cues or body language.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;imgs/masks.jpg&#34; alt=&#34;Three people wearing face mask.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I remember that the first time I saw my father wearing a mask it felt very strange. And when I started wearing a mask and people around me wouldn&amp;rsquo;t, I felt even stranger—like I was over-reacting. I bet I wasn&amp;rsquo;t the only one feeling strange, and an early research appeared earlier this year scientifically confirmed that the simple exposure to social groups of mask wearers greatly reduces that strange feeling (Carbon, 2020). The researchers have asked 86 participants to assess how strange they felt when wearing a mask (i.e., simple surgery mask, FFP2 mask, and loop scarfs) among other mask wearers, in groups of varying size. The larger the social group, the less strange each member feels about themselves.&lt;/p&gt;
+&lt;p&gt;So, one part of the impact on emotion seems to be that wearing masks makes us feel a little different, triggers different or slightly different emotions. When we wear a mask we’re left only with the eyes, and that can make it difficult for people to make these judgments. According to 
+&lt;a href=&#34;https://www.brandeis.edu/facultyguide/person.html?emplid=2eb6be94b388be4b500e54ef726277fd747f02bb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Leslie Zebrowitz&lt;/a&gt;, psychology professor who studies facial perception at 
+&lt;a href=&#34;https://www.brandeis.edu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Brandeis University&lt;/a&gt;, told that &lt;em&gt;“We feel more comfortable when we feel that we’re able to assess what someone is like”&lt;/em&gt; (CORDIS, 2020).&lt;/p&gt;
+&lt;h2 id=&#34;a-face-mask-can-help-you-conceal-unauthentic-or-social-emotions&#34;&gt;A face mask can help you conceal unauthentic (or social) emotions&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s another line of thoughts I tend to agree with, probably because I&amp;rsquo;m introvert. We—introvers—won&amp;rsquo;t be showing our true emotions anyhow, with or without mask, so why bother? We don’t have to be happy to smile, and we don’t always smile when we’re happy. This can vary greatly across cultures. In the United States, smiling is part of the etiquette, while a 
+&lt;a href=&#34;https://archive.is/wip/vm2kd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Russian proverb translates as &lt;em&gt;“smiling with no reason is a sign of stupidity.”&lt;/em&gt;&lt;/a&gt; In Japan, emotions are stifled in public, there’s a greater emphasis on smiling with the eyes, so Japanese people may be able to convey—and read—their emotions through facial expressions more effectively.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;imgs/lonely.jpg&#34; alt=&#34;Person in a hoodie.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tara Well, Associate Professor of Psychology at Barnard College of Columbia University, recently wrote a short thought piece about the social smile (Tara Well, 2020). She wrote that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The social smile is activated in the mouth muscles only and, therefore, easily covered up by a face mask. But a genuine smile, known as the Duchenne smile, named after the French anatomist who discovered it, involves both the mouth and the eyes. Interestingly, the facial muscle engaged by a genuine smile, called the orbicularis oculi, can’t be activated on command. You can see an authentic smile in the crinkles around the eyes.&lt;/p&gt;
+&lt;p&gt;According to this, the face mask only hides the fake smiles, not the authentic ones. Think about it: when you&amp;rsquo;re truly smiling (close to laughing), extending your mouth isn&amp;rsquo;t enough. On the other hand, when you make a forced smile, it&amp;rsquo;s istantaneous, and it only involves the muscles around your mouth. Prof. T. Well continues explaining how, for some personality types, wearing a mask may even have a beneficial impact in their emotional space:&lt;/p&gt;
+&lt;p&gt;Those suffering from social anxiety may welcome wearing face masks precisely because &lt;em&gt;they prefer to veil their emotional state from the outside world as much as possible&lt;/em&gt;. [&amp;hellip;] Others appreciate the freedom from the obligation to put others at ease with a warm, friendly smile. By wearing a face mask, you don’t have to smile if you don’t feel like it.&lt;/p&gt;
+&lt;p&gt;We learn when to show and hide our genuine emotions from early face-to-face exchanges. Parents instinctively want to shield their children from negative social experiences. So they reward emotional displays that will encourage and facilitate acceptance from others. Children learn to behave in specific ways to receive social approval. Part of this process is developing a social smile to hide unacceptable emotions. (see book on negative factors of this).&lt;/p&gt;
+&lt;p&gt;The social smile is often activated automatically. We may not be fully aware of it. We might smile reflexively to put the brakes on showing too much negative emotion in public. We may maintain a calm, relaxed smile to prevent fear from upwelling and getting the best of us. We can also intentionally use the social smile to pepper our communication—like smiling, assuringly at someone who appears suspicious of us.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m among those who “suffer” when the social “norm” ask us to smile or simply for an emotion, so I like this viewpoint. An Asian friend a few years ago told me some Asian people cover their faces with a mask or scarf loop not only during flu season, but simply beacuse they don&amp;rsquo;t always want to show their mouth area or full face in public. Whether or not that&amp;rsquo;s a bias in his social circle, I sometimes feel the same.&lt;/p&gt;
+&lt;h2 id=&#34;is-eye-only-emotion-communication-possible&#34;&gt;Is Eye-only Emotion Communication Possible?&lt;/h2&gt;
+&lt;p&gt;Shakespeare said that the eyes were the windows to the soul. Indeed, eyes alone can provide a great deal of information. 
+&lt;a href=&#34;https://www.aber.ac.uk/en/psychology/staff-profiles/listing/profile/nih12/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nigel Holt&lt;/a&gt;, Professor of Psychology at 
+&lt;a href=&#34;https://www.aber.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aberystwyth University&lt;/a&gt; recently wrote (Holt, 2020) that “we are wired to extract information from the eyes—information that can help us assess the emotions of those around us and so allow us to engage more effectively with them.” Eyes alone can be quite effective, as (Lee and Anderson, 2017) showed. They showed volunteers images of eyes expressing different emotions (sadness, disgust, anger, joy, surprise, fear) and found out that the participants were able to correctly guess the mental states to the “eye expression”. From this research it emerged that different aspects of the eyes (such as how open they are or how sloped the brow is) give information about different mental states.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;imgs/eyes.jpg&#34; alt=&#34;Eyes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Eye contact is also essential in social interactions as well as in the emotions that gazing at eye level can trigger. (Guastella, Mitchell, and Dadds, 2008) showed images of faces to people who are given oxytocin, and found out that they spend more time looking at the eyes than those given a placebo. Since oxytocin is a factor in social interactions, this finding suggests the eyes are very important in how we understand our engagement and interaction with those around us. Indeed, people with high levels of oxytocin appear to seek out the eyes to help them better engage socially with others.&lt;/p&gt;
+&lt;p&gt;From a perception viewpoint, we know that we are exceptionally sensitive to very tiny changes in direction of gaze, because the center of our retina is densely populated with light receptors. But a recent study showed that this goes beyond just sensitivity and perception. When we try to assess which direction someone is looking in, it significantly activates our amygdala, a part of the brain associated with emotion. So there seems to be a link between emotion and eyes at a neurological level (Kawashima et al., 1999).&lt;/p&gt;
+&lt;p&gt;When eyes are the only feature available the role of the context could be crucial, but there&amp;rsquo;s no strong evidence about this.(Kret and de Gelder, 2012) tested whether emotions can be recognized when just the eyes are visible and whether this recognition is affected by context cues (e.g., various Islamic headdresses vs. a cap or a scarf). The results are that fear is still well recognized from a briefly flashed (100 ms) image of a women wearing a burqa with less than 20% transparency of the eye region.&lt;/p&gt;
+&lt;p&gt;Last, let me bring up a different viewpoint on eye-only emotion communication. It&amp;rsquo;s somewhat common belief that if someone is “looking up and to the right” when they are talking then they may be lying. (Wiseman et al., 2012) filmed a group of people telling true and false stories, and then asked another group to try to spot the lies by looking at the speakers’ eyes. This experiment found no evidence for a link between lying and eye movements at all. So, eye-only emotion communication is possible, but not as reliable as one may think.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-better-communicate-when-wearing-masks&#34;&gt;How to better communicate when wearing masks?&lt;/h2&gt;
+&lt;p&gt;Some 
+&lt;a href=&#34;https://www.boredpanda.com/doctor-portraits-on-protective-gear/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;healthcare workers on the frontline have attached smiley-faced pictures of themselves&lt;/a&gt; onto their medical gowns, trying to ease patient anxiety (Ong, 2020). That&amp;rsquo;s one practical and simple way to show your best emotion (happyness) when people around you need that. Especially when we can&amp;rsquo;t talk, I don&amp;rsquo;t see any better way than that.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;imgs/healthcare-workers.jpg&#34; alt=&#34;Healthcare workers with a smiley-faced picture.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;But when we can talk and move freely, it&amp;rsquo;s a whole different story. Psychologist Al Zayer suggests that, when wearing a mask, we should strive to over-communicate, use more words than we normally would, and ask more questions, to make sure we&amp;rsquo;re picking up on the other person’s emotions. Isn&amp;rsquo;t that what professional radio speakers or podcast creators do? They can convey very deep emotions and many shades of emotions by using their voice only. Normally, facial expressions form part of a coordinated set of features—including hand gestures, body language, words, pitch and tone, and even face colour (Benitez-Quiroz, Srinivasan, and Martinez, 2018). All of these features act together to convey message, intent, and emotions. And the best part is that, for some people, this is all natural. No training needed!&lt;/p&gt;
+&lt;p&gt;I want to close with a fun fact. There are 
+&lt;a href=&#34;https://archive.is/wip/SAyaJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;prototypes of a voice-activated mask, currently in the crowdfunding stages&lt;/a&gt; (Georgia Coggan, 2020). The mask uses LED lights to display emotion or words. The LED lights can mimic the mouth movements, with simple commands like “popping the lips” to display simple words, emojis or smiles.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;imgs/led-mask.jpg&#34; alt=&#34;LED mask&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The artificial mouth tracks the mouth of the user, emulating the physical action of the lips. It&amp;rsquo;s a matter of time and someone will make the flexible OLED version of that, showing a full, high-resolution picture of your mouth area recorded in real time from a micro-camera with IR illuminators positioned inside the mask.&lt;/p&gt;
+&lt;p&gt;For now, I&amp;rsquo;m sticking to the old-school approach.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;imgs/old-school.jpeg&#34; alt=&#34;Old school approach&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Baron-Cohen, Simon, Sally Wheelwright, Jacqueline Hill, Yogini Raste, and Ian Plumb. “The ‘Reading the Mind in the Eyes’ Test Revised Version: A Study with Normal Adults, and Adults with Asperger Syndrome or High-Functioning Autism.” The Journal of Child Psychology and Psychiatry and Allied Disciplines 42, no. 2 (February 2001): 241–51. 
+&lt;a href=&#34;https://doi.org/10/fdwnm3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/fdwnm3&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Benitez-Quiroz, Carlos F., Ramprakash Srinivasan, and Aleix M. Martinez. “Facial Color Is an Efficient Mechanism to Visually Transmit Emotion.” Proceedings of the National Academy of Sciences 115, no. 14 (April 3, 2018): 3581–86. 
+&lt;a href=&#34;https://doi.org/10/gdb3m5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/gdb3m5&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Carbon, Claus-Christian. “The Psychology of Wearing Face Masks in Times of the COVID-19 Pandemic.” SSRN Scholarly Paper. Rochester, NY: Social Science Research Network, April 24, 2020. 
+&lt;a href=&#34;https://doi.org/10.2139/ssrn.3584834&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.2139/ssrn.3584834&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Carbon, Claus-Christian. “Wearing Face Masks Strongly Confuses Counterparts in Reading Emotions.” Frontiers in Psychology 11 (September 25, 2020). 
+&lt;a href=&#34;https://doi.org/10/ghp92r&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/ghp92r&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Carys Betteley. “Coronavirus: Mask Wearing ‘risks Isolating’ Deaf People.” BBC News, May 14, 2020, sec. Wales. 
+&lt;a href=&#34;https://www.bbc.com/news/uk-wales-52659083&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.bbc.com/news/uk-wales-52659083&lt;/a&gt;. 
+&lt;a href=&#34;https://archive.is/L3TKW&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Archived copy&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;CORDIS. “Are Masks the New Face of Our Society? Science and the Changing Landscape of Human Expression | News | CORDIS | European Commission.” News. Trending Science. Community Research and Development Information Service (CORDIS), May 28, 2020. 
+&lt;a href=&#34;https://cordis.europa.eu/article/id/418273-human-expression&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://cordis.europa.eu/article/id/418273-human-expression&lt;/a&gt; (
+&lt;a href=&#34;https://archive.is/wip/SCjDP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Archived copy&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Cowen, Alan S., and Dacher Keltner. “Self-Report Captures 27 Distinct Categories of Emotion Bridged by Continuous Gradients.” Proceedings of the National Academy of Sciences 114, no. 38 (September 19, 2017): E7900–7909. 
+&lt;a href=&#34;https://doi.org/10/gfhzd2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/gfhzd2&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Darwin, Charles. The Expression of the Emotions in Man and Animals. J. Murray, 1872.&lt;/li&gt;
+&lt;li&gt;Ebner, Natalie C., Michaela Riediger, and Ulman Lindenberger. “FACES—A Database of Facial Expressions in Young, Middle-Aged, and Older Women and Men: Development and Validation.” Behavior Research Methods 42, no. 1 (February 1, 2010): 351–62. 
+&lt;a href=&#34;https://doi.org/10/ftbs4j&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/ftbs4j&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Ekman, Paul. “Universal Facial Expressions of Emotion.” California Mental Health Research Digest 8, no. 4 (1970): 151–58.&lt;/li&gt;
+&lt;li&gt;Georgia Coggan. “Incredible New Face Mask Displays Your Emotions.” Creative Bloq, September 2020. 
+&lt;a href=&#34;https://www.creativebloq.com/news/led-face-mask&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.creativebloq.com/news/led-face-mask&lt;/a&gt;. 
+&lt;a href=&#34;https://archive.is/wip/tIVaO&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Archived copy&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Gorvett, Zaria. “There Are 19 Types of Smile but Only Six Are for Happiness,” April 10, 2017. 
+&lt;a href=&#34;https://www.bbc.com/future/article/20170407-why-all-smiles-are-not-the-same&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.bbc.com/future/article/20170407-why-all-smiles-are-not-the-same&lt;/a&gt;. 
+&lt;a href=&#34;https://archive.is/wip/vOfcc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Archived copy&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Guastella, Adam J., Philip B. Mitchell, and Mark R. Dadds. “Oxytocin Increases Gaze to the Eye Region of Human Faces.” Biological Psychiatry, Schizophrenia: From Genetics to Treatment, 63, no. 1 (January 1, 2008): 3–5. 
+&lt;a href=&#34;https://doi.org/10/c8mvmg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/c8mvmg&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Holt, Nigel. “Face Masks: Why Your Eyes Might Be Saying More than You Realise.” The Conversation, September 1, 2020. 
+&lt;a href=&#34;http://theconversation.com/face-masks-why-your-eyes-might-be-saying-more-than-you-realise-145076.[Archived&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://theconversation.com/face-masks-why-your-eyes-might-be-saying-more-than-you-realise-145076.[Archived&lt;/a&gt; copy](
+&lt;a href=&#34;https://archive.is/wip/A1yfF%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://archive.is/wip/A1yfF)&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Kawashima, Ryuta, Motoaki Sugiura, Takashi Kato, Akinori Nakamura, Kentaro Hatano, Kengo Ito, Hiroshi Fukuda, Shozo Kojima, and Katsuki Nakamura. “The Human Amygdala Plays an Important Role in Gaze Monitoring: A PET Study.” Brain 122, no. 4 (April 1, 1999): 779–83. 
+&lt;a href=&#34;https://doi.org/10/dsqnk6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/dsqnk6&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Kret, Mariska Esther, and Beatrice de Gelder. “Islamic Headdress Influences How Emotion Is Recognized from the Eyes.” Frontiers in Psychology 3 (2012): 110. 
+&lt;a href=&#34;https://doi.org/10/ghp92q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/ghp92q&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Lee, Daniel H., and Adam K. Anderson. “Reading What the Mind Thinks From How the Eye Sees.” Psychological Science 28, no. 4 (April 2017): 494–503. 
+&lt;a href=&#34;https://doi.org/10/f942wj&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/f942wj&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Mike Rinck, Maximilian Primbs, Iris Verpaalen, and Gijs Bijlstra. “The Effect of Face Masks on Facial Emotion Recognition.” Behavioural Science Institute, 2020. 
+&lt;a href=&#34;https://www.ru.nl/bsi/covid-19-bsi-studies/effect-face-masks-facial-emotion-recognition/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.ru.nl/bsi/covid-19-bsi-studies/effect-face-masks-facial-emotion-recognition/&lt;/a&gt;. 
+&lt;a href=&#34;https://archive.is/wip/D9xhK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Archived copy&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Ong, Sandy. “How Face Masks Affect Our Communication.” BBC Future, June 8, 2020. 
+&lt;a href=&#34;https://www.bbc.com/future/article/20200609-how-face-masks-affect-our-communication&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.bbc.com/future/article/20200609-how-face-masks-affect-our-communication&lt;/a&gt;. 
+&lt;a href=&#34;https://archive.is/wip/S3wvO&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Archived copy&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Pytlik, Nico, Daniel Soll, and Stephanie Mehl. “Thinking Preferences and Conspiracy Belief: Intuitive Thinking and the Jumping to Conclusions-Bias as a Basis for the Belief in Conspiracy Theories.” Frontiers in Psychiatry 11 (2020). 
+&lt;a href=&#34;https://doi.org/10/ghpdjv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/ghpdjv&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Tara Well. “Do Face Masks Really Conceal Emotions?” Medium, August 4, 2020. 
+&lt;a href=&#34;https://medium.com/@tarawell/do-face-masks-really-conceal-emotions-98a7bfe3af66&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://medium.com/@tarawell/do-face-masks-really-conceal-emotions-98a7bfe3af66&lt;/a&gt;. 
+&lt;a href=&#34;https://archive.is/wip/q180I&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Archived copy&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Wegrzyn, Martin, Maria Vogt, Berna Kireclioglu, Julia Schneider, and Johanna Kissler. “Mapping the Emotional Face. How Individual Face Parts Contribute to Successful Emotion Recognition.” PLoS ONE 12, no. 5 (May 11, 2017). 
+&lt;a href=&#34;https://doi.org/10/f9699b&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/f9699b&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Wiseman, Richard, Caroline Watt, Leanne ten Brinke, Stephen Porter, Sara-Louise Couper, and Calum Rankin. “The Eyes Don’t Have It: Lie Detection and Neuro-Linguistic Programming.” PLOS ONE 7, no. 7 (July 11, 2012): e40259. 
+&lt;a href=&#34;https://doi.org/10/kxh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10/kxh&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;image-credits&#34;&gt;Image Credits&lt;/h2&gt;
+&lt;p&gt;In order of appearance:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Photo of person walking on a boat by 
+&lt;a href=&#34;https://unsplash.com/@kaziiparkour?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zakaria Zayane&lt;/a&gt; on 
+&lt;a href=&#34;https://unsplash.com/s/photos/stranger-look?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unsplash&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Photo showing dark scenery with an unrecognizable person by 
+&lt;a href=&#34;https://unsplash.com/@sm83?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Peter Scherbatykh&lt;/a&gt; on 
+&lt;a href=&#34;https://unsplash.com/s/photos/crime?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unsplash&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Photo of a person in a hoodie by 
+&lt;a href=&#34;https://unsplash.com/@patryksobczak?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Patryk Sobczak&lt;/a&gt; on 
+&lt;a href=&#34;https://unsplash.com/s/photos/lonely?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unsplash&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Photo of eyes closeup by 
+&lt;a href=&#34;https://unsplash.com/@kj2018?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kat J&lt;/a&gt; on 
+&lt;a href=&#34;https://unsplash.com/s/photos/eyes-only?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unsplash&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Photo of healthcare workers by 
+&lt;a href=&#34;https://www.instagram.com/derekdevault/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;derekdevault&lt;/a&gt; (via 
+&lt;a href=&#34;https://www.boredpanda.com/doctor-portraits-on-protective-gear/?utm_source=google&amp;amp;utm_medium=organic&amp;amp;utm_campaign=organic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;boredpanda.com&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Photo of JabberMask by 
+&lt;a href=&#34;https://twitter.com/TylerGlaiel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tyler Glaiel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reading Aloud</title>
+      <link>/post/reading-aloud/</link>
+      <pubDate>Mon, 14 Dec 2020 17:18:55 +0100</pubDate>
+      <guid>/post/reading-aloud/</guid>
+      <description>&lt;p&gt;Reading long texts has always been a daunting task to me. A rocky mountain I seldom find myself brave enough to start climbing (unless forced to). I&amp;rsquo;ve never had good reading habits, except for a few, very intriguing novels with a powerful storyline, which I could actually read quite fast. But most of the readings I wish I could get done quickly are damn hard. In the era of 
+&lt;a href=&#34;https://mashable.com/shopping/march-23-book-summary-apps/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;book-summarizing services&lt;/a&gt; like 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Blinkist&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blinkist&lt;/a&gt;, 
+&lt;a href=&#34;https://www.cbsnews.com/news/the-explosion-in-audio-books/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;audiobooks&lt;/a&gt;, and &amp;ldquo;CEO reading guides,&amp;rdquo; where people invest time and money to compress time and read more, my limited reading abilities are an actual obstacle to my knowledge development. How did I change that? I don&amp;rsquo;t know if I did, but here is what I found by experimenting on myself.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;In short:&lt;/strong&gt; I got significantly better a reading when I started reading aloud, record my voice, and share partial audio files with friends, who told me they ejoyed listening to my recordings, and that helped them stay motivated. The power of social incentives!&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;#the-joy-pain-of-reading&#34;&gt;The &lt;del&gt;Joy&lt;/del&gt; Pain of Reading&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#could-i-motivate-myself-to-read-more&#34;&gt;Could I Motivate Myself to Read More?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#intrinsic-vs-extrinsic-motivation&#34;&gt;Intrinsic vs. Extrinsic Motivation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#the-microphone-that-brought-in-new-incentives&#34;&gt;The Microphone that Brought in New Incentives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#read-for-someone-else-your-age&#34;&gt;Read for Someone Else (Your Age)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#the-turning-point-helping-and-motivating-others&#34;&gt;The Turning Point: Helping and Motivating Others&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#seeing-progress&#34;&gt;Seeing Progress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#the-tedx-talk-that-made-me-write-this&#34;&gt;The TEDx Talk That Made Me Write This&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-joy-pain-of-reading&#34;&gt;The &lt;del&gt;Joy&lt;/del&gt; Pain of Reading&lt;/h2&gt;
+&lt;p&gt;It all begun about a month ago, when I needed to read more books to dig into a new subject. I had a pile of books staring at me and I simply couldn&amp;rsquo;t find enough courage to get started. I&amp;rsquo;ve always been a very lazy reader, cherry picking the content I needed to get my job done and only seldom enjoying what others called &amp;ldquo;the joy of reading&amp;rdquo;. Few exceptions aside, that &amp;ldquo;joy&amp;rdquo; was actually a frustrating pain.&lt;/p&gt;
+&lt;p&gt;Most of the papers and other technical resources I had read during my 
+&lt;a href=&#34;/about&#34;&gt;academic career&lt;/a&gt; had been an authentic pain, with only a few exceptions. I do a decent amount of reviewing work, both internal (not public, for the company I work for) and external (I sit in some 
+&lt;a href=&#34;/about/#reviewing-others-work&#34;&gt;conferences review boards or technical commitees&lt;/a&gt;), and because of how review-oriented reading works, I pause reading very often to think about what I&amp;rsquo;ve just read, take notes, etc. So, slow reading, mostly. Truth is, I actually read a lot, but mainly because I have to, and I don&amp;rsquo;t quite realize how much I read. Possibly, this may have have created a negative bias about my actual reading abilities, to the point that starting and continuing a reading to the end is hard. Once I&amp;rsquo;m engaged, I get going, but getting started and concluding are the hardest parts.&lt;/p&gt;
+&lt;h2 id=&#34;could-i-motivate-myself-to-read-more&#34;&gt;Could I Motivate Myself to Read More?&lt;/h2&gt;
+&lt;p&gt;The Web is filled with &amp;ldquo;how to motivate yourself to do X, Y, Z&amp;rdquo; guides. Ironically, these many and diverse guides on the same subject not only means that people find them useful, but also that there are enough instances of X, Y, Z problems to make these guides worth existing! In simple words, many people suffer from X, Y, Z problems. So, you&amp;rsquo;re not alone. This post is not meant to be yet another of such guides, but just a summary of my recent experience.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; I&amp;rsquo;m not writing this post as a result of following one of those X, Y, Z guides. Actually, I found about a &lt;strong&gt;generic&lt;/strong&gt; &amp;ldquo;how to motivate yourself&amp;rdquo; guide, not about reading, which made me realize and reflect about the reasons why I&amp;rsquo;ve been reading more in the past month. I&amp;rsquo;m writing this in a retrospective way, not biased by the content of the guide I found. The guide&amp;mdash;which I&amp;rsquo;ll share below&amp;mdash;was helpful because it helped me understand the reasons of the change I had already embraced, without even noticing that.&lt;/p&gt;
+&lt;h2 id=&#34;intrinsic-vs-extrinsic-motivation&#34;&gt;Intrinsic vs. Extrinsic Motivation&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;re familiar with the basics of psychology, you know that there exist two, broad types of motivation in incentive theories: 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Motivation#Incentive_theories:_intrinsic_and_extrinsic_motivation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;intrinsic (internal) motivation and extrinsic (external) motivation&lt;/a&gt;, and the latter is less powerful than the the former. When you&amp;rsquo;re intrinsically motivated to do something everything seems easy and smooth. For example, if you love your job you don&amp;rsquo;t perceive it as a due duty. If you like to play chess or cards, you look forward to play, regardless of any prizes. The prizes are external incentives that drive &lt;strong&gt;extrinsic&lt;/strong&gt; motivation. By the way, that&amp;rsquo;s how I interpret the last minute of 
+&lt;a href=&#34;https://www.imdb.com/title/tt10048342/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Queen&amp;rsquo;s Gambit&lt;/a&gt;: &lt;em&gt;&amp;ldquo;sygrayem!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Intrinsic vs. extrinsic motivation play an important role in &lt;strong&gt;education&lt;/strong&gt;. If educators are able to find and trigger intrinsic incentive mechanisms&amp;mdash;for instance by engaging the students with practical activities, involving them as &lt;strong&gt;part&lt;/strong&gt; of the teaching experience&amp;mdash;then the students are more likely to get intrinsically motivated to dig deeper into a subject&amp;hellip;for the sake of it! Students perform better with a good balance of intrinsic vs. extrinsic rewards, but both are necessary. Extrinsic rewards are often visible to others, so they become part of social interactions. Yes, I&amp;rsquo;m talking about grades. In the perfect system you study because you like the way the teacher teaches a subject, you get good grades (and you feel good the moment you get that reward!), other see those good grades and feel motivated to get good grades as well! On the other hand, if you only get extrinsic incentives&amp;mdash;grades only&amp;mdash;you won&amp;rsquo;t feel as good as when you get an intrinsic incentive, even when the grades are outstanding.&lt;/p&gt;
+&lt;p&gt;Back to readings, when you get sucked into a novel or a story in the news, and want to continue reading, that&amp;rsquo;s your intrinsic motivation at play. You almost don&amp;rsquo;t perceive that you&amp;rsquo;re reading, you get so immersed that it&amp;rsquo;s almost like flying through the words. That&amp;rsquo;s what happened, very few cases, honestly (I should be pickier while choosing books!), when I found a book that was a true joy to read. There are many online social networks about readings (e.g., 
+&lt;a href=&#34;https://www.goodreads.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Goodreads&lt;/a&gt;, 
+&lt;a href=&#34;https://www.anobii.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anobii&lt;/a&gt;), which, in addition to recommending good books based on your past readings, show how much &lt;em&gt;others&lt;/em&gt; are reading. So, they make external (social) incentive factors into play: &amp;ldquo;look at how much your friend is reading&amp;rdquo;. I&amp;rsquo;ve tried some of them, but they never worked on me: I&amp;rsquo;m so slow at reading anyways that my social circle appears to be so far off me that I ended up closing the accounts because I found those numbers very depressing. Meh!&lt;/p&gt;
+&lt;h2 id=&#34;the-microphone-that-brought-in-new-incentives&#34;&gt;The Microphone that Brought in New Incentives&lt;/h2&gt;
+&lt;p&gt;At the beginning of the first lockdown I purchased a decent (not professional) microphone, because what I had ahead of me was, heh, lots of virtual conferences! I got myself a 
+&lt;a href=&#34;https://www.trust.com/en/product/22400-gxt-252-emita-plus-streaming-microphone&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trust GTX 252+&lt;/a&gt;, which, considering the price range ($90&amp;ndash;100), has a quite good, warm sound.&lt;/p&gt;
+&lt;p&gt;After recording the first presentation&amp;mdash;and get disappointed about the very scarce conference attendance&amp;mdash;I started to ponder how I could use that microphone in other ways. If you have small kids you know that doing actual work during lockdown is just a bliss. But small kids are a gold mine of opportunities and unexpected surprises. In this case my older one asked me to read him a book. He had &amp;ldquo;read&amp;rdquo; (through me and his mom) probably more than I&amp;rsquo;ve ever done in 6&amp;ndash;7 times his age. This time I told him: &lt;em&gt;&amp;ldquo;do you want to record the reading so you can share with your cousin?&amp;rdquo;&lt;/em&gt; And so I started recording my voice while reading his books, along with his (quite funny and entertaining) comments. We both enjoyed the activity, which we continued for about a month. Here you can see both an intrinsic incentive (reading became fun for both) as well as a social incentive (his cousin was happy to listen to his books whenever he wanted).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; Commercial and/or professional recording of copyrighted material should adhere to copyright laws as well as follow any additional licenses that come with the material in question; so, if you ever think about doing this professionally, I recommend that you think about 
+&lt;a href=&#34;https://www.google.com/search?q=how&amp;#43;to&amp;#43;become&amp;#43;an&amp;#43;audiobook&amp;#43;narrator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;starting a career as an audiobook narrator&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;read-for-someone-else-your-age&#34;&gt;Read for Someone Else (Your Age)&lt;/h2&gt;
+&lt;p&gt;At this point you could be thinking that reading child books is painless&amp;mdash;to someone like with with poor reading habits&amp;mdash;because they&amp;rsquo;re short. True! And extremely boring to most adults, I&amp;rsquo;d say. Especially if you&amp;rsquo;ve been reading them every, single, day at bedtime for the past year or so. That&amp;rsquo;s probably why I stopped doing that after about a month 😆&lt;/p&gt;
+&lt;p&gt;Meanwhile, about one month ago I started reading about 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Hermann_Ebbinghaus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hermann Ebbinghaus&amp;rsquo; research on memory&lt;/a&gt;, and in particular about 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Spaced_repetition&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;spaced repetitions&lt;/a&gt;, a technique that he experimented on himself to memorize long lists of 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Pseudoword#Nonsense_syllables&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nonsense syllables&lt;/a&gt;. I was particularly intrigued by the fact that he used to read the target pseudowords aloud. And I had recetly learned about how the phonological loop of working memory works:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Subvocal rehearsal loop&lt;/strong&gt; (source: 
+&lt;a href=&#34;https://www.oxfordreference.com/view/10.1093/oi/authority.20110803100540469&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oxford reference&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;One of the two components of the phonological loop of working memory, functioning to keep information from decaying by mental repetition, and also translating visual information into phonological code where necessary for short-term memory. Also called an articulatory loop, an articulatory rehearsal loop, or an articulatory store.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So, putting all the pieces together, I decided to run an experiment on myself: I read aloud one chapter of a book I was reading, used my new shiny microphone and 
+&lt;a href=&#34;https://www.audacityteam.org/lwwwwww&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Audacity&lt;/a&gt; to record my voice, and I&amp;rsquo;ll listen to myself reading while doing other tasks, to see if I could memorize it better. I know, this does not replicate Ebbinghaus experiment, but bare with me, because at the end of the story this turns out to be just a pretext.&lt;/p&gt;
+&lt;p&gt;At a first glance, here&amp;rsquo;s what I recall I felt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I felt extremely &lt;strong&gt;good and committed&lt;/strong&gt;, from the very first words I spoke;&lt;/li&gt;
+&lt;li&gt;I could &lt;strong&gt;see&lt;/strong&gt; the &lt;strong&gt;progress&lt;/strong&gt; of my speech on the screen and the read pages quickly flipping;&lt;/li&gt;
+&lt;li&gt;I felt focused and distraction free.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I thought it was a very good start and I didn&amp;rsquo;t even know what was coming!&lt;/p&gt;
+&lt;h2 id=&#34;the-turning-point-helping-and-motivating-others&#34;&gt;The Turning Point: Helping and Motivating Others&lt;/h2&gt;
+&lt;p&gt;Almost for fun, I shared the recorded audio among my reading group, just to hear their thoughts. When I shared the MP3 file among my friends, they inundated me with many thank-you messages and lots of blinky emojis. One of them in particular was the key, the turning point. They said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That&amp;rsquo;s awesome 😍 I felt so &lt;strong&gt;lost&lt;/strong&gt; these days, now you gave me a &lt;strong&gt;guiding voice&lt;/strong&gt; to listen to, and I can do that when I do my jogging! Thank you!!!!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;See that? That closed the loop! The fact that I was helping someone (BTW, a total stranger, because we run this reading group remotely among strangers!) to stay motivated is what motivated me most! I could almost envision this person doing their activities while listening to my &amp;ldquo;guiding voice&amp;rdquo; (I think that was the most powerful phrase). I felt what I was doing had positive value for someone, and that was the best, instantaneous reward I could get.&lt;/p&gt;
+&lt;p&gt;A powerful social incentive!&lt;/p&gt;
+&lt;h2 id=&#34;seeing-progress&#34;&gt;Seeing Progress&lt;/h2&gt;
+&lt;p&gt;Remember when I said that I wasn&amp;rsquo;t incentivized to use Goodreads &amp;amp; friends because I felt slow at reading compared to my social circle? It turned out I was faster than I thought, and I could monitor my progress pretty quickly by looking at the folder where I kept my recordings on my computer. And those lists have been growing constantly on daily basis, and so the compliments I received by my reading group, thanking me for what I was doing.&lt;/p&gt;
+&lt;p&gt;Seeing progress is the third ingredient towards behavior change. When we see the cumulative result of our work, we&amp;rsquo;re motivated to keep our behavior in that direction. But progress has to be measurable with an adequately-fine-grained unit. If you&amp;rsquo;re a lazy reader like me, and you&amp;rsquo;re measuring yourself by the number of books you read, then you&amp;rsquo;re stuck.&lt;/p&gt;
+&lt;h2 id=&#34;the-tedx-talk-that-made-me-write-this&#34;&gt;The TEDx Talk That Made Me Write This&lt;/h2&gt;
+&lt;p&gt;So, why am I writing this? Just because I wanted to share? Nah! I mean, yes, but not only that. Yesterday I watched 
+&lt;a href=&#34;https://www.youtube.com/watch?v=xp0O2vi8DX4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this TEDx Cambridge&lt;/a&gt; talk by 
+&lt;a href=&#34;https://www.ucl.ac.uk/pals/research/experimental-psychology/person/dr-tali-sharot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Tali Sharot&lt;/a&gt;, a cognitive neuroscientist at 
+&lt;a href=&#34;https://www.ucl.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UCL&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xp0O2vi8DX4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Prof. Sharot summarizes that it&amp;rsquo;s hard to change our behavior because most of our incentive programs are designed to &lt;em&gt;threaten&lt;/em&gt; us by showing us all the bad things that could happen if we don&amp;rsquo;t adopt that behavior, while her experiments show that the opposite incentive program is much more powerful (we&amp;rsquo;re talking about 15% vs 90%!). So, instead of bombard our kids with things like &lt;em&gt;&amp;ldquo;if you don&amp;rsquo;t read enough you&amp;rsquo;ll get bad grades&amp;rdquo;&lt;/em&gt; (which is what I&amp;rsquo;ve been bombarded with), let&amp;rsquo;s tell them &lt;em&gt;&amp;ldquo;if you read you&amp;rsquo;ll become the fastest reader in the world&amp;rdquo;&lt;/em&gt;. It&amp;rsquo;s intuitive, I know, but if you think about it, it&amp;rsquo;s quite hard to implement. Why? Because you have to design a good reward system around it, which should show immediate positive rewards over time. And that&amp;rsquo;s not always practical.&lt;/p&gt;
+&lt;p&gt;So, the reason why I&amp;rsquo;m writing this piece is because Prof. Sharot&amp;rsquo;s talk enlightened me by showing all the ingredients that I already had on my plate, which were already at work to keep me motivated, but was quite nice to see them all condensed in that 15-minutes engaging talk, backed by scientific research!&lt;/p&gt;
+&lt;p&gt;Overall, a good way to change your behavior consists of these steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;use &lt;strong&gt;positive reward&lt;/strong&gt; as opposed to negative, threatening scenarios; by the way, this teaches a good lesson to many industry fields, which often makes use of 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Fear,_uncertainty,_and_doubt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FUD&lt;/a&gt; to spread supposedly convincing marketing messages and incentivize prospects to purchase more; and yes, that&amp;rsquo;s why disinformation spreads so well as opposed to clear, fact-based information.&lt;/li&gt;
+&lt;li&gt;bring in &lt;strong&gt;social incentives&lt;/strong&gt;, so that you can see how others perceive your performance as well as compare yourself with others;&lt;/li&gt;
+&lt;li&gt;find a way to &lt;strong&gt;monitor your progress&lt;/strong&gt; as fast as possible, to get you immediate, measurable rewards; delayed rewards don&amp;rsquo;t work well, or they should be broken down into smaller, spaced rewards.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Hope you enjoyed reading this far, and please feel free to 
+&lt;a href=&#34;/#contact&#34;&gt;reach out&lt;/a&gt; with any comments!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tali Sharot, &lt;em&gt;&amp;ldquo;How to Motivate Yourself to Change Your Behavior&amp;rdquo;&lt;/em&gt;, TEDx Cambridge. 
+&lt;a href=&#34;https://singjupost.com/how-to-motivate-yourself-to-change-your-behavior-tali-sharot-transcript/?singlepage=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Transcript&lt;/a&gt;, 
+&lt;a href=&#34;https://www.youtube.com/watch?v=xp0O2vi8DX4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Susan Nolen-Hoeksema, Ernest R Hilgard, &lt;em&gt;&amp;ldquo;Atkinson and Hilgard&amp;rsquo;s Introduction to Psychology&amp;rdquo;&lt;/em&gt;, Cengage Learning, 2014, 16th edition. 
+&lt;a href=&#34;https://www.worldcat.org/title/atkinson-and-hilgards-introduction-to-psychology/oclc/869786503&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Book details&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Hermann_Ebbinghaus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hermann Ebbinghaus&lt;/a&gt;, Wikipedia. Viewed on: Dec 14th, 2020.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Spaced_repetition&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spaced Repetitions&lt;/a&gt;, Wikipedia. Viewed on: Dec 14th, 2020.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Pseudoword#Nonsense_syllables&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nonsense Syllables&lt;/a&gt;, Wikipedia. Viewed on: Dec 14th, 2020.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
