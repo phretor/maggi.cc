@@ -1,0 +1,1377 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+        
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Federico Maggi">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Malware targeting gamers / VSCode extension with command injection / OWASP turns 20 / Chrome fixes an RCE / AirTags can carry XSS payload / PoC exploit for VMware CVE-2021-22005 / More Apple bug bounty drama / Android bankers / Bitcoin ATMs vulnerable to tampering / New SolarWinds details / When ransomware hits hospitals / Bug in ApplePay Express Mode with VISA / Threat actors posing as Amnesty">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/cyberfacts/issue-1/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#cc6627">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/cyberfacts/issue-1/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@phretor">
+  <meta property="twitter:creator" content="@phretor">
+  
+  <meta property="og:site_name" content="Federico Maggi">
+  <meta property="og:url" content="/cyberfacts/issue-1/">
+  <meta property="og:title" content="🔓 [CyberFacts Weekly - Issue 0x01] A Packed Week | Federico Maggi">
+  <meta property="og:description" content="Malware targeting gamers / VSCode extension with command injection / OWASP turns 20 / Chrome fixes an RCE / AirTags can carry XSS payload / PoC exploit for VMware CVE-2021-22005 / More Apple bug bounty drama / Android bankers / Bitcoin ATMs vulnerable to tampering / New SolarWinds details / When ransomware hits hospitals / Bug in ApplePay Express Mode with VISA / Threat actors posing as Amnesty"><meta property="og:image" content="/cyberfacts/issue-1/featured.jpg">
+  <meta property="twitter:image" content="/cyberfacts/issue-1/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-10-01T00:20:08&#43;02:00">
+    
+    <meta property="article:modified_time" content="2021-10-01T00:20:08&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#cc6627",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#cc6627"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "/privacy/"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>🔓 [CyberFacts Weekly - Issue 0x01] A Packed Week | Federico Maggi</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/cyberfacts"><span>CyberFacts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/post"><span>Diary</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/talk"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/advisories"><span>Advisories</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacts</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>🔓 [CyberFacts Weekly - Issue 0x01] A Packed Week</h1>
+
+  
+  <p class="page-subtitle">Malware targeting gamers / VSCode extension with command injection / OWASP turns 20 / Chrome fixes an RCE / AirTags can carry XSS payload / PoC exploit for VMware CVE-2021-22005 / More Apple bug bounty drama / Android bankers / Bitcoin ATMs vulnerable to tampering / New SolarWinds details / When ransomware hits hospitals / Bug in ApplePay Express Mode with VISA / Threat actors posing as Amnesty</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 1, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 481px;">
+  <div style="position: relative">
+    <img src="/cyberfacts/issue-1/featured_hu30beddacbfb9241f0aa5089988a5ac51_178020_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Hello ☺️</p>
+<p>The second issue of CyberFacts Weekly is out and I have to say that I&rsquo;m quite happy to see a (slowly) growing interest around both this weekly digest and the live feed (available via 
+<a href="https://twitter.com/CyberFactsIT" target="_blank" rel="noopener">Twitter</a> and 
+<a href="https://cyberfacts.it" target="_blank" rel="noopener">RSS</a>).</p>
+<p>It&rsquo;s been quite a packed week: It wasn&rsquo;t easy to keep track of all the interesting events. Also, I decided to open each weekly issue with 
+<a href="https://archillect.com/350085" target="_blank" rel="noopener">the image Tweeted by the @archillect AI</a> at the time of writing.</p>
+<p>Towards the end of this digest, I took some room for a reflection about the current state of conferences, and what I foresee for their future.</p>
+<p><strong>Note:</strong> I deliberately avoided to include in this issue the new developments regarding Group-IB and Julian Assange; despite the latter case is certainly shocking, I strive to keep this feed and digest free from stories that are highly connected with political and geo-political matters, and focus only on the technically relevant events.</p>
+<p>Enjoy!</p>
+<hr>
+<ul>
+<li>
+<a href="#this-weeks-top-picks">This Week&rsquo;s Top Picks</a>
+<ul>
+<li>
+<a href="#gaming--malware-specialized-in-stealing-gamers-assetshttpssecurelistcombloodystealer-and-gaming-assets-for-sale104319">#gaming | Malware specialized in stealing gamers&rsquo; assets</a></li>
+<li>
+<a href="#coding--vscode-remote-development-extension-had-a-now-fixed-command-injection-vulnerabilityhttpswwwshielderitadvisoriesremote-command-execution-in-visual-studio-code-remote-development-extension">#coding | VSCode Remote Development extension had a now-fixed command-injection vulnerability</a></li>
+<li>
+<a href="#iot--2-cticial-vulnerabilities-fixed-in-qnap-video-surveillance-nas-solutionhttpswwwbleepingcomputercomnewssecurityqnap-fixes-critical-bugs-in-qvr-video-surveillance-solution">#iot | 2 cticial vulnerabilities fixed in QNAP video-surveillance NAS solution</a></li>
+<li>
+<a href="#appsec--owasp-turned-20-and-xss-is-now-bundled-into-injection-attacks-in-their-top-10httpsportswiggernetdaily-swigowasp-toasts-20th-anniversary-with-revised-top-10-for-2021">#appsec | OWASP turned 20 and XSS is now bundled into &lsquo;injection attacks&rsquo; in their Top 10</a></li>
+<li>
+<a href="#vuln--google-fixes-critical-rce-vulnerability-in-chrome-cve-2021-37973httpsus-certcisagovncascurrent-activity20210924google-releases-security-updates-chrome">#vuln | Google fixes critical RCE vulnerability in Chrome (CVE-2021-37973)</a></li>
+<li>
+<a href="#apple--apple-vs-bug-bounty-take-ii---fed-up-researcher-speaks-louderhttpshabrcomrupost580272">#apple | Apple vs. Bug Bounty: Take II - Fed-up researcher speaks louder</a></li>
+<li>
+<a href="#cloud--public-exploit-available-for-vmware-vcenter-cve-2021-22005httpswwwbleepingcomputercomnewssecurityworking-exploit-released-for-vmware-vcenter-cve-2021-22005-bug">#cloud | Public exploit available for VMware vCenter CVE-2021-22005</a></li>
+<li>
+<a href="#mobile--airtag-lost-mode-api-allowed-javascript-injection-enabling-client-side-redirection-attackhttpsmediumcombobbyrseczero-day-hijacking-icloud-credentials-with-apple-airtags-stored-xss-6997da43a216">#mobile | AirTag Lost Mode API allowed JavaScript injection enabling client-side redirection attack</a></li>
+<li>
+<a href="#mobile--grifthorse-android-trojan-steals-millions-by-subscribing-to-paid-35mo-serviceshttpsblogzimperiumcomgrifthorse-android-trojan-steals-millions-from-over-10-million-victims-globally">#mobile | GriftHorse Android trojan steals millions by subscribing to paid $35/mo services</a></li>
+<li>
+<a href="#supplychain--updated-timeline-adds-new-details-to-the-solarwind-incidenthttpssecurelistcomdarkhalo-after-solarwinds-the-tomiris-connection104311">#supplychain | Updated timeline adds new details to the SolarWind incident</a></li>
+<li>
+<a href="#cloud--azure-ad-is-still-vulnerable-to-%22by-design%22-flaw-that-allows-single-factor-brute-force-attackshttpswwwsecureworkscomresearchundetected-azure-active-directory-brute-force-attacks">#cloud | Azure AD is still vulnerable to &ldquo;by design&rdquo; flaw that allows single-factor brute-force attacks</a></li>
+<li>
+<a href="#bitcoin--us-bitcoin-atms-which-run-on-cots-linux-based-embedded-platforms-has-been-found-to-have-interesting-vulnerabilities-and-no-tamper-proof-designhttpsblogkrakencompost11263kraken-security-labs-identifies-vulnerabilities-in-commonly-used-bitcoin-atm">#bitcoin | US Bitcoin ATMs, which run on COTS Linux-based embedded platforms, has been found to have interesting vulnerabilities and no tamper-proof design</a></li>
+<li>
+<a href="#crypto--bug-in-apple-pay-with-visa-allows-above-the-limit-transactions-via-man-in-the-middle-even-when-the-iphone-is-locked-at-resthttpswwwbleepingcomputercomnewssecurityapple-pay-with-visa-lets-hackers-force-payments-on-locked-iphones">#crypto | Bug in Apple Pay with VISA allows above-the limit transactions via man-in-the-middle even when the iPhone is locked at rest</a></li>
+<li>
+<a href="#web--lets-encrypts-root-ca-certificate-is-expiring-and-were-getting-a-new-one-good-til-2024httpsscotthelmecouklets-encrypt-old-root-expiration">#web | Let&rsquo;s Encrypt&rsquo;s Root CA Certificate is expiring, and we&rsquo;re getting a new one good &rsquo;til 2024</a></li>
+<li>
+<a href="#macmalware--mac-users-targeted-again-by-trojanized-iterm2-apphttpswwwtrendmicrocomenusresearch21imac-users-targeted-by-trojanized-iterm2-apphtml">#macmalware | Mac users targeted (again) by trojanized iTerm2 app</a></li>
+<li>
+<a href="#ransomware--when-ransomware-hits-a-hospital-with-no-backup-plans-whos-responsible-of-the-consequenceshttpsthreatpostcombabys-death-linked-ransomware175232">#ransomware | When ransomware hits a hospital with no backup plans, who&rsquo;s responsible of the consequences?</a></li>
+<li>
+<a href="#malware--threat-actors-posing-as-amnesty-international-exploit-the-fear-of-pegasus-to-spread-malwarehttpsblogtalosintelligencecom202109fakeantipegasusamnestyhtml">#malware | Threat actors posing as Amnesty International exploit the fear of Pegasus to spread malware</a></li>
+</ul>
+</li>
+<li>
+<a href="#also-noteworthy">Also Noteworthy</a>
+<ul>
+<li>
+<a href="#fraud--fbi-arrests-business-email-compromise-bec-scammers-which-stole-around-17-millionhttpstherecordmediaus-arrests-33-bec-scammers-linked-to-nigerian-crime-syndicate">#fraud | FBI arrests business email compromise (BEC) scammers which stole around $17 million</a></li>
+<li>
+<a href="#privacy--fastmail-now-selling-masked-email-alias-integration-with-1passwordhttpswwwfastmailcom1password">#privacy | Fastmail now selling masked email-alias integration with 1Password</a></li>
+<li>
+<a href="#mobile--ermac-a-new-androind-banking-trojan-derived-from-cerberus-rented-for-3kmohttpswwwthreatfabriccomblogsermac-another-cerberus-rebornhtml">#mobile | ERMAC, a new Androind banking trojan derived from Cerberus rented for $3k/mo</a></li>
+<li>
+<a href="#windows--windows-low-level-substrate-wpbt-can-be-leveraged-to-write-rootkitshttpseclypsiumcom20210920everyone-gets-a-rootkit">#windows | Windows low-level substrate (WPBT) can be leveraged to write rootkits</a></li>
+<li>
+<a href="#surveillance--finspyfinfisher-now-discovered-to-have-a-multi-staged-modular-uefi-module-a-%22piece-of-art%22httpssecurelistcomfinspy-unseen-findings104322">#surveillance | FinSpy/FinFisher now discovered to have a multi-staged, modular UEFI module: A &ldquo;piece of art&rdquo;</a></li>
+<li>
+<a href="#vulns--timeline-of-high-impact-vulnerabilities-since-2019httpswwwhackmageddoncom20210928the-perfect-storm">#vulns | Timeline of high-impact vulnerabilities since 2019</a></li>
+<li>
+<a href="#malware--zeus-nostalgia-zloader-infographics-since-2019httpswwwtrendmicrocomvinfoussecuritynewscybercrime-and-digital-threatszloader-campaigns-at-a-glance">#malware | Zeus nostalgia: Zloader infographics since 2019</a></li>
+<li>
+<a href="#blockchain--tracking-monero-wannacry-20-transactions-thanks-to-an-open-now-fixed-shapeshift-apihttpsmediumcomnbaxtracing-the-wannacry-2-0-monero-transactions-d8c1e5129dc1">#blockchain | Tracking Monero WannaCry 2.0 transactions thanks to an open, now fixed, ShapeShift API</a></li>
+<li>
+<a href="#mobile--android-banking-trojan-steals-instant-payment-pix-currencyhttpsresearchcheckpointcom2021pixstealer-a-new-wave-of-android-banking-trojans-abusing-accessibility-services">#mobile | Android banking trojan steals instant-payment Pix currency</a></li>
+<li>
+<a href="#acquisition--akamai-acquires-guardicorehttpswwwguardicorecompress-releasesakamai-to-acquire-guardicore-to-extend-zero-trust">#acquisition | Akamai acquires Guardicore</a></li>
+<li>
+<a href="#ecrime--criminals-are-interested-in-stealing-otp-tokens-via-telegram-botshttpsintel471comblogotp-password-bots-telegram">#ecrime | Criminals are interested in stealing OTP tokens via Telegram bots</a></li>
+<li>
+<a href="#nft--scammers-on-discord-posing-as-opensea-support-operators-scammed-collectors-and-stole-hundreds-of-thousands-of-dollars-worth-of-nfthttpswwwthevergecom22683766nft-scams-theft-social-engineering-opensea-community-recovery">#nft | Scammers on Discord posing as OpenSea Support Operators scammed collectors and stole hundreds of thousands of dollars worth of NFT</a></li>
+<li>
+<a href="#crypto--stealing-crypto-keys-from-phones-via-em-side-channelshttpsresearchgatecheduresearchers-discover-vulnerability-widely-used-method-securing-phone-data">#crypto | Stealing crypto keys from phones via EM side channels</a></li>
+</ul>
+</li>
+<li>
+<a href="#tools">Tools</a>
+<ul>
+<li>
+<a href="#facebook-open-sources-static-analysis-tool-to-find-bugs-in-android-and-java-appshttpsmariana-trench">Facebook open-sources static analysis tool to find bugs in Android and Java apps</a></li>
+</ul>
+</li>
+<li>
+<a href="#conferences">Conferences</a>
+<ul>
+<li>
+<a href="#security-analyst-summit-sas-2021httpsthesas2021online">Security Analyst Summit (SAS) 2021</a></li>
+<li>
+<a href="#black-hat-europe-2021-full-briefings-lineup-announcedhttpswwwblackhatcomeu-21briefingsscheduleindexhtml">Black Hat Europe 2021 full briefings lineup announced</a></li>
+<li>
+<a href="#romhack-2021-recordings-publishedhttpswwwyoutubecomwatchvjpkerdmkb9g">RomHack 2021 Recordings Published</a></li>
+<li>
+<a href="#ieee-euro-sp-2021httpswwwieee-securityorgtceurosp2021programhtml">IEEE Euro S&amp;P 2021</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="this-weeks-top-picks">This Week&rsquo;s Top Picks</h1>
+<h2 id="gaming--malware-specialized-in-stealing-gamers-assetshttpssecurelistcombloodystealer-and-gaming-assets-for-sale104319">#gaming | 
+<a href="https://securelist.com/bloodystealer-and-gaming-assets-for-sale/104319/" target="_blank" rel="noopener">Malware specialized in stealing gamers&rsquo; assets</a></h2>
+<p><em>by Kaspersky</em></p>
+<p>As professional gamers become valuable individuals, cybercriminals are increasingly showing interest in stealing their assets, which include their account credentials to access popular gaming platforms such as Steam and Origin.</p>
+<p>Kaspersky researchers have found evidence of cybercriminal actors advertising and selling a malware dubbed &ldquo;BloodyStealer&rdquo;, specialized in stealing gaming assets.</p>
+<h2 id="coding--vscode-remote-development-extension-had-a-now-fixed-command-injection-vulnerabilityhttpswwwshielderitadvisoriesremote-command-execution-in-visual-studio-code-remote-development-extension">#coding | 
+<a href="https://www.shielder.it/advisories/remote-command-execution-in-visual-studio-code-remote-development-extension/" target="_blank" rel="noopener">VSCode Remote Development extension had a now-fixed command-injection vulnerability</a></h2>
+<p><em>by Shielder</em></p>
+<p>Extensions are always the weak link of a well-developed and well-secured software. I guess everyone remembers how many times vulnerable WordPress extensions have become the door opener to popular websites.</p>
+<p>Development environments such as VSCode are no exceptions. At the end of the day, extensions are just &ldquo;more code&rdquo; in the game. The Italian Shielder has discovered that a remote-development extension, making heavy use of SSH as a secure transport, was vulnerable to comand injection.</p>
+<h2 id="iot--2-cticial-vulnerabilities-fixed-in-qnap-video-surveillance-nas-solutionhttpswwwbleepingcomputercomnewssecurityqnap-fixes-critical-bugs-in-qvr-video-surveillance-solution">#iot | 
+<a href="https://www.bleepingcomputer.com/news/security/qnap-fixes-critical-bugs-in-qvr-video-surveillance-solution/" target="_blank" rel="noopener">2 cticial vulnerabilities fixed in QNAP video-surveillance NAS solution</a></h2>
+<p><em>by Ionut Ilascu for Bleeping Computer</em></p>
+<p>QNAP has just fixed two critical vulnerabilities (CVE-2021-34351 and CVE-2021-34348) in their video surveillance solution, which could be exploited to run arbitrary commands. Needless to say, NAS endpoints have become a very juicy target, exposing consumers to more enterprise-like threats, because of the data and computation resources offered by modern NAS boxes.</p>
+<h2 id="appsec--owasp-turned-20-and-xss-is-now-bundled-into-injection-attacks-in-their-top-10httpsportswiggernetdaily-swigowasp-toasts-20th-anniversary-with-revised-top-10-for-2021">#appsec | 
+<a href="https://portswigger.net/daily-swig/owasp-toasts-20th-anniversary-with-revised-top-10-for-2021" target="_blank" rel="noopener">OWASP turned 20 and XSS is now bundled into &lsquo;injection attacks&rsquo; in their Top 10</a></h2>
+<p><em>by Jessica Haworth for The Daily Swig</em></p>
+<p>Happy 20th birthday OWASP! 🎂 What better way to celebrate than publishing a revised 
+<a href="https://owasp.org/Top10/" target="_blank" rel="noopener">Top 10 list</a>! In the updated list, injection attacks are now the 3rd most popular attack (were number one) and, most importantly, XSS is not a standalone bug class anymore: It&rsquo;s now part of the broader &ldquo;injection&rdquo; class. Broken access control is now the most serious web application risk.</p>
+<p><img src="https://owasp.org/Top10/assets/mapping.png" alt="Top 10 (2021)">
+<em>(Source: 
+<a href="https://owasp.org/Top10/" target="_blank" rel="noopener">https://owasp.org/Top10/</a>)</em></p>
+<h2 id="vuln--google-fixes-critical-rce-vulnerability-in-chrome-cve-2021-37973httpsus-certcisagovncascurrent-activity20210924google-releases-security-updates-chrome">#vuln | 
+<a href="https://us-cert.cisa.gov/ncas/current-activity/2021/09/24/google-releases-security-updates-chrome" target="_blank" rel="noopener">Google fixes critical RCE vulnerability in Chrome (CVE-2021-37973)</a></h2>
+<p><em>by US-CERT and Google</em></p>
+<p>
+<a href="https://chromereleases.googleblog.com/2021/09/stable-channel-update-for-desktop_24.html" target="_blank" rel="noopener">Google has just released</a> quite an important patch to address CVE-2021-37973, which could be exploited to take control of a vulnerable system. Also, an exploit for this vulnerability exists in the wild! So, make sure your on the latest Chrome version: 94.0.4606.61.</p>
+<h2 id="apple--apple-vs-bug-bounty-take-ii---fed-up-researcher-speaks-louderhttpshabrcomrupost580272">#apple | 
+<a href="https://habr.com/ru/post/580272/" target="_blank" rel="noopener">Apple vs. Bug Bounty: Take II - Fed-up researcher speaks louder</a></h2>
+<p><em>by Denis Tokarev</em></p>
+<p>Another week, another drama. Well, it&rsquo;s not just drama: It&rsquo;s serious business! Running a bug bounty program is quite hard, but it seems that Apple could really use some help. After 
+<a href="https://habr.com/ru/post/579714/" target="_blank" rel="noopener">dropping 3 0-days last week</a>, fed-up researcher Denis Tokarev, which findings have not received the deserved attention, is back with a louder voice. This time he&rsquo;s explaning (also through the neat narration of 
+<a href="https://www.vice.com/en/article/g5gan4/apple-still-investigating-unpatched-and-public-iphone-vulnerabilities" target="_blank" rel="noopener">Motherboard&rsquo;s Lorenzo Franceschi-Bicchierai</a>) how Apple should do better, and 
+<a href="https://archive.is/lct3y" target="_blank" rel="noopener">how App Store&rsquo;s static analysis checks</a>, which are supposed to prevent malware from crippling in, can be bypassed.</p>
+<h2 id="cloud--public-exploit-available-for-vmware-vcenter-cve-2021-22005httpswwwbleepingcomputercomnewssecurityworking-exploit-released-for-vmware-vcenter-cve-2021-22005-bug">#cloud | 
+<a href="https://www.bleepingcomputer.com/news/security/working-exploit-released-for-vmware-vcenter-cve-2021-22005-bug/" target="_blank" rel="noopener">Public exploit available for VMware vCenter CVE-2021-22005</a></h2>
+<p><em>by Ionut Ilascu for Bleeping Computer</em></p>
+<p>Within a week we went from 
+<a href="https://www.bleepingcomputer.com/news/security/hackers-are-scanning-for-vmware-cve-2021-22005-targets-patch-now/" target="_blank" rel="noopener">knowing about actors scanning for VMware targets vulnerable to CVE-2021-22005</a> to having a 
+<a href="https://archive.is/wxTfN" target="_blank" rel="noopener">publicly available exploit PoC</a>. On the good side, if your signatures aren&rsquo;t yet up to date, the availability of a public PoC will certainly help refining them.</p>
+<h2 id="mobile--airtag-lost-mode-api-allowed-javascript-injection-enabling-client-side-redirection-attackhttpsmediumcombobbyrseczero-day-hijacking-icloud-credentials-with-apple-airtags-stored-xss-6997da43a216">#mobile | 
+<a href="https://medium.com/@bobbyrsec/zero-day-hijacking-icloud-credentials-with-apple-airtags-stored-xss-6997da43a216" target="_blank" rel="noopener">AirTag Lost Mode API allowed JavaScript injection enabling client-side redirection attack</a></h2>
+<p><em>by Bobby Rauch</em></p>
+<p>This is quite a neat attack PoC, despite leverging &ldquo;just&rdquo; an injection bug. I like it because it involves a physical device that, essentially, &ldquo;carries&rdquo; the injection exploit.</p>
+<blockquote>
+<p>“I can’t remember another instance where these sort of small consumer-grade tracking devices at a low cost like this could be weaponized,” Rauch said.</p>
+</blockquote>
+<p>(source: 
+<a href="https://krebsonsecurity.com/2021/09/apple-airtag-bug-enables-good-samaritan-attack/" target="_blank" rel="noopener">Brian Krebs</a>)</p>
+<p>The vulnerability per sé is nothing really sophisticated, because it&rsquo;s a parsing bug that does not prevent an attacker to inject client-side JavaScript code instead of the phone number, but the exploitation and the effect is quite theatrical.</p>
+<p>You (attacker) set an AirTag in lost mode, inject a short line of JavaScript that redirects to a (malicious) website that you control, instead of the phone number. The victim scans the tag with the phone and, instead of being &ldquo;redirected&rdquo; to the phone number (which is the expected, by-design behavior), they&rsquo;ll get automatically redirected to the malicious website.</p>
+<p>Want more drama? Here we go:</p>
+<blockquote>
+<p>Rauch [the researcher who found the bug] said he’s reported many software vulnerabilities to other vendors over the years, and that Apple’s lack of communication prompted him to go public with his findings — even though Apple says staying quiet about a bug until it is fixed is how researchers qualify for recognition in security advisories.</p>
+</blockquote>
+<p>(source: 
+<a href="https://krebsonsecurity.com/2021/09/apple-airtag-bug-enables-good-samaritan-attack/" target="_blank" rel="noopener">Brian Krebs</a>)</p>
+<h2 id="mobile--grifthorse-android-trojan-steals-millions-by-subscribing-to-paid-35mo-serviceshttpsblogzimperiumcomgrifthorse-android-trojan-steals-millions-from-over-10-million-victims-globally">#mobile | 
+<a href="https://blog.zimperium.com/grifthorse-android-trojan-steals-millions-from-over-10-million-victims-globally/" target="_blank" rel="noopener">GriftHorse Android trojan steals millions by subscribing to paid $35/mo services</a></h2>
+<p><em>by Zimperium zLabs</em></p>
+<p>If you thought that &ldquo;dialer&rdquo; malware is a thing from the past, GriftHorse is the modern take on 
+<a href="https://www.trendmicro.com/vinfo/us/security/definition/dialers" target="_blank" rel="noopener">good ol&rsquo; dialers</a>.</p>
+<blockquote>
+<p>Dialers are software that change modem configurations to dial high cost toll numbers or request payment for access to specific content.</p>
+</blockquote>
+<p>Instead of dialing premium numbers, GriftHorse surreptitiously subscribes your phone to premium services that can cost up to $35/month. This way, the actors behind GriftHorse have managed to make hundreds of millions of Euros by infecting up to 10 million victims globally, according to the research.</p>
+<h2 id="supplychain--updated-timeline-adds-new-details-to-the-solarwind-incidenthttpssecurelistcomdarkhalo-after-solarwinds-the-tomiris-connection104311">#supplychain | 
+<a href="https://securelist.com/darkhalo-after-solarwinds-the-tomiris-connection/104311/" target="_blank" rel="noopener">Updated timeline adds new details to the SolarWind incident</a></h2>
+<p><em>by Kasperksy</em></p>
+<p>Kaspersky’s GReAT team has unveiled some more details connected to the SolarWinds incident, including a previously-unknown malware family dubbed Tomiris, which shares several similarities with the Sunshuttle second-stage malware (both written in Go, packed with UPX, same configuration syntax, same C2 traffic encryption, etc.), found and analyzed by FireEye and Microsoft when investigating the SolarWinds incident.</p>
+<h2 id="cloud--azure-ad-is-still-vulnerable-to-by-design-flaw-that-allows-single-factor-brute-force-attackshttpswwwsecureworkscomresearchundetected-azure-active-directory-brute-force-attacks">#cloud | 
+<a href="https://www.secureworks.com/research/undetected-azure-active-directory-brute-force-attacks" target="_blank" rel="noopener">Azure AD is still vulnerable to &ldquo;by design&rdquo; flaw that allows single-factor brute-force attacks</a></h2>
+<p><em>by Dell Secure Works</em></p>
+<p>Secureworks® Counter Threat Unit™ (CTU) researchers found a flaw in the protocol used by Azure Active Directory Seamless Single Sign-On feature, that would allow an attacker to stealthily brute-force sign-in attempts, without leaving any traces. After responsible disclosure to Microsoft, the flaw was confirmed, but won&rsquo;t be fixed because considered a &ldquo;by-design&rdquo; behavior.</p>
+<h2 id="bitcoin--us-bitcoin-atms-which-run-on-cots-linux-based-embedded-platforms-has-been-found-to-have-interesting-vulnerabilities-and-no-tamper-proof-designhttpsblogkrakencompost11263kraken-security-labs-identifies-vulnerabilities-in-commonly-used-bitcoin-atm">#bitcoin | 
+<a href="https://blog.kraken.com/post/11263/kraken-security-labs-identifies-vulnerabilities-in-commonly-used-bitcoin-atm/" target="_blank" rel="noopener">US Bitcoin ATMs, which run on COTS Linux-based embedded platforms, has been found to have interesting vulnerabilities and no tamper-proof design</a></h2>
+<p><em>by Kraken Security Labs</em></p>
+<p>Behind an ATM there&rsquo;s a computer, and that&rsquo;s no surprise. Bitcoin ATMs are no exception. The researchers of the Kraken Security Labs have performed a full-blown pen-test of a Bitcoin ATM popular in the US and have found out that:</p>
+<blockquote>
+<p>a large number of ATMs are configured with the same default admin QR code, allowing anyone with this QR code to walk up to an ATM and compromise it.</p>
+</blockquote>
+<p>In addition, they found out that the single-board computer used to power these devices is used &ldquo;as is,&rdquo; without any tamper-proof additions, which are usually necessary in these applications to record any traces of tampering attemps (e.g., the cabinet should have a sensor that logs every attempt of opening, and possibly put the device in some sort of &ldquo;open mode&rdquo;).</p>
+<p>Although we shouldn&rsquo;t forget about the threat model (i.e., it&rsquo;s suspicious to see anyone tampering with an ATM), it seems that these devices are not hardened enough to make it difficult for an attacker to open the cabinet and plug-in a USB key.</p>
+<h2 id="crypto--bug-in-apple-pay-with-visa-allows-above-the-limit-transactions-via-man-in-the-middle-even-when-the-iphone-is-locked-at-resthttpswwwbleepingcomputercomnewssecurityapple-pay-with-visa-lets-hackers-force-payments-on-locked-iphones">#crypto | 
+<a href="https://www.bleepingcomputer.com/news/security/apple-pay-with-visa-lets-hackers-force-payments-on-locked-iphones/" target="_blank" rel="noopener">Bug in Apple Pay with VISA allows above-the limit transactions via man-in-the-middle even when the iPhone is locked at rest</a></h2>
+<p><em>by Ionut Ilascu for Bleeping Computer</em></p>
+<p>Apple Pay, when used with VISA and Express Mode, exhibits a bug that can be leveraged to raise the transaction limit, from a locked iPhone (e.g., in your pocket).</p>
+<p>The 
+<a href="https://practical_emv.gitlab.io/assets/practical_emv_rp.pdf" target="_blank" rel="noopener">original paper</a> has been presented at the 6th 
+<a href="https://www.ieee-security.org/TC/EuroSP2021/accepted.html" target="_blank" rel="noopener">IEEE European Symposium on Security and Privacy (EuroS&amp;P)</a>.</p>
+<h2 id="web--lets-encrypts-root-ca-certificate-is-expiring-and-were-getting-a-new-one-good-til-2024httpsscotthelmecouklets-encrypt-old-root-expiration">#web | 
+<a href="https://scotthelme.co.uk/lets-encrypt-old-root-expiration/" target="_blank" rel="noopener">Let&rsquo;s Encrypt&rsquo;s Root CA Certificate is expiring, and we&rsquo;re getting a new one good &rsquo;til 2024</a></h2>
+<p><em>by Scott Helme</em></p>
+<blockquote>
+<p>One thing that I do know, though, is that at least something, somewhere is going to break.</p>
+</blockquote>
+<p>And it did happen:</p>
+<blockquote>
+<p>Helme 
+<a href="https://www.zdnet.com/article/fortinet-shopify-others-report-issues-after-root-ca-certificate-from-lets-encrypt-expires/" target="_blank" rel="noopener">told ZDNet</a> that he confirmed issues with Palo Alto, Bluecoat, Cisco Umbrella, Catchpoint, Guardian Firewall, Monday.com, PFsense, Google Cloud Monitoring, Azure Application Gateway, OVH, Auth0, Shopify, Xero, QuickBooks, Fortinet, Heroku, Rocket League, InstaPage, Ledger, Netlify and Cloudflare Pages</p>
+</blockquote>
+<p>While 
+<a href="https://www.theregister.com/2021/09/30/lets_encrypt_xero_slack_outages/" target="_blank" rel="noopener">The Register has reported about Xero and Slack</a> outages, but 
+<a href="https://theitcrowd.fandom.com/wiki/The_Internet" target="_blank" rel="noopener">the &ldquo;Internet&rdquo; is still working</a>.</p>
+<h2 id="macmalware--mac-users-targeted-again-by-trojanized-iterm2-apphttpswwwtrendmicrocomen_usresearch21imac-users-targeted-by-trojanized-iterm2-apphtml">#macmalware | 
+<a href="https://www.trendmicro.com/en_us/research/21/i/mac-users-targeted-by-trojanized-iterm2-app.html" target="_blank" rel="noopener">Mac users targeted (again) by trojanized iTerm2 app</a></h2>
+<p><em>by Trend Micro</em></p>
+<p>There&rsquo;s a Python-based malware targeting Mac users, packaged into fake, trojanized iTerm2 app being advertised in Q&amp;A forums. The malware collects private data. This research is a 
+<a href="https://objective-see.com/blog/blog_0x66.html" target="_blank" rel="noopener">follow-up to Objective-See&rsquo;s previous analysis on the same family</a>.</p>
+<h2 id="ransomware--when-ransomware-hits-a-hospital-with-no-backup-plans-whos-responsible-of-the-consequenceshttpsthreatpostcombabys-death-linked-ransomware175232">#ransomware | 
+<a href="https://threatpost.com/babys-death-linked-ransomware/175232/" target="_blank" rel="noopener">When ransomware hits a hospital with no backup plans, who&rsquo;s responsible of the consequences?</a></h2>
+<p><em>by Threatpost (and 
+<a href="https://www.wsj.com/articles/ransomware-hackers-hospital-first-alleged-death-11633008116" target="_blank" rel="noopener">WSJ</a>)</em></p>
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Mixed feelings about this one.<br><br>This is *alleged* malware-related death #2 in my list, after the ambulance which was rerouted to another hospital because of a ransomware-induced downtime.<br><br>The problem lies in too much reliance on IT in critical situations and no backup plans. <a href="https://t.co/6vktKTrX7n">https://t.co/6vktKTrX7n</a></p>&mdash; Federico Maggi (@phretor) <a href="https://twitter.com/phretor/status/1443655762350383105?ref_src=twsrc%5Etfw">September 30, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>I <em>think</em> there is a case of an ambulance (which would make this #3), but I could not find it. However, I found 
+<a href="https://www.technologyreview.com/2020/09/18/1008582/a-patient-has-died-after-ransomware-hackers-hit-a-german-hospital/" target="_blank" rel="noopener">this case occurred back in 2020</a>.</p>
+<blockquote>
+<p>For the first time ever, a patient’s death has been linked directly to a cyberattack. Police have launched a &ldquo;negligent homicide&rdquo; investigation after ransomware disrupted emergency care at Düsseldorf University Hospital in Germany.</p>
+</blockquote>
+<p>But it&rsquo;s not really important if it&rsquo;s the third, second, or first case. I see things differently, and I don&rsquo;t think we should fingerpoint to the ransomware:</p>
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">So, no, it&#39;s not the first ransomware-linked death.<br><br>And of course I&#39;m among those who think that ransomware is the root cause.<br><br>If a life-critical service is relying on tech without a back up plan...the poor security/threat model is the cause. <a href="https://t.co/o5X34X5LK8">https://t.co/o5X34X5LK8</a></p>&mdash; Federico Maggi (@phretor) <a href="https://twitter.com/phretor/status/1443685365903208452?ref_src=twsrc%5Etfw">September 30, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="malware--threat-actors-posing-as-amnesty-international-exploit-the-fear-of-pegasus-to-spread-malwarehttpsblogtalosintelligencecom202109fakeantipegasusamnestyhtml">#malware | 
+<a href="https://blog.talosintelligence.com/2021/09/fakeantipegasusamnesty.html" target="_blank" rel="noopener">Threat actors posing as Amnesty International exploit the fear of Pegasus to spread malware</a></h2>
+<p><em>by Cisco Talos</em></p>
+<p>Just a few weeks since 
+<a href="https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/" target="_blank" rel="noopener">Amnesty International has published their detailed forensics analysis of the Pegasus spyware kit</a>, Cisto Talos researchers have found an actor leveraging the fear around Pegasus, <em>posing</em> as Amnesty Internation to fool victims into installing the little-known Sarwent malware. A wolf in sheep&rsquo;s clothing, as the title of the blog post says.</p>
+<h1 id="also-noteworthy">Also Noteworthy</h1>
+<h2 id="fraud--fbi-arrests-business-email-compromise-bec-scammers-which-stole-around-17-millionhttpstherecordmediaus-arrests-33-bec-scammers-linked-to-nigerian-crime-syndicate">#fraud | 
+<a href="https://therecord.media/us-arrests-33-bec-scammers-linked-to-nigerian-crime-syndicate/" target="_blank" rel="noopener">FBI arrests business email compromise (BEC) scammers which stole around $17 million</a></h2>
+<p><em>by Catalin Cimpanu</em></p>
+<blockquote>
+<p>US officials said the group had been active since at least January 2017 and engaged in a wide range of fraudulent schemes, such as business email compromise (BEC), investor scams, and unemployment insurance fraud.</p>
+</blockquote>
+<h2 id="privacy--fastmail-now-selling-masked-email-alias-integration-with-1passwordhttpswwwfastmailcom1password">#privacy | 
+<a href="https://www.fastmail.com/1password/" target="_blank" rel="noopener">Fastmail now selling masked email-alias integration with 1Password</a></h2>
+<p><em>by Fastmail</em></p>
+<p>If you&rsquo;re a Fastmail user, great, you can enable this integration to have privacy-preserving email aliases that can masquerade your true, email address. If you&rsquo;re not, Fastmail will offer you a discount on the first year of subscription.</p>
+<p>I&rsquo;m a 1Password user and I think this functionality makes a lot of sense (*), but it&rsquo;s hard for me (as it is to anyone, I guess) to change email provider.</p>
+<p>(*) In my view, each time you subscribe to a website, email alias and password should be automatically and transparently generated at random by a kernel-backed password manager with secrets managed in a hardware-supported trust zone, without any user interaction. I&rsquo;m still waiting for a standard API that supports all of these operations. Websites should get APIs for registration and password changing operations, while kernels should get a uniform API to set-get secrets using a least-privilege model (i.e., unlock only the secret pertaining to the website in question).</p>
+<h2 id="mobile--ermac-a-new-androind-banking-trojan-derived-from-cerberus-rented-for-3kmohttpswwwthreatfabriccomblogsermac-another-cerberus-rebornhtml">#mobile | 
+<a href="https://www.threatfabric.com/blogs/ermac-another-cerberus-reborn.html" target="_blank" rel="noopener">ERMAC, a new Androind banking trojan derived from Cerberus rented for $3k/mo</a></h2>
+<p><em>by Threat Fabric (and 
+<a href="https://thehackernews.com/2021/09/new-android-malware-steals-financial.html" target="_blank" rel="noopener">THN</a>)</em></p>
+<blockquote>
+<p>ERMAC is almost fully based on the well-known banking trojan Cerberus, and is being operated by BlackRock actor(s).</p>
+</blockquote>
+<p>and it&rsquo;s advertised, as a service, in undergound forums:</p>
+<blockquote>
+<p>“Android botnet ERMAC. I will rent a new android botnet with wide functionality to a narrow circle of people (10 people). 3k$ per month. Details in PM.”</p>
+</blockquote>
+<h2 id="windows--windows-low-level-substrate-wpbt-can-be-leveraged-to-write-rootkitshttpseclypsiumcom20210920everyone-gets-a-rootkit">#windows | 
+<a href="https://eclypsium.com/2021/09/20/everyone-gets-a-rootkit/" target="_blank" rel="noopener">Windows low-level substrate (WPBT) can be leveraged to write rootkits</a></h2>
+<p><em>by Eclypsium</em></p>
+<p>Every modern computer has the ACPI (introduced in the early 2000s). Every Windows installation since Windows 8 has WPBT. So what? Well, these two make an explosive cocktail, making it the perfect place for a rootkit!</p>
+<p>I&rsquo;m going to quote Dino Dai Zovi&rsquo;s here:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yet another example of the fine folks at <a href="https://twitter.com/eclypsium?ref_src=twsrc%5Etfw">@eclypsium</a> dropping The K-nowledge:<a href="https://t.co/uwgjwFE10b">https://t.co/uwgjwFE10b</a></p>&mdash; Dino A. Dai Zovi (@dinodaizovi) <a href="https://twitter.com/dinodaizovi/status/1442854586314903559?ref_src=twsrc%5Etfw">September 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<h2 id="surveillance--finspyfinfisher-now-discovered-to-have-a-multi-staged-modular-uefi-module-a-piece-of-arthttpssecurelistcomfinspy-unseen-findings104322">#surveillance | 
+<a href="https://securelist.com/finspy-unseen-findings/104322/" target="_blank" rel="noopener">FinSpy/FinFisher now discovered to have a multi-staged, modular UEFI module: A &ldquo;piece of art&rdquo;</a></h2>
+<p><em>by Kaspersky</em></p>
+<blockquote>
+<p>we found out that the backdoored installers are nothing more than first stage implants that are used to download and deploy further payloads before the actual FinSpy Trojan.</p>
+</blockquote>
+<blockquote>
+<p>Apart from the Trojanized installers, we also observed infections involving usage of a UEFI or MBR bootkit. While the MBR infection has been known since at least 2014, details on the UEFI bootkit are publicly revealed in this article for the first time.</p>
+</blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It is also multi-staged, modular, is capable of parasitic binary infection and contains polymorphic properties. It is a piece of art.</p>&mdash; vx-underground (@vxunderground) <a href="https://twitter.com/vxunderground/status/1442907031682179075?ref_src=twsrc%5Etfw">September 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<h2 id="vulns--timeline-of-high-impact-vulnerabilities-since-2019httpswwwhackmageddoncom20210928the-perfect-storm">#vulns | 
+<a href="https://www.hackmageddon.com/2021/09/28/the-perfect-storm/" target="_blank" rel="noopener">Timeline of high-impact vulnerabilities since 2019</a></h2>
+<p><em>by Paolo Passeri</em></p>
+<p>I wasn&rsquo;t aware of the work patiently put together by Paolo Passeri, but he makes pretty nice timelines! In this one, he&rsquo;s selected the most impactful (according to his technical judgment) vulnerabilities since 2019.</p>
+<h2 id="malware--zeus-nostalgia-zloader-infographics-since-2019httpswwwtrendmicrocomvinfoussecuritynewscybercrime-and-digital-threatszloader-campaigns-at-a-glance">#malware | 
+<a href="https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/zloader-campaigns-at-a-glance" target="_blank" rel="noopener">Zeus nostalgia: Zloader infographics since 2019</a></h2>
+<p><em>by Trend Micro</em></p>
+<p>Remember Zeus? I&rsquo;ve used it in so many training when I was teaching malware analysis at the university. Have a look at this infographics by Trend Micro, about Zloader, one of the active Zeus variants.</p>
+<h2 id="blockchain--tracking-monero-wannacry-20-transactions-thanks-to-an-open-now-fixed-shapeshift-apihttpsmediumcomnbaxtracing-the-wannacry-2-0-monero-transactions-d8c1e5129dc1">#blockchain | 
+<a href="https://medium.com/@nbax/tracing-the-wannacry-2-0-monero-transactions-d8c1e5129dc1" target="_blank" rel="noopener">Tracking Monero WannaCry 2.0 transactions thanks to an open, now fixed, ShapeShift API</a></h2>
+<p><em>by Nick Bax</em></p>
+<p>According to 
+<a href="https://www.coindesk.com/business/2021/09/21/leaked-slides-show-how-chainalysis-flags-crypto-suspects-for-cops/" target="_blank" rel="noopener">leaked slides</a>:</p>
+<blockquote>
+<p>Monero transactions related to the WannaCry 2.0 ransomware were traced as they were converted back to the transparent BTC and BCH blockchains. Here, I demonstrate how the WannaCry 2.0 funds were traceable using publicly-available information.</p>
+</blockquote>
+<h2 id="mobile--android-banking-trojan-steals-instant-payment-pix-currencyhttpsresearchcheckpointcom2021pixstealer-a-new-wave-of-android-banking-trojans-abusing-accessibility-services">#mobile | 
+<a href="https://research.checkpoint.com/2021/pixstealer-a-new-wave-of-android-banking-trojans-abusing-accessibility-services/" target="_blank" rel="noopener">Android banking trojan steals instant-payment Pix currency</a></h2>
+<p><em>by Check Point</em></p>
+<blockquote>
+<p>These malicious apps, once distributed on Google Store, seem to be an evolution of an unclassified family of Brazilian bankers [&hellip;]</p>
+</blockquote>
+<p>It&rsquo;s the week of Android currency stealers, isn&rsquo;t it?</p>
+<h2 id="acquisition--akamai-acquires-guardicorehttpswwwguardicorecompress-releasesakamai-to-acquire-guardicore-to-extend-zero-trust">#acquisition | 
+<a href="https://www.guardicore.com/press-releases/akamai-to-acquire-guardicore-to-extend-zero-trust" target="_blank" rel="noopener">Akamai acquires Guardicore</a></h2>
+<p><em>by Guardicore</em></p>
+<h2 id="ecrime--criminals-are-interested-in-stealing-otp-tokens-via-telegram-botshttpsintel471comblogotp-password-bots-telegram">#ecrime | 
+<a href="https://intel471.com/blog/otp-password-bots-telegram" target="_blank" rel="noopener">Criminals are interested in stealing OTP tokens via Telegram bots</a></h2>
+<p><em>by Intel471</em></p>
+<blockquote>
+<p>Intel 471 has seen an uptick in services on the cybercrime underground that allow attackers to intercept one-time password (OTP) tokens.</p>
+</blockquote>
+<blockquote>
+<p>[they] either operate via a Telegram bot or provide support for customers via a Telegram channel. In these support channels, users often share their success while using the bot, often walking away with thousands of dollars from victim accounts.</p>
+</blockquote>
+<h2 id="nft--scammers-on-discord-posing-as-opensea-support-operators-scammed-collectors-and-stole-hundreds-of-thousands-of-dollars-worth-of-nfthttpswwwthevergecom22683766nft-scams-theft-social-engineering-opensea-community-recovery">#nft | 
+<a href="https://www.theverge.com/22683766/nft-scams-theft-social-engineering-opensea-community-recovery" target="_blank" rel="noopener">Scammers on Discord posing as OpenSea Support Operators scammed collectors and stole hundreds of thousands of dollars worth of NFT</a></h2>
+<p><em>by Andrew Wang for The Verge</em></p>
+<p>I&rsquo;m a little late on this one, but I wanted to keep track of it. I want to keep an eye on this topic, because I think we&rsquo;re going to see <em>a lot</em> of these scams.</p>
+<h2 id="crypto--stealing-crypto-keys-from-phones-via-em-side-channelshttpsresearchgatecheduresearchers-discover-vulnerability-widely-used-method-securing-phone-data">#crypto | 
+<a href="https://research.gatech.edu/researchers-discover-vulnerability-widely-used-method-securing-phone-data" target="_blank" rel="noopener">Stealing crypto keys from phones via EM side channels</a></h2>
+<p><em>by Georgia Tech</em></p>
+<p>Catching EM emissions produced by a computer to infer the data manipulated by a CPU during crypto operations isn&rsquo;t a new technique: It&rsquo;s called TEMPEST attack. But seeing this practically applied to a real, mainstream phone in non-lab conditions is a step forward! How many times have you checked below the surface before placing your phone on it?</p>
+<h1 id="tools">Tools</h1>
+<h2 id="facebook-open-sources-static-analysis-tool-to-find-bugs-in-android-and-java-appshttpsmariana-trench">
+<a href="https://mariana-tren.ch/" target="_blank" rel="noopener">Facebook open-sources static analysis tool to find bugs in Android and Java apps</a></h2>
+<p><em>by Facebook</em></p>
+<p>Can&rsquo;t wait to test it on a recent app. Maybe a COVID19 vaccine-pass checkers? 😇</p>
+<h1 id="conferences">Conferences</h1>
+<h2 id="security-analyst-summit-sas-2021httpsthesas2021online">
+<a href="https://thesas2021.online/" target="_blank" rel="noopener">Security Analyst Summit (SAS) 2021</a></h2>
+<p><em>by Kasperksy</em></p>
+<p>This year&rsquo;s SAS has really set the new bar of virtual conferences:</p>
+<p><img src="https://media.threatpost.com/wp-content/uploads/sites/103/2021/09/28125042/SAS-2-1024x527.png" alt="Screenshot from SAS 2021"></p>
+<p>(source: 
+<a href="https://threatpost.com/finspy-surveillance-kit/175068/" target="_blank" rel="noopener">Threatpost</a>)</p>
+<p>I literally fell in love with how the organizers have prepped the speakers and turned them into actors, basically. Including remote speakers! I guess each speaker went through some short training, they got shipped clothes, etc., and the idea of connecting them in the studio by 
+<a href="https://twitter.com/TheSAScon/media" target="_blank" rel="noopener">bringing in a Trinitron TV set just blew my mind when I saw it</a>. Not to mention the backstage with the telephone-switch-like atmosphere, typewriters, people playing chess. Amazing, absolutely amazing. 👏  Of course, this takes a hell of logistics and organization work behind the scenes.</p>
+<p>Conference organizers: please take inspiration!</p>
+<p>Eye-candy-look aside, allow me a short reflection about conferences in the post-COVID era. I think we all got the point: talks alone are a bit pointless. Pre-recorded talks especially are very easy to recycle, that they loose completely the &ldquo;exclusivity&rdquo; that justifies a 15-hours flight to attend them. To be completely honest, I don&rsquo;t kwnow about other sectors, but cybersecurity folks travel to conferences primarily for the so-called &ldquo;corridor con,&rdquo; which IMHO is the best of all the tracks as it lets you connect with colleagues and peers around the world.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A lot of the responses to this tweet have been about the social/networking aspect of conferences. Okay, if that’s the value of conferences, let’s start having conferences without talks. <a href="https://t.co/4OR5cyOsL6">https://t.co/4OR5cyOsL6</a></p>&mdash; Charlie Miller (@0xcharlie) <a href="https://twitter.com/0xcharlie/status/1434653391280562177?ref_src=twsrc%5Etfw">September 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<p>So, how do we make talks attractive again? We should make them fun, entertaining, theatrical. What about pre-recording? Yes, why not, we can still do pre-recording, but we shold move away from the &ldquo;cheap-looking&rdquo; pre-recorded talks if we want people to watch them. I foresee bigger conferences getting more and more specialized in producing high-quality, exclusive videos. Like Netflix? Not yet, but that&rsquo;s the spirit. You want people to attend a (virtual) conference because of exclusive, eye-candy and well-produced content, in the same way you want people to attend a physical conference to get together with peers and be entertained.</p>
+<h2 id="black-hat-europe-2021-full-briefings-lineup-announcedhttpswwwblackhatcomeu-21briefingsscheduleindexhtml">
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/index.html" target="_blank" rel="noopener">Black Hat Europe 2021 full briefings lineup announced</a></h2>
+<p>Shameless plug: I&rsquo;ll be speaking about the security of a not-so-popular but extremely ubiquitous critical protocol called DDS. Check it out, and please stop by if you&rsquo;ll attend the conference!</p>
+<h2 id="romhack-2021-recordings-publishedhttpswwwyoutubecomwatchvjpkerdmkb9g">
+<a href="https://www.youtube.com/watch?v=JPKerDMkb9g" target="_blank" rel="noopener">RomHack 2021 Recordings Published</a></h2>
+<p>Slides and full recordings of the Italian RomHack 2021 are available!</p>
+<h2 id="ieee-euro-sp-2021httpswwwieee-securityorgtceurosp2021programhtml">
+<a href="https://www.ieee-security.org/TC/EuroSP2021/program.html" target="_blank" rel="noopener">IEEE Euro S&amp;P 2021</a></h2>
+<p>I&rsquo;m a little late on this one, but the list could not be complete without EuroS&amp;P!</p>
+
+
+      <p>CyberFacts Weekly is a digest of my hand-picked readings from the cyber-security world.</p>
+      <p>CyberFacts Weekly is intended mostly for myself, to have a place to archive and keep public notes of what I read and deem as noteworthy.</p>
+      <p>If you like it, consider
+      <a href="https://buttondown.email/cyberfacts" target="_blank" rel="noopener">subscribing</a> or forwarding this email to peers and friends. If newsletters aren&rsquo;t really your thing, maybe you&rsquo;d prefer to follow the
+      <a href="https://twitter.com/CyberFactsIT" target="_blank" rel="noopener">@CyberFactsIT</a> Twitter account, which I use to publish the real-time feed of my selected readings (also available
+      <a href="http://www.inoreader.com/stream/user/1004856625/tag/Cybersecurity%20Noteworthy" target="_blank" rel="noopener">via RSS</a>).</p>
+      <p>Hope you enjoyed this issue&hellip;and see you reading the next one! 🙃</p>
+      <p>Thanks! Cheers,
+      Fede</p>
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/cyberfacts/issue-1/&amp;text=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x01]%20A%20Packed%20Week" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/cyberfacts/issue-1/&amp;t=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x01]%20A%20Packed%20Week" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x01]%20A%20Packed%20Week&amp;body=/cyberfacts/issue-1/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/cyberfacts/issue-1/&amp;title=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x01]%20A%20Packed%20Week" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x01]%20A%20Packed%20Week%20/cyberfacts/issue-1/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/cyberfacts/issue-1/&amp;title=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x01]%20A%20Packed%20Week" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+  </p>
+  
+
+  <p class="powered-by">
+    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    Unless otherwise stated, the original content in this website is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nd_icon.svg" alt="CC ND icon">
+        
+      
+    </a>
+  </p>
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

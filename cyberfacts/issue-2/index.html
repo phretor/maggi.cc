@@ -1,0 +1,1356 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+        
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Federico Maggi">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Twitch leak (128GB) / Telegraph DB exposed (10TB) / Full iOS 15 decompiled source code / FB/IG/WA disappeared from the Internet / New ESP-persistent UEFI bootkit found / LeakIX 2.0 vs. exposed services / Pandora Papers is the new Panama Papers / SMS-routing service compromised for years / Phrack #70 is out / Apache CVE-2021-41773 patched / SOS.dev pilot to secure OSS / Ransomware gang arrested in Ukraine">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/cyberfacts/issue-2/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#cc6627">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/cyberfacts/issue-2/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@phretor">
+  <meta property="twitter:creator" content="@phretor">
+  
+  <meta property="og:site_name" content="Federico Maggi">
+  <meta property="og:url" content="/cyberfacts/issue-2/">
+  <meta property="og:title" content="🔓 [CyberFacts Weekly - Issue 0x02] The Week of Massive Leaks | Federico Maggi">
+  <meta property="og:description" content="Twitch leak (128GB) / Telegraph DB exposed (10TB) / Full iOS 15 decompiled source code / FB/IG/WA disappeared from the Internet / New ESP-persistent UEFI bootkit found / LeakIX 2.0 vs. exposed services / Pandora Papers is the new Panama Papers / SMS-routing service compromised for years / Phrack #70 is out / Apache CVE-2021-41773 patched / SOS.dev pilot to secure OSS / Ransomware gang arrested in Ukraine"><meta property="og:image" content="/cyberfacts/issue-2/featured.jpg">
+  <meta property="twitter:image" content="/cyberfacts/issue-2/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-10-08T16:26:24&#43;02:00">
+    
+    <meta property="article:modified_time" content="2021-10-08T16:26:24&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#cc6627",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#cc6627"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "/privacy/"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>🔓 [CyberFacts Weekly - Issue 0x02] The Week of Massive Leaks | Federico Maggi</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/cyberfacts"><span>CyberFacts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/post"><span>Diary</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/talk"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/advisories"><span>Advisories</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacts</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>🔓 [CyberFacts Weekly - Issue 0x02] The Week of Massive Leaks</h1>
+
+  
+  <p class="page-subtitle">Twitch leak (128GB) / Telegraph DB exposed (10TB) / Full iOS 15 decompiled source code / FB/IG/WA disappeared from the Internet / New ESP-persistent UEFI bootkit found / LeakIX 2.0 vs. exposed services / Pandora Papers is the new Panama Papers / SMS-routing service compromised for years / Phrack #70 is out / Apache CVE-2021-41773 patched / SOS.dev pilot to secure OSS / Ransomware gang arrested in Ukraine</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 8, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 540px;">
+  <div style="position: relative">
+    <img src="/cyberfacts/issue-2/featured_huc5c03ca917304b1bbdf4d38bb067cb6a_80158_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>I think 
+<a href="https://archillect.com/351165" target="_blank" rel="noopener">this week&rsquo;s featured image by the @archillect AI</a> is very appropriate, given the 3 massive leaks that happened (plus FB/IG/WA downtime, although not due to a security compromise):</p>
+<ul>
+<li>Twitch (128GB)</li>
+<li>The Telegraph (10TB)</li>
+<li>Pandora Papers (11.9M documents)</li>
+</ul>
+<p>Plus some leaky Apache Airflow servers exposing credentials of popular services, and iOS 15 decompiled source code dumped online.</p>
+<p>On the bright side, The Linux Foundation and Google (which sponsored $1B worth of rewards) has launched a pilot program to reward developers who help open source projects score better (e.g., by contributing fixes, fuzzing harnesses); Apache has released a fix for CVE-2021-42773 (currently exploited in the wild); and LeakIX has announced a game-changing (although a bit controversial) transparent breach-disclosure framework to track unwanted exposed services leaking data, and &ldquo;pressure&rdquo; service operators to close or secure them.</p>
+<p>With linked content referred or created by: 
+<a href="https://twitter.com/jonathandata1" target="_blank" rel="noopener">@jonathandata1</a>, 
+<a href="https://twitter.com/fb_engineering" target="_blank" rel="noopener">@fb_engineering</a>, 
+<a href="https://twitter.com/ESETresearch" target="_blank" rel="noopener">@ESETresearch</a>, 
+<a href="https://twitter.com/leak_ix" target="_blank" rel="noopener">@leak_ix</a>, 
+<a href="https://twitter.com/ICIJorg" target="_blank" rel="noopener">@ICIJorg</a>, 
+<a href="https://twitter.com/billtoulas" target="_blank" rel="noopener">@billtoulas</a>, 
+<a href="https://twitter.com/BleepinComputer" target="_blank" rel="noopener">@BleepinComputer</a>, 
+<a href="https://twitter.com/IoTInspector" target="_blank" rel="noopener">@IoTInspector</a>, 
+<a href="https://twitter.com/The_ASF" target="_blank" rel="noopener">@TheASF</a>, 
+<a href="https://twitter.com/@campuscodi" target="_blank" rel="noopener">@campuscodi</a>, 
+<a href="https://twitter.com/Google" target="_blank" rel="noopener">@Google</a>, 
+<a href="https://twitter.com/linuxfoundation" target="_blank" rel="noopener">@linuxfoundation</a>, 
+<a href="https://twitter.com/INTERPOL_Cyber" target="_blank" rel="noopener">@INTERPOL_Cyber</a>, 
+<a href="https://twitter.com/proofpoint" target="_blank" rel="noopener">@proofpoint</a>, 
+<a href="https://twitter.com/NLOKLabs" target="_blank" rel="noopener">@NLOKLabs</a>, 
+<a href="https://twitter.com/_revng" target="_blank" rel="noopener">@_revng</a>, 
+<a href="https://twitter.com/Claroty" target="_blank" rel="noopener">@Claroty</a>, 
+<a href="https://twitter.com/IntezerLabs" target="_blank" rel="noopener">@IntezerLabs</a>, 
+<a href="https://twitter.com/campuscodi" target="_blank" rel="noopener">@campuscodi</a>, 
+<a href="https://twitter.com/trompi" target="_blank" rel="noopener">@trompi</a>, 
+<a href="https://twitter.com/ProjectZeroBugs" target="_blank" rel="noopener">@ProjectZeroBugs</a>, 
+<a href="https://twitter.com/Certego_IRT" target="_blank" rel="noopener">@Certego_IRT</a>, 
+<a href="https://twitter.com/nohatcon" target="_blank" rel="noopener">@nohatcon</a>, and 
+<a href="https://twitter.com/reyammer" target="_blank" rel="noopener">@reyammer</a>.</p>
+<hr>
+<ul>
+<li>
+<a href="#this-weeks-top-picks">This Week&rsquo;s Top Picks</a>
+<ul>
+<li>
+<a href="#leaks--twitch-data-and-code-base-leaked-alleged-%22part-one%22-is-128gbhttpssizeofcatposttwitch-leaks">#leaks | Twitch Data and Code Base Leaked (alleged &ldquo;part one&rdquo; is 128GB)</a></li>
+<li>
+<a href="#leaks--ios-15-decompiled-source-code-published-by-researcherhttpswww0hakcomdecompiled-firmwareios-15">#leaks | iOS 15 Decompiled Source Code Published by Researcher</a></li>
+<li>
+<a href="#facebook--fbigwa-temporarily-disappeared-because-of-a-failure-in-a-routine-maintenance-job-on-the-backbone-network-which-stopped-bgp-advertisments-propagationhttpsengineeringfbcom20211005networking-trafficoutage-details">#facebook | FB/IG/WA Temporarily Disappeared Because of a Failure in a Routine Maintenance Job on the Backbone Network, which Stopped BGP Advertisments Propagation</a></li>
+<li>
+<a href="#malware--new-uefi-bootkit-that-persists-in-the-efi-system-partition-esp-discovered-in-the-wildhttpswwwwelivesecuritycom20211005uefi-threats-moving-esp-introducing-especter-bootkit">#malware | New UEFI Bootkit that Persists in the EFI System Partition (ESP) Discovered in the Wild</a></li>
+<li>
+<a href="#leak--the-telegraph-notified-by-leakix-about-a-leaking-10tb-databasehttpswwwbleepingcomputercomnewssecuritythe-telegraph-exposes-10-tb-database-with-subscriber-info">#leak | The Telegraph Notified by LeakIX About a Leaking 10TB Database</a></li>
+<li>
+<a href="#leak--leakixs-transparent-game-changing-approach-to-breach-disclosure-and-preventionhttpsblogleakixnet202110releasing-leakix-v2">#leak | LeakIX&rsquo;s Transparent, Game-changing Approach to Breach Disclosure (and Prevention)</a></li>
+<li>
+<a href="#leak--pandora-papers-119-million-no-longer-secret-records-from-14-offshore-firmshttpswwwicijorginvestigationspandora-papersabout-pandora-papers-leak-dataset">#leak | Pandora Papers: 11.9 Million (No Longer Secret) Records From 14 Offshore Firms</a></li>
+<li>
+<a href="#telco--sms-routing-company-syniverse-has-been-compromised-for-yearshttpswwwvicecomenarticlez3xpm8company-that-routes-billions-of-text-messages-quietly-says-it-was-hacked">#telco | SMS-routing Company Syniverse has Been Compromised for Years</a></li>
+<li>
+<a href="#hacking--phrack-70-is-outhttpwwwphrackorgissues701html">#hacking | Phrack #70 is Out!</a></li>
+<li>
+<a href="#vuln--10-years-old-upnp-vulnerabilities-in-broadcoms-sdk-still-affecting-cisco-dd-wrt-and-linksys-routershttpswwwiot-inspectorcomblogbroadcom-sdk-vulnerabilities-bug-reports">#vuln | 10-years Old UPnP Vulnerabilities in Broadcom&rsquo;s SDK Still Affecting Cisco, DD-WRT, and Linksys Routers</a></li>
+<li>
+<a href="#vuln--apache-partially-patches-path-traversal-vulnerability-actively-exploited-in-the-wild-cve-2021-41773httpshttpdapacheorgsecurityvulnerabilities24html">#vuln | Apache Partially Patches Path Traversal Vulnerability Actively Exploited in the Wild (CVE-2021-41773)</a></li>
+<li>
+<a href="#opensource--the-linux-foundation--google-launch-pilot-program-to-secure-open-source-software-1m-sponsorshiphttpssosdev">#opensource | The Linux Foundation + Google Launch Pilot Program to Secure Open Source Software ($1M Sponsorship)</a></li>
+<li>
+<a href="#arrest--prolific-ransomware-gang-active-since-2020-arrested-in-ukrainehttpswwwinterpolintnews-and-eventsnews2021ransomware-gang-arrested-in-ukraine">#arrest | Prolific Ransomware Gang Active since 2020 Arrested in Ukraine</a></li>
+</ul>
+</li>
+<li>
+<a href="#also-noteworthy">Also Noteworthy</a>
+<ul>
+<li>
+<a href="#healthcare--ics-medical-advisory-for-medtronic-minimed-mmt-500503-insuline-pump-remote-controller-rf-replay-attack-vulnerability-icsma-18-219-02httpsus-certcisagovicsadvisoriesicsma-18-219-02">#healthcare | ICS Medical Advisory for Medtronic MiniMed MMT-500/503 Insuline Pump Remote Controller RF Replay-attack Vulnerability (ICSMA-18-219-02)</a></li>
+<li>
+<a href="#mobile--tanglebot-covid-themed-malware-campaign-spreads-via-sms-targeting-uscanadian-android-usershttpswwwproofpointcomusblogthreat-insightmobile-malware-tanglebot-untangled">#mobile | TangleBot COVID-themed Malware Campaign Spreads via SMS Targeting US/Canadian Android Users</a></li>
+<li>
+<a href="#mobile--fake-covid-19-android-apps-infected-with-spyware-rats-and-other-malwarehttpswwwnortonlifelockcomsitesdefaultfiles2021-10whitepapercovidmalwarepdf">#mobile | Fake COVID-19 Android Apps Infected with Spyware, RATs, and Other Malware</a></li>
+<li>
+<a href="#re--%22no-contract-can-prevent-you-from-decompiling-software-you-bought-if-your-goal-is-fixing-a-bug%22httpscuriaeuropaeujurisdocumentdocumentjsftextdocid247056pageindex0doclangenmodereqdiroccfirstpart1cid6413406">#RE | &ldquo;no contract can prevent you from decompiling software you bought, if your goal is fixing a bug&rdquo;</a></li>
+<li>
+<a href="#ics--honeywell-fixes-3-vulnerabilities-in-their-pks-cve-2021-38397-cve-2021-38395-cve-2021-38399httpswwwclarotycom20211005blog-research-target-dcs-finding-fixing-critical-bugs-in-honeywell-experion-pks">#ics | Honeywell Fixes 3 Vulnerabilities in their PKS (CVE-2021-38397, CVE-2021-38395, CVE-2021-38399)</a></li>
+<li>
+<a href="#leaks--leaky-apache-airflow-instances-expose-credentials-from-popular-serviceshttpswwwintezercomblogcloud-securitymisconfigured-airflows-leak-credentials">#leaks | Leaky Apache Airflow Instances Expose Credentials from Popular Services</a></li>
+<li>
+<a href="#darkweb--dark-web-marketplace-white-house-market-shuts-downhttpstherecordmediadark-web-marketplace-white-house-market-shuts-down">#darkweb | Dark Web Marketplace &lsquo;White House Market&rsquo; Shuts Down</a></li>
+<li>
+<a href="#ransomware--virustotal-publishes-first-ransomware-activity-reporthttpsblogvirustotalcom202110ransomware-in-global-contexthtml">#ransomware | VirusTotal Publishes First Ransomware Activity Report</a></li>
+<li>
+<a href="#airgap--ethertnet-cables-make-good-antennae-to-exfiltrate-data-from-air-gapped-networkshttpsarxivorgabs211000104">#airgap | Ethertnet Cables Make Good Antennae to Exfiltrate Data from Air-Gapped Networks</a></li>
+</ul>
+</li>
+<li>
+<a href="#tools">Tools</a>
+<ul>
+<li>
+<a href="#google-project-zero-releases-robust-cc-semantic-search-tool-to-grep-your-code-for-anti-or-any-patternshttpsgithubcomgoogleprojectzeroweggli">Google Project Zero Releases Robust C/C++ Semantic Search Tool to Grep Your Code for (Anti or Any) Patterns</a></li>
+<li>
+<a href="#dragonfly-a-multi-engine-emulation-based-sandbox-available-in-closed-alphahttpscertego-dragonfly-docsreadthedocs-hostedcomenlatest">Dragonfly: A Multi-engine Emulation-based Sandbox Available in Closed Alpha</a></li>
+</ul>
+</li>
+<li>
+<a href="#conferences">Conferences</a>
+<ul>
+<li>
+<a href="#nohat-2021-tickets-almost-sold-outhttpsnohatit">NoHat 2021 Tickets Almost Sold Out!</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="this-weeks-top-picks">This Week&rsquo;s Top Picks</h1>
+<h2 id="leaks--twitch-data-and-code-base-leaked-alleged-part-one-is-128gbhttpssizeofcatposttwitch-leaks">#leaks | 
+<a href="https://sizeof.cat/post/twitch-leaks/" target="_blank" rel="noopener">Twitch Data and Code Base Leaked (alleged &ldquo;part one&rdquo; is 128GB)</a></h2>
+<p><em>by 
+<a href="https://github.com/sizeofcat" target="_blank" rel="noopener">sizeof(cat)</a></em></p>
+<p>A vast portion of Twitch&rsquo;s code base, if not all of it (although the original file name says <code>part one</code>), has been leaked and is being shared on the Torrent network, with new analyses popping up every day, from the 
+<a href="https://web.archive.org/web/20211007001100/https://www.twitchearnings.com/" target="_blank" rel="noopener">creators&rsquo; payouts</a> (original site now taken offline), to a 
+<a href="https://lowlife.tech/twitch/" target="_blank" rel="noopener">selection of their infosec tools</a> (here: 
+<a href="https://archive.is/E0QvI" target="_blank" rel="noopener">archived copy</a>).</p>
+<p>
+<a href="https://blog.twitch.tv/en/2021/10/06/updates-on-the-twitch-security-incident/" target="_blank" rel="noopener">Twitch&rsquo;s official acknowledgement</a> reads as follows:</p>
+<blockquote>
+<p>some data was exposed to the internet due to an error in a Twitch server configuration change that was subsequently accessed by a malicious third party.</p>
+</blockquote>
+<p>Which is a bit too cold and not really informative. I can only vaguely imagine the creators&rsquo; frustration, as they&rsquo;re 
+<a href="https://www.vice.com/en/article/jg8w9b/the-twitch-hack-is-worse-for-streamers-than-for-twitch" target="_blank" rel="noopener">arguably more impacted by this leak than Twitch itself</a>.</p>
+<h2 id="leaks--ios-15-decompiled-source-code-published-by-researcherhttpswww0hakcomdecompiled-firmwareios-15">#leaks | 
+<a href="https://www.0hak.com/decompiled-firmware/ios-15" target="_blank" rel="noopener">iOS 15 Decompiled Source Code Published by Researcher</a></h2>
+<p><em>by Jonathan Scott - 
+<a href="https://twitter.com/jonathandata1" target="_blank" rel="noopener">@jonathandata1</a></em></p>
+<p>As easy as you read from the title: a mobile hacker has just dropped the full decomplied (non working, but perfectly readable and useful) source code of iOS 15 (and 15.01) on his website. And announced it on Twitter.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This iOS 15 source code I&#39;m uploading is EPIC, <br><br>1. No one has decompiled iOS 15 yet, i did, you can actually read the source code 100% IN TACT, <br><br>2. Full internal DMG DECOMPILED here is a sample of the BT auto connect Database that inside <br><br>Keep Holding, upload soon<a href="https://twitter.com/hashtag/infosec?src=hash&amp;ref_src=twsrc%5Etfw">#infosec</a> <a href="https://t.co/WnC7sUzmB5">pic.twitter.com/WnC7sUzmB5</a></p>&mdash; Jonathan Scott (@jonathandata1) <a href="https://twitter.com/jonathandata1/status/1444419040617844746?ref_src=twsrc%5Etfw">October 2, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<h2 id="facebook--fbigwa-temporarily-disappeared-because-of-a-failure-in-a-routine-maintenance-job-on-the-backbone-network-which-stopped-bgp-advertisments-propagationhttpsengineeringfbcom20211005networking-trafficoutage-details">#facebook | 
+<a href="https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/" target="_blank" rel="noopener">FB/IG/WA Temporarily Disappeared Because of a Failure in a Routine Maintenance Job on the Backbone Network, which Stopped BGP Advertisments Propagation</a></h2>
+<p><em>by Facebook Engineering - 
+<a href="https://twitter.com/fb_engineering" target="_blank" rel="noopener">@fb_engineering</a></em></p>
+<blockquote>
+<p>[an erroneous router admin command] caused a complete disconnection of our server connections between our data centers and the internet. And that total loss of connection caused a second issue that made things worse.</p>
+</blockquote>
+<blockquote>
+<p>This wasn&rsquo;t a DNS issue itself, but failing DNS was the first symptom [Cloudflare had] seen of a larger Facebook outage.</p>
+</blockquote>
+<h2 id="malware--new-uefi-bootkit-that-persists-in-the-efi-system-partition-esp-discovered-in-the-wildhttpswwwwelivesecuritycom20211005uefi-threats-moving-esp-introducing-especter-bootkit">#malware | 
+<a href="https://www.welivesecurity.com/2021/10/05/uefi-threats-moving-esp-introducing-especter-bootkit/" target="_blank" rel="noopener">New UEFI Bootkit that Persists in the EFI System Partition (ESP) Discovered in the Wild</a></h2>
+<p><em>by ESET Research - 
+<a href="https://twitter.com/ESETresearch" target="_blank" rel="noopener">@ESETresearch</a></em></p>
+<p>ESET reseaerchers have discovered and analyzed a previously undocumented UEFI bootkit that can persist into the EFI system partition (ESP). When a computer starts up, the UEFI firmware loads and starts files stored on the ESP, so, this is a perfect mechanism for malware persistence (the modern take on MBR malware, in some ways).</p>
+<p>Dubbed ESPecter, the researchers wrote that this is</p>
+<blockquote>
+<p>the second real-world case of a UEFI bootkit persisting on the ESP in the form of a patched Windows Boot Manager to be analyzed.</p>
+</blockquote>
+<h2 id="leak--the-telegraph-notified-by-leakix-about-a-leaking-10tb-databasehttpswwwbleepingcomputercomnewssecuritythe-telegraph-exposes-10-tb-database-with-subscriber-info">#leak | 
+<a href="https://www.bleepingcomputer.com/news/security/the-telegraph-exposes-10-tb-database-with-subscriber-info/" target="_blank" rel="noopener">The Telegraph Notified by LeakIX About a Leaking 10TB Database</a></h2>
+<p><em>by Bill Toulas - 
+<a href="https://twitter.com/billtoulas" target="_blank" rel="noopener">@billtoulas</a> for Bleeping Computer - 
+<a href="https://twitter.com/BleepinComputer" target="_blank" rel="noopener">@BleepinComputer</a></em></p>
+<p>The Telegraph.co.uk has been notified by LeakIX of a 10TB database exposed online. According to the 
+<a href="https://leakix.net/reports/a3e48165-fa60-4e6c-8b16-5a303c7d8d46" target="_blank" rel="noopener">detailed report</a>, it was a production Elastic Search used for logging, likely hosted in Google Cloud Platform (the domain name contains <code>platforms-prod-gcp</code>).</p>
+<h2 id="leak--leakixs-transparent-game-changing-approach-to-breach-disclosure-and-preventionhttpsblogleakixnet202110releasing-leakix-v2">#leak | 
+<a href="https://blog.leakix.net/2021/10/releasing-leakix-v2/" target="_blank" rel="noopener">LeakIX&rsquo;s Transparent, Game-changing Approach to Breach Disclosure (and Prevention)</a></h2>
+<p><em>by 
+<a href="https://twitter.com/leak_ix" target="_blank" rel="noopener">@leak_ix</a></em></p>
+<p>LeakIX is a fast growing service that takes an agile approach to monitoring exposed services that leak data, by randomly scanning the IP space (leaks are random!), piping exposed service ip-port lists through a series of post-processing steps that enriches each finding with detailed metadata, useful to tell leaks from false positives, and categorize, prioritize each discovered service in various way. LeakIX 2.0 launches a program for voluntary researchers, allowing them to gain points by analyzing and reporting leaks, with points that can be redeemed to access members-only content.</p>
+<p>I have a love-hate relationship with LeakIX. While I think it&rsquo;s fundamental to pursue continuous service monitoring (to the point that I&rsquo;ve humbly contributed a 
+<a href="https://github.com/LeakIX/l9plugins/pull/3" target="_blank" rel="noopener">LeakIX plugin to find exposed Firebase instances</a>), I was a bit surprised to see their approach to disclosing leaks. They use public reports, with very detailed tracking information, including the full cleartext correspondence between the researcher who found the leak and the service operator(s) (see 
+<a href="https://leakix.net/reports/" target="_blank" rel="noopener">examples here</a>). This is a big step forward and game-changing approach, because it puts real pressure on the operators to minimize exposures and speedup their incident response process to close leaking services. However, the degree of details included in the reports is a bit&hellip;ahem&hellip;too much for a public page, IMHO.</p>
+<h2 id="leak--pandora-papers-119-million-no-longer-secret-records-from-14-offshore-firmshttpswwwicijorginvestigationspandora-papersabout-pandora-papers-leak-dataset">#leak | 
+<a href="https://www.icij.org/investigations/pandora-papers/about-pandora-papers-leak-dataset/" target="_blank" rel="noopener">Pandora Papers: 11.9 Million (No Longer Secret) Records From 14 Offshore Firms</a></h2>
+<p><em>by International Consortium of Investigative Journalists - 
+<a href="https://twitter.com/ICIJorg" target="_blank" rel="noopener">@ICIJorg</a></em></p>
+<p>Remember the 
+<a href="https://www.icij.org/investigations/panama-papers/" target="_blank" rel="noopener">Panama Papers</a>? Great! Pandora Papers is another great investigation conducted by the ICIJ to expose the rogue offshore finance industry, adding 11.9 million records to the existing 11.5 millions collected by the Panama Papers.</p>
+<h2 id="telco--sms-routing-company-syniverse-has-been-compromised-for-yearshttpswwwvicecomenarticlez3xpm8company-that-routes-billions-of-text-messages-quietly-says-it-was-hacked">#telco | 
+<a href="https://www.vice.com/en/article/z3xpm8/company-that-routes-billions-of-text-messages-quietly-says-it-was-hacked" target="_blank" rel="noopener">SMS-routing Company Syniverse has Been Compromised for Years</a></h2>
+<p><em>by Lorenzo Franceschi-Bicchierai - 
+<a href="https://twitter.com/lorenzofb" target="_blank" rel="noopener">@lorenzofb</a> for Motherboard - 
+<a href="https://twitter.com/motherboard" target="_blank" rel="noopener">@motherboard</a></em></p>
+<p>An SMS-routing services used by AT&amp;T, T-Mobile, Verizon, Vodafone, and China Mobile, handling billions of text messages, has disclosed that it has been compromised for years, impacting around 235 of its customers. In addition to SMS routing, the company manages roaming across networks using 
+<a href="https://en.wikipedia.org/wiki/Signalling_System_No._7" target="_blank" rel="noopener">SS7</a> and 
+<a href="https://en.wikipedia.org/wiki/Diameter_%28protocol%29" target="_blank" rel="noopener">Diameter</a>.</p>
+<h2 id="hacking--phrack-70-is-outhttpwwwphrackorgissues701html">#hacking | 
+<a href="http://www.phrack.org/issues/70/1.html" target="_blank" rel="noopener">Phrack #70 is Out!</a></h2>
+<p><em>by Phrack Staff</em></p>
+<p>5 years after the previous issue, Volume 0x10, Issue 0x46, Phile #0x01 of 0x0f of Phrack is out! I&rsquo;ve read the introduction and skimmed through the titles. Here are my highlights:</p>
+<blockquote>
+<p>We are all ego-driven [&hellip;] We expect direct payback from our hacking, in many forms, including reputation. [&hellip;] It became a symbol of achievement, eliteness, and honor to be published in Phrack.</p>
+</blockquote>
+<p>And then the best part:</p>
+<blockquote>
+<p>Academia noticed the high quality of Phrack papers, started citing them, and basing their offensive and defensive work on them. Did that alienate the underground that Phrack represented for so many years? Yes, we think it did. But the underground also changed.</p>
+</blockquote>
+<p>If you&rsquo;re interested in the delicate balance between industry vs. academia and the (lack of) recognition of outstandingly good non-peer-reviewed work, 
+<a href="https://reyammer.io/blog/2020/10/03/the-good-the-bad-and-the-bye-bye-why-i-left-my-tenured-academic-job/" target="_blank" rel="noopener">read @reyammer&rsquo;s take on the topic</a>.</p>
+<p>Articles that I may find the time to read, one day or another:</p>
+<ul>
+<li>Cyber Grand Shellphish by 
+<a href="https://shellphish.net/" target="_blank" rel="noopener">Team Shellphish</a></li>
+<li>.NET Instrumentation via MSIL bytecode injection by 
+<a href="https://twitter.com/s4tan" target="_blank" rel="noopener">Antonio &lsquo;s4tan&rsquo; Parata</a></li>
+<li>Tale of two hypervisor bugs - Escaping from FreeBSD bhyve by 
+<a href="https://www.voidsecurity.in/" target="_blank" rel="noopener">Reno Robert</a></li>
+</ul>
+<h2 id="vuln--10-years-old-upnp-vulnerabilities-in-broadcoms-sdk-still-affecting-cisco-dd-wrt-and-linksys-routershttpswwwiot-inspectorcomblogbroadcom-sdk-vulnerabilities-bug-reports">#vuln | 
+<a href="https://www.iot-inspector.com/blog/broadcom-sdk-vulnerabilities-bug-reports/" target="_blank" rel="noopener">10-years Old UPnP Vulnerabilities in Broadcom&rsquo;s SDK Still Affecting Cisco, DD-WRT, and Linksys Routers</a></h2>
+<p><em>by IoT Inspector - 
+<a href="https://twitter.com/IoTInspector" target="_blank" rel="noopener">@IoTInspector</a></em></p>
+<p>Two vulnerabilities in the UPnP implementation (stack and heap based overflow) patched in Broadcom&rsquo;s SDK in 2011 &ldquo;resurfaced&rdquo; in the firmware running on various routers from Cisco, DD-WRT and Linksys, which means that the issue isn&rsquo;t in the routers&rsquo; firmware, but in the use of an older, unpatched version of the Broadcom SDK. What&rsquo;s worse is that there&rsquo;s no public/tracked disclosure by Broadcom, and thus no CVEs. Despite the messy supply chain and CVEs issued only by the router vendors, with some careful firmware digging, it&rsquo;s still possible to determine if a firmware includes a vulnerable version of the Broadcome SDK.</p>
+<h2 id="vuln--apache-partially-patches-path-traversal-vulnerability-actively-exploited-in-the-wild-cve-2021-41773httpshttpdapacheorgsecurityvulnerabilities_24html">#vuln | 
+<a href="https://httpd.apache.org/security/vulnerabilities_24.html" target="_blank" rel="noopener">Apache Partially Patches Path Traversal Vulnerability Actively Exploited in the Wild (CVE-2021-41773)</a></h2>
+<p><em>by Apache - 
+<a href="https://twitter.com/The_ASF" target="_blank" rel="noopener">@TheASF</a> via Catalin Cimpanu - 
+<a href="https://twitter.com/@campuscodi" target="_blank" rel="noopener">@campuscodi</a></em></p>
+<p>Although my personal mantra recites that <em>&ldquo;vulnerabilities are a natural part of each engineering artifact,&rdquo;</em> and I also agree with the line of thought that the cyber-security issues (regardless of their extent) are causing more benefit (i.e., profit) than damage, globally, &hellip;, well, seeing a path traversal kinda brought me (and many of us!) back a couple of decades. Apache HTTP Server 2.4.51 has partial fixes for this vulnerability.</p>
+<h2 id="opensource--the-linux-foundation--google-launch-pilot-program-to-secure-open-source-software-1m-sponsorshiphttpssosdev">#opensource | 
+<a href="https://sos.dev/" target="_blank" rel="noopener">The Linux Foundation + Google Launch Pilot Program to Secure Open Source Software ($1M Sponsorship)</a></h2>
+<p><em>by Google - 
+<a href="https://twitter.com/Google" target="_blank" rel="noopener">@Google</a> and The Linux Foundation - 
+<a href="https://twitter.com/linuxfoundation" target="_blank" rel="noopener">@linuxfoundation</a></em></p>
+<blockquote>
+<p>The Secure Open Source Rewards pilot program financially rewards developers for enhancing the security of critical open source projects that we all depend on.</p>
+</blockquote>
+<p>I love this! I like to think of it as an extension of Google&rsquo;s OSS-Fuzz integration reward program, which financially rewards researchers that integrate fuzzing harnesses for relevant, popular open source software.</p>
+<h2 id="arrest--prolific-ransomware-gang-active-since-2020-arrested-in-ukrainehttpswwwinterpolintnews-and-eventsnews2021ransomware-gang-arrested-in-ukraine">#arrest | 
+<a href="https://www.interpol.int/News-and-Events/News/2021/Ransomware-gang-arrested-in-Ukraine" target="_blank" rel="noopener">Prolific Ransomware Gang Active since 2020 Arrested in Ukraine</a></h2>
+<p><em>by INTERPOL - 
+<a href="https://twitter.com/INTERPOL_Cyber" target="_blank" rel="noopener">@INTERPOL_Cyber</a> via Catalin Cimpanu - 
+<a href="https://twitter.com/@campuscodi" target="_blank" rel="noopener">@campuscodi</a></em></p>
+<p>Announced on Oct 4th, the arrests were made on Sep 28th, as a cooperative joint effort involving the French National Gendarmerie, the Ukrainian National Police and the United States Federal Bureau of Investigation (FBI), INTERPOL and Europol.</p>
+<h1 id="also-noteworthy">Also Noteworthy</h1>
+<h2 id="healthcare--ics-medical-advisory-for-medtronic-minimed-mmt-500503-insuline-pump-remote-controller-rf-replay-attack-vulnerability-icsma-18-219-02httpsus-certcisagovicsadvisoriesicsma-18-219-02">#healthcare | 
+<a href="https://us-cert.cisa.gov/ics/advisories/ICSMA-18-219-02" target="_blank" rel="noopener">ICS Medical Advisory for Medtronic MiniMed MMT-500/503 Insuline Pump Remote Controller RF Replay-attack Vulnerability (ICSMA-18-219-02)</a></h2>
+<p><em>by CISA - 
+<a href="httsp://twitter.com/@CISAgov">@CISAgov</a></em></p>
+<p>Capture-replay attacks of wireless communications can be surprisingly successful in the ICS domain, where it&rsquo;s easy to encounter proprietary wireless stacks. Fortunately, the risk assessment reveals the real extent of this vulnerability:</p>
+<blockquote>
+<p>Successful exploitation of these vulnerabilities may allow an attacker to replay captured wireless communications and cause an insulin (bolus) delivery. This is only possible when non-default options are configured. Additionally, the pump will annunciate this by providing a physical alert, and the user has the capability to suspend the bolus delivery.</p>
+</blockquote>
+<h2 id="mobile--tanglebot-covid-themed-malware-campaign-spreads-via-sms-targeting-uscanadian-android-usershttpswwwproofpointcomusblogthreat-insightmobile-malware-tanglebot-untangled">#mobile | 
+<a href="https://www.proofpoint.com/us/blog/threat-insight/mobile-malware-tanglebot-untangled" target="_blank" rel="noopener">TangleBot COVID-themed Malware Campaign Spreads via SMS Targeting US/Canadian Android Users</a></h2>
+<p><em>by Proofpoint - 
+<a href="https://twitter.com/proofpoint" target="_blank" rel="noopener">@proofpoint</a></em></p>
+<blockquote>
+<p>[Since September 2021] TangleBot is leveraging COVID-19 and electricity-themed lures in its effort to convince users to click on the malicious link and install the malware. [The malicious SMS links target] Android mobile devices and are currently only being sent to US and Canadian users.</p>
+</blockquote>
+<h2 id="mobile--fake-covid-19-android-apps-infected-with-spyware-rats-and-other-malwarehttpswwwnortonlifelockcomsitesdefaultfiles2021-10whitepaper_covid_malwarepdf">#mobile | 
+<a href="https://www.nortonlifelock.com/sites/default/files/2021-10/Whitepaper_Covid_Malware.pdf" target="_blank" rel="noopener">Fake COVID-19 Android Apps Infected with Spyware, RATs, and Other Malware</a></h2>
+<p><em>by NortonLifeLock Labs - 
+<a href="https://twitter.com/NLOKLabs" target="_blank" rel="noopener">@NLOKLabs</a></em></p>
+<p>It&rsquo;s been found that a large percent of COVID-themed apps are actually malware. 19.5% of the analyzed 2,293 apps, found by searching for &ldquo;covid&rdquo; or &ldquo;coronavirus&rdquo;, turned out to be malicious. US, Italy, and Germany are the countries with the highest fraction of affected users.</p>
+<h2 id="re--no-contract-can-prevent-you-from-decompiling-software-you-bought-if-your-goal-is-fixing-a-bughttpscuriaeuropaeujurisdocumentdocumentjsftextdocid247056pageindex0doclangenmodereqdiroccfirstpart1cid6413406">#RE | 
+<a href="https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=247056&amp;pageIndex=0&amp;doclang=en&amp;mode=req&amp;dir=&amp;occ=first&amp;part=1&amp;cid=6413406" target="_blank" rel="noopener">&ldquo;no contract can prevent you from decompiling software you bought, if your goal is fixing a bug&rdquo;</a></h2>
+<p><em>via rev.ng - 
+<a href="https://twitter.com/_revng" target="_blank" rel="noopener">@_revng</a></em></p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In today&#39;s 🇪🇺 news, it has been ruled that no contract can prevent you from decompiling software you bought, if your goal is fixing a bug. 👨‍⚖️<a href="https://t.co/bSzeJbXVX3">https://t.co/bSzeJbXVX3</a></p>&mdash; rev.ng (@_revng) <a href="https://twitter.com/_revng/status/1446055646214959107?ref_src=twsrc%5Etfw">October 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<h2 id="ics--honeywell-fixes-3-vulnerabilities-in-their-pks-cve-2021-38397-cve-2021-38395-cve-2021-38399httpswwwclarotycom20211005blog-research-target-dcs-finding-fixing-critical-bugs-in-honeywell-experion-pks">#ics | 
+<a href="https://www.claroty.com/2021/10/05/blog-research-target-dcs-finding-fixing-critical-bugs-in-honeywell-experion-pks/" target="_blank" rel="noopener">Honeywell Fixes 3 Vulnerabilities in their PKS (CVE-2021-38397, CVE-2021-38395, CVE-2021-38399)</a></h2>
+<p><em>by Claroty&rsquo;s Team82 - 
+<a href="https://twitter.com/Claroty" target="_blank" rel="noopener">@Claroty</a></em></p>
+<p>Honeywell has addressed the vulnerabilities and 
+<a href="https://www.honeywellprocess.com/library/support/notifications/Customer/SN2021-02-22-01-Experion-C300-CCL.pdf" target="_blank" rel="noopener">issued an advisory</a>, and ICS-CERT published an independent advisory, 
+<a href="https://us-cert.cisa.gov/ics/advisories/icsa-21-278-04" target="_blank" rel="noopener">ICSA-21-287-04</a>, assigning the highest CVSS score (10.0).</p>
+<h2 id="leaks--leaky-apache-airflow-instances-expose-credentials-from-popular-serviceshttpswwwintezercomblogcloud-securitymisconfigured-airflows-leak-credentials">#leaks | 
+<a href="https://www.intezer.com/blog/cloud-security/misconfigured-airflows-leak-credentials/" target="_blank" rel="noopener">Leaky Apache Airflow Instances Expose Credentials from Popular Services</a></h2>
+<p><em>by Intezer - 
+<a href="https://twitter.com/IntezerLabs" target="_blank" rel="noopener">@IntezerLabs</a></em></p>
+<p>One more on leaky servers this week. Apache Airflow (a task-orchestration framework written in Python) is gaining a lot of attention recently by the developers&rsquo; communities, mainly because of its flexibility and low entry barrier.</p>
+<h2 id="darkweb--dark-web-marketplace-white-house-market-shuts-downhttpstherecordmediadark-web-marketplace-white-house-market-shuts-down">#darkweb | 
+<a href="https://therecord.media/dark-web-marketplace-white-house-market-shuts-down/" target="_blank" rel="noopener">Dark Web Marketplace &lsquo;White House Market&rsquo; Shuts Down</a></h2>
+<p><em>by Catalin Cimpanu - 
+<a href="https://twitter.com/campuscodi" target="_blank" rel="noopener">@campuscodi</a></em></p>
+<blockquote>
+<p><em>Thanks everybody for your business, trust, support and of course for placing decent amounts of money in our pockets.  We may come back some time in the future with a different project or we may not. Meanwhile be on the lookout for phishing or copycats, if it’s not signed by us it’s not us.</em></p>
+<p>Mr_White, WHM administrator</p>
+</blockquote>
+<h2 id="ransomware--virustotal-publishes-first-ransomware-activity-reporthttpsblogvirustotalcom202110ransomware-in-global-contexthtml">#ransomware | 
+<a href="https://blog.virustotal.com/2021/10/ransomware-in-global-context.html" target="_blank" rel="noopener">VirusTotal Publishes First Ransomware Activity Report</a></h2>
+<p><em>by Vicente Diaz - 
+<a href="https://twitter.com/trompi" target="_blank" rel="noopener">@trompi</a></em></p>
+<p>I don&rsquo;t like gated content (here&rsquo;s the 
+<a href="https://storage.googleapis.com/vtpublic/vt-ransomware-report-2021.pdf" target="_blank" rel="noopener">direct link to the PDF</a>), but the numbers make this report a must read:</p>
+<blockquote>
+<ul>
+<li>Since 2020, users from more than 140 countries have submitted ransomware samples to VirusTotal.</li>
+<li>During this time, at least 130 different ransomware families have been active.</li>
+<li>Israel, South Korea, Vietnam, China, Singapore, India, Kazakhstan, Philippines, Iran and the UK are the 10 most affected territories based on the number of submissions to VirusTotal.</li>
+<li>Activity among the most spread ransomware families comes and goes, but there is a baseline of activity of around 100 not-so-popular ransomware families that never stops.</li>
+<li>According to our observations, it seems that in most cases attackers prepare fresh new samples for their campaigns.</li>
+<li>In July 2021 we observed a wave of the new variant of Babuk ransomware.</li>
+<li>GandCrab was the most active family in early 2020, before its prevalence decreased dramatically in the second half of the year.</li>
+</ul>
+</blockquote>
+<p>I was a bit surprised to see a sudden drop in the number of ransomware sample submissions, which decreased by at least a factor of 3x (if not 4x) after July 2020, with a spike in July 2021 (Kaseya hit by REvil, maybe?).</p>
+<h2 id="airgap--ethertnet-cables-make-good-antennae-to-exfiltrate-data-from-air-gapped-networkshttpsarxivorgabs211000104">#airgap | 
+<a href="https://arxiv.org/abs/2110.00104" target="_blank" rel="noopener">Ethertnet Cables Make Good Antennae to Exfiltrate Data from Air-Gapped Networks</a></h2>
+<p><em>by Mordechai Guri</em></p>
+<p>An antenna is just a cable cut at right (wave)length so that it resonates at the desired frequency, right? Not quite as easy, but that&rsquo;s the idea. The author shows that by leveraging electro-magnetic emanations of a LAN cable, it&rsquo;s possible to encode information that can be decoded a few meters away. Mordechai Guri&rsquo;s research track on air-gap jumping techniques is just impressive. Since 2014 he&rsquo;s focusing 99% of his research on finding the most creative exfiltration mechanisms (e.g., bliking LED, HDD vibrations, computer or CPU fan) to demonstrate that it&rsquo;s not only possible, but practical (to some extent) to implement malware that jumps across air-gapped computers.</p>
+<h1 id="tools">Tools</h1>
+<h2 id="google-project-zero-releases-robust-cc-semantic-search-tool-to-grep-your-code-for-anti-or-any-patternshttpsgithubcomgoogleprojectzeroweggli">
+<a href="https://github.com/googleprojectzero/weggli" target="_blank" rel="noopener">Google Project Zero Releases Robust C/C++ Semantic Search Tool to Grep Your Code for (Anti or Any) Patterns</a></h2>
+<p><em>by 
+<a href="https://twitter.com/ProjectZeroBugs" target="_blank" rel="noopener">@ProjectZeroBugs</a></em></p>
+<p>I tried it: I was impressed by how low the entry barrier and how expressive the query language is:</p>
+<pre><code>$ weggli '{
+    _ $buf[_];
+    memcpy($buf,_,_);
+}' ./target/src
+</code></pre>
+<p>I mean, how neat is that!</p>
+<h2 id="dragonfly-a-multi-engine-emulation-based-sandbox-available-in-closed-alphahttpscertego-dragonfly-docsreadthedocs-hostedcomenlatest">
+<a href="https://certego-dragonfly-docs.readthedocs-hosted.com/en/latest/" target="_blank" rel="noopener">Dragonfly: A Multi-engine Emulation-based Sandbox Available in Closed Alpha</a></h2>
+<p><em>by Certego - 
+<a href="https://twitter.com/Certego_IRT" target="_blank" rel="noopener">@Certego_IRT</a></em></p>
+<blockquote>
+<p>Dragonfly is an automated sandbox, developed by Certego, built over different emulation engines: it allows to customize the entire operating system and the rules used to hunt malware.</p>
+</blockquote>
+<h1 id="conferences">Conferences</h1>
+<h2 id="nohat-2021-tickets-almost-sold-outhttpsnohatit">
+<a href="https://nohat.it" target="_blank" rel="noopener">NoHat 2021 Tickets Almost Sold Out!</a></h2>
+<p>This conference is probably one of the most selective venues in Italy, and this is well reflected by the speaker lineup, which includes mostly international speakers among the top researchers in their areas: Fuzzing, vulnerability research, hardware security, mobile security, malware detection, reverse engineering. Check out 
+<a href="https://www.nohat.it/program" target="_blank" rel="noopener">the program</a> (and attend if you can!). No wonder the tickets are 
+<a href="https://twitter.com/nohatcon/status/1446519653124251654" target="_blank" rel="noopener">almost all gone</a>!</p>
+<p><em>by 
+<a href="https://twitter.com/nohatcon" target="_blank" rel="noopener">@nohatcon</a></em></p>
+
+
+      <p>CyberFacts Weekly is a digest of my hand-picked readings from the cyber-security world.</p>
+      <p>CyberFacts Weekly is intended mostly for myself, to have a place to archive and keep public notes of what I read and deem as noteworthy.</p>
+      <p>If you like it, consider
+      <a href="https://buttondown.email/cyberfacts" target="_blank" rel="noopener">subscribing</a> or forwarding this email to peers and friends. If newsletters aren&rsquo;t really your thing, maybe you&rsquo;d prefer to follow the
+      <a href="https://twitter.com/CyberFactsIT" target="_blank" rel="noopener">@CyberFactsIT</a> Twitter account, which I use to publish the real-time feed of my selected readings (also available
+      <a href="http://www.inoreader.com/stream/user/1004856625/tag/Cybersecurity%20Noteworthy" target="_blank" rel="noopener">via RSS</a>).</p>
+      <p>Hope you enjoyed this issue&hellip;and see you reading the next one! 🙃</p>
+      <p>Thanks! Cheers,
+      Fede</p>
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/cyberfacts/issue-2/&amp;text=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x02]%20The%20Week%20of%20Massive%20Leaks" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/cyberfacts/issue-2/&amp;t=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x02]%20The%20Week%20of%20Massive%20Leaks" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x02]%20The%20Week%20of%20Massive%20Leaks&amp;body=/cyberfacts/issue-2/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/cyberfacts/issue-2/&amp;title=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x02]%20The%20Week%20of%20Massive%20Leaks" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x02]%20The%20Week%20of%20Massive%20Leaks%20/cyberfacts/issue-2/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/cyberfacts/issue-2/&amp;title=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x02]%20The%20Week%20of%20Massive%20Leaks" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+  </p>
+  
+
+  <p class="powered-by">
+    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    Unless otherwise stated, the original content in this website is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nd_icon.svg" alt="CC ND icon">
+        
+      
+    </a>
+  </p>
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

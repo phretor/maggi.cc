@@ -1,0 +1,6638 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+        
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Federico Maggi">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Federico enjoys working on various cyber-security research topics, including offensive and defensive research on malware, web security, network protocols, and devices, embedded systems, radio-frequency control systems, industrial robots, cars, and mobile devices.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/publication/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#cc6627">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+  <link rel="alternate" href="/publication/index.xml" type="application/rss+xml" title="Federico Maggi">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/publication/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@phretor">
+  <meta property="twitter:creator" content="@phretor">
+  
+  <meta property="og:site_name" content="Federico Maggi">
+  <meta property="og:url" content="/publication/">
+  <meta property="og:title" content="Publications | Federico Maggi">
+  <meta property="og:description" content="Federico enjoys working on various cyber-security research topics, including offensive and defensive research on malware, web security, network protocols, and devices, embedded systems, radio-frequency control systems, industrial robots, cars, and mobile devices."><meta property="og:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png">
+  <meta property="twitter:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2021-04-06T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#cc6627",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#cc6627"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "/privacy/"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>Publications | Federico Maggi</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/cyberfacts"><span>CyberFacts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/post"><span>Diary</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/talk"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/advisories"><span>Advisories</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacts</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+<div class="universal-wrapper pt-3">
+  <h1>Publications</h1>
+
+  
+
+  
+</div>
+
+
+
+<div class="universal-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+
+      
+
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+
+      <div class="form-row mb-4">
+        <div class="col-auto">
+          <input type="search" class="filter-search" placeholder="Search..." autocapitalize="off"
+          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
+            <option value="*">Type</option>
+            
+            
+            <option value=".pubtype-1">
+              Conference paper
+            </option>
+            
+            <option value=".pubtype-2">
+              Journal article
+            </option>
+            
+            <option value=".pubtype-3">
+              Preprint
+            </option>
+            
+            <option value=".pubtype-4">
+              Report
+            </option>
+            
+            <option value=".pubtype-7">
+              Thesis
+            </option>
+            
+          </select>
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters form-control form-control-sm" data-filter-group="year">
+            <option value="*">Date</option>
+            
+            
+            
+            <option value=".year-2021">
+              2021
+            </option>
+            
+            <option value=".year-2020">
+              2020
+            </option>
+            
+            <option value=".year-2019">
+              2019
+            </option>
+            
+            <option value=".year-2018">
+              2018
+            </option>
+            
+            <option value=".year-2017">
+              2017
+            </option>
+            
+            <option value=".year-2016">
+              2016
+            </option>
+            
+            <option value=".year-2015">
+              2015
+            </option>
+            
+            <option value=".year-2014">
+              2014
+            </option>
+            
+            <option value=".year-2013">
+              2013
+            </option>
+            
+            <option value=".year-2012">
+              2012
+            </option>
+            
+            <option value=".year-2011">
+              2011
+            </option>
+            
+            <option value=".year-2010">
+              2010
+            </option>
+            
+            <option value=".year-2009">
+              2009
+            </option>
+            
+            <option value=".year-2008">
+              2008
+            </option>
+            
+            <option value=".year-2007">
+              2007
+            </option>
+            
+            
+          </select>
+        </div>
+      </div>
+
+      <div id="container-publications">
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2021">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Andrea Guglielmini</span>
+  </span>
+  (2021).
+  <a href="/publication/maggi_rfquack_tr_2021/">RFQuack: A Universal Hardware-Software Toolkit for Wireless Protocol (Security) Analysis and Research</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_rfquack_tr_2021/maggi_rfquack_tr_2021.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_rfquack_tr_2021/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Marco Balduzzi</span>, <span>Rainer Vosseler</span>, <span>Martin Rösler</span>, <span>Walter Quadrini</span>, <span>Giacomo Tavola</span>, <span>Marcello Pogliani</span>, <span>Davide Quarta</span>, <span>Stefano Zanero</span>
+  </span>
+  (2020).
+  <a href="/publication/maggi_smsec_2020/">Smart Factory Security: A Case Study on a Modular SmartManufacturing System</a>.
+  <em>International Conference on Industry 4.0 and Smart Manufacturing</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_smsec_2020/maggi_smsec_2020.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_smsec_2020/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Marcello Pogliani</span>, <span>Federico Maggi</span>, <span>Marco Balduzzi</span>, <span>Davide Quarta</span>, <span>Stefano Zanero</span>
+  </span>
+  (2020).
+  <a href="/publication/pogliani_otrazor_2020/">Detecting Unsafe Code Patterns in Industrial Robot Programs</a>.
+  <em>Proceedings of the 2020 on Asia Conference on Computer and Communications Security</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/pogliani_otrazor_2020/pogliani_otrazor_2020.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/pogliani_otrazor_2020/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Marcello Pogliani</span>, <span>Martino, Vittone</span>, <span>Davide Quarta</span>, <span>Stefano Zanero</span>, <span>Marco Balduzzi</span>, <span>Rainer Vosseler</span>, <span>Martin Rösler</span>
+  </span>
+  (2020).
+  <a href="/publication/maggi_rogueautomationwp_tr_2020/">Rogue Automation: Vulnerable and Malicious Code in Industrial Programming</a>.
+  <em>Trend Micro Research</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.trendmicro.com/vinfo/us/security/news/internet-of-things/unveiling-the-hidden-risks-of-industrial-automation-programming" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_rogueautomationwp_tr_2020/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Marcello Pogliani</span>
+  </span>
+  (2020).
+  <a href="/publication/maggi_smartfactorywp_tr_2020/">Attacks on Smart Manufactururing Systems: A Forward-looking Security Analysis</a>.
+  <em>Trend Micro Research</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.trendmicro.com/vinfo/us/security/news/internet-of-things/threats-and-consequences-a-security-analysis-of-smart-manufacturing-systems" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_smartfactorywp_tr_2020/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Stephen Hilt</span>, <span>Federico Maggi</span>, <span>Charles Perine</span>, <span>Lord Remorin</span>, <span>Martin Rösler</span>, <span>Rainer Vosseler</span>
+  </span>
+  (2020).
+  <a href="/publication/hilt_factoryhoneypotwp_tr_2020/">Caught in the Act: Running a Realistic Factory Honeypot to Capture Real Threats</a>.
+  <em>Trend Micro Research</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.trendmicro.com/vinfo/us/security/news/internet-of-things/fake-company-real-threats-logs-from-a-smart-factory-honeypot" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/hilt_factoryhoneypotwp_tr_2020/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Marco Balduzzi</span>, <span>Jonathan Andersson</span>, <span>Philippe Lin</span>, <span>Stephen Hilt</span>, <span>Akira Urano</span>, <span>Rainer Vosseler</span>
+  </span>
+  (2019).
+  <a href="/publication/maggi_industrialradios_2019/">A Security Evaluation of Industrial Radio Remote Controllers</a>.
+  <em>Proceedings of the 16th International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_industrialradios_2019/maggi_industrialradios_2019.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_industrialradios_2019/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2019">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Marcello Pogliani</span>, <span>Davide Quarta</span>, <span>Mario Polino</span>, <span>Martino Vittone</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2019).
+  <a href="/publication/pogliani_article_2019/">Security of controlled manufacturing systems in the connected factory: the case of industrial robots</a>.
+  <em>Journal of Computer Virology and Hacking Techniques</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/pogliani_article_2019/pogliani_article_2019.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/pogliani_article_2019/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2019">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Jonathan Andersson</span>, <span>Marco Balduzzi</span>, <span>Stephen Hilt</span>, <span>Philippe Lin</span>, <span>Federico Maggi</span>, <span>Akira Urano</span>, <span>Rainer Vosseler</span>
+  </span>
+  (2019).
+  <a href="/publication/andersson_industrialradioswp_tr_2019/">A Security Analysis of Radio Remote Controllers for Industrial Applications</a>.
+  <em>Trend Micro Research</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/andersson_industrialradioswp_tr_2019/andersson_industrialradioswp_tr_2019.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/andersson_industrialradioswp_tr_2019/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Rainer Vosseler</span>, <span>Davide Quarta</span>
+  </span>
+  (2018).
+  <a href="/publication/maggi_mqttwp_tr_2018/">The Fragility of Industrial IoT&#39;s Data Backbone: Security and Privacy Issues in MQTT and CoAP Protocols</a>.
+  <em>Trend Micro Research</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_mqttwp_tr_2018/maggi_mqttwp_tr_2018.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_mqttwp_tr_2018/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Marco Balduzzi</span>, <span>Ryan Flores</span>, <span>Lion Gu</span>, <span>Vincenzo Ciancaglini</span>
+  </span>
+  (2018).
+  <a href="/publication/maggi_defplorex_2018/">Investigating Web Defacement Campaigns at Large</a>.
+  <em>Proceedings of the 2018 on Asia Conference on Computer and Communications Security</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_defplorex_2018/maggi_defplorex_2018.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_defplorex_2018/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Marco Balduzzi</span>, <span>Ryan Flores</span>, <span>Lion Gu</span>, <span>Federico Maggi</span>, <span>Vincenzo Ciancaglini</span>, <span>Roel Reyes</span>, <span>Akira Urano</span>
+  </span>
+  (2018).
+  <a href="/publication/balduzzi_defplorexwp_tr_2018/">A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks</a>.
+  <em>TrendLabs</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/balduzzi_defplorexwp_tr_2018/balduzzi_defplorexwp_tr_2018.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/balduzzi_defplorexwp_tr_2018/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Apostolis Zarras</span>, <span>Federico Maggi</span>
+  </span>
+  (2017).
+  <a href="/publication/zarras_sqlbot_2017/">Hiding Behind the Shoulders of Giants: Abusing Crawlers for Indirect Web Attacks</a>.
+  <em>Proceedings of the 15th Annual International Conference on Privacy, Security and Trust (PST)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/zarras_sqlbot_2017/zarras_sqlbot_2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/zarras_sqlbot_2017/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Bhargava Shastry</span>, <span>Federico Maggi</span>, <span>Fabian Yamaguchi</span>, <span>Konrad Rieck</span>, <span>Jean-Pierre Seifert</span>
+  </span>
+  (2017).
+  <a href="/publication/shastry_hybridstaticfuzzing_2017/">Static Exploration of Taint-Style Vulnerabilities Found by Fuzzing</a>.
+  <em>11th USENIX Workshop on Offensive Technologies USENIX Workshop on Offensive Technologies (WOOT 17)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/shastry_hybridstaticfuzzing_2017/shastry_hybridstaticfuzzing_2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/shastry_hybridstaticfuzzing_2017/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Tommi Unruh</span>, <span>Bhargava Shastry</span>, <span>Malte Skoruppa</span>, <span>Federico Maggi</span>, <span>Konrad Rieck</span>, <span>Jean-Pierre Seifert</span>, <span>Fabian Yamaguchi</span>
+  </span>
+  (2017).
+  <a href="/publication/unruh_joernphp_2017/">Leveraging Flawed Tutorials for Seeding Large-Scale Web Vulnerability Discovery</a>.
+  <em>Proceedings of the 11th USENIX Workshop on Offensive Technologies (WOOT 17)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/unruh_joernphp_2017/unruh_joernphp_2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/unruh_joernphp_2017/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>
+  </span>
+  (2017).
+  <a href="/publication/maggi_candoswp_tr_2017/">A Vulnerability in Modern Automotive Standards and How We Exploited It</a>.
+  <em>TrendLabs Security Intelligence Blog</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_candoswp_tr_2017/maggi_candoswp_tr_2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_candoswp_tr_2017/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Andrea Palanca</span>, <span>Eric Evenchick</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2017).
+  <a href="/publication/palanca_candos_2017/">A Stealth, Selective, Link-Layer Denial-of-Service Attack Against Automotive Networks</a>.
+  <em>Proceedings of the 14th International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/palanca_candos_2017/palanca_candos_2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/palanca_candos_2017/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Andrea Continella</span>, <span>Michele Carminati</span>, <span>Mario Polino</span>, <span>Andrea Lanzi</span>, <span>Stefano Zanero</span>, <span>Federico Maggi</span>
+  </span>
+  (2017).
+  <a href="/publication/continella_prometheus_article_2017/">Prometheus: Analyzing WebInject-based information stealers</a>.
+  <em>Journal of Computer Security</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/continella_prometheus_article_2017/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Davide Quarta</span>, <span>Marcello Pogliani</span>, <span>Mario Polino</span>, <span>Andrea M. Zanchettin</span>, <span>Stefano Zanero</span>
+  </span>
+  (2017).
+  <a href="/publication/maggi_robotswp_tr_2017/">Rogue Robots: Testing the Limits of an Industrial Robot’s Security</a>.
+  <em>TrendLabs</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_robotswp_tr_2017/maggi_robotswp_tr_2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_robotswp_tr_2017/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Davide Quarta</span>, <span>Marcello Pogliani</span>, <span>Mario Polino</span>, <span>Federico Maggi</span>, <span>Andrea Maria Zanchettin</span>, <span>Stefano Zanero</span>
+  </span>
+  (2017).
+  <a href="/publication/quarta_robosec_2017/">An Experimental Security Analysis of an Industrial Robot Controller</a>.
+  <em>Proceedings of the 38th IEEE Symposium on Security and Privacy</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/quarta_robosec_2017/quarta_robosec_2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/quarta_robosec_2017/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=X3fUNWRgeao" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Vasilios Mavroudis</span>, <span>Shuang Hao</span>, <span>Yanick Fratantonio</span>, <span>Federico Maggi</span>, <span>Christopher Kruegel</span>, <span>Giovanni Vigna</span>
+  </span>
+  (2017).
+  <a href="/publication/mavroudis_ubeacsec_2017/">On the Privacy and Security of the Ultrasound Ecosystem</a>.
+  <em>Proceedings of the 17th Privacy Enhancing Technologies Symposium</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/mavroudis_ubeacsec_2017/mavroudis_ubeacsec_2017.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/mavroudis_ubeacsec_2017/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Andrea Continella</span>, <span>Alessandro Guagnelli</span>, <span>Giovanni Zingaro</span>, <span>Giulio De Pasquale</span>, <span>Alessandro Barenghi</span>, <span>Stefano Zanero</span>, <span>Federico Maggi</span>
+  </span>
+  (2016).
+  <a href="/publication/continella_shieldfs_2016/">ShieldFS: A Self-healing, Ransomware-aware Filesystem</a>.
+  <em>Proceedings of the 32nd Annual Computer Security Applications Conference</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/continella_shieldfs_2016/continella_shieldfs_2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/continella_shieldfs_2016/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Chenghyu Zheng</span>, <span>Nicola Della Rocca</span>, <span>Niccolò Andronio</span>, <span>Stefano Zanero</span>, <span>Maggi Federico</span>
+  </span>
+  (2016).
+  <a href="/publication/zheng_greateatlon_2016/">GreatEatlon: Fast, Static Detection of Mobile Ransomware</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/zheng_greateatlon_2016/zheng_greateatlon_2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/zheng_greateatlon_2016/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Chenghyu Zheng</span>, <span>Mila Dalla Preda</span>, <span>Jorge Granjal</span>, <span>Stefano Zanero</span>, <span>Federico Maggi</span>
+  </span>
+  (2016).
+  <a href="/publication/zheng_openst_2016/">On-Chip System Call Tracing: A Feasibility Study and Open Prototype</a>.
+  <em>IEEE Conference on Communications and Network Security (CNS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/zheng_openst_2016/zheng_openst_2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/zheng_openst_2016/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2016">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Mila Dalla Preda</span>, <span>Federico Maggi</span>
+  </span>
+  (2016).
+  <a href="/publication/dalla-preda_aamo_article_2016/">Testing android malware detectors against code obfuscation: a systematization of knowledge and unified methodology</a>.
+  <em>Journal of Computer Virology and Hacking Techniques</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/dalla-preda_aamo_article_2016/dalla-preda_aamo_article_2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/dalla-preda_aamo_article_2016/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Andrea Mambretti</span>, <span>Kaan Onarlioglu</span>, <span>Collin Mulliner</span>, <span>William Robertson</span>, <span>Engin Kirda</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2016).
+  <a href="/publication/mambretti_trellis_2016/">Trellis: Privilege Separation for Multi-User Applications Made Easy</a>.
+  <em>International Symposium on Research in Attacks, Intrusions and Defenses (RAID)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/mambretti_trellis_2016/mambretti_trellis_2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/mambretti_trellis_2016/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Alberto Coletta</span>, <span>Victor Van der Veen</span>, <span>Federico Maggi</span>
+  </span>
+  (2016).
+  <a href="/publication/coletta_droydseuss_2016/">DroydSeuss: A Mobile Banking Trojan Tracker - Short Paper</a>.
+  <em>Financial Cryptography and Data Security</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/coletta_droydseuss_2016/coletta_droydseuss_2016.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/coletta_droydseuss_2016/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2015">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Luca Falsina</span>, <span>Yanick Fratantonio</span>, <span>Stefano Zanero</span>, <span>Christopher Kruegel</span>, <span>Giovanni Vigna</span>, <span>Federico Maggi</span>
+  </span>
+  (2015).
+  <a href="/publication/falsina_grabnrun_2015/">Grab &#39;n Run: Secure and Practical Dynamic Code Loading for Android Applications</a>.
+  <em>Proceedings of the 31st Annual Computer Security Applications Conference</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/falsina_grabnrun_2015/falsina_grabnrun_2015.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/falsina_grabnrun_2015/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2015">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Andrea Valdi</span>, <span>Eros Lever</span>, <span>Simone Benefico</span>, <span>Davide Quarta</span>, <span>Stefano Zanero</span>, <span>Federico Maggi</span>
+  </span>
+  (2015).
+  <a href="/publication/valdi_andrototal_article_2015/">Scalable Testing of Mobile Antivirus Applications</a>.
+  <em>Computer</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/valdi_andrototal_article_2015/valdi_andrototal_article_2015.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/valdi_andrototal_article_2015/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2015">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Niccolò Andronio</span>, <span>Stefano Zanero</span>, <span>Federico Maggi</span>
+  </span>
+  (2015).
+  <a href="/publication/andronio_heldroid_2015/">HelDroid: Dissecting and Detecting Mobile Ransomware</a>.
+  <em>International Symposium on Research in Attacks, Intrusions and Defenses (RAID)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/andronio_heldroid_2015/andronio_heldroid_2015.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/andronio_heldroid_2015/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2015">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Panagiotis Ilia</span>, <span>Iasonas Polakis</span>, <span>Elias Athanasopoulos</span>, <span>Federico Maggi</span>, <span>Sotiris Ioannidis</span>
+  </span>
+  (2015).
+  <a href="/publication/ilia_faceoff_2015/">Face/Off: Preventing Privacy Leakage From Photos in Social Networks</a>.
+  <em>Proceedings of the 22Nd ACM SIGSAC Conference on Computer and Communications Security</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/ilia_faceoff_2015/ilia_faceoff_2015.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/ilia_faceoff_2015/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2015">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Mario Polino</span>, <span>Andrea Scorti</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2015).
+  <a href="/publication/polino_jackdaw_2015/">Jackdaw: Towards Automatic Reverse Engineering of Large Datasets of Binaries</a>.
+  <em>Detection of Intrusions and Malware, and Vulnerability Assessment</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/polino_jackdaw_2015/polino_jackdaw_2015.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/polino_jackdaw_2015/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2015">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Michele Carminati</span>, <span>Roberto Caron</span>, <span>Federico Maggi</span>, <span>Ilenia Epifani</span>, <span>Stefano Zanero</span>
+  </span>
+  (2015).
+  <a href="/publication/carminati_banksealer_article_2015/">BankSealer: A decision support system for online banking fraud analysis and investigation</a>.
+  <em>Computers &amp; Security</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/carminati_banksealer_article_2015/carminati_banksealer_article_2015.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/carminati_banksealer_article_2015/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2015">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Stefano Zanero</span>, <span>Evangelos Markatos</span>
+  </span>
+  (2015).
+  <a href="/publication/maggi_eusyssec_tr_2015/">European Cyber-Security Research and Innovation</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_eusyssec_tr_2015/maggi_eusyssec_tr_2015.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_eusyssec_tr_2015/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Iasonas Polakis</span>, <span>Panagiotis Ilia</span>, <span>Federico Maggi</span>, <span>Marco Lancini</span>, <span>Georgios Kontaxis</span>, <span>Stefano Zanero</span>, <span>Sotiris Ioannidis</span>, <span>Angelos D. Keromytis</span>
+  </span>
+  (2014).
+  <a href="/publication/polakis_resoauth_2014/">Faces in the Distorting Mirror: Revisiting Photo-based Social Authentication</a>.
+  <em>Proceedings of the 2014 ACM SIGSAC Conference on Computer and Communications Security</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/polakis_resoauth_2014/polakis_resoauth_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/polakis_resoauth_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Enrico Bazzoli</span>, <span>Claudio Criscione</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2014).
+  <a href="/publication/bazzoli_xsspeeker_tr_2014/">XSS Peeker: A Systematic Analysis of Cross-site Scripting Vulnerability Scanners</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/bazzoli_xsspeeker_tr_2014/bazzoli_xsspeeker_tr_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/bazzoli_xsspeeker_tr_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Iasonas Polakis</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>, <span>Angelos D. Keromytis</span>
+  </span>
+  (2014).
+  <a href="/publication/polakis_osnresearch_2014/">Security and Privacy Measurements on Social Networks: Experiences and Lessons Learned</a>.
+  <em>2014 Third International Workshop on Building Analysis Datasets and Gathering Experience Returns for Security (BADGERS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/polakis_osnresearch_2014/polakis_osnresearch_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/polakis_osnresearch_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Alessio Antonini</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2014).
+  <a href="/publication/antonini_knxmalware_2014/">A Practical Attack Against a KNX-based Building Automation System</a>.
+  <em>Proceedings of the 2Nd International Symposium on ICS &amp; SCADA Cyber Security Research 2014</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/antonini_knxmalware_2014/antonini_knxmalware_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/antonini_knxmalware_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Claudio Criscione</span>, <span>Fabio Bosatelli</span>, <span>Stefano Zanero</span>, <span>Federico Maggi</span>
+  </span>
+  (2014).
+  <a href="/publication/criscione_zarathustra_2014/">Zarathustra: Extracting WebInject Signatures from Banking Trojans</a>.
+  <em>Proceedings of the Twelfth Annual International Conference on Privacy, Security and Trust (PST)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/criscione_zarathustra_2014/criscione_zarathustra_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/criscione_zarathustra_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Stefano Schiavoni</span>, <span>Federico Maggi</span>, <span>Lorenzo Cavallaro</span>, <span>Stefano Zanero</span>
+  </span>
+  (2014).
+  <a href="/publication/schiavoni_phoenix_2014/">Phoenix: DGA-Based Botnet Tracking and Intelligence</a>.
+  <em>Proceedings of the International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/schiavoni_phoenix_2014/schiavoni_phoenix_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/schiavoni_phoenix_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Martina Lindorfer</span>, <span>Stamatis Volanis</span>, <span>Alessandro Sisto</span>, <span>Matthias Neugschwandtner</span>, <span>Elias Athanasopoulos</span>, <span>Federico Maggi</span>, <span>Christian Platzer</span>, <span>Stefano Zanero</span>, <span>Sotiris Ioannidis</span>
+  </span>
+  (2014).
+  <a href="/publication/lindorfer_andradar_2014/">AndRadar: Fast Discovery of Android Applications in Alternative Markets</a>.
+  <em>Detection of Intrusions and Malware, and Vulnerability Assessment</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/lindorfer_andradar_2014/lindorfer_andradar_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/lindorfer_andradar_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Michele Carminati</span>, <span>Roberto Caron</span>, <span>Federico Maggi</span>, <span>Ilenia Epifani</span>, <span>Stefano Zanero</span>
+  </span>
+  (2014).
+  <a href="/publication/carminati_banksealer_2014/">BankSealer: An Online Banking Fraud Analysis and Decision Support System</a>.
+  <em>ICT Systems Security and Privacy Protection</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/carminati_banksealer_2014/carminati_banksealer_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/carminati_banksealer_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Nick Nikiforakis</span>, <span>Federico Maggi</span>, <span>Gianluca Stringhini</span>, <span>M. Zubair Rafique</span>, <span>Wouter Joosen</span>, <span>Christopher Kruegel</span>, <span>Frank Piessens</span>, <span>Giovanni Vigna</span>, <span>Stefano Zanero</span>
+  </span>
+  (2014).
+  <a href="/publication/nikiforakis_strangerdanger_2014/">Stranger Danger: Exploring the Ecosystem of Ad-based URL Shortening Services</a>.
+  <em>Proceedings of the 23rd International Conference on World Wide Web</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/nikiforakis_strangerdanger_2014/nikiforakis_strangerdanger_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/nikiforakis_strangerdanger_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Michele Spagnuolo</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2014).
+  <a href="/publication/spagnuolo_bitiodine_2014/">BitIodine: Extracting Intelligence from the Bitcoin Network</a>.
+  <em>Financial Cryptography and Data Security</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/spagnuolo_bitiodine_2014/spagnuolo_bitiodine_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/spagnuolo_bitiodine_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2014">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Andrea Gianazza</span>, <span>Federico Maggi</span>, <span>Aristide Fattori</span>, <span>Lorenzo Cavallaro</span>, <span>Stefano Zanero</span>
+  </span>
+  (2014).
+  <a href="/publication/gianazza_puppetdroid_tr_2014/">PuppetDroid: A User-Centric UI Exerciser for Automatic Dynamic Analysis of Similar Android Applications</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/gianazza_puppetdroid_tr_2014/gianazza_puppetdroid_tr_2014.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/gianazza_puppetdroid_tr_2014/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2013">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Gabriele Bonetti</span>, <span>Marco Viglione</span>, <span>Alessandro Frossi</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2013).
+  <a href="/publication/bonetti_ssdforensics_2013/">A Comprehensive Black-box Methodology for Testing the Forensic Characteristics of Solid-state Drives</a>.
+  <em>Proceedings of the 29th Annual Computer Security Applications Conference</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/bonetti_ssdforensics_2013/bonetti_ssdforensics_2013.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/bonetti_ssdforensics_2013/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2013">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Stefano Schiavoni</span>, <span>Federico Maggi</span>, <span>Lorenzo Cavallaro</span>, <span>Stefano Zanero</span>
+  </span>
+  (2013).
+  <a href="/publication/schiavoni_phoenix_tr_2013/">Tracking and Characterizing Botnets Using Automatically Generated Domains</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/schiavoni_phoenix_tr_2013/schiavoni_phoenix_tr_2013.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/schiavoni_phoenix_tr_2013/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2013">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Andrea Valdi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2013).
+  <a href="/publication/maggi_andrototal_2013/">AndroTotal: A Flexible, Scalable Toolbox and Service for Testing Mobile Malware Detectors</a>.
+  <em>Proceedings of the Third ACM Workshop on Security and Privacy in Smartphones &amp; Mobile Devices</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_andrototal_2013/maggi_andrototal_2013.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_andrototal_2013/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2013">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Alessandro Nacci</span>, <span>Francesco Trovò</span>, <span>Federico Maggi</span>, <span>Matteo Ferroni</span>, <span>Andrea Cazzola</span>, <span>Donatella Sciuto</span>, <span>Marco Santambrogio</span>
+  </span>
+  (2013).
+  <a href="/publication/nacci_mpower_article_2013/">Adaptive and Flexible Smartphone Power Modeling</a>.
+  <em>Mobile Networks and Applications</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/nacci_mpower_article_2013/nacci_mpower_article_2013.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/nacci_mpower_article_2013/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2013">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Andrea Dardanelli</span>, <span>Federico Maggi</span>, <span>Mara Tanelli</span>, <span>Stefano Zanero</span>, <span>Sergio M Savaresi</span>, <span>Roman Kochanek</span>, <span>Thorsten Holz</span>
+  </span>
+  (2013).
+  <a href="/publication/dardanelli_cartox_article_2013/">A Security Layer for Smartphone-to-Vehicle Communication over Bluetooth</a>.
+  <em>Embedded Systems Letters</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/dardanelli_cartox_article_2013/dardanelli_cartox_article_2013.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/dardanelli_cartox_article_2013/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2013">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Alessandro Frossi</span>, <span>Stefano Zanero</span>, <span>Gianluca Stringhini</span>, <span>Brett Stone-Gross</span>, <span>Christopher Kruegel</span>, <span>Giovanni Vigna</span>
+  </span>
+  (2013).
+  <a href="/publication/maggi_longshore_2013/">Two years of short URLs internet measurement: security threats and countermeasures</a>.
+  <em>Proceedings of the 22nd international conference on World Wide Web (WWW)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_longshore_2013/maggi_longshore_2013.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_longshore_2013/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2012">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Martina Lindorfer</span>, <span>Alessandro Di Federico</span>, <span>Federico Maggi</span>, <span>Paolo Milani Comparetti</span>, <span>Stefano Zanero</span>
+  </span>
+  (2012).
+  <a href="/publication/lindorfer_beagle_2012/">Lines of Malicious Code: Insights Into the Malicious Software Industry</a>.
+  <em>Proceedings of the Annual Computer Security Applications Conference (ACSAC)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/lindorfer_beagle_2012/lindorfer_beagle_2012.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/lindorfer_beagle_2012/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2012">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Jason Polakis</span>, <span>Marco Lancini</span>, <span>Georgios Kontaxis</span>, <span>Federico Maggi</span>, <span>Sotiris Ioannidis</span>, <span>Angelos Keromytis</span>, <span>Stefano Zanero</span>
+  </span>
+  (2012).
+  <a href="/publication/polakis_soauth_2012/">All Your Face Are Belong to Us: Breaking Facebook&#39;s Social Authentication</a>.
+  <em>Proceedings of the Annual Computer Security Applications Conference (ACSAC)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/polakis_soauth_2012/polakis_soauth_2012.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/polakis_soauth_2012/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2012">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Roman Kochanek</span>, <span>Andrea Dardanelli</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>, <span>Mara Tanelli</span>, <span>Sergio Savaresi</span>, <span>Thorsten Holz</span>
+  </span>
+  (2012).
+  <a href="/publication/kochanek_cartox_tr_2012/">Secure Integration of Mobile Devices for Automotive Services</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/kochanek_cartox_tr_2012/kochanek_cartox_tr_2012.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/kochanek_cartox_tr_2012/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2012">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2012).
+  <a href="/publication/maggi_phdthesispaper_2012/">Integrated Detection of Anomalous Behavior of Computer Infrastructures</a>.
+  <em>Proceedings of the IEEE/IFIP Network Operations and Management Symposium (NOMS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_phdthesispaper_2012/maggi_phdthesispaper_2012.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_phdthesispaper_2012/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2011">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Andrea Bellini</span>, <span>Guido Salvaneschi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2011).
+  <a href="/publication/maggi_avlabelling_2011/">Finding Non-trivial Malware Naming Inconsistencies</a>.
+  <em>Proceedings of the 7th International Conference on Information Systems Security (ICISS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_avlabelling_2011/maggi_avlabelling_2011.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_avlabelling_2011/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2011">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Alberto Volpatto</span>, <span>Simone Gasparini</span>, <span>Giacomo Boracchi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2011).
+  <a href="/publication/maggi_iclearshot_2011/">A Fast Eavesdropping Attack Against Touchscreens</a>.
+  <em>Proceedings of the 7th International Conference on Information Assurance and Security (IAS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_iclearshot_2011/maggi_iclearshot_2011.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_iclearshot_2011/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2011">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Alberto Volpatto</span>, <span>Simone Gasparini</span>, <span>Giacomo Boracchi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2011).
+  <a href="/publication/maggi_iclearshotposter_2011/">POSTER: Fast, Automatic iPhone Shoulder Surfing</a>.
+  <em>Proceedings of the 18th Conference on Computer and Communication Security (CCS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_iclearshotposter_2011/maggi_iclearshotposter_2011.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_iclearshotposter_2011/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2011">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2011).
+  <a href="/publication/maggi_syssecpolimi_2011/">System Security research at Politecnico di Milano</a>.
+  <em>Proceedings of the 1st SysSec Workshop (SysSec)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_syssecpolimi_2011/maggi_syssecpolimi_2011.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_syssecpolimi_2011/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2011">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Francesco Roveta</span>, <span>Luca Di Mario</span>, <span>Federico Maggi</span>, <span>Giorgio Caviglia</span>, <span>Stefano Zanero</span>, <span>Paolo Ciuccarelli</span>
+  </span>
+  (2011).
+  <a href="/publication/roveta_burn_2011/">BURN: Baring Unknown Rogue Networks</a>.
+  <em>Proceedings of the 8th International Symposium on Visualization for Cyber Security (VizSec)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/roveta_burn_2011/roveta_burn_2011.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/roveta_burn_2011/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2011">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2011).
+  <a href="/publication/maggi_cloudids_2011/">Is the future Web more insecure? Distractions and solutions of new-old security issues and measures</a>.
+  <em>Proceedings of the Worldwide Cybersecurity Summit</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_cloudids_2011/maggi_cloudids_2011.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_cloudids_2011/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2011">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Alessandro Sisto</span>, <span>Stefano Zanero</span>
+  </span>
+  (2011).
+  <a href="/publication/maggi_phonephishinghoneypot_2011/">A social-engineering-centric data collection initiative to study phishing</a>.
+  <em>Proceedings of the First Workshop on Building Analysis Datasets and Gathering Experience Returns for Security (BADGERS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_phonephishinghoneypot_2011/maggi_phonephishinghoneypot_2011.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_phonephishinghoneypot_2011/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2010">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Alberto Volpatto</span>, <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2010).
+  <a href="/publication/volpatto_cooperativeids_2010/">Effective Multimodel Anomaly Detection Using Cooperative Negotiation</a>.
+  <em>Proceedings of the Decision and Game Theory for Security (GameSec)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/volpatto_cooperativeids_2010/volpatto_cooperativeids_2010.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/volpatto_cooperativeids_2010/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2010">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2010).
+  <a href="/publication/maggi_cloudids_tr_2010/">Rethinking security in a cloudy world</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_cloudids_tr_2010/maggi_cloudids_tr_2010.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_cloudids_tr_2010/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2010">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Alberto Volpatto</span>, <span>Simone Gasparini</span>, <span>Giacomo Boracchi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2010).
+  <a href="/publication/maggi_iclearshot_tr_2010/">Don&#39;t touch a word! A practical input eavesdropping attack against mobile touchscreen devices</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_iclearshot_tr_2010/maggi_iclearshot_tr_2010.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_iclearshot_tr_2010/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2010">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>
+  </span>
+  (2010).
+  <a href="/publication/maggi_phonephishing_2010/">Are the Con Artists Back? A Preliminary Analysis of Modern Phone Frauds</a>.
+  <em>Proceedings of the International Conference on Computer and Information Technology (CIT)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_phonephishing_2010/maggi_phonephishing_2010.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_phonephishing_2010/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2010">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>
+  </span>
+  (2010).
+  <a href="/publication/maggi_traces_2010/">A Recognizer of Rational Trace Languages</a>.
+  <em>Proceedings of the International Conference on Computer and Information Technology (CIT)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_traces_2010/maggi_traces_2010.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_traces_2010/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2010">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>William Robertson</span>, <span>Federico Maggi</span>, <span>Christopher Kruegel</span>, <span>Giovanni Vigna</span>
+  </span>
+  (2010).
+  <a href="/publication/robertson_longtail_2010/">Effective Anomaly Detection with Scarce Training Data</a>.
+  <em>Proceedings of the Network and Distributed System Security Symposium (NDSS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/robertson_longtail_2010/robertson_longtail_2010.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/robertson_longtail_2010/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-7 year-2010">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>
+  </span>
+  (2010).
+  <a href="/publication/maggi_phdthesis_2010/">Integrated Detection of Anomalous Behavior of Computer Infrastructures</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_phdthesis_2010/maggi_phdthesis_2010.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_phdthesis_2010/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2009">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Claudio Criscione</span>, <span>Federico Maggi</span>, <span>Guido Salvaneschi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2009).
+  <a href="/publication/criscione_masibty_2009/">Integrated Detection of Attacks Against Browsers, Web Applications and Databases</a>.
+  <em>Proceedings of the European Conference on Network Defense (EC2ND)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/criscione_masibty_2009/criscione_masibty_2009.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/criscione_masibty_2009/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2009">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Matteo Matteucci</span>, <span>Stefano Zanero</span>
+  </span>
+  (2009).
+  <a href="/publication/maggi_fuzzyalertaggregation_article_2009/">Reducing false positives in anomaly detectors through fuzzy alert aggregation</a>.
+  <em>Information Fusion</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_fuzzyalertaggregation_article_2009/maggi_fuzzyalertaggregation_article_2009.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_fuzzyalertaggregation_article_2009/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2009">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>William Robertson</span>, <span>Christopher Kruegel</span>, <span>Giovanni Vigna</span>
+  </span>
+  (2009).
+  <a href="/publication/maggi_conceptdrift_2009/">Protecting a Moving Target: Addressing Web Application Concept Drift</a>.
+  <em>Proceedings of the International Symposium on Recent Advances in Intrusion Detection (RAID)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_conceptdrift_2009/maggi_conceptdrift_2009.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_conceptdrift_2009/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2009">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Alessandro Frossi</span>, <span>Federico Maggi</span>, <span>Gian Luigi Rizzo</span>, <span>Stefano Zanero</span>
+  </span>
+  (2009).
+  <a href="/publication/frossi_hybridsyscalls_2009/">Selecting and Improving System Call Models for Anomaly Detection</a>.
+  <em>Proceedings of the International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/frossi_hybridsyscalls_2009/frossi_hybridsyscalls_2009.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/frossi_hybridsyscalls_2009/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2008">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Matteo Matteucci</span>, <span>Stefano Zanero</span>
+  </span>
+  (2008).
+  <a href="/publication/maggi_syscallseq_article_2008/">Detecting Intrusions through System Call Sequence and Argument Analysis</a>.
+  <em>IEEE Transactions on Dependable and Secure Computing (TODS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_syscallseq_article_2008/maggi_syscallseq_article_2008.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_syscallseq_article_2008/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2008">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>
+  </span>
+  (2008).
+  <a href="/publication/maggi_traces_tr_2008/">Specification and Evaluation of an Efficient Recognizer for Rational Trace Languages</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_traces_tr_2008/maggi_traces_tr_2008.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_traces_tr_2008/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2008">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Stefano Zanero</span>, <span>Vincenzo Iozzo</span>
+  </span>
+  (2008).
+  <a href="/publication/maggi_antiforensics_article_2008/">Seeing the invisible: forensic uses of anomaly detection and machine learning</a>.
+  <em>Operating Systems Review of the ACM Special Interest Group on Operating Systems (SIGOPS)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_antiforensics_article_2008/maggi_antiforensics_article_2008.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_antiforensics_article_2008/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-4 year-2008">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>
+  </span>
+  (2008).
+  <a href="/publication/maggi_recordmatching_tr_2008/">A Survey of Probabilistic Record Matching Models, Techniques and Tools</a>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_recordmatching_tr_2008/maggi_recordmatching_tr_2008.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_recordmatching_tr_2008/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2007">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span>Federico Maggi</span>, <span>Stefano Zanero</span>
+  </span>
+  (2007).
+  <a href="/publication/maggi_alertcorrelation_2007/">On the Use of Different Statistical Tests for Alert Correlation - Short Paper</a>.
+  <em>Proceedings of the International Symposium on Recent Advances in Intrusion Detection (RAID)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/maggi_alertcorrelation_2007/maggi_alertcorrelation_2007.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/maggi_alertcorrelation_2007/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+  </p>
+  
+
+  <p class="powered-by">
+    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    Unless otherwise stated, the original content in this website is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nd_icon.svg" alt="CC ND icon">
+        
+      
+    </a>
+  </p>
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

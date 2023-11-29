@@ -1,0 +1,1303 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+        
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Federico Maggi">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Hiding Trojan Source Code via Unicode Tricks / CISA&#39;s Known Exploited Vulnerabilities Feed / CWE Most Important Hardware Weaknesses / How Signal Responds to Law Enforcement Search Warrants / Exchange Vuln. Exploited by Babuk Ransomware Campaign">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/cyberfacts/issue-5/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#cc6627">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/cyberfacts/issue-5/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@phretor">
+  <meta property="twitter:creator" content="@phretor">
+  
+  <meta property="og:site_name" content="Federico Maggi">
+  <meta property="og:url" content="/cyberfacts/issue-5/">
+  <meta property="og:title" content="🔓 [CyberFacts Weekly - Issue 0x05] It&#39;s (Almost) the Season to be Jolly 🎅 | Federico Maggi">
+  <meta property="og:description" content="Hiding Trojan Source Code via Unicode Tricks / CISA&#39;s Known Exploited Vulnerabilities Feed / CWE Most Important Hardware Weaknesses / How Signal Responds to Law Enforcement Search Warrants / Exchange Vuln. Exploited by Babuk Ransomware Campaign"><meta property="og:image" content="/cyberfacts/issue-5/featured.jpg">
+  <meta property="twitter:image" content="/cyberfacts/issue-5/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-11-05T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-11-05T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#cc6627",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#cc6627"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "/privacy/"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>🔓 [CyberFacts Weekly - Issue 0x05] It&#39;s (Almost) the Season to be Jolly 🎅 | Federico Maggi</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/cyberfacts"><span>CyberFacts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/post"><span>Diary</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/talk"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/advisories"><span>Advisories</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacts</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>🔓 [CyberFacts Weekly - Issue 0x05] It&#39;s (Almost) the Season to be Jolly 🎅</h1>
+
+  
+  <p class="page-subtitle">Hiding Trojan Source Code via Unicode Tricks / CISA&rsquo;s Known Exploited Vulnerabilities Feed / CWE Most Important Hardware Weaknesses / How Signal Responds to Law Enforcement Search Warrants / Exchange Vuln. Exploited by Babuk Ransomware Campaign</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 5, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 592px; max-height: 443px;">
+  <div style="position: relative">
+    <img src="/cyberfacts/issue-5/featured.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Oh oh oh!</p>
+<p>I guess I&rsquo;m a little early this year, but after having spent the
+Halloween weekend at home with no adequate trick or treating because of
+the rain, I&rsquo;m really looking forward to the upcoming holiday season!</p>
+<p>I don&rsquo;t know about you, but I changed my business travel plans to make
+sure I&rsquo;m back home to watch 
+<a href="https://www.youtube.com/watch?v=2BkVf2voCr0" target="_blank" rel="noopener">Home Sweet Home
+Alone</a> with the family. I
+guess it&rsquo;s a little too much 😂</p>
+<p>You&rsquo;ll notice that this week&rsquo;s edition is pretty short, because I&rsquo;m head
+down prepping for 
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/index.html" target="_blank" rel="noopener">Black Hat
+Europe</a>,
+where I&rsquo;ll finally get to speak on a physical stage!</p>
+<p>Here are some of the talks I&rsquo;m planning to attend or re-watch:</p>
+<ul>
+<li>
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/#http-the-sequel-is-always-worse-25206" target="_blank" rel="noopener">HTTP/2: The Sequel is Always
+Worse</a>
+by <span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#james-kettle-32347" class="speaker_link">James Kettle</a></span></li>
+<li>
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/#who-did-it---how-we-attributed-campaigns-of-a-cyber-mercenary-24803" target="_blank" rel="noopener">Who Did It - How We Attributed Campaigns of a Cyber
+Mercenary</a>
+by <span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#feike-hacquebord-42839" class="speaker_link">Feike Hacquebord</a></span></li>
+<li>
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/#lost-in-the-loader-the-many-faces-of-the-windows-pe-file-format-24706" target="_blank" rel="noopener">Lost in the Loader: The Many Faces of the Windows PE File
+Format</a>
+by <span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#dario-nisi-42743" class="speaker_link">Dario Nisi</a></span>,
+<span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#mariano-graziano-35062" class="speaker_link">Mariano Graziano</a></span>,
+<span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#yanick-fratantonio-33796" class="speaker_link">Yanick Fratantonio</a></span>,
+and <span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#davide-balzarotti-32026" class="speaker_link">Davide Balzarotti</a></span></li>
+<li>
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/#embedding-a-human-centric-approach-into-a-global-cyber-security-program-25259" target="_blank" rel="noopener">Embedding a Human-Centric Approach Into a Global Cyber Security
+Program</a>
+by <span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#kevin-jones-36975" class="speaker_link">Kevin Jones</a></span>
+(Airbus CISO)</li>
+<li>
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/#clocking-on-25263" target="_blank" rel="noopener">Clocking
+On</a>
+(Keynote) by <span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#adam-laurie-40450" class="speaker_link">Adam Laurie</a></span></li>
+<li>
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/#locknote-conclusions-and-key-takeaways-from-black-hat-europe--25257" target="_blank" rel="noopener"><span class="nospace session-speaker">Locknote: Conclusions and Key
+Takeaways from Black Hat Europe
+2021</span></a>
+with <span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#daniel-cuthbert-31839" class="speaker_link">Daniel Cuthbert</a></span>,
+<span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#thomas-brandstetter-31880" class="speaker_link">Thomas Brandstetter</a></span>,
+<span
+class="nospace session-speaker"><a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#meadow-ellis-43053" class="speaker_link">Meadow Ellis</a>,
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#james-kettle-32347" class="speaker_link">James Kettle</a>,
+and
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/speakers.html#marina-krotofil-32575" class="speaker_link">Marina Krotofil</a></span></li>
+</ul>
+<p>And then, I think I can&rsquo;t avoid &ldquo;attending&rdquo; the
+
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/#the-data-distribution-service-dds-protocol-is-critical-lets-use-it-securely-24934" target="_blank" rel="noopener">talk</a>
+and
+
+<a href="https://www.blackhat.com/eu-21/briefings/schedule/#from-coordinated-disclosure-to-cooperative-vulnerability-research-when-dealing-with-critical-software-stacks-25298" target="_blank" rel="noopener">panel</a>
+I&rsquo;m expected to speak at. Stay tuned, my colleagues and I will explain
+how we found 
+<a href="https://twitter.com/TrendMicroRSRCH/status/1456222491601481731" target="_blank" rel="noopener">12 CVEs and 1 spec-level vulnerability affecting most of
+the DDS
+implementations</a>,
+and what their impact is.</p>
+<p>Thanks for reading this issue, big thanks to the subscribers, and bigger
+thanks to the new subscribers! 🙏</p>
+<hr>
+<ul>
+<li>
+<a href="#top-picks">Top Picks</a>
+<ul>
+<li>
+<a href="#microsoft-exchange-vulnerabilities-exploited-once-again-for-ransomware-this-time-with-babuk">MS Exchange Vulnerability (CVE-2021-36942) Exploited for Babuk Ransomware Campaign</a></li>
+<li>
+<a href="#trojan-source-invisible-vulnerabilities">Hiding (Trojan) Functionalities in Source Code Using Unicode Bidirectional Algorithm (CVE-2021-42574)</a></li>
+<li>
+<a href="#search-warrant-for-signal-user-data-santa-clara-county">How Signal Responds to Law Enforcement Search Warrants</a></li>
+<li>
+<a href="#cwe-cwe-most-important-hardware-weaknesses">CWE Most Important Hardware Weaknesses</a></li>
+<li>
+<a href="#known-exploited-vulnerabilities-catalog-cisa">US CISA Publishes a Feed of Known Exploited Vulnerabilities</a></li>
+</ul>
+</li>
+<li>
+<a href="#also-noteworthy">Also Noteworthy</a>
+<ul>
+<li>
+<a href="#ukraine-discloses-identity-of-gamaredon-members-links-it-to-russia-s-fsb">Identity of Cyber-espionage Gamaredon Group Members Revelaed by Ukraine</a></li>
+<li>
+<a href="#gitlab-servers-are-being-exploited-in-ddos-attacks-in-excess-of-1-tbps">Vulnerability in GitLab (self-hosted) Exploited to Build a DDoS Botnet</a></li>
+<li>
+<a href="#the-booming-underground-market-for-bots-that-steal-your-2fa-codes">Bots that Steal 2FA Codes are Being Sold in Underground Markets</a></li>
+<li>
+<a href="#avoiding-bot-detection-how-to-scrape-the-web-without-getting-blocked">State of Browser Fingerprinting Techniques and How to Bypass Them for Web Scraping</a></li>
+<li>
+<a href="#ransomware-strikes-toronto-transit-system-disrupting-some-services">Ransomware Attack Against Toronto Transit System</a></li>
+<li>
+<a href="#hive-ransomware-now-encrypts-linux-and-freebsd-systems">Hive ransomware now encrypts Linux and FreeBSD systems</a></li>
+</ul>
+</li>
+<li>
+<a href="#tools">Tools</a>
+<ul>
+<li>
+<a href="#embark-the-firmware-security-scanning-environment">EMBArk Web-based Firmware Security Scanning Environment</a></li>
+<li>
+<a href="#openvdp">OpenVDP: Open Source Tool for Vulnerability Disclosure Programs</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="top-picks">Top Picks</h1>
+<h2 id="microsoft-exchange-vulnerabilities-exploited-once-again-for-ransomware-this-time-with-babuk"><a href="http://blog.talosintelligence.com/2021/11/babuk-exploits-exchange.html">MS Exchange Vulnerability (CVE-2021-36942) Exploited for Babuk Ransomware Campaign</a></h2>
+<p><em>by <strong>Chetan Raghuprasad</strong></em></p>
+<blockquote>
+<p>Cisco Talos recently discovered a malicious campaign deploying
+variants of the Babuk ransomware predominantly affecting users in the
+U.S. with smaller number of infections in U.K., Germany, Ukraine,
+Finland, Brazil, Honduras and Thailand.</p>
+</blockquote>
+<hr>
+<h2 id="trojan-source-invisible-vulnerabilities"><a href="https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/">Hiding (Trojan) Functionalities in Source Code Using Unicode Bidirectional Algorithm (CVE-2021-42574)</a></h2>
+<p><em>by <strong>Ross Anderson</strong></em></p>
+<p>The Security Group of The University of Cambridge have discovered ways
+of manipulating the encoding of source code files so that human viewers
+and compilers see different logic, opening the potentially devastating
+possibility of introducing portions of source code that are invisible to
+the human eye, on all the major programming languages.</p>
+<p>More details: 
+<a href="https://trojansource.codes/" target="_blank" rel="noopener">here</a>,
+
+<a href="https://blog.rust-lang.org/2021/11/01/cve-2021-42574.html" target="_blank" rel="noopener">here</a>
+(Rust), 
+<a href="https://trojansource.codes/trojan-source.pdf" target="_blank" rel="noopener">paper</a>, and
+
+<a href="https://github.com/nickboucher/trojan-source" target="_blank" rel="noopener">code</a>.</p>
+<hr>
+<h2 id="search-warrant-for-signal-user-data-santa-clara-county"><a href="https://signal.org/bigbrother/santaclara/">How Signal Responds to Law Enforcement Search Warrants</a></h2>
+<p><em>by <strong>Signal</strong> // Signal Messenger</em></p>
+<blockquote>
+<p>Because everything in Signal is end-to-end encrypted by default, the
+broad set of personal information that is typically easy to retrieve
+in other apps simply doesn’t exist on Signal’s servers. Once again,
+this request sought a wide variety of information we don’t have,
+including the user’s name, address, correspondence, contacts, groups,
+call records.</p>
+</blockquote>
+<p>Also covered by 
+<a href="https://www.zdnet.com/article/signal-unveils-how-far-us-law-enforcement-will-go-to-get-information-about-people/#ftag=RSSbaffb68" target="_blank" rel="noopener">ZDNet in a less technical
+way</a>.</p>
+<hr>
+<h2 id="cwe-cwe-most-important-hardware-weaknesses"><a href="https://cwe.mitre.org/scoring/lists/2021_CWE_MIHW.html?mc_cid=ca5399112f&mc_eid=c0cc4325f7">CWE Most Important Hardware Weaknesses</a></h2>
+<p><em>by <strong>MITRE</strong></em></p>
+<p>The goal of this &ldquo;first of its kind&rdquo; list is to drive awareness of
+common hardware weaknesses.</p>
+<ul>
+<li><strong>CWE-1189</strong> Improper Isolation of Shared Resources on
+System-on-a-Chip (SoC)</li>
+<li><strong>CWE-1191</strong> On-Chip Debug and Test Interface With Improper Access
+Control</li>
+<li><strong>CWE-1231</strong> Improper Prevention of Lock Bit Modification</li>
+<li><strong>CWE-1233</strong> Security-Sensitive Hardware Controls with Missing Lock
+Bit Protection</li>
+<li><strong>CWE-1240</strong> Use of a Cryptographic Primitive with a Risky
+Implementation</li>
+<li><strong>CWE-1244</strong> Internal Asset Exposed to Unsafe Debug Access Level or
+State</li>
+<li><strong>CWE-1256</strong> Improper Restriction of Software Interfaces to Hardware
+Features</li>
+<li><strong>CWE-1260</strong> Improper Handling of Overlap Between Protected Memory
+Ranges</li>
+<li><strong>CWE-1272</strong> Sensitive Information Uncleared Before Debug/Power
+State Transition</li>
+<li><strong>CWE-1274</strong> Improper Access Control for Volatile Memory Containing
+Boot Code</li>
+<li><strong>CWE-1277</strong> Firmware Not Updateable</li>
+<li><strong>CWE-1300</strong> Improper Protection of Physical Side Channels</li>
+</ul>
+<hr>
+<h2 id="known-exploited-vulnerabilities-catalog-cisa"><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">US CISA Publishes a Feed of Known Exploited Vulnerabilities</a></h2>
+<p><em>by <strong>CISA</strong> // CISA</em></p>
+<blockquote>
+<p>CISA will update this catalog with additional exploited
+vulnerabilities as they become known.</p>
+</blockquote>
+<p>A great complement to 
+<a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/edit#gid=0" target="_blank" rel="noopener">Google P0&rsquo;s 0day in the wild
+spreadsheet</a>.</p>
+<hr>
+<h1 id="also-noteworthy">Also Noteworthy</h1>
+<h2 id="ukraine-discloses-identity-of-gamaredon-members-links-it-to-russia-s-fsb"><a href="https://therecord.media/ukraine-discloses-identity-of-gamaredon-members-links-it-to-russias-fsb/">Identity of Cyber-espionage Gamaredon Group Members Revelaed by Ukraine</a></h2>
+<p><em>by <strong>Catalin Cimpanu</strong> // The Record by Recorded Future</em></p>
+<blockquote>
+<p>The Ukrainian Security Service (SSU) has revealed the real identities
+of 5 members of the Gamaredon cyber-espionage group, linking its
+members to the Crimean branch of the Russian Federal Security Service
+(FSB).</p>
+</blockquote>
+<hr>
+<h2 id="gitlab-servers-are-being-exploited-in-ddos-attacks-in-excess-of-1-tbps"><a href="https://therecord.media/gitlab-servers-are-being-exploited-in-ddos-attacks-in-excess-of-1-tbps/">Vulnerability in GitLab (self-hosted) Exploited to Build a DDoS Botnet</a></h2>
+<blockquote>
+<p>Threat actors are exploiting a security flaw in GitLab self-hosted
+servers to assemble botnets and launch gigantic distributed denial of
+service (DDoS) attacks, with some in excess of 1 terabit per second
+(Tbps).</p>
+</blockquote>
+<hr>
+<h2 id="the-booming-underground-market-for-bots-that-steal-your-2fa-codes"><a href="https://www.vice.com/en/article/y3vz5k/booming-underground-market-bots-2fa-otp-paypal-amazon-bank-apple-venmo">Bots that Steal 2FA Codes are Being Sold in Underground Markets</a></h2>
+<p>Unexpectedly, as we increasingly rely on 2FA to secure our
+communications, they become an attractive and lucrative target.</p>
+<blockquote>
+<p>The bots convincingly and effortlessly help hackers break into
+Coinbase, Amazon, PayPal, and bank accounts.</p>
+</blockquote>
+<hr>
+<h2 id="avoiding-bot-detection-how-to-scrape-the-web-without-getting-blocked"><a href="https://github.com/niespodd/browser-fingerprinting">State of Browser Fingerprinting Techniques and How to Bypass Them for Web Scraping</a></h2>
+<p><em>by <strong>Niespod Dariusz</strong> // GitHub</em></p>
+<hr>
+<h2 id="ransomware-strikes-toronto-transit-system-disrupting-some-services"><a href="https://www.cyberscoop.com/toronto-transit-commission-ann-arbor-theride-ransomware/">Ransomware Attack Against Toronto Transit System</a></h2>
+<p><em>by <strong>Tim Starks</strong> // CyberScoop</em></p>
+<blockquote>
+<p>Online services for communicating with vehicle operators, information
+platform screens, trip-planning apps, the commission’s website, an
+online booking portal and internal email messaging were among the
+affected systems.</p>
+</blockquote>
+<hr>
+<h2 id="hive-ransomware-now-encrypts-linux-and-freebsd-systems"><a href="https://www.bleepingcomputer.com/news/security/hive-ransomware-now-encrypts-linux-and-freebsd-systems/">Hive ransomware now encrypts Linux and FreeBSD systems</a></h2>
+<p><em>by <strong>Sergiu Gatlan</strong> // BleepingComputer</em></p>
+<p>
+<a href="https://twitter.com/ESETresearch/status/1454100591261667329" target="_blank" rel="noopener">ESET has
+identified</a>
+Linux and FreeBSD variants of the Hive ransomware, written in Golang
+with gobfuscate&rsquo;d strings and package names.</p>
+<hr>
+<h1 id="tools">Tools</h1>
+<h2 id="embark-the-firmware-security-scanning-environment"><a href="https://github.com/e-m-b-a/embark">EMBArk Web-based Firmware Security Scanning Environment</a></h2>
+<p>A new web-based tool for firmware scanning joins the list, together with
+
+<a href="https://github.com/cruise-automation/fwanalyzer" target="_blank" rel="noopener">FwAnalyzer</a> by Cruise
+Automation and 
+<a href="https://github.com/firmadyne/firmadyne" target="_blank" rel="noopener">Firmadyne</a> by
+BU.</p>
+<p>Watch a demo of EMBArk
+
+<a href="https://www.youtube.com/watch?v=qSHuPWbfhmI" target="_blank" rel="noopener">here</a>.</p>
+<hr>
+<h2 id="openvdp"><a href="https://github.com/parikhakshat/openvdp">OpenVDP: Open Source Tool for Vulnerability Disclosure Programs</a></h2>
+<p><em>by <strong>parikhakshat</strong> // GitHub</em></p>
+<blockquote>
+<p>OpenVDP is a full stack web application that provides organizations
+with an easy way to recieve security advice. It is a bug
+tracking/reporting application for organizations and security
+researchers.</p>
+</blockquote>
+<p>IMHO it can&rsquo;t compete with tools like
+
+<a href="https://kb.cert.org/vince/" target="_blank" rel="noopener">VINCE</a>, but it&rsquo;s certainly a useful tool
+for small realms that need to manage vulnerabilities.</p>
+<hr>
+
+
+      <p>CyberFacts Weekly is a digest of my hand-picked readings from the cyber-security world.</p>
+      <p>CyberFacts Weekly is intended mostly for myself, to have a place to archive and keep public notes of what I read and deem as noteworthy.</p>
+      <p>If you like it, consider
+      <a href="https://buttondown.email/cyberfacts" target="_blank" rel="noopener">subscribing</a> or forwarding this email to peers and friends. If newsletters aren&rsquo;t really your thing, maybe you&rsquo;d prefer to follow the
+      <a href="https://twitter.com/CyberFactsIT" target="_blank" rel="noopener">@CyberFactsIT</a> Twitter account, which I use to publish the real-time feed of my selected readings (also available
+      <a href="http://www.inoreader.com/stream/user/1004856625/tag/Cybersecurity%20Noteworthy" target="_blank" rel="noopener">via RSS</a>).</p>
+      <p>Hope you enjoyed this issue&hellip;and see you reading the next one! 🙃</p>
+      <p>Thanks! Cheers,
+      Fede</p>
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/cyberfacts/issue-5/&amp;text=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x05]%20It&amp;#39;s%20%28Almost%29%20the%20Season%20to%20be%20Jolly%20%f0%9f%8e%85" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/cyberfacts/issue-5/&amp;t=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x05]%20It&amp;#39;s%20%28Almost%29%20the%20Season%20to%20be%20Jolly%20%f0%9f%8e%85" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x05]%20It&amp;#39;s%20%28Almost%29%20the%20Season%20to%20be%20Jolly%20%f0%9f%8e%85&amp;body=/cyberfacts/issue-5/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/cyberfacts/issue-5/&amp;title=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x05]%20It&amp;#39;s%20%28Almost%29%20the%20Season%20to%20be%20Jolly%20%f0%9f%8e%85" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x05]%20It&amp;#39;s%20%28Almost%29%20the%20Season%20to%20be%20Jolly%20%f0%9f%8e%85%20/cyberfacts/issue-5/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/cyberfacts/issue-5/&amp;title=%f0%9f%94%93%20[CyberFacts%20Weekly%20-%20Issue%200x05]%20It&amp;#39;s%20%28Almost%29%20the%20Season%20to%20be%20Jolly%20%f0%9f%8e%85" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+  </p>
+  
+
+  <p class="powered-by">
+    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    Unless otherwise stated, the original content in this website is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nd_icon.svg" alt="CC ND icon">
+        
+      
+    </a>
+  </p>
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

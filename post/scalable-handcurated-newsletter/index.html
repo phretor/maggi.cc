@@ -1,0 +1,1249 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+        
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Federico Maggi">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="I guess it&#39;s not unique to the cyber-security world, but research and media move pretty fast here, so it&#39;s easy to end up with hundreds of seemingly interestingly articles or blog posts to read every day. Of course, that&#39;s not humanly possible. Let me tell you how I deal with this.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/scalable-handcurated-newsletter/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#cc6627">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/post/scalable-handcurated-newsletter/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@phretor">
+  <meta property="twitter:creator" content="@phretor">
+  
+  <meta property="og:site_name" content="Federico Maggi">
+  <meta property="og:url" content="/post/scalable-handcurated-newsletter/">
+  <meta property="og:title" content="Scalable, Hand-curated Newsletters: A Data-centric, Automatic Workflow | Federico Maggi">
+  <meta property="og:description" content="I guess it&#39;s not unique to the cyber-security world, but research and media move pretty fast here, so it&#39;s easy to end up with hundreds of seemingly interestingly articles or blog posts to read every day. Of course, that&#39;s not humanly possible. Let me tell you how I deal with this."><meta property="og:image" content="/post/scalable-handcurated-newsletter/featured.png">
+  <meta property="twitter:image" content="/post/scalable-handcurated-newsletter/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-11-15T21:41:54&#43;01:00">
+    
+    <meta property="article:modified_time" content="2021-11-15T21:41:54&#43;01:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/scalable-handcurated-newsletter/"
+  },
+  "headline": "Scalable, Hand-curated Newsletters: A Data-centric, Automatic Workflow",
+  
+  "image": [
+    "/post/scalable-handcurated-newsletter/featured.png"
+  ],
+  
+  "datePublished": "2021-11-15T21:41:54+01:00",
+  "dateModified": "2021-11-15T21:41:54+01:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Federico Maggi"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Federico Maggi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "I guess it's not unique to the cyber-security world, but research and media move pretty fast here, so it's easy to end up with hundreds of seemingly interestingly articles or blog posts to read every day. Of course, that's not humanly possible. Let me tell you how I deal with this."
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#cc6627",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#cc6627"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "/privacy/"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>Scalable, Hand-curated Newsletters: A Data-centric, Automatic Workflow | Federico Maggi</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Federico Maggi</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/cyberfacts"><span>CyberFacts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post"><span>Diary</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/talk"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/advisories"><span>Advisories</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacts</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>Scalable, Hand-curated Newsletters: A Data-centric, Automatic Workflow</h1>
+
+  
+  <p class="page-subtitle">How to maintain a newsletter in just a few minutes a day, without loosing your mind.</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 15, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    15 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 594px;">
+  <div style="position: relative">
+    <img src="/post/scalable-handcurated-newsletter/featured_hu1ad646aa283006f7e943839a8aff26d8_1993167_720x0_resize_lanczos_3.png" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>I guess it&rsquo;s not unique to the cyber-security world, but research and media move pretty fast here, so it&rsquo;s easy to end up with hundreds of seemingly interestingly articles or blog posts to read every day. Of course, that&rsquo;s not humanly possible. Let me tell you how I deal with this with only two tools, 
+<a href="https://inoreader.com" target="_blank" rel="noopener">Inoreader</a> and 
+<a href="https://zotero.org" target="_blank" rel="noopener">Zotero</a>, plus some scripting.</p>
+<p>In 
+<a href="/cyberfacts/issue-3/">CyberFacts Weekly Issue 0x03</a> I briefly hinted about this workflow, which surprisingly have inspired one of my subscribers to follow the same approach to curate their own newsletter (cool!). This motivated me to spend some time and write down the details of the workflow, in the hope that curators and newsletter authors would find it useful.</p>
+<p><strong>DISCLAIMER:</strong> I don&rsquo;t care about building an audience nor monetizing this. I do this to fuel my thirst for research ideas. Admittedly, I like to pretend there is an audience, which keeps me motivated to keep maintaining this.</p>
+<hr>
+<ul>
+<li>
+<a href="#why-curated-content">Why Curated Content?</a></li>
+<li>
+<a href="#no-silver-bullet-curation">No Silver Bullet Curation</a></li>
+<li>
+<a href="#from-consuming-to-creating">From Consuming to Creating</a></li>
+<li>
+<a href="#high-level-pseudo-workflow-no-tools-yet">High-Level Pseudo Workflow: No Tools, Yet</a></li>
+<li>
+<a href="#from-research-to-headline-a-simplified-journey">From Research to Headline: A Simplified Journey</a></li>
+<li>
+<a href="#the-workflow-for-the-impatient">The Workflow: For the Impatient</a>
+<ul>
+<li>
+<a href="#sourcing-discovering-organizing-and-consuming-good-sources-1-2">Sourcing: Discovering, Organizing, and Consuming Good Sources (1-2)</a></li>
+<li>
+<a href="#taxonomy-tagging-skimming-selection-2">Taxonomy, tagging, skimming, selection (2)</a></li>
+<li>
+<a href="#live-sharing-with-minimum-friction-3">Live Sharing With Minimum Friction (3)</a></li>
+<li>
+<a href="#reading-curation-annotation-summary-4">Reading, curation, annotation, summary (4)</a></li>
+<li>
+<a href="#weekly-digest-sharing-5">Weekly digest sharing (5)</a></li>
+</ul>
+</li>
+<li>
+<a href="#whats-left">What&rsquo;s Left?</a></li>
+</ul>
+<hr>
+<h2 id="why-curated-content">Why Curated Content?</h2>
+<p>Good research starts with good knowledge of the environment, state of the art, and key people. I guess it&rsquo;s not unique to the cyber-security world, but <strong>research and media move pretty fast</strong> in this field, so it&rsquo;s easy to end up with hundreds of seemingly interestingly articles or blog posts to read every day. Of course, that&rsquo;s not humanly possible. And this is without including social media and fake news &ldquo;drifts&rdquo; in the picture.</p>
+<p>Hand curation services and newsletters have became very popular as a mean for <strong>busy people</strong> to stay on top of things, letting curators filter noise from the signal: 
+<a href="https://lists.cymru.com/mailman/options/dragon_newsbytes" target="_blank" rel="noopener">Dragon News Bytes (DNB)</a>, 
+<a href="https://www.sans.org/newsletters/newsbites/" target="_blank" rel="noopener">SANS Newsbites</a>, 
+<a href="https://danielmiessler.com/newsletter/" target="_blank" rel="noopener">Unsupervised Learning</a>, 
+<a href="https://tldrsec.com/" target="_blank" rel="noopener">tl;dr sec</a>, 
+<a href="https://cloudseclist.com/" target="_blank" rel="noopener">CloudSecList</a>, and 
+<a href="https://guerredirete.substack.com/" target="_blank" rel="noopener">Guerre di Rete</a> are some of those I read.</p>
+<h2 id="no-silver-bullet-curation">No Silver Bullet Curation</h2>
+<p>I&rsquo;ve learned there&rsquo;s <strong>no silver bullet</strong> in content curation: Some of these digests are lightly processed, some are more processed and include analyses, some fit my research topics, some completely miss some key stories I need to know about. Some newsletters are too high level (but contain good pointers!), while some other newsletters are too narrow.</p>
+<p>While there are some must-read stories every week (which are found in the set-intersection between all good newsletters), each one of us has their own style and need to build their own opinion, independently, through autonomous content sourcing. Regardless of how good some newsletters are, even paid ones, I&rsquo;ve always ended up not finding something I wanted in each one of them. So, while being an avid consumer of newsletters, a few years ago, I felt the need to understand more of how research results develop into news stories as a mean to build my own view. After all, traditional media outlets and socials cover a very important and critical role of research dissemination, with the responsibility of making the difference on public opinion around a cold research result.</p>
+<h2 id="from-consuming-to-creating">From Consuming to Creating</h2>
+<p>I decided I wanted to get to the source of each news I read. So, I started to systematize my reading list into a taxonomy and, month over month, I&rsquo;ve been feeling I&rsquo;d improved the way I consume readings, gaining more confidence in the difficult task of telling apart interesting from non-interesting news stories. I mean, interesting for my work, of course. Sometimes my work is interesting to the public, so, very seldom, <em>my</em> noteworthy news stories are interesting for others, too.</p>
+<p><img src="i/cf-overall.png" alt="Overall workflow"></p>
+<p>Let me now tell you how I deal with the ever-growing amount of reading material, having only a few minutes a day, often with more important work-related tasks to do.</p>
+<h2 id="high-level-pseudo-workflow-no-tools-yet">High-Level Pseudo Workflow: No Tools, Yet</h2>
+<p>Without going down into the tooling and details, yet, my workflow can be boiled down to the following steps.</p>
+<ol>
+<li><strong>Sources of content:</strong> newspapers, mainstream media outlets, press releases, official and personal blogs, public and private social media feeds, bulletins, content aggregators, other curated content. I organize my sources in a taxonomy with overlapping categories (e.g., a source can be both marked as &ldquo;Must read&rdquo; as well be in a broader &ldquo;Infosec Relevant&rdquo; category), by topic, and by importance.</li>
+<li><strong>Discovery of new sources:</strong> when I encounter an interesting story (e.g., shared by someone else via social media) and I notice I didn&rsquo;t know about that source, I find a place for it within my taxonomy of sources.</li>
+<li><strong>Systematize and prioritize sources &amp; topics:</strong> every time I feel I can&rsquo;t find a good place for a new source, I revise my taxonomy of sources, get rid of inactive or noisy sources, re-sort, etc. I organize my taxonomy in sorted folders from the most important topic-folders (top) to the most generic ones (bottom). In 3 years I&rsquo;ve done this spring cleaning probably twice, so it&rsquo;s not a lot of work.</li>
+<li><strong>Automatic filtering, &ldquo;bucketization,&rdquo; and tagging:</strong> All items are first globally de-duplicated (so that I don&rsquo;t happen to read the same item twice, not even by accident), slightly filtered to reduce noise (e.g., I&rsquo;m not interested in Q&amp;As or AMA posts on Reddit, replies to Tweets), bucketized into topic-folders, and automatically tagged for interesting keywords (e.g., tracked topics, people, places, software names).</li>
+<li><strong>Skimming through buckets:</strong> The way my sources are organized is such that I don&rsquo;t have to choose what to read. The top buckets will always appear at the top, and as I mark them as read, they&rsquo;ll disappear from the current bucket, and from any other overlapping buckets below.</li>
+<li><strong>Select interesting articles:</strong> When I find an interesting item, I tag it as &ldquo;Noteworthy,&rdquo; which triggers automatic archival and immediate sharing (e.g., on Twitter). I have private chats with co-workers where I share the same (or slightly different) content. I create one tag for each one of these cases so I can manage their workflows independently.</li>
+<li><strong>Share and track:</strong> When the content get shared via my social media channels, I receive notifications when people comment, re-share, or like, which gives me an indication of how good my choice was. Also, when I select an item about a completely new (but very important) topic, I setup auto-tagging of that topic, so that I get notified when something about that topic pops in the news again.</li>
+<li><strong>Sort content selection:</strong> Every 1-2 days, I go through my &ldquo;Noteworthy&rdquo; items and, also based on feedback from social media (if any), I choose the absolutely most important items and read through them in my browser.</li>
+<li><strong>Annotate selected content:</strong> While reading, I take an HTML snapshot and save a copy of the page so that I can annotate and archive locally.</li>
+<li><strong>Highlight and summarize:</strong> While reading, I highlight the most important pieces and start thinking about a one-liner to summarize the story, which may happen to be the same title chosen by the original reporter.</li>
+<li><strong>Digest:</strong> Every week, I spend 30&rsquo; to organize the selected content into 3+ groups: top most important items, also important, tools, and some other ad-hoc groups (e.g., vulnerabilities) as the content demands.</li>
+<li><strong>Share:</strong> From the weekly selection, I have automatic scripts that generate a Markdown file containing an intro I write (there go my 30&rsquo;), table of content, summary, and list of grouped items; that file is then converted into HTML and summaries for Twitter and LinkedIn.</li>
+<li><strong>Maintain:</strong> And that used to be the hardest part, but most of this workflow is automated, so I can focus of what I&rsquo;d do anyhow: reading!</li>
+</ol>
+<h2 id="from-research-to-headline-a-simplified-journey">From Research to Headline: A Simplified Journey</h2>
+<p>At times my work gets picked up <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> by the media, so I&rsquo;ve seen how things work from both sides of the journey. What follows is not the complete picture, but just a quick summary as a pre-requisite to better appreciate the rest of this post.</p>
+<p><img src="i/cf-research-headline.png" alt="From research to headline"></p>
+<p>In the diagram above you can see the changes induced by massive use of social media. Despite the simplicity of the diagram, the effects are relevant.</p>
+<ul>
+<li><strong>Idea genesis:</strong> Researchers have ideas all the time, while discussing with colleagues or reading others&rsquo; work. Due to resource constraints, not all ideas get developed.</li>
+<li><strong>Research development:</strong> Research ideas are developed into research projects, which ultimately lead to results (good or bad). Some results are written into more or less scientific reports or white papers for the general public or special interest groups.</li>
+<li><strong>Embargoed content and press releases:</strong> If a researcher (or their organization) deems that a research result is important and want to make mediatic noise about it, they can decide to contact a trusted reporter, directly or indirectly, or prepare a press release (the latter is the norm for large organizations). The same concept applies to coordinated vulnerability disclosure.</li>
+<li><strong>Public peer-reviewed publication or conference talk about results:</strong> Independently from, but usually in coordination with, release via media outlets, original and important research results are submitted for reviewed venues (e.g., scientific or non scientific conferences), which may end up selecting them for publication, usually including a public speech.</li>
+<li><strong>First media article publication:</strong> Depending on the agreements with the reporters, the cat gets out of the sac. The research becomes public news, although who needed to know (e.g., target of an attack, vendors of a vulnerable product, breached account holders) already knew, which creates the possibility of leaks.</li>
+<li><strong>Follow-up news articles:</strong> Other reporters discover about interesting articles and write their own take, potentially interviewing other experts, develop other angles of the story, make connections, etc. This creates many near-duplicates or updates to te original story.</li>
+<li><strong>Social amplification and content aggregation:</strong> The many verses have their say about relevant news, and usually comment a lot when something interesting pops up, create aggregation pages, and so on.</li>
+<li><strong>Readers content consumption:</strong> Finally, the readers, the intended audience, gets a chance to read the original story, or one of the many derivatives.</li>
+</ul>
+<p>And we&rsquo;re here, we&rsquo;re all content consumers. Some of us are producers, but we can&rsquo;t just not being consumers. Content creators and curators, especially if they&rsquo;re subject matter experts (SME), want to go the source of a content, potentially all the way back to the original research material. I think this is the key to good content curation: Find the right balance between looking at the source while listening to output of the following steps. Or, in other words, it&rsquo;s important to follow a reporter, but even the best reporters can make mistakes or omit details because they need to summarize.</p>
+<h2 id="the-workflow-for-the-impatient">The Workflow: For the Impatient</h2>
+<p>It&rsquo;s now time to dig into the details of how we can start curating our interesting content. From now on, I&rsquo;ll write about the tools and approaches that I use.</p>
+<p><img src="i/0-inoreader-main.png" alt="Inoreader main"></p>
+<p>I use Inoreader for 99% of my readings and archival, and Zotero for local archival and newsletter editing. Inspired by Marco Lancini&rsquo;s CloudSecList, which 
+<a href="https://www.marcolancini.it/2020/blog-serverless-mailing-list/" target="_blank" rel="noopener">uses a JSON file</a> to hold the data of each issue, I use Zotero&rsquo;s auto-generated JSON files for the same purpose, with some post-processing.</p>
+<p><img src="i/cf-high-level-workflow.png" alt="Workflow"></p>
+<h3 id="sourcing-discovering-organizing-and-consuming-good-sources-1-2">Sourcing: Discovering, Organizing, and Consuming Good Sources (1-2)</h3>
+<p>My sources include global and local newspapers (there&rsquo;s more than just cyber-security), mainstream media outlets, press releases, official and personal blogs, public and private social media feeds, bulletins, content aggregators, other curated content. Roughly, I split sources in the following macro groups:</p>
+<ul>
+<li><strong>New sources</strong> I monitor to see how I like them; this group include newly discovered sources that I put in &ldquo;beta testing&rdquo;; usually, they stay in this group for a few weeks.</li>
+<li><strong>Top stuff</strong> I absolutely must read; this group includes RSS feeds from renowned voices in the cyber-security field (e.g., Bruce Schneier, Brian Krebs), top outlets (e.g., Engaged, WIRED, Forbes), top technical blogs (e.g., Google Project Zero), etc.</li>
+<li><strong>Specialized sources</strong> that are relevant and low-noise, but one step after the top sources; this include newsletters or digests, the 
+<a href="https://reddit.com/r/netsec" target="_blank" rel="noopener">r/netsec</a> sub-reddit, 
+<a href="https://www.techmeme.com" target="_blank" rel="noopener">Techmeme</a>, pure feeds (e.g., vulnerability feeds, news from law enforcements), and press releases from top tech companies.</li>
+<li><strong>Non-specialized sources</strong>, which include tech outlets like Gizmodo, Engaged, hand-curated world news (e.g., via 
+<a href="https://www.mediagazer.com" target="_blank" rel="noopener">Mediagazer</a>), personal blogs, trending GitHub repositories, official blogs of top tech companies, etc.</li>
+<li><strong>All the rest</strong>. Why do I keep this? First of all because I want to be able to globally search on everything. Secondly, if a news is really important, it will travel far, far away, event to the local free newspaper. So, monitoring the least-popular sources will give you indirect confirmation that something is <em>really</em> good, if you know how to interpret signals.</li>
+</ul>
+<p><img src="i/1-inoreader-tech-blogs.png" alt="Inoreader tech blogs"></p>
+<p>I organize my sources in a taxonomy with overlapping categories (e.g., a source can be both marked as &ldquo;Must read&rdquo; as well be in a broader &ldquo;Infosec Relevant&rdquo; category), by topic, and by importance.</p>
+<p>When I encounter an interesting story (e.g., shared by someone else via social media) and I notice I didn&rsquo;t know about that source, I find a place for it within my taxonomy of sources.</p>
+<h3 id="taxonomy-tagging-skimming-selection-2">Taxonomy, tagging, skimming, selection (2)</h3>
+<p>I spent a good full day in 2018 to think about how I reacted on keywords, and came up with a taxonomy of keywords that fit my reading habits. I revised it twice over the past 3 years.</p>
+<p><img src="i/cf-keyword.png" alt="Tagging workflow"></p>
+<p>I set Inoreader to first apply global deduplication to the entire newsriver.</p>
+<p><img src="i/4-inoreader-filter.png" alt="Inoreader deduplication"></p>
+<p>There are indeed cases where the same article would appear multiple times, within the same feed and across distinct feeds.</p>
+<p><img src="i/3-inoreader-filter-example-duplicate.png" alt="Inoreader deduplication"></p>
+<p>Then, rules are triggered based on my interests in order to tag relevant content according to the following tags (some are omitted for NDA reasons).</p>
+<p><img src="i/2-inoreader-tags.png" alt="Inoreader tags"></p>
+<p>Here you can see some example rules that I created using regular expressions. Inoreader makes it extremely easy to do this.</p>
+<p><img src="i/6-inoreader-rule-reporters.png" alt="Inoreader rule"></p>
+<p>The sources and tags are organized is such that I don&rsquo;t have to think too much about what to read every time I check Inoreader. The top buckets will always appear at the top, and as I mark them as read, they&rsquo;ll disappear from the current bucket, and from any other overlapping buckets below.</p>
+<p>When I find an interesting item, I tag it as &ldquo;Noteworthy,&rdquo; which triggers automatic archival and immediate sharing (e.g., on Twitter). I have private chats with co-workers where I share the same (or slightly different) content. I create one tag for each one of these cases so I can manage their workflows independently.</p>
+<h3 id="live-sharing-with-minimum-friction-3">Live Sharing With Minimum Friction (3)</h3>
+<p>I create so-called &ldquo;export RSS feeds&rdquo; for the folders and tags which content I want to post-process externally. This includes sharing with colleagues in a private chat, sending to a Telegram channel, publishing on Twitter (which I do, at 
+<a href="https://twitter.com/CyberFactsIT" target="_blank" rel="noopener">CyberFactsIT</a>), or creating a web page like this one at 
+<a href="https://cyberfacts.it" target="_blank" rel="noopener">cyberfacts.it</a>. Of course none of this involves any manual action. Instead, it&rsquo;s al handled by Inoreader&rsquo;s RSS export functionality, custom integrations and a GitHub Action to tweet from an RSS feed.</p>
+<script src="https://gist.github.com/phretor/e51b826f77f046b3438e7a5cbb365386.js"></script>
+<p>When the content get shared via my social media channels, I receive notifications when people comment, re-share, or like, which gives me an indication of how good my choice was. Also, when I select an item about a completely new (but very important) topic, I setup auto-tagging of that topic, so that I get notified when something about that topic pops in the news again.</p>
+<h3 id="reading-curation-annotation-summary-4">Reading, curation, annotation, summary (4)</h3>
+<p>Every 1-2 days I go through my &ldquo;Noteworthy&rdquo; items and, also based on feedback from social media (if any), I choose the absolutely most important items and read through them in my browser. I have Zotero open all the time, so it only takes me the click of a button in Firefox on the Zotero Connector extension. Each weekly issue lives in a Zotero collection, with sorted sub-collections that mark any subsections I want to create.</p>
+<p><img src="i/8-zotero-main.png" alt="Zotero"></p>
+<p>The item is snapshotted in HTML (with embedded elements, so the webpage is fully offline!), a new item is created into Zotero, pre-filled with most of the metadata (e.g., author, URL, date, title).</p>
+<p><img src="i/9-zotero-item-details.png" alt="Zotero item details"></p>
+<p>While reading, I copy-paste 2-3 key sentences and add them into a child note of the item I just saved into Zotero. I also and start thinking about a one-liner to summarize the story, which may happen to be the same title chosen by the original reporter.</p>
+<p><img src="i/10-zotero-writing-note.png" alt="Zotero writing note"></p>
+<h3 id="weekly-digest-sharing-5">Weekly digest sharing (5)</h3>
+<p>Every week, I spend 30&rsquo; to organize the selected content into 3+ groups: top most important items, also important, tools, and some other ad-hoc groups (e.g., vulnerabilities) as the content demands. I spend most of the 30&rsquo; actually write an intro to the weekly issue, which goes in the top-level collection as a news item, with a child note holding the actual content.</p>
+<p><img src="i/11-zotero-top-note-meta.png" alt="Zotero top note meta"></p>
+<p><img src="i/12-zotero-writing-top-note.png" alt="Zotero writing top note"></p>
+<p>The final step in Zotero is to export to a JSON file.</p>
+<p><img src="i/13-zotero-export-dialog.png" alt="Zotero export dialog"></p>
+<p><img src="i/14-zotero-export.png" alt="Zotero export"></p>
+<p><img src="i/15-zotero-json-export.png" alt="Zotero JSON"></p>
+<p>From the weekly JSON file, I have automatic scripts that generate a Markdown file based on a Jinja template, containing an intro, table of content, summary, and list of grouped items.</p>
+<p>&hellip;</p>
+<p>That file is then converted into HTML (via 
+<a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>) and summaries for Twitter and LinkedIn.</p>
+<p><img src="i/16-issue-md.png" alt="Conversion"></p>
+<p>The resulting Markdown file or HTML can be shared to email subscribers via 
+<a href="https://buttondown.email" target="_blank" rel="noopener">Buttondown</a>, which is what I do. It has an API, so I guess my next step is to create draft posts automatically, when generating the HTML file.</p>
+<h2 id="whats-left">What&rsquo;s Left?</h2>
+<p>It&rsquo;s a huge leap forward if compared to manually maintaining JSON, Markdown, or HTML files. Imagine a simple task like sorting items, or changing a title and update the table of contents, etc.</p>
+<p>However, there are a few things that will keep my weekends busy for a couple of hours:</p>
+<ul>
+<li>generate Twitter and LinkedIn post automatically and push draft via their APIs,</li>
+<li>generate a draft and push it to Buttondown via its API,</li>
+<li>trigger Hugo to re-generate the Markdown and HTML file every time the JSON is changed,</li>
+<li>&hellip;and&hellip;</li>
+<li>apply some machine-learning magic to automatically find interesting articles according to my selection habits of the past 2 years.</li>
+</ul>
+<hr>
+<p>That&rsquo;s all folks!</p>
+<p>Thanks for reading this far. Hope you learned something new! And if you like to subscribe to my weekly digest or live feed, head over to the 
+<a href="/cyberfacts">dedicated page</a>.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I don&rsquo;t like this term, because more often then not, content is &ldquo;pushed&rdquo; to the mainstream media. Few people know about this fact and most people think that reporters have infinite time to consume all available resources.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/scalable-handcurated-newsletter/&amp;text=Scalable,%20Hand-curated%20Newsletters:%20A%20Data-centric,%20Automatic%20Workflow" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/scalable-handcurated-newsletter/&amp;t=Scalable,%20Hand-curated%20Newsletters:%20A%20Data-centric,%20Automatic%20Workflow" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Scalable,%20Hand-curated%20Newsletters:%20A%20Data-centric,%20Automatic%20Workflow&amp;body=/post/scalable-handcurated-newsletter/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/scalable-handcurated-newsletter/&amp;title=Scalable,%20Hand-curated%20Newsletters:%20A%20Data-centric,%20Automatic%20Workflow" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Scalable,%20Hand-curated%20Newsletters:%20A%20Data-centric,%20Automatic%20Workflow%20/post/scalable-handcurated-newsletter/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/scalable-handcurated-newsletter/&amp;title=Scalable,%20Hand-curated%20Newsletters:%20A%20Data-centric,%20Automatic%20Workflow" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+  </p>
+  
+
+  <p class="powered-by">
+    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    Unless otherwise stated, the original content in this website is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nd_icon.svg" alt="CC ND icon">
+        
+      
+    </a>
+  </p>
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
