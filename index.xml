@@ -4207,22 +4207,6 @@ solve. Or,
 &lt;a href=&#34;https://twitter.com/phretor/status/1053753526097244163?s=20&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;as my wife once
 said&lt;/a&gt;, to &lt;em&gt;&amp;ldquo;push
 buttons on my computer&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;boring-stuff-first&#34;&gt;Boring Stuff First&lt;/h2&gt;
-&lt;p&gt;Very likely, you came here because you need to quickly copy and paste my short bio, or grab a head shot to post on a conference website. So, here you go!&lt;/p&gt;
-&lt;h3 id=&#34;bio&#34;&gt;Short Bio&lt;/h3&gt;
-&lt;p&gt;With more than a decade of research experience in the cybersecurity field, Federico Maggi has worked on offensive and defensive projects in web applications, network protocols, embedded systems, radio-frequency control systems, industrial robots, cars, and mobile devices.&lt;/p&gt;
-&lt;p&gt;Some of his research work has been featured on mainstream and media outlets such as Bloomberg, Wired, Reuters, Forbes, Hackread, ZDNet, and MIT Technology Review.&lt;/p&gt;
-&lt;p&gt;Currently employed as a Security Engineer at AWS with focus on server firmware and hardware, Federico has been a Research Expert in the Huawei AI4Sec Research team, and a Senior Researcher with Trend Micro. Previously, Federico was an Assistant Professor at Politecnico di Milano, one of the leading engineering technical universities in Italy. Aside his teaching activities, Federico co-directed the security group and has managed hundreds of graduate students.&lt;/p&gt;
-&lt;p&gt;Federico has given several lectures and talks as an invited speaker at
-international venues and research schools, and also serves in the review or
-organizing committees of well-known academic and industry conferences.&lt;/p&gt;
-&lt;p&gt;More info about Federico and his work is available online at 
-&lt;a href=&#34;https://maggi.cc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://maggi.cc&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;teaser&#34;&gt;One-liner Bio&lt;/h3&gt;
-&lt;p&gt;Federico Maggi, PhD, is a Senior Security Engineer with AWS, and has been working in cybersecurity for more than a decade with the public and private sector.&lt;/p&gt;
-&lt;h3 id=&#34;head-shot&#34;&gt;Head shot&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;headshot.jpg&#34;&gt;&lt;img style=&#34;margin-left: 0 !important;&#34; src=&#34;headshot.jpg&#34; width=&#34;200px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;You can also grab the &lt;a href=&#34;headshot-hires.jpg&#34;&gt;high-resolution version&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;an-academic-moved-to-the-industry-world&#34;&gt;An Academic Moved to the Industry World&lt;/h2&gt;
 &lt;p&gt;Before joining Trend Micro, until Summer 2016 I was an Assistant Professor at 
 &lt;a href=&#34;http://www.deib.polimi.it&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dipartimento di Elettronica, Informazione e Bioingegneria (DEIB)&lt;/a&gt;, 
@@ -4234,7 +4218,7 @@ organizing committees of well-known academic and industry conferences.&lt;/p&gt;
 &lt;h2 id=&#34;public-speaking&#34;&gt;Public Speaking&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s be honest: when the hard research work is over, isn&amp;rsquo;t it just great to get on stage and share the results with the world?&lt;/p&gt;
 &lt;p&gt;I have given several lectures and talks, mainly peer-reviewed talks, but also as an invited speaker at international venues and research schools.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m far from being a professional speaker, but people say I&amp;rsquo;m quite good at it.  Have a look at some of 
+&lt;p&gt;I&amp;rsquo;m far from being a professional speaker, but people say I&amp;rsquo;m quite good at it. Have a look at some of 
 &lt;a href=&#34;https://www.youtube.com/playlist?list=PL8hbvIylvVeiC3CeGDQ1NJXEI9fCZKN0x&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my public speeches to get a sense of my speaking style&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I used to hate and be afraid of speaking in public, and I still remember the tension and anxiety I experienced before every single talk. I don&amp;rsquo;t know exactly when and why, but something happened at some point, and everything turned upside down. Now I try to find every possible excuse to get on stage, because I find it an extremely satisfying and entertaining activity–for myself, at least, and hopefully for the audience as well!&lt;/p&gt;
 &lt;h2 id=&#34;hacking-and-playing-around-with-stuff&#34;&gt;Hacking and Playing Around With Stuff&lt;/h2&gt;
@@ -4260,6 +4244,21 @@ organizing committees of well-known academic and industry conferences.&lt;/p&gt;
 &lt;a href=&#34;https://dl.acm.org/event.cfm?id=RE289&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AsiaCCS&lt;/a&gt;, 
 &lt;a href=&#34;https://dimva.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIMVA&lt;/a&gt;, 
 &lt;a href=&#34;http://securecomm.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SecureComm&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;bio-headshot-and-stuff&#34;&gt;Bio, Headshot, and Stuff&lt;/h2&gt;
+&lt;h3 id=&#34;bio&#34;&gt;Short Bio&lt;/h3&gt;
+&lt;p&gt;With more than a decade of research experience in the cybersecurity field, Federico Maggi has worked on offensive and defensive projects in web applications, network protocols, embedded systems, radio-frequency control systems, industrial robots, cars, and mobile devices.&lt;/p&gt;
+&lt;p&gt;Some of his research work has been featured on mainstream and media outlets such as Bloomberg, Wired, Reuters, Forbes, Hackread, ZDNet, and MIT Technology Review.&lt;/p&gt;
+&lt;p&gt;Currently employed as a Senior Security Engineer at AWS with focus on server firmware and hardware, Federico has been a Research Expert in the Huawei AI4Sec Research team, and a Senior Researcher with Trend Micro. Previously, Federico was an Assistant Professor at Politecnico di Milano, one of the leading engineering technical universities in Italy. Aside his teaching activities, Federico co-directed the security group and has managed hundreds of graduate students.&lt;/p&gt;
+&lt;p&gt;Federico has given several lectures and talks as an invited speaker at
+international venues and research schools, and also serves in the review or
+organizing committees of well-known academic and industry conferences.&lt;/p&gt;
+&lt;p&gt;More info about Federico and his work is available online at 
+&lt;a href=&#34;https://maggi.cc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://maggi.cc&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;teaser&#34;&gt;One-liner Bio&lt;/h3&gt;
+&lt;p&gt;Federico Maggi, PhD, is a Senior Security Engineer with AWS, and has been working in cybersecurity for more than a decade with the public and private sector.&lt;/p&gt;
+&lt;h3 id=&#34;head-shot&#34;&gt;Head shot&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;headshot.jpg&#34;&gt;&lt;img style=&#34;margin-left: 0 !important;&#34; src=&#34;headshot.jpg&#34; width=&#34;200px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can also grab the &lt;a href=&#34;headshot-hires.jpg&#34;&gt;high-resolution version&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -4350,7 +4349,7 @@ system-administration tools.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;2023–present&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Title:&lt;/strong&gt; Security Engineer 
+&lt;li&gt;&lt;strong&gt;Title:&lt;/strong&gt; Senior Security Engineer 
 &lt;a href=&#34;https://aws.amazon.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon Web Services (AWS)&lt;/a&gt;, Global.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Main activities:&lt;/strong&gt; server platform security.&lt;/li&gt;
 &lt;/ul&gt;
@@ -4440,8 +4439,7 @@ system-administration tools.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Grade: cum laude&lt;/li&gt;
 &lt;li&gt;Institute: Politecnico di Milano.&lt;/li&gt;
-&lt;li&gt;Thesis:&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;Thesis:
 &lt;blockquote&gt;
 
   &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
@@ -4504,7 +4502,7 @@ system-administration tools.&lt;/p&gt;
 
 
 &lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Advisor: 
 &lt;a href=&#34;http://home.dei.polimi.it/zanero/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. S. Zanero&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Reviewer: 
