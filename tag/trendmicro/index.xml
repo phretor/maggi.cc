@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>trendmicro | Federico Maggi</title>
+    <title>Trendmicro | Federico Maggi</title>
     <link>/tag/trendmicro/</link>
       <atom:link href="/tag/trendmicro/index.xml" rel="self" type="application/rss+xml" />
-    <description>trendmicro</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Wed, 16 Jan 2019 16:01:50 +0200</lastBuildDate>
+    <description>Trendmicro</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2025. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Wed, 16 Jan 2019 16:01:50 +0200</lastBuildDate>
     <image>
-      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
-      <title>trendmicro</title>
+      <url>/images/icon_hu16868671553544422563.png</url>
+      <title>Trendmicro</title>
       <link>/tag/trendmicro/</link>
     </image>
     
@@ -35,7 +35,7 @@ mechanism? Like, if I push a button to make the load go down, and someone is
 under that load, what happens?&amp;rdquo; In the local dialect, he answered something
 that I could roughly translate as&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;ldquo;🤬  if you do that, you must have some serious problems.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;🤬  if you do that, you must have some serious problems.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This sounded like the perfect project idea to pitch to my colleagues! So I did.
 After some back and forth, brainstorming, and someone in the team having
@@ -47,7 +47,7 @@ a challenging disclosure process, I&amp;rsquo;m very happy to share the results 
 my colleagues in Trend Micro Research and I have produced.&lt;/p&gt;
 &lt;p&gt;Meanwhile, the renovation work is done and we&amp;rsquo;re enjoying a shiny new stone
 paver.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;condo.jpg&#34; alt=&#34;End of the renovation work.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/ir-security/condo.jpg&#34; alt=&#34;End of the renovation work.&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;radio-frequency-technology&#34;&gt;Radio-frequency Technology&lt;/h2&gt;
 &lt;p&gt;Sub-gigaherz radio-frequency (RF) protocols are widely adopted for both
 consumer and &lt;strong&gt;industrial applications&lt;/strong&gt;. From simple garage-door openers to
@@ -65,7 +65,7 @@ and a micro-controller that implements the actual application-level protocol
 (e.g., structure of messages, CRCs, pairing, addressing). Each transmitted
 message carries a distinct &lt;strong&gt;command&lt;/strong&gt; that the RX actuates, usually by
 triggering the relay switches in a given, configurable way.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;ir-system.jpg&#34; alt=&#34;Industrial Radio Remote Control System in a Nutshell&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/ir-security/ir-system.jpg&#34; alt=&#34;Industrial Radio Remote Control System in a Nutshell&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;security-angle&#34;&gt;Security Angle&lt;/h2&gt;
 &lt;p&gt;Despite the simplicity of these systems, &lt;strong&gt;there is no standardization&lt;/strong&gt; in the
 application-level protocol, nor security best practices that go beyond the use
@@ -258,7 +258,7 @@ academic paper, and (spoiler alert) another white paper coming soon.&lt;/p&gt;
 behind web defacement have evolved and mutated over the past ~20 years. From
 attackers interested in pointing their finger to vulnerable websites, to modern
 actors taking strong positions on real-world conflicts.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/real-world-timeline.jpg&#34; alt=&#34;Timeline of real world events for which we have found evidence in web-deface pages.&#34; title=&#34;Timeline of Real World Events&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/real-world-timeline.jpg&#34; alt=&#34;Timeline of real world events for which we have found evidence in web-deface pages.&#34; title=&#34;Timeline of Real World Events&#34;&gt;&lt;/p&gt;
 &lt;p&gt;How do we know what we know about this phenomenon? Let&amp;rsquo;s take a look!&lt;/p&gt;
 &lt;h2 id=&#34;the-tool&#34;&gt;The Tool&lt;/h2&gt;
 &lt;p&gt;Last year at 
@@ -290,9 +290,9 @@ interactivity aspect of the investigation.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/trendmicro/defplorex/blob/master/i/dpx-clusters-viz.png?raw=true&#34; alt=&#34;DefPloreX web app main screen&#34; title=&#34;DefPloreX web app main screen&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you want to see the web app in action, you can take yourself a 14 minutes coffee or tea break while watching this demo.&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/DILbSXYpiMU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/DILbSXYpiMU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 
 &lt;h3 id=&#34;distributed-data-processing&#34;&gt;Distributed Data Processing&lt;/h3&gt;
 &lt;p&gt;Normally, to take full advantage of Elastic&amp;rsquo;s distributed data-processing
@@ -411,22 +411,22 @@ particular, we look at 7 campaigns that have affected Israel, France,
 India, Syria, Kosovo, and countries surrounding the South China Sea. We dig
 into specific conflicts in those areas and the defacements that happened in the
 aftermath.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/wp.jpg&#34; alt=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34; title=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34;&gt;&lt;/p&gt;
-&lt;p&gt;To &lt;del&gt;feed our curiosity and&lt;/del&gt;~ help CERTs understand better the origin of these
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/wp.jpg&#34; alt=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34; title=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To ~~feed our curiosity and~~~ help CERTs understand better the origin of these
 attacks and modus-operandi of the groups, we also look how they are organized
 (some are formed across continents, and some are a loose collection of local
 hackers), as well as how their recruitment tools and the methods adopt.&lt;/p&gt;
 &lt;h2 id=&#34;the-devil-answer-is-in-the-details&#34;&gt;The &lt;del&gt;Devil&lt;/del&gt; Answer is in the Details&lt;/h2&gt;
 &lt;p&gt;You might be wondering how exactly the data-mining workflow works, what
 features we use, what clustering algorithm and so on. For the impatient, here&amp;rsquo;s a quick overview of the data that we process and the features that we extract:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/data.jpg&#34; alt=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34; title=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/features.jpg&#34; alt=&#34;Clustering features that we extract from each deface page.&#34; title=&#34;Clustering features that we extract from each deface page.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/data.jpg&#34; alt=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34; title=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/features.jpg&#34; alt=&#34;Clustering features that we extract from each deface page.&#34; title=&#34;Clustering features that we extract from each deface page.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;So, now, how do we use these features for clustering?&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m very thankful to Roberto Perdisci for the valuable insights that he
 provided on this work about the machine-learning and data-mining part. What I&amp;rsquo;m
 most thankful about, however, is the suggestion to use BIRCH, which I didn&amp;rsquo;t
 know before. I think this figure speaks by itself.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/dbscan-vs-birch.jpg&#34; alt=&#34;BIRCH vs. DBSCAN.&#34; title=&#34;BIRCH vs. DBSCAN.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/dbscan-vs-birch.jpg&#34; alt=&#34;BIRCH vs. DBSCAN.&#34; title=&#34;BIRCH vs. DBSCAN.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Impressive, huh?&lt;/p&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;p&gt;
@@ -623,9 +623,9 @@ audience. True fact: I&amp;rsquo;ve recorded this while preparing my talk for
 &lt;a href=&#34;https://itsec.cs.uni-bonn.de/dimva2017/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIMVA
 2017&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/oajtDFw_t3Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/oajtDFw_t3Q?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 
 &lt;h2 id=&#34;additional-material&#34;&gt;Additional Material&lt;/h2&gt;
 &lt;p&gt;If you&amp;rsquo;re curious to know more:&lt;/p&gt;
@@ -852,9 +852,9 @@ I happily joined the hacker&amp;rsquo;s corner at the International Journalism F
 2017 in Perugia, a few months later, in a panel moderated by Carola. Here&amp;rsquo;s
 the recording of the panel.&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/icgJavQqICM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description>
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/icgJavQqICM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
     </item>
     
     <item>

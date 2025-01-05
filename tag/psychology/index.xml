@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>psychology | Federico Maggi</title>
+    <title>Psychology | Federico Maggi</title>
     <link>/tag/psychology/</link>
       <atom:link href="/tag/psychology/index.xml" rel="self" type="application/rss+xml" />
-    <description>psychology</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 21 Dec 2020 17:36:57 +0100</lastBuildDate>
+    <description>Psychology</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2025. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 21 Dec 2020 17:36:57 +0100</lastBuildDate>
     <image>
-      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
-      <title>psychology</title>
+      <url>/images/icon_hu16868671553544422563.png</url>
+      <title>Psychology</title>
       <link>/tag/psychology/</link>
     </image>
     
@@ -90,10 +90,10 @@
 &lt;figure id=&#34;figure-facial-expressions-i-used-in-the-experiment-anger-disgust-fear-happyness-neutral-sad&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/featured_hua0d4d4b24f4da3a102e4452ac738b95f_538555_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Facial expressions I used in the experiment: anger, disgust, fear, happyness, neutral, sad.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/featured_hu12146490337527537716.jpg&#34; data-caption=&#34;Facial expressions I used in the experiment: anger, disgust, fear, happyness, neutral, sad.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/masked-emotions/featured_hua0d4d4b24f4da3a102e4452ac738b95f_538555_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2744&#34; height=&#34;1114&#34;&gt;
+  &lt;img data-src=&#34;/post/masked-emotions/featured_hu12146490337527537716.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2744&#34; height=&#34;1114&#34;&gt;
 &lt;/a&gt;
 
 
@@ -111,7 +111,7 @@
 &lt;a href=&#34;https://faces.mpdl.mpg.de&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FACES dataset&lt;/a&gt; (Ebner, Riediger, and Lindenberger, 2010) and I artificially applied a face mask on the pictures of the male model.&lt;/p&gt;
 &lt;h3 id=&#34;the-importance-of-past-experience-people-we-dont-know&#34;&gt;The importance of past experience: People we don&amp;rsquo;t know&lt;/h3&gt;
 &lt;p&gt;I decided to present images to each worker in random order, one at a time, not all at the same time. Why? Because I wanted to emulate the worst-case condition. Here&amp;rsquo;s the rationale: If I know a person I know their “normal” face or “angry” face very well. But if we look at the neutral face above (second from the right), are we 100% that couldn&amp;rsquo;t that be her angry or sad face? If I see the whole context then I have way more context to cast the correct decision—especially if I know there are 6 emotion types.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/stranger.jpg&#34; alt=&#34;A stranger walking on a vessel.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/stranger.jpg&#34; alt=&#34;A stranger walking on a vessel.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In other words, if I know a person, even when that person wears a mask, I can easily tell their emotions apart. But I was more interested in emulating the “random stranger” condition: Imagine you&amp;rsquo;re walking on the street and a person you&amp;rsquo;ve never seen before walks toward you with a sad-looking face—or angry-looking face, who knows! How good are you at telling those two very different emotions apart? Anger and sadness are quite different emotions, but because of the mask and the complete lack of past experience you simply can&amp;rsquo;t guess. It&amp;rsquo;s the worst-case condition and I wanted to emulate exactly that.&lt;/p&gt;
 &lt;p&gt;Following the same line of thought, I decided to impose a 60s time constrain for workers to complete each task (1 face). Why is timing important? Because when we glance at someone&amp;rsquo;s face we make unconscious decisions and those are quite fast. (Carbon, 2020) gave the participants “unlimited” time to complete the task and collected a conscious assessment of their “confidence” in their decision. I decided to focus on a fast task, because at the end of the day, that&amp;rsquo;s how our brain works when we see someone.&lt;/p&gt;
 &lt;h3 id=&#34;results-how-good-are-we-at-detecting-emotions-from-facial-expressions&#34;&gt;Results: How Good are we at Detecting Emotions from Facial Expressions?&lt;/h3&gt;
@@ -137,10 +137,10 @@
 &lt;figure id=&#34;figure-confusion-matrix-showing-the-number-of-correct-detections-for-each-combination-of-real-detected-emotions-the-greener-the-better&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/confusion_hu79da99e9f5c11b2b53d7a599ac88ac31_381483_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Confusion matrix showing the number of correct detections for each combination of real-detected emotions. The greener, the better.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/confusion_hu12473860164509649863.jpg&#34; data-caption=&#34;Confusion matrix showing the number of correct detections for each combination of real-detected emotions. The greener, the better.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/masked-emotions/imgs/confusion_hu79da99e9f5c11b2b53d7a599ac88ac31_381483_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
+  &lt;img data-src=&#34;/post/masked-emotions/imgs/confusion_hu12473860164509649863.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
 &lt;/a&gt;
 
 
@@ -191,10 +191,10 @@
 &lt;figure id=&#34;figure-overall-time-to-detect-facial-emotions-in-case-of-correct-blue-and-incorrect-false-detections&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing_hud3f906394e33c42b903908d2e33c2bfb_35572_2000x2000_fit_q90_lanczos.jpeg&#34; data-caption=&#34;Overall time to detect facial emotions in case of correct (blue) and incorrect (false) detections.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing_hu16393481769333423570.jpeg&#34; data-caption=&#34;Overall time to detect facial emotions in case of correct (blue) and incorrect (false) detections.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing_hud3f906394e33c42b903908d2e33c2bfb_35572_2000x2000_fit_q90_lanczos.jpeg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1000&#34; height=&#34;400&#34;&gt;
+  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing_hu16393481769333423570.jpeg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1000&#34; height=&#34;400&#34;&gt;
 &lt;/a&gt;
 
 
@@ -230,10 +230,10 @@
 &lt;figure id=&#34;figure-breakdown-on-real-emotions-displayed-on-the-stimuli&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing-detailed_hu79da99e9f5c11b2b53d7a599ac88ac31_546558_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Breakdown on real emotions displayed on the stimuli.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing-detailed_hu5133896203654422755.jpg&#34; data-caption=&#34;Breakdown on real emotions displayed on the stimuli.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing-detailed_hu79da99e9f5c11b2b53d7a599ac88ac31_546558_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
+  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing-detailed_hu5133896203654422755.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
 &lt;/a&gt;
 
 
@@ -248,7 +248,7 @@
 
 &lt;h2 id=&#34;survival-adaptation-and-crime&#34;&gt;Survival, adaptation, and crime&lt;/h2&gt;
 &lt;p&gt;Since our earliest days, human beings have been incredibly attuned to reading the facial expressions of others. This ability likely conferred upon us an evolutionary advantage, Charles Darwin (Darwin, 1872)Learning how to read emotions from a face could aid social interaction, reduce misunderstandings and help a group function efficiently and harmoniously for the greater good, said (Ong, 2020).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/malice.jpg&#34; alt=&#34;Dark scenery with unrecognizable person.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/malice.jpg&#34; alt=&#34;Dark scenery with unrecognizable person.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pure.hud.ac.uk/en/persons/eilidh-garvey&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eilidh Noyes&lt;/a&gt;, lecturer in cognitive psychology at the 
 &lt;a href=&#34;https://hud.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Huddersfield&lt;/a&gt; in northern England said that&lt;/p&gt;
@@ -279,7 +279,7 @@
 &lt;p&gt;I still feel a little strange when wearing a mask, but my rational part is now in full control of those mixed emotion, and I simply forget I&amp;rsquo;m wearing a mask at times. In May, 
 &lt;a href=&#34;https://www.reading.ac.uk/pcls/staff/katie-gray&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kate Gray&lt;/a&gt;, who researches emotion processing at the 
 &lt;a href=&#34;https://www.reading.ac.uk/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Reading&lt;/a&gt; in the UK, mentioned that adapting to a faceless society will be a smooth process: &lt;em&gt;“[&amp;hellip;] we’ll quite quickly get used to picking up social and emotional cues from voice cues or body language.”&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/masks.jpg&#34; alt=&#34;Three people wearing face mask.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/masks.jpg&#34; alt=&#34;Three people wearing face mask.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I remember that the first time I saw my father wearing a mask it felt very strange. And when I started wearing a mask and people around me wouldn&amp;rsquo;t, I felt even stranger—like I was over-reacting. I bet I wasn&amp;rsquo;t the only one feeling strange, and an early research appeared earlier this year scientifically confirmed that the simple exposure to social groups of mask wearers greatly reduces that strange feeling (Carbon, 2020). The researchers have asked 86 participants to assess how strange they felt when wearing a mask (i.e., simple surgery mask, FFP2 mask, and loop scarfs) among other mask wearers, in groups of varying size. The larger the social group, the less strange each member feels about themselves.&lt;/p&gt;
 &lt;p&gt;So, one part of the impact on emotion seems to be that wearing masks makes us feel a little different, triggers different or slightly different emotions. When we wear a mask we’re left only with the eyes, and that can make it difficult for people to make these judgments. According to 
 &lt;a href=&#34;https://www.brandeis.edu/facultyguide/person.html?emplid=2eb6be94b388be4b500e54ef726277fd747f02bb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Leslie Zebrowitz&lt;/a&gt;, psychology professor who studies facial perception at 
@@ -287,7 +287,7 @@
 &lt;h2 id=&#34;a-face-mask-can-help-you-conceal-unauthentic-or-social-emotions&#34;&gt;A face mask can help you conceal unauthentic (or social) emotions&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s another line of thoughts I tend to agree with, probably because I&amp;rsquo;m introvert. We—introvers—won&amp;rsquo;t be showing our true emotions anyhow, with or without mask, so why bother? We don’t have to be happy to smile, and we don’t always smile when we’re happy. This can vary greatly across cultures. In the United States, smiling is part of the etiquette, while a 
 &lt;a href=&#34;https://archive.is/wip/vm2kd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Russian proverb translates as &lt;em&gt;“smiling with no reason is a sign of stupidity.”&lt;/em&gt;&lt;/a&gt; In Japan, emotions are stifled in public, there’s a greater emphasis on smiling with the eyes, so Japanese people may be able to convey—and read—their emotions through facial expressions more effectively.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/lonely.jpg&#34; alt=&#34;Person in a hoodie.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/lonely.jpg&#34; alt=&#34;Person in a hoodie.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Tara Well, Associate Professor of Psychology at Barnard College of Columbia University, recently wrote a short thought piece about the social smile (Tara Well, 2020). She wrote that:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The social smile is activated in the mouth muscles only and, therefore, easily covered up by a face mask. But a genuine smile, known as the Duchenne smile, named after the French anatomist who discovered it, involves both the mouth and the eyes. Interestingly, the facial muscle engaged by a genuine smile, called the orbicularis oculi, can’t be activated on command. You can see an authentic smile in the crinkles around the eyes.&lt;/p&gt;
@@ -301,7 +301,7 @@
 &lt;p&gt;Shakespeare said that the eyes were the windows to the soul. Indeed, eyes alone can provide a great deal of information. 
 &lt;a href=&#34;https://www.aber.ac.uk/en/psychology/staff-profiles/listing/profile/nih12/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nigel Holt&lt;/a&gt;, Professor of Psychology at 
 &lt;a href=&#34;https://www.aber.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aberystwyth University&lt;/a&gt; recently wrote (Holt, 2020) that “we are wired to extract information from the eyes—information that can help us assess the emotions of those around us and so allow us to engage more effectively with them.” Eyes alone can be quite effective, as (Lee and Anderson, 2017) showed. They showed volunteers images of eyes expressing different emotions (sadness, disgust, anger, joy, surprise, fear) and found out that the participants were able to correctly guess the mental states to the “eye expression”. From this research it emerged that different aspects of the eyes (such as how open they are or how sloped the brow is) give information about different mental states.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/eyes.jpg&#34; alt=&#34;Eyes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/eyes.jpg&#34; alt=&#34;Eyes&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Eye contact is also essential in social interactions as well as in the emotions that gazing at eye level can trigger. (Guastella, Mitchell, and Dadds, 2008) showed images of faces to people who are given oxytocin, and found out that they spend more time looking at the eyes than those given a placebo. Since oxytocin is a factor in social interactions, this finding suggests the eyes are very important in how we understand our engagement and interaction with those around us. Indeed, people with high levels of oxytocin appear to seek out the eyes to help them better engage socially with others.&lt;/p&gt;
 &lt;p&gt;From a perception viewpoint, we know that we are exceptionally sensitive to very tiny changes in direction of gaze, because the center of our retina is densely populated with light receptors. But a recent study showed that this goes beyond just sensitivity and perception. When we try to assess which direction someone is looking in, it significantly activates our amygdala, a part of the brain associated with emotion. So there seems to be a link between emotion and eyes at a neurological level (Kawashima et al., 1999).&lt;/p&gt;
 &lt;p&gt;When eyes are the only feature available the role of the context could be crucial, but there&amp;rsquo;s no strong evidence about this.(Kret and de Gelder, 2012) tested whether emotions can be recognized when just the eyes are visible and whether this recognition is affected by context cues (e.g., various Islamic headdresses vs. a cap or a scarf). The results are that fear is still well recognized from a briefly flashed (100 ms) image of a women wearing a burqa with less than 20% transparency of the eye region.&lt;/p&gt;
@@ -309,14 +309,14 @@
 &lt;h2 id=&#34;how-to-better-communicate-when-wearing-masks&#34;&gt;How to better communicate when wearing masks?&lt;/h2&gt;
 &lt;p&gt;Some 
 &lt;a href=&#34;https://www.boredpanda.com/doctor-portraits-on-protective-gear/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;healthcare workers on the frontline have attached smiley-faced pictures of themselves&lt;/a&gt; onto their medical gowns, trying to ease patient anxiety (Ong, 2020). That&amp;rsquo;s one practical and simple way to show your best emotion (happyness) when people around you need that. Especially when we can&amp;rsquo;t talk, I don&amp;rsquo;t see any better way than that.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/healthcare-workers.jpg&#34; alt=&#34;Healthcare workers with a smiley-faced picture.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/healthcare-workers.jpg&#34; alt=&#34;Healthcare workers with a smiley-faced picture.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;But when we can talk and move freely, it&amp;rsquo;s a whole different story. Psychologist Al Zayer suggests that, when wearing a mask, we should strive to over-communicate, use more words than we normally would, and ask more questions, to make sure we&amp;rsquo;re picking up on the other person’s emotions. Isn&amp;rsquo;t that what professional radio speakers or podcast creators do? They can convey very deep emotions and many shades of emotions by using their voice only. Normally, facial expressions form part of a coordinated set of features—including hand gestures, body language, words, pitch and tone, and even face colour (Benitez-Quiroz, Srinivasan, and Martinez, 2018). All of these features act together to convey message, intent, and emotions. And the best part is that, for some people, this is all natural. No training needed!&lt;/p&gt;
 &lt;p&gt;I want to close with a fun fact. There are 
 &lt;a href=&#34;https://archive.is/wip/SAyaJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;prototypes of a voice-activated mask, currently in the crowdfunding stages&lt;/a&gt; (Georgia Coggan, 2020). The mask uses LED lights to display emotion or words. The LED lights can mimic the mouth movements, with simple commands like “popping the lips” to display simple words, emojis or smiles.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/led-mask.jpg&#34; alt=&#34;LED mask&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/led-mask.jpg&#34; alt=&#34;LED mask&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The artificial mouth tracks the mouth of the user, emulating the physical action of the lips. It&amp;rsquo;s a matter of time and someone will make the flexible OLED version of that, showing a full, high-resolution picture of your mouth area recorded in real time from a micro-camera with IR illuminators positioned inside the mask.&lt;/p&gt;
 &lt;p&gt;For now, I&amp;rsquo;m sticking to the old-school approach.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/old-school.jpeg&#34; alt=&#34;Old school approach&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/old-school.jpeg&#34; alt=&#34;Old school approach&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Baron-Cohen, Simon, Sally Wheelwright, Jacqueline Hill, Yogini Raste, and Ian Plumb. “The ‘Reading the Mind in the Eyes’ Test Revised Version: A Study with Normal Adults, and Adults with Asperger Syndrome or High-Functioning Autism.” The Journal of Child Psychology and Psychiatry and Allied Disciplines 42, no. 2 (February 2001): 241–51. 
@@ -486,9 +486,9 @@
 &lt;a href=&#34;https://www.ucl.ac.uk/pals/research/experimental-psychology/person/dr-tali-sharot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Tali Sharot&lt;/a&gt;, a cognitive neuroscientist at 
 &lt;a href=&#34;https://www.ucl.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UCL&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/xp0O2vi8DX4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/xp0O2vi8DX4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Prof. Sharot summarizes that it&amp;rsquo;s hard to change our behavior because most of our incentive programs are designed to &lt;em&gt;threaten&lt;/em&gt; us by showing us all the bad things that could happen if we don&amp;rsquo;t adopt that behavior, while her experiments show that the opposite incentive program is much more powerful (we&amp;rsquo;re talking about 15% vs 90%!). So, instead of bombard our kids with things like &lt;em&gt;&amp;ldquo;if you don&amp;rsquo;t read enough you&amp;rsquo;ll get bad grades&amp;rdquo;&lt;/em&gt; (which is what I&amp;rsquo;ve been bombarded with), let&amp;rsquo;s tell them &lt;em&gt;&amp;ldquo;if you read you&amp;rsquo;ll become the fastest reader in the world&amp;rdquo;&lt;/em&gt;. It&amp;rsquo;s intuitive, I know, but if you think about it, it&amp;rsquo;s quite hard to implement. Why? Because you have to design a good reward system around it, which should show immediate positive rewards over time. And that&amp;rsquo;s not always practical.&lt;/p&gt;
 &lt;p&gt;So, the reason why I&amp;rsquo;m writing this piece is because Prof. Sharot&amp;rsquo;s talk enlightened me by showing all the ingredients that I already had on my plate, which were already at work to keep me motivated, but was quite nice to see them all condensed in that 15-minutes engaging talk, backed by scientific research!&lt;/p&gt;

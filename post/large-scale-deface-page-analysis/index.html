@@ -210,10 +210,7 @@ academic paper, and (spoiler alert) another white paper coming soon.">
   
   <link rel="stylesheet" href="/css/academic.css">
 
-  
-
-
-
+    
 
   
 
@@ -224,8 +221,8 @@ academic paper, and (spoiler alert) another white paper coming soon.">
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu3968311862830079689.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu15867440453535063751.png">
 
   <link rel="canonical" href="/post/large-scale-deface-page-analysis/">
 
@@ -300,7 +297,7 @@ academic paper, and (spoiler alert) another white paper coming soon."><meta prop
     "name": "Federico Maggi",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png"
+      "url": "/images/icon_hu15867440453535063751.png"
     }
   },
   "description": "\u003cp\u003eGiven the multiple releases around this topic and project, I\u0026rsquo;ve decided to\nput together a summary. So far, there is: a tool, a white paper, an\nacademic paper, and (spoiler alert) another white paper coming soon.\u003c/p\u003e"
@@ -721,7 +718,7 @@ academic paper, and (spoiler alert) another white paper coming soon.</p>
 behind web defacement have evolved and mutated over the past ~20 years. From
 attackers interested in pointing their finger to vulnerable websites, to modern
 actors taking strong positions on real-world conflicts.</p>
-<p><img src="i/real-world-timeline.jpg" alt="Timeline of real world events for which we have found evidence in web-deface pages." title="Timeline of Real World Events"></p>
+<p><img src="/post/large-scale-deface-page-analysis/i/real-world-timeline.jpg" alt="Timeline of real world events for which we have found evidence in web-deface pages." title="Timeline of Real World Events"></p>
 <p>How do we know what we know about this phenomenon? Let&rsquo;s take a look!</p>
 <h2 id="the-tool">The Tool</h2>
 <p>Last year at 
@@ -753,9 +750,9 @@ interactivity aspect of the investigation.</p>
 <p><img src="https://github.com/trendmicro/defplorex/blob/master/i/dpx-clusters-viz.png?raw=true" alt="DefPloreX web app main screen" title="DefPloreX web app main screen"></p>
 <p>If you want to see the web app in action, you can take yourself a 14 minutes coffee or tea break while watching this demo.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/DILbSXYpiMU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/DILbSXYpiMU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
 
 <h3 id="distributed-data-processing">Distributed Data Processing</h3>
 <p>Normally, to take full advantage of Elastic&rsquo;s distributed data-processing
@@ -874,22 +871,22 @@ particular, we look at 7 campaigns that have affected Israel, France,
 India, Syria, Kosovo, and countries surrounding the South China Sea. We dig
 into specific conflicts in those areas and the defacements that happened in the
 aftermath.</p>
-<p><img src="i/wp.jpg" alt="A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks" title="A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks"></p>
-<p>To <del>feed our curiosity and</del>~ help CERTs understand better the origin of these
+<p><img src="/post/large-scale-deface-page-analysis/i/wp.jpg" alt="A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks" title="A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks"></p>
+<p>To ~~feed our curiosity and~~~ help CERTs understand better the origin of these
 attacks and modus-operandi of the groups, we also look how they are organized
 (some are formed across continents, and some are a loose collection of local
 hackers), as well as how their recruitment tools and the methods adopt.</p>
 <h2 id="the-devil-answer-is-in-the-details">The <del>Devil</del> Answer is in the Details</h2>
 <p>You might be wondering how exactly the data-mining workflow works, what
 features we use, what clustering algorithm and so on. For the impatient, here&rsquo;s a quick overview of the data that we process and the features that we extract:</p>
-<p><img src="i/data.jpg" alt="Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute." title="Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute."></p>
-<p><img src="i/features.jpg" alt="Clustering features that we extract from each deface page." title="Clustering features that we extract from each deface page."></p>
+<p><img src="/post/large-scale-deface-page-analysis/i/data.jpg" alt="Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute." title="Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute."></p>
+<p><img src="/post/large-scale-deface-page-analysis/i/features.jpg" alt="Clustering features that we extract from each deface page." title="Clustering features that we extract from each deface page."></p>
 <p>So, now, how do we use these features for clustering?</p>
 <p>I&rsquo;m very thankful to Roberto Perdisci for the valuable insights that he
 provided on this work about the machine-learning and data-mining part. What I&rsquo;m
 most thankful about, however, is the suggestion to use BIRCH, which I didn&rsquo;t
 know before. I think this figure speaks by itself.</p>
-<p><img src="i/dbscan-vs-birch.jpg" alt="BIRCH vs. DBSCAN." title="BIRCH vs. DBSCAN."></p>
+<p><img src="/post/large-scale-deface-page-analysis/i/dbscan-vs-birch.jpg" alt="BIRCH vs. DBSCAN." title="BIRCH vs. DBSCAN."></p>
 <p>Impressive, huh?</p>
 <h2 id="references">References</h2>
 <p>
@@ -1031,13 +1028,13 @@ know before. I think this figure speaks by itself.</p>
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/trendmicro/">trendmicro</a>
+  <a class="badge badge-light" href="/tag/trendmicro/">Trendmicro</a>
   
-  <a class="badge badge-light" href="/tag/measurement/">measurement</a>
+  <a class="badge badge-light" href="/tag/measurement/">Measurement</a>
   
-  <a class="badge badge-light" href="/tag/web/">web</a>
+  <a class="badge badge-light" href="/tag/web/">Web</a>
   
-  <a class="badge badge-light" href="/tag/defacement/">defacement</a>
+  <a class="badge badge-light" href="/tag/defacement/">Defacement</a>
   
 </div>
 
@@ -1284,7 +1281,7 @@ know before. I think this figure speaks by itself.</p>
     
     
     
-    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+    <script src="/js/academic.min.cd45a9c0bbdd3dfb1c126917c601c9f2.js"></script>
 
     
 
@@ -1307,7 +1304,7 @@ know before. I think this figure speaks by itself.</p>
   
 
   <p class="powered-by">
-    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+    ©2009–2025. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
   </p>
 
   

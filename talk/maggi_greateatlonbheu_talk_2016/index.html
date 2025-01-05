@@ -208,10 +208,7 @@
   
   <link rel="stylesheet" href="/css/academic.css">
 
-  
-
-
-
+    
 
   
 
@@ -222,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu3968311862830079689.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu15867440453535063751.png">
 
   <link rel="canonical" href="/talk/maggi_greateatlonbheu_talk_2016/">
 
@@ -246,8 +243,8 @@
   <meta property="og:site_name" content="Federico Maggi">
   <meta property="og:url" content="/talk/maggi_greateatlonbheu_talk_2016/">
   <meta property="og:title" content="Pocket-sized Badness: Why Ransomware Comes as a Plot Twist in the Cat-Mouse Game | Federico Maggi">
-  <meta property="og:description" content="While we have grown accustomed to stealthy malware, specifically written to gain and maintain control of the victim machines to abuse their resources, ransomware really comes as a &#34;plot twist&#34;! After 10&#43; years of stealthy malware, spread mainly for building botnets and steal information, for the second time we&#39;re witnessing a growth of disruptive malware, and an interest for direct and fast profit. Ransomware is a particularly striking example of disruptive malware, both on mobile and desktop targets: While traditional mass malware must fly under the radar to fulfill its goals, a ransomware attack that remains unaccountable has failed miserably. It must show up to inform and frighten the victim! As a result, the human psychological response to the attack plays a significant role in the success of ransomware schemes. And, given the remarkable revenue, the scheme seems to be working fairly well.  This talk will describe the technical impact of disruptive malware and its game-changing approach, which made us (at least) rethink our incident-response plans. We will focus on mobile ransomware as a representative, extreme case study. Albeit not very studied, we are currently tracking 10 distinct families, and collected tenths of thousands distinct samples in three months. In this talk, we will go through the most notorious families such as Koler, SLocker, Svpeng (and mention the other notable ones), overviewing their social-engineering tricks and how they are technically implemented. This will include, for instance, how an app can effectively lock a device to forcefully display the typical threatening message that informs the victim of what just happened, or how crypto and file-system APIs are (ab)used to surreptitiously encrypt the valuable data.  After having overviewed these aspects, we will describe how they can be effectively detected with specific static features. We will present a lightweight Smali emulator to track the instruction sequences that implement device-locking mechanisms. To detect malicious encryption attempts, we will present a static, dataflow-based program-analysis technique and tool that track file-system operations (e.g., file listing, file reading) to determine if they are &#34;connected&#34; to encryption flows. Since the most recent families have started to abuse the device-administration API (e.g., to lock the device), obfuscated method names and reflection to hinder automatic static analysis, we will show a couple of counter-tricks. Last, we will show how the threatening messages can be recognized from normal text using a language-analysis technique, which classifies text based on the appearance of key terms frequently found in ransomware samples but not in benign sources. Since static program-analysis approaches like ours can be time and resource consuming, we describe a fast triaging pre-filtering technique to quickly discard strikingly benign applications. This filter is generic and ransomware-agnostic. Thus, in principle, it could be applied to any app-vetting pipeline.  With this talk we will release the source code of a prototype that implements (part of) the described techniques, and a dataset comprising tenths of thousands of ransomware applications targeting the Android platform, each labeled with the set of features that characterize their statically-extracted behavior."><meta property="og:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="While we have grown accustomed to stealthy malware, specifically written to gain and maintain control of the victim machines to abuse their resources, ransomware really comes as a &#34;plot twist&#34;! After 10&#43; years of stealthy malware, spread mainly for building botnets and steal information, for the second time we&#39;re witnessing a growth of disruptive malware, and an interest for direct and fast profit. Ransomware is a particularly striking example of disruptive malware, both on mobile and desktop targets: While traditional mass malware must fly under the radar to fulfill its goals, a ransomware attack that remains unaccountable has failed miserably. It must show up to inform and frighten the victim! As a result, the human psychological response to the attack plays a significant role in the success of ransomware schemes. And, given the remarkable revenue, the scheme seems to be working fairly well.  This talk will describe the technical impact of disruptive malware and its game-changing approach, which made us (at least) rethink our incident-response plans. We will focus on mobile ransomware as a representative, extreme case study. Albeit not very studied, we are currently tracking 10 distinct families, and collected tenths of thousands distinct samples in three months. In this talk, we will go through the most notorious families such as Koler, SLocker, Svpeng (and mention the other notable ones), overviewing their social-engineering tricks and how they are technically implemented. This will include, for instance, how an app can effectively lock a device to forcefully display the typical threatening message that informs the victim of what just happened, or how crypto and file-system APIs are (ab)used to surreptitiously encrypt the valuable data.  After having overviewed these aspects, we will describe how they can be effectively detected with specific static features. We will present a lightweight Smali emulator to track the instruction sequences that implement device-locking mechanisms. To detect malicious encryption attempts, we will present a static, dataflow-based program-analysis technique and tool that track file-system operations (e.g., file listing, file reading) to determine if they are &#34;connected&#34; to encryption flows. Since the most recent families have started to abuse the device-administration API (e.g., to lock the device), obfuscated method names and reflection to hinder automatic static analysis, we will show a couple of counter-tricks. Last, we will show how the threatening messages can be recognized from normal text using a language-analysis technique, which classifies text based on the appearance of key terms frequently found in ransomware samples but not in benign sources. Since static program-analysis approaches like ours can be time and resource consuming, we describe a fast triaging pre-filtering technique to quickly discard strikingly benign applications. This filter is generic and ransomware-agnostic. Thus, in principle, it could be applied to any app-vetting pipeline.  With this talk we will release the source code of a prototype that implements (part of) the described techniques, and a dataset comprising tenths of thousands of ransomware applications targeting the Android platform, each labeled with the set of features that characterize their statically-extracted behavior."><meta property="og:image" content="/images/icon_hu16868671553544422563.png">
+  <meta property="twitter:image" content="/images/icon_hu16868671553544422563.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2016-11-03T00:00:00&#43;00:00">
@@ -1052,7 +1049,7 @@
     
     
     
-    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+    <script src="/js/academic.min.cd45a9c0bbdd3dfb1c126917c601c9f2.js"></script>
 
     
 
@@ -1075,7 +1072,7 @@
   
 
   <p class="powered-by">
-    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+    ©2009–2025. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
   </p>
 
   

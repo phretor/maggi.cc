@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Martino, Vittone | Federico Maggi</title>
+    <title>Martino Vittone | Federico Maggi</title>
     <link>/author/martino-vittone/</link>
       <atom:link href="/author/martino-vittone/index.xml" rel="self" type="application/rss+xml" />
-    <description>Martino, Vittone</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Tue, 04 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <description>Martino Vittone</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2025. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
-      <title>Martino, Vittone</title>
+      <url>/images/icon_hu16868671553544422563.png</url>
+      <title>Martino Vittone</title>
       <link>/author/martino-vittone/</link>
     </image>
-    
-    <item>
-      <title>Rogue Automation: Vulnerable and Malicious Code in Industrial Programming</title>
-      <link>/publication/maggi_rogueautomationwp_tr_2020/</link>
-      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/maggi_rogueautomationwp_tr_2020/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Security of controlled manufacturing systems in the connected factory: the case of industrial robots</title>

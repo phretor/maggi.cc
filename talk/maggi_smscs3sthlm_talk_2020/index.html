@@ -208,10 +208,7 @@
   
   <link rel="stylesheet" href="/css/academic.css">
 
-  
-
-
-
+    
 
   
 
@@ -222,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu3968311862830079689.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu15867440453535063751.png">
 
   <link rel="canonical" href="/talk/maggi_smscs3sthlm_talk_2020/">
 
@@ -246,8 +243,8 @@
   <meta property="og:site_name" content="Federico Maggi">
   <meta property="og:url" content="/talk/maggi_smscs3sthlm_talk_2020/">
   <meta property="og:title" content="Hidden Attack Surfaces of Modern Industrial Automation Systems | Federico Maggi">
-  <meta property="og:description" content="Last year we performed a security analysis on a testbed smart manufacturing system using a variety of &#34;unconventional&#34; attack vectors. Striving to think very much outside the box, we wanted to understand which overlooked conditions and attacker capabilities make certain attacks possible, and their consequences.  Through concrete PoCs, we&#39;ll describe what unconventional attack vectors and very creative attackers can achieve, as well as how they can be stopped by current security solutions.  We&#39;ll first show how a remote attacker can indirectly compromise an engineering workstation to backdoor the automation logic of an industrial robot. Then, we&#39;ll reveal how the attack has been carried out via a malicious software extension that targets the simulation and offline programming (OLP) platform. The attendees will learn that such malicious extensions have full capabilities on the target system, but we&#39;ll explain what they are and how they can be stopped.  Our second entry point is an industry-grade embedded device. These devices, often dubbed as &#34;IIoT devices&#34; offer great programming flexibility—compared to, say, PLCs—at the price of more responsibility for the programmers. The proliferation of customizable IIoT devices along with the many 3rd-party development libraries are the perfect target for software supply-chain attacks. We&#39;ll show how we trojanized a simple temperature-measurement library to implement an ARP-based DoS attack, along with inaccurate temperature data-points, which can cause cascade effects down the data-processing pipeline. We&#39;ll argue that detecting violations in the software supply-chain is hard in large, distributed enterprises, but their effects can be mitigated with proper network partitioning.  The last step of our security analysis focused on lateral movements to complex, programmable machines such as industrial robots. We observe that, movement-instructions aside, industrial robot programming languages have statements, loops, conditions, network sockets, serial communication, etc. With access to low-level system resources like files, network, memory, and peripherals, task programs are a powerful, overlooked payload. Not only we show that task programs are susceptible to input-validation vulnerabilities, we also show that they&#39;re rich enough to implement malware-like functionalities, given that the runtime environment provides no resource isolation. As a result, task programs have unmediated access to the entire system.  We&#39;ll share cases of vulnerable and malicious task programs, and how to discover such patterns, including some vulnerabilities we found in real-world code.  We conclude by discussing the remediation steps that can be adopted by developers and vendors to mitigate our findings in the medium and long term."><meta property="og:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Last year we performed a security analysis on a testbed smart manufacturing system using a variety of &#34;unconventional&#34; attack vectors. Striving to think very much outside the box, we wanted to understand which overlooked conditions and attacker capabilities make certain attacks possible, and their consequences.  Through concrete PoCs, we&#39;ll describe what unconventional attack vectors and very creative attackers can achieve, as well as how they can be stopped by current security solutions.  We&#39;ll first show how a remote attacker can indirectly compromise an engineering workstation to backdoor the automation logic of an industrial robot. Then, we&#39;ll reveal how the attack has been carried out via a malicious software extension that targets the simulation and offline programming (OLP) platform. The attendees will learn that such malicious extensions have full capabilities on the target system, but we&#39;ll explain what they are and how they can be stopped.  Our second entry point is an industry-grade embedded device. These devices, often dubbed as &#34;IIoT devices&#34; offer great programming flexibility—compared to, say, PLCs—at the price of more responsibility for the programmers. The proliferation of customizable IIoT devices along with the many 3rd-party development libraries are the perfect target for software supply-chain attacks. We&#39;ll show how we trojanized a simple temperature-measurement library to implement an ARP-based DoS attack, along with inaccurate temperature data-points, which can cause cascade effects down the data-processing pipeline. We&#39;ll argue that detecting violations in the software supply-chain is hard in large, distributed enterprises, but their effects can be mitigated with proper network partitioning.  The last step of our security analysis focused on lateral movements to complex, programmable machines such as industrial robots. We observe that, movement-instructions aside, industrial robot programming languages have statements, loops, conditions, network sockets, serial communication, etc. With access to low-level system resources like files, network, memory, and peripherals, task programs are a powerful, overlooked payload. Not only we show that task programs are susceptible to input-validation vulnerabilities, we also show that they&#39;re rich enough to implement malware-like functionalities, given that the runtime environment provides no resource isolation. As a result, task programs have unmediated access to the entire system.  We&#39;ll share cases of vulnerable and malicious task programs, and how to discover such patterns, including some vulnerabilities we found in real-world code.  We conclude by discussing the remediation steps that can be adopted by developers and vendors to mitigate our findings in the medium and long term."><meta property="og:image" content="/images/icon_hu16868671553544422563.png">
+  <meta property="twitter:image" content="/images/icon_hu16868671553544422563.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-10-21T00:00:00&#43;00:00">
@@ -1027,7 +1024,7 @@
     
     
     
-    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+    <script src="/js/academic.min.cd45a9c0bbdd3dfb1c126917c601c9f2.js"></script>
 
     
 
@@ -1050,7 +1047,7 @@
   
 
   <p class="powered-by">
-    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+    ©2009–2025. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
   </p>
 
   

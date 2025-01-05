@@ -208,10 +208,7 @@
   
   <link rel="stylesheet" href="/css/academic.css">
 
-  
-
-
-
+    
 
   
 
@@ -222,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu3968311862830079689.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu15867440453535063751.png">
 
   <link rel="canonical" href="/talk/mavroudis_silverdogbh_talk_2016/">
 
@@ -246,8 +243,8 @@
   <meta property="og:site_name" content="Federico Maggi">
   <meta property="og:url" content="/talk/mavroudis_silverdogbh_talk_2016/">
   <meta property="og:title" content="Talking Behind Your Back: Attacks and Countermeasures of Ultrasonic Cross-Device Tracking | Federico Maggi">
-  <meta property="og:description" content="Cross-device tracking (XDT) technologies are currently the ``Holy Grail&#39;&#39; for marketers because they allow to track the user&#39;s visited content across different devices to then push relevant, more targeted content. For example, if a user clicks on a particular advertisement while browsing the web at home, the advertisers are very interested in collecting this information to display, later on, related advertisements on other devices belonging to the same user (e.g., phone, tablet).  Currently, the most recent innovation in this area is ultrasonic cross-device tracking (uXDT), which is the use of the ultrasonic spectrum as a communication channel to &#34;pair&#34; devices for the aforementioned tracking purposes. Technically, this pairing happens through a receiver application installed on the phone or tablet. The business model is that users will receive rewards or useful services for keeping those apps active, pretty much like it happens for proximity-marketing apps (e.g., Shopkick), where users receive deals for walk-ins recorded by their indoor-localizing apps.  This talk will describe and demonstrate the practical security and privacy risks that arise with the adoption of uXDT-enabled systems. The uXDT technology has caught the attention of major companies (e.g., IDG Ventures, Google, Nestle, Dominos), many of which either invested in uXDT providers (e.g., SilverPush, Signal360, Audible Magic), or approached such companies as clients. Unfortunately, unbeknownst to the users, we found that numerous mobile applications, some with millions of downloads, include uXDT advertising frameworks that actively listen for ultrasounds, with no opt-out option for the users! Security experts and the authorities (e.g., the Federal Trade Commission) have promptly raised concerns about uXDT, but until now no comprehensive security analysis of the technology has been released.  In this talk, we will explore the uXDT ecosystem, dig into the inner workings of popular uXDT frameworks, and perform an in-depth technical analysis of the underlying technology, exposing both implementation &amp; design vulnerabilities, and critical security &amp; privacy shortcomings that we discovered. In the offensive part of our talk, we will demonstrate (through practical demo sessions) how an attacker can exploit uXDT frameworks to reveal the true IP addresses of users who browse the Internet through anonymity networks (e.g., VPNs or Tor). Moreover, we will describe how an attacker can tamper with the &#34;pairing&#34; process or affect the results of the advertising/bidding algorithms. For example, an attacker equipped with a simple beacon-emitting device (e.g., a smartphone) can walk into a Starbucks at peak hour and launch a profile-corruption attack against all customers currently taking advantage of uXDT-enabled apps.  In the defensive part of our talk, we will introduce three countermeasures that we designed, implemented, and will publicly release. These include (1) a mobile application that detects ultrasound beacons &#34;in the air&#34; with the goal of raising awareness, (2) a browser extension that acts as a personal firewall by selectively filtering ultrasonic beacons, and (3) an brand-new OS permission control in Android that allows applications to declaratively ask access to the ultrasound spectrum. We will go into the technical details and provide remediation advice useful both for the users and developers."><meta property="og:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Cross-device tracking (XDT) technologies are currently the ``Holy Grail&#39;&#39; for marketers because they allow to track the user&#39;s visited content across different devices to then push relevant, more targeted content. For example, if a user clicks on a particular advertisement while browsing the web at home, the advertisers are very interested in collecting this information to display, later on, related advertisements on other devices belonging to the same user (e.g., phone, tablet).  Currently, the most recent innovation in this area is ultrasonic cross-device tracking (uXDT), which is the use of the ultrasonic spectrum as a communication channel to &#34;pair&#34; devices for the aforementioned tracking purposes. Technically, this pairing happens through a receiver application installed on the phone or tablet. The business model is that users will receive rewards or useful services for keeping those apps active, pretty much like it happens for proximity-marketing apps (e.g., Shopkick), where users receive deals for walk-ins recorded by their indoor-localizing apps.  This talk will describe and demonstrate the practical security and privacy risks that arise with the adoption of uXDT-enabled systems. The uXDT technology has caught the attention of major companies (e.g., IDG Ventures, Google, Nestle, Dominos), many of which either invested in uXDT providers (e.g., SilverPush, Signal360, Audible Magic), or approached such companies as clients. Unfortunately, unbeknownst to the users, we found that numerous mobile applications, some with millions of downloads, include uXDT advertising frameworks that actively listen for ultrasounds, with no opt-out option for the users! Security experts and the authorities (e.g., the Federal Trade Commission) have promptly raised concerns about uXDT, but until now no comprehensive security analysis of the technology has been released.  In this talk, we will explore the uXDT ecosystem, dig into the inner workings of popular uXDT frameworks, and perform an in-depth technical analysis of the underlying technology, exposing both implementation &amp; design vulnerabilities, and critical security &amp; privacy shortcomings that we discovered. In the offensive part of our talk, we will demonstrate (through practical demo sessions) how an attacker can exploit uXDT frameworks to reveal the true IP addresses of users who browse the Internet through anonymity networks (e.g., VPNs or Tor). Moreover, we will describe how an attacker can tamper with the &#34;pairing&#34; process or affect the results of the advertising/bidding algorithms. For example, an attacker equipped with a simple beacon-emitting device (e.g., a smartphone) can walk into a Starbucks at peak hour and launch a profile-corruption attack against all customers currently taking advantage of uXDT-enabled apps.  In the defensive part of our talk, we will introduce three countermeasures that we designed, implemented, and will publicly release. These include (1) a mobile application that detects ultrasound beacons &#34;in the air&#34; with the goal of raising awareness, (2) a browser extension that acts as a personal firewall by selectively filtering ultrasonic beacons, and (3) an brand-new OS permission control in Android that allows applications to declaratively ask access to the ultrasound spectrum. We will go into the technical details and provide remediation advice useful both for the users and developers."><meta property="og:image" content="/images/icon_hu16868671553544422563.png">
+  <meta property="twitter:image" content="/images/icon_hu16868671553544422563.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2016-11-03T00:00:00&#43;00:00">
@@ -1107,7 +1104,7 @@
     
     
     
-    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+    <script src="/js/academic.min.cd45a9c0bbdd3dfb1c126917c601c9f2.js"></script>
 
     
 
@@ -1130,7 +1127,7 @@
   
 
   <p class="powered-by">
-    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+    ©2009–2025. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
   </p>
 
   

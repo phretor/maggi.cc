@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>radio | Federico Maggi</title>
+    <title>Radio | Federico Maggi</title>
     <link>/tag/radio/</link>
       <atom:link href="/tag/radio/index.xml" rel="self" type="application/rss+xml" />
-    <description>radio</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Wed, 16 Jan 2019 16:01:50 +0200</lastBuildDate>
+    <description>Radio</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2025. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Wed, 16 Jan 2019 16:01:50 +0200</lastBuildDate>
     <image>
-      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
-      <title>radio</title>
+      <url>/images/icon_hu16868671553544422563.png</url>
+      <title>Radio</title>
       <link>/tag/radio/</link>
     </image>
     
@@ -35,7 +35,7 @@ mechanism? Like, if I push a button to make the load go down, and someone is
 under that load, what happens?&amp;rdquo; In the local dialect, he answered something
 that I could roughly translate as&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;ldquo;🤬  if you do that, you must have some serious problems.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;🤬  if you do that, you must have some serious problems.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This sounded like the perfect project idea to pitch to my colleagues! So I did.
 After some back and forth, brainstorming, and someone in the team having
@@ -47,7 +47,7 @@ a challenging disclosure process, I&amp;rsquo;m very happy to share the results 
 my colleagues in Trend Micro Research and I have produced.&lt;/p&gt;
 &lt;p&gt;Meanwhile, the renovation work is done and we&amp;rsquo;re enjoying a shiny new stone
 paver.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;condo.jpg&#34; alt=&#34;End of the renovation work.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/ir-security/condo.jpg&#34; alt=&#34;End of the renovation work.&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;radio-frequency-technology&#34;&gt;Radio-frequency Technology&lt;/h2&gt;
 &lt;p&gt;Sub-gigaherz radio-frequency (RF) protocols are widely adopted for both
 consumer and &lt;strong&gt;industrial applications&lt;/strong&gt;. From simple garage-door openers to
@@ -65,7 +65,7 @@ and a micro-controller that implements the actual application-level protocol
 (e.g., structure of messages, CRCs, pairing, addressing). Each transmitted
 message carries a distinct &lt;strong&gt;command&lt;/strong&gt; that the RX actuates, usually by
 triggering the relay switches in a given, configurable way.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;ir-system.jpg&#34; alt=&#34;Industrial Radio Remote Control System in a Nutshell&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/ir-security/ir-system.jpg&#34; alt=&#34;Industrial Radio Remote Control System in a Nutshell&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;security-angle&#34;&gt;Security Angle&lt;/h2&gt;
 &lt;p&gt;Despite the simplicity of these systems, &lt;strong&gt;there is no standardization&lt;/strong&gt; in the
 application-level protocol, nor security best practices that go beyond the use

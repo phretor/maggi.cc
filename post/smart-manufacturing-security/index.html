@@ -209,10 +209,7 @@ ransomware infection that halted production at a major semiconductor foundry in 
   
   <link rel="stylesheet" href="/css/academic.css">
 
-  
-
-
-
+    
 
   
 
@@ -223,8 +220,8 @@ ransomware infection that halted production at a major semiconductor foundry in 
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu3968311862830079689.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu15867440453535063751.png">
 
   <link rel="canonical" href="/post/smart-manufacturing-security/">
 
@@ -298,7 +295,7 @@ ransomware infection that halted production at a major semiconductor foundry in 
     "name": "Federico Maggi",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_192x192_fill_lanczos_center_3.png"
+      "url": "/images/icon_hu15867440453535063751.png"
     }
   },
   "description": "\u003cp\u003eHow do we secure a smart manufacturing system, or a smart factory? Recent incidents such as the \n\u003ca href=\"https://thehackernews.com/2018/08/tsmc-wannacry-ransomware-attack.html\" target=\"_blank\" rel=\"noopener\"\u003eransomware infection that halted production at a major semiconductor foundry in 2018\u003c/a\u003e have already shown the impact of IT-to-OT lateral movement. Moreover, while smart manufacturing systems are isolated from other networks, there is a trend toward less isolation between IT and OT systems.\u003c/p\u003e"
@@ -723,9 +720,9 @@ ransomware infection that halted production at a major semiconductor foundry in 
 <p>In this video we start by taking a look at how a smart manufacturing system actually looks like, using the system that we have used during our research.
 Although it&rsquo;s an educational lab, it uses the same equipment used in real modern factories.</p>
 <p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/7q7eun--K30" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7q7eun--K30?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
 <br /></p>
 <p>There are 7 stations, each controlled by a dedicated PLC and an HMI for the operator to interact with the system, for maintenance or troubleshooting for example. The goal of the plant is to produce cell phones (actually, toy cell phones) with a case and a printed circuit board inside. The whole system is controlled by a so-called MES (or manufacturing execution system) which is a scheduling software that make sure that each PLC receives the right control command at the right time, and that all the parts needed to produce an item are available.</p>
 <p>The SIEMENS equipment (such as the HMIs and PLCs) communicate via S7, which is a proprietary control protocol by SIEMENS. The MES and other components communicate via Modbus and OPC Unified Architecture, which is an open machine-to-machine protocol for industrial automation
@@ -741,18 +738,18 @@ There&rsquo;s a lot of &ldquo;backstage&rdquo; work done by the engineers who se
 <h2 id="ep-2-malicious-industrial-software-extensions">Ep. 2: Malicious Industrial Software Extensions</h2>
 <p>In this video we focus on the engineering workstation (EWS), which is a crucial endpoint used to program the logic of a smart manufacturing plant. It&rsquo;s essential in any smart factory station, it should never be exposed or reachable from a public network, but we show that even if not directly reachable, an attacker can still find ways to access it.</p>
 <p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/jiyb6BKx_TA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jiyb6BKx_TA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
 <br /></p>
 <p>In this second episode I show you how future smart factories could be infected via malicious software extensions, a new way to deliver software for industrial automation. Malicious software extensions and future industrial &ldquo;app stores&rdquo; represent a relevant but overlooked attack vector for smart factory environments.</p>
 <p>Thanks to our research ABB&rsquo;s RobotApps Store has fixed an upload bypass vulnerability that would have allowed anyone to upload (malicious) software extensions that could cripple into the engineering workstation, a critical endpoint used to program industrial machines such as robots.</p>
 <h2 id="extra-episode-lateral-movements-via-industrial-automation-scripts">Extra Episode: Lateral Movements via Industrial Automation Scripts</h2>
 <p>In this video we focus on two questions: What if a perfectly patched industrial manufacturing machine can still harbor for vulnerabilities where no one is looking? What if the powerful programming languages used to program these machines can go beyond simple movement instructions, and actually allow threat actors to hide malware into the logic?</p>
 <p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/g2h2EQWan3E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/g2h2EQWan3E?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
 <br /></p>
 <p>In this unplanned, extra episode you can see the entire picture, from entry point (already glanced at in the second episode) to vulnerability exploitation and complete system compromise.</p>
 <p>And of course we conclude with an overview of the short-, medium-, and long-term remediation approaches.</p>
@@ -1121,7 +1118,7 @@ There&rsquo;s a lot of &ldquo;backstage&rdquo; work done by the engineers who se
     
     
     
-    <script src="/js/academic.min.5cbe51271615d69caead0155ce0cb8ce.js"></script>
+    <script src="/js/academic.min.cd45a9c0bbdd3dfb1c126917c601c9f2.js"></script>
 
     
 
@@ -1144,7 +1141,7 @@ There&rsquo;s a lot of &ldquo;backstage&rdquo; work done by the engineers who se
   
 
   <p class="powered-by">
-    ©2009–2023. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
+    ©2009–2025. All rights are reserved to Federico Maggi or the respective authors. <br /> <em> Opinions are my own, and not necessarily reflecting the views of my employer. </em>
   </p>
 
   

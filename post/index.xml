@@ -5,9 +5,9 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Diary</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2023. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 15 Nov 2021 21:41:54 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2009–2025. All rights are reserved to Federico Maggi or the respective authors. Opinions are my own, and not necessarily reflecting the views of my employer. </copyright><lastBuildDate>Mon, 15 Nov 2021 21:41:54 +0100</lastBuildDate>
     <image>
-      <url>/images/icon_hu7b980d35cd4a053ebe986874a36746b7_63893_512x512_fill_lanczos_center_3.png</url>
+      <url>/images/icon_hu16868671553544422563.png</url>
       <title>Diary</title>
       <link>/post/</link>
     </image>
@@ -68,7 +68,7 @@
 &lt;p&gt;While there are some must-read stories every week (which are found in the set-intersection between all good newsletters), each one of us has their own style and need to build their own opinion, independently, through autonomous content sourcing. Regardless of how good some newsletters are, even paid ones, I&amp;rsquo;ve always ended up not finding something I wanted in each one of them. So, while being an avid consumer of newsletters, a few years ago, I felt the need to understand more of how research results develop into news stories as a mean to build my own view. After all, traditional media outlets and socials cover a very important and critical role of research dissemination, with the responsibility of making the difference on public opinion around a cold research result.&lt;/p&gt;
 &lt;h2 id=&#34;from-consuming-to-creating&#34;&gt;From Consuming to Creating&lt;/h2&gt;
 &lt;p&gt;I decided I wanted to get to the source of each news I read. So, I started to systematize my reading list into a taxonomy and, month over month, I&amp;rsquo;ve been feeling I&amp;rsquo;d improved the way I consume readings, gaining more confidence in the difficult task of telling apart interesting from non-interesting news stories. I mean, interesting for my work, of course. Sometimes my work is interesting to the public, so, very seldom, &lt;em&gt;my&lt;/em&gt; noteworthy news stories are interesting for others, too.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/cf-overall.png&#34; alt=&#34;Overall workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/cf-overall.png&#34; alt=&#34;Overall workflow&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Let me now tell you how I deal with the ever-growing amount of reading material, having only a few minutes a day, often with more important work-related tasks to do.&lt;/p&gt;
 &lt;h2 id=&#34;high-level-pseudo-workflow-no-tools-yet&#34;&gt;High-Level Pseudo Workflow: No Tools, Yet&lt;/h2&gt;
 &lt;p&gt;Without going down into the tooling and details, yet, my workflow can be boiled down to the following steps.&lt;/p&gt;
@@ -89,7 +89,7 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;from-research-to-headline-a-simplified-journey&#34;&gt;From Research to Headline: A Simplified Journey&lt;/h2&gt;
 &lt;p&gt;At times my work gets picked up &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; by the media, so I&amp;rsquo;ve seen how things work from both sides of the journey. What follows is not the complete picture, but just a quick summary as a pre-requisite to better appreciate the rest of this post.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/cf-research-headline.png&#34; alt=&#34;From research to headline&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/cf-research-headline.png&#34; alt=&#34;From research to headline&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In the diagram above you can see the changes induced by massive use of social media. Despite the simplicity of the diagram, the effects are relevant.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Idea genesis:&lt;/strong&gt; Researchers have ideas all the time, while discussing with colleagues or reading others&amp;rsquo; work. Due to resource constraints, not all ideas get developed.&lt;/li&gt;
@@ -104,10 +104,10 @@
 &lt;p&gt;And we&amp;rsquo;re here, we&amp;rsquo;re all content consumers. Some of us are producers, but we can&amp;rsquo;t just not being consumers. Content creators and curators, especially if they&amp;rsquo;re subject matter experts (SME), want to go the source of a content, potentially all the way back to the original research material. I think this is the key to good content curation: Find the right balance between looking at the source while listening to output of the following steps. Or, in other words, it&amp;rsquo;s important to follow a reporter, but even the best reporters can make mistakes or omit details because they need to summarize.&lt;/p&gt;
 &lt;h2 id=&#34;the-workflow-for-the-impatient&#34;&gt;The Workflow: For the Impatient&lt;/h2&gt;
 &lt;p&gt;It&amp;rsquo;s now time to dig into the details of how we can start curating our interesting content. From now on, I&amp;rsquo;ll write about the tools and approaches that I use.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/0-inoreader-main.png&#34; alt=&#34;Inoreader main&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/0-inoreader-main.png&#34; alt=&#34;Inoreader main&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I use Inoreader for 99% of my readings and archival, and Zotero for local archival and newsletter editing. Inspired by Marco Lancini&amp;rsquo;s CloudSecList, which 
 &lt;a href=&#34;https://www.marcolancini.it/2020/blog-serverless-mailing-list/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uses a JSON file&lt;/a&gt; to hold the data of each issue, I use Zotero&amp;rsquo;s auto-generated JSON files for the same purpose, with some post-processing.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/cf-high-level-workflow.png&#34; alt=&#34;Workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/cf-high-level-workflow.png&#34; alt=&#34;Workflow&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;sourcing-discovering-organizing-and-consuming-good-sources-1-2&#34;&gt;Sourcing: Discovering, Organizing, and Consuming Good Sources (1-2)&lt;/h3&gt;
 &lt;p&gt;My sources include global and local newspapers (there&amp;rsquo;s more than just cyber-security), mainstream media outlets, press releases, official and personal blogs, public and private social media feeds, bulletins, content aggregators, other curated content. Roughly, I split sources in the following macro groups:&lt;/p&gt;
 &lt;ul&gt;
@@ -120,20 +120,20 @@
 &lt;a href=&#34;https://www.mediagazer.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mediagazer&lt;/a&gt;), personal blogs, trending GitHub repositories, official blogs of top tech companies, etc.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;All the rest&lt;/strong&gt;. Why do I keep this? First of all because I want to be able to globally search on everything. Secondly, if a news is really important, it will travel far, far away, event to the local free newspaper. So, monitoring the least-popular sources will give you indirect confirmation that something is &lt;em&gt;really&lt;/em&gt; good, if you know how to interpret signals.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;i/1-inoreader-tech-blogs.png&#34; alt=&#34;Inoreader tech blogs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/1-inoreader-tech-blogs.png&#34; alt=&#34;Inoreader tech blogs&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I organize my sources in a taxonomy with overlapping categories (e.g., a source can be both marked as &amp;ldquo;Must read&amp;rdquo; as well be in a broader &amp;ldquo;Infosec Relevant&amp;rdquo; category), by topic, and by importance.&lt;/p&gt;
 &lt;p&gt;When I encounter an interesting story (e.g., shared by someone else via social media) and I notice I didn&amp;rsquo;t know about that source, I find a place for it within my taxonomy of sources.&lt;/p&gt;
 &lt;h3 id=&#34;taxonomy-tagging-skimming-selection-2&#34;&gt;Taxonomy, tagging, skimming, selection (2)&lt;/h3&gt;
 &lt;p&gt;I spent a good full day in 2018 to think about how I reacted on keywords, and came up with a taxonomy of keywords that fit my reading habits. I revised it twice over the past 3 years.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/cf-keyword.png&#34; alt=&#34;Tagging workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/cf-keyword.png&#34; alt=&#34;Tagging workflow&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I set Inoreader to first apply global deduplication to the entire newsriver.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/4-inoreader-filter.png&#34; alt=&#34;Inoreader deduplication&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/4-inoreader-filter.png&#34; alt=&#34;Inoreader deduplication&#34;&gt;&lt;/p&gt;
 &lt;p&gt;There are indeed cases where the same article would appear multiple times, within the same feed and across distinct feeds.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/3-inoreader-filter-example-duplicate.png&#34; alt=&#34;Inoreader deduplication&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/3-inoreader-filter-example-duplicate.png&#34; alt=&#34;Inoreader deduplication&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Then, rules are triggered based on my interests in order to tag relevant content according to the following tags (some are omitted for NDA reasons).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/2-inoreader-tags.png&#34; alt=&#34;Inoreader tags&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/2-inoreader-tags.png&#34; alt=&#34;Inoreader tags&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Here you can see some example rules that I created using regular expressions. Inoreader makes it extremely easy to do this.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/6-inoreader-rule-reporters.png&#34; alt=&#34;Inoreader rule&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/6-inoreader-rule-reporters.png&#34; alt=&#34;Inoreader rule&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The sources and tags are organized is such that I don&amp;rsquo;t have to think too much about what to read every time I check Inoreader. The top buckets will always appear at the top, and as I mark them as read, they&amp;rsquo;ll disappear from the current bucket, and from any other overlapping buckets below.&lt;/p&gt;
 &lt;p&gt;When I find an interesting item, I tag it as &amp;ldquo;Noteworthy,&amp;rdquo; which triggers automatic archival and immediate sharing (e.g., on Twitter). I have private chats with co-workers where I share the same (or slightly different) content. I create one tag for each one of these cases so I can manage their workflows independently.&lt;/p&gt;
 &lt;h3 id=&#34;live-sharing-with-minimum-friction-3&#34;&gt;Live Sharing With Minimum Friction (3)&lt;/h3&gt;
@@ -144,24 +144,24 @@
 &lt;p&gt;When the content get shared via my social media channels, I receive notifications when people comment, re-share, or like, which gives me an indication of how good my choice was. Also, when I select an item about a completely new (but very important) topic, I setup auto-tagging of that topic, so that I get notified when something about that topic pops in the news again.&lt;/p&gt;
 &lt;h3 id=&#34;reading-curation-annotation-summary-4&#34;&gt;Reading, curation, annotation, summary (4)&lt;/h3&gt;
 &lt;p&gt;Every 1-2 days I go through my &amp;ldquo;Noteworthy&amp;rdquo; items and, also based on feedback from social media (if any), I choose the absolutely most important items and read through them in my browser. I have Zotero open all the time, so it only takes me the click of a button in Firefox on the Zotero Connector extension. Each weekly issue lives in a Zotero collection, with sorted sub-collections that mark any subsections I want to create.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/8-zotero-main.png&#34; alt=&#34;Zotero&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/8-zotero-main.png&#34; alt=&#34;Zotero&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The item is snapshotted in HTML (with embedded elements, so the webpage is fully offline!), a new item is created into Zotero, pre-filled with most of the metadata (e.g., author, URL, date, title).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/9-zotero-item-details.png&#34; alt=&#34;Zotero item details&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/9-zotero-item-details.png&#34; alt=&#34;Zotero item details&#34;&gt;&lt;/p&gt;
 &lt;p&gt;While reading, I copy-paste 2-3 key sentences and add them into a child note of the item I just saved into Zotero. I also and start thinking about a one-liner to summarize the story, which may happen to be the same title chosen by the original reporter.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/10-zotero-writing-note.png&#34; alt=&#34;Zotero writing note&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/10-zotero-writing-note.png&#34; alt=&#34;Zotero writing note&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;weekly-digest-sharing-5&#34;&gt;Weekly digest sharing (5)&lt;/h3&gt;
 &lt;p&gt;Every week, I spend 30&amp;rsquo; to organize the selected content into 3+ groups: top most important items, also important, tools, and some other ad-hoc groups (e.g., vulnerabilities) as the content demands. I spend most of the 30&amp;rsquo; actually write an intro to the weekly issue, which goes in the top-level collection as a news item, with a child note holding the actual content.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/11-zotero-top-note-meta.png&#34; alt=&#34;Zotero top note meta&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/12-zotero-writing-top-note.png&#34; alt=&#34;Zotero writing top note&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/11-zotero-top-note-meta.png&#34; alt=&#34;Zotero top note meta&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/12-zotero-writing-top-note.png&#34; alt=&#34;Zotero writing top note&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The final step in Zotero is to export to a JSON file.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/13-zotero-export-dialog.png&#34; alt=&#34;Zotero export dialog&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/14-zotero-export.png&#34; alt=&#34;Zotero export&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/15-zotero-json-export.png&#34; alt=&#34;Zotero JSON&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/13-zotero-export-dialog.png&#34; alt=&#34;Zotero export dialog&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/14-zotero-export.png&#34; alt=&#34;Zotero export&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/15-zotero-json-export.png&#34; alt=&#34;Zotero JSON&#34;&gt;&lt;/p&gt;
 &lt;p&gt;From the weekly JSON file, I have automatic scripts that generate a Markdown file based on a Jinja template, containing an intro, table of content, summary, and list of grouped items.&lt;/p&gt;
 &lt;p&gt;&amp;hellip;&lt;/p&gt;
 &lt;p&gt;That file is then converted into HTML (via 
 &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt;) and summaries for Twitter and LinkedIn.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/16-issue-md.png&#34; alt=&#34;Conversion&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/scalable-handcurated-newsletter/i/16-issue-md.png&#34; alt=&#34;Conversion&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The resulting Markdown file or HTML can be shared to email subscribers via 
 &lt;a href=&#34;https://buttondown.email&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Buttondown&lt;/a&gt;, which is what I do. It has an API, so I guess my next step is to create draft posts automatically, when generating the HTML file.&lt;/p&gt;
 &lt;h2 id=&#34;whats-left&#34;&gt;What&amp;rsquo;s Left?&lt;/h2&gt;
@@ -267,10 +267,10 @@
 &lt;figure id=&#34;figure-facial-expressions-i-used-in-the-experiment-anger-disgust-fear-happyness-neutral-sad&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/featured_hua0d4d4b24f4da3a102e4452ac738b95f_538555_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Facial expressions I used in the experiment: anger, disgust, fear, happyness, neutral, sad.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/featured_hu12146490337527537716.jpg&#34; data-caption=&#34;Facial expressions I used in the experiment: anger, disgust, fear, happyness, neutral, sad.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/masked-emotions/featured_hua0d4d4b24f4da3a102e4452ac738b95f_538555_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2744&#34; height=&#34;1114&#34;&gt;
+  &lt;img data-src=&#34;/post/masked-emotions/featured_hu12146490337527537716.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2744&#34; height=&#34;1114&#34;&gt;
 &lt;/a&gt;
 
 
@@ -288,7 +288,7 @@
 &lt;a href=&#34;https://faces.mpdl.mpg.de&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FACES dataset&lt;/a&gt; (Ebner, Riediger, and Lindenberger, 2010) and I artificially applied a face mask on the pictures of the male model.&lt;/p&gt;
 &lt;h3 id=&#34;the-importance-of-past-experience-people-we-dont-know&#34;&gt;The importance of past experience: People we don&amp;rsquo;t know&lt;/h3&gt;
 &lt;p&gt;I decided to present images to each worker in random order, one at a time, not all at the same time. Why? Because I wanted to emulate the worst-case condition. Here&amp;rsquo;s the rationale: If I know a person I know their “normal” face or “angry” face very well. But if we look at the neutral face above (second from the right), are we 100% that couldn&amp;rsquo;t that be her angry or sad face? If I see the whole context then I have way more context to cast the correct decision—especially if I know there are 6 emotion types.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/stranger.jpg&#34; alt=&#34;A stranger walking on a vessel.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/stranger.jpg&#34; alt=&#34;A stranger walking on a vessel.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In other words, if I know a person, even when that person wears a mask, I can easily tell their emotions apart. But I was more interested in emulating the “random stranger” condition: Imagine you&amp;rsquo;re walking on the street and a person you&amp;rsquo;ve never seen before walks toward you with a sad-looking face—or angry-looking face, who knows! How good are you at telling those two very different emotions apart? Anger and sadness are quite different emotions, but because of the mask and the complete lack of past experience you simply can&amp;rsquo;t guess. It&amp;rsquo;s the worst-case condition and I wanted to emulate exactly that.&lt;/p&gt;
 &lt;p&gt;Following the same line of thought, I decided to impose a 60s time constrain for workers to complete each task (1 face). Why is timing important? Because when we glance at someone&amp;rsquo;s face we make unconscious decisions and those are quite fast. (Carbon, 2020) gave the participants “unlimited” time to complete the task and collected a conscious assessment of their “confidence” in their decision. I decided to focus on a fast task, because at the end of the day, that&amp;rsquo;s how our brain works when we see someone.&lt;/p&gt;
 &lt;h3 id=&#34;results-how-good-are-we-at-detecting-emotions-from-facial-expressions&#34;&gt;Results: How Good are we at Detecting Emotions from Facial Expressions?&lt;/h3&gt;
@@ -314,10 +314,10 @@
 &lt;figure id=&#34;figure-confusion-matrix-showing-the-number-of-correct-detections-for-each-combination-of-real-detected-emotions-the-greener-the-better&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/confusion_hu79da99e9f5c11b2b53d7a599ac88ac31_381483_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Confusion matrix showing the number of correct detections for each combination of real-detected emotions. The greener, the better.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/confusion_hu12473860164509649863.jpg&#34; data-caption=&#34;Confusion matrix showing the number of correct detections for each combination of real-detected emotions. The greener, the better.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/masked-emotions/imgs/confusion_hu79da99e9f5c11b2b53d7a599ac88ac31_381483_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
+  &lt;img data-src=&#34;/post/masked-emotions/imgs/confusion_hu12473860164509649863.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
 &lt;/a&gt;
 
 
@@ -368,10 +368,10 @@
 &lt;figure id=&#34;figure-overall-time-to-detect-facial-emotions-in-case-of-correct-blue-and-incorrect-false-detections&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing_hud3f906394e33c42b903908d2e33c2bfb_35572_2000x2000_fit_q90_lanczos.jpeg&#34; data-caption=&#34;Overall time to detect facial emotions in case of correct (blue) and incorrect (false) detections.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing_hu16393481769333423570.jpeg&#34; data-caption=&#34;Overall time to detect facial emotions in case of correct (blue) and incorrect (false) detections.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing_hud3f906394e33c42b903908d2e33c2bfb_35572_2000x2000_fit_q90_lanczos.jpeg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1000&#34; height=&#34;400&#34;&gt;
+  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing_hu16393481769333423570.jpeg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1000&#34; height=&#34;400&#34;&gt;
 &lt;/a&gt;
 
 
@@ -407,10 +407,10 @@
 &lt;figure id=&#34;figure-breakdown-on-real-emotions-displayed-on-the-stimuli&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing-detailed_hu79da99e9f5c11b2b53d7a599ac88ac31_546558_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Breakdown on real emotions displayed on the stimuli.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/masked-emotions/imgs/timing-detailed_hu5133896203654422755.jpg&#34; data-caption=&#34;Breakdown on real emotions displayed on the stimuli.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing-detailed_hu79da99e9f5c11b2b53d7a599ac88ac31_546558_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
+  &lt;img data-src=&#34;/post/masked-emotions/imgs/timing-detailed_hu5133896203654422755.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3200&#34; height=&#34;2400&#34;&gt;
 &lt;/a&gt;
 
 
@@ -425,7 +425,7 @@
 
 &lt;h2 id=&#34;survival-adaptation-and-crime&#34;&gt;Survival, adaptation, and crime&lt;/h2&gt;
 &lt;p&gt;Since our earliest days, human beings have been incredibly attuned to reading the facial expressions of others. This ability likely conferred upon us an evolutionary advantage, Charles Darwin (Darwin, 1872)Learning how to read emotions from a face could aid social interaction, reduce misunderstandings and help a group function efficiently and harmoniously for the greater good, said (Ong, 2020).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/malice.jpg&#34; alt=&#34;Dark scenery with unrecognizable person.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/malice.jpg&#34; alt=&#34;Dark scenery with unrecognizable person.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pure.hud.ac.uk/en/persons/eilidh-garvey&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eilidh Noyes&lt;/a&gt;, lecturer in cognitive psychology at the 
 &lt;a href=&#34;https://hud.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Huddersfield&lt;/a&gt; in northern England said that&lt;/p&gt;
@@ -456,7 +456,7 @@
 &lt;p&gt;I still feel a little strange when wearing a mask, but my rational part is now in full control of those mixed emotion, and I simply forget I&amp;rsquo;m wearing a mask at times. In May, 
 &lt;a href=&#34;https://www.reading.ac.uk/pcls/staff/katie-gray&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kate Gray&lt;/a&gt;, who researches emotion processing at the 
 &lt;a href=&#34;https://www.reading.ac.uk/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Reading&lt;/a&gt; in the UK, mentioned that adapting to a faceless society will be a smooth process: &lt;em&gt;“[&amp;hellip;] we’ll quite quickly get used to picking up social and emotional cues from voice cues or body language.”&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/masks.jpg&#34; alt=&#34;Three people wearing face mask.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/masks.jpg&#34; alt=&#34;Three people wearing face mask.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I remember that the first time I saw my father wearing a mask it felt very strange. And when I started wearing a mask and people around me wouldn&amp;rsquo;t, I felt even stranger—like I was over-reacting. I bet I wasn&amp;rsquo;t the only one feeling strange, and an early research appeared earlier this year scientifically confirmed that the simple exposure to social groups of mask wearers greatly reduces that strange feeling (Carbon, 2020). The researchers have asked 86 participants to assess how strange they felt when wearing a mask (i.e., simple surgery mask, FFP2 mask, and loop scarfs) among other mask wearers, in groups of varying size. The larger the social group, the less strange each member feels about themselves.&lt;/p&gt;
 &lt;p&gt;So, one part of the impact on emotion seems to be that wearing masks makes us feel a little different, triggers different or slightly different emotions. When we wear a mask we’re left only with the eyes, and that can make it difficult for people to make these judgments. According to 
 &lt;a href=&#34;https://www.brandeis.edu/facultyguide/person.html?emplid=2eb6be94b388be4b500e54ef726277fd747f02bb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Leslie Zebrowitz&lt;/a&gt;, psychology professor who studies facial perception at 
@@ -464,7 +464,7 @@
 &lt;h2 id=&#34;a-face-mask-can-help-you-conceal-unauthentic-or-social-emotions&#34;&gt;A face mask can help you conceal unauthentic (or social) emotions&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s another line of thoughts I tend to agree with, probably because I&amp;rsquo;m introvert. We—introvers—won&amp;rsquo;t be showing our true emotions anyhow, with or without mask, so why bother? We don’t have to be happy to smile, and we don’t always smile when we’re happy. This can vary greatly across cultures. In the United States, smiling is part of the etiquette, while a 
 &lt;a href=&#34;https://archive.is/wip/vm2kd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Russian proverb translates as &lt;em&gt;“smiling with no reason is a sign of stupidity.”&lt;/em&gt;&lt;/a&gt; In Japan, emotions are stifled in public, there’s a greater emphasis on smiling with the eyes, so Japanese people may be able to convey—and read—their emotions through facial expressions more effectively.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/lonely.jpg&#34; alt=&#34;Person in a hoodie.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/lonely.jpg&#34; alt=&#34;Person in a hoodie.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Tara Well, Associate Professor of Psychology at Barnard College of Columbia University, recently wrote a short thought piece about the social smile (Tara Well, 2020). She wrote that:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The social smile is activated in the mouth muscles only and, therefore, easily covered up by a face mask. But a genuine smile, known as the Duchenne smile, named after the French anatomist who discovered it, involves both the mouth and the eyes. Interestingly, the facial muscle engaged by a genuine smile, called the orbicularis oculi, can’t be activated on command. You can see an authentic smile in the crinkles around the eyes.&lt;/p&gt;
@@ -478,7 +478,7 @@
 &lt;p&gt;Shakespeare said that the eyes were the windows to the soul. Indeed, eyes alone can provide a great deal of information. 
 &lt;a href=&#34;https://www.aber.ac.uk/en/psychology/staff-profiles/listing/profile/nih12/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nigel Holt&lt;/a&gt;, Professor of Psychology at 
 &lt;a href=&#34;https://www.aber.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aberystwyth University&lt;/a&gt; recently wrote (Holt, 2020) that “we are wired to extract information from the eyes—information that can help us assess the emotions of those around us and so allow us to engage more effectively with them.” Eyes alone can be quite effective, as (Lee and Anderson, 2017) showed. They showed volunteers images of eyes expressing different emotions (sadness, disgust, anger, joy, surprise, fear) and found out that the participants were able to correctly guess the mental states to the “eye expression”. From this research it emerged that different aspects of the eyes (such as how open they are or how sloped the brow is) give information about different mental states.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/eyes.jpg&#34; alt=&#34;Eyes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/eyes.jpg&#34; alt=&#34;Eyes&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Eye contact is also essential in social interactions as well as in the emotions that gazing at eye level can trigger. (Guastella, Mitchell, and Dadds, 2008) showed images of faces to people who are given oxytocin, and found out that they spend more time looking at the eyes than those given a placebo. Since oxytocin is a factor in social interactions, this finding suggests the eyes are very important in how we understand our engagement and interaction with those around us. Indeed, people with high levels of oxytocin appear to seek out the eyes to help them better engage socially with others.&lt;/p&gt;
 &lt;p&gt;From a perception viewpoint, we know that we are exceptionally sensitive to very tiny changes in direction of gaze, because the center of our retina is densely populated with light receptors. But a recent study showed that this goes beyond just sensitivity and perception. When we try to assess which direction someone is looking in, it significantly activates our amygdala, a part of the brain associated with emotion. So there seems to be a link between emotion and eyes at a neurological level (Kawashima et al., 1999).&lt;/p&gt;
 &lt;p&gt;When eyes are the only feature available the role of the context could be crucial, but there&amp;rsquo;s no strong evidence about this.(Kret and de Gelder, 2012) tested whether emotions can be recognized when just the eyes are visible and whether this recognition is affected by context cues (e.g., various Islamic headdresses vs. a cap or a scarf). The results are that fear is still well recognized from a briefly flashed (100 ms) image of a women wearing a burqa with less than 20% transparency of the eye region.&lt;/p&gt;
@@ -486,14 +486,14 @@
 &lt;h2 id=&#34;how-to-better-communicate-when-wearing-masks&#34;&gt;How to better communicate when wearing masks?&lt;/h2&gt;
 &lt;p&gt;Some 
 &lt;a href=&#34;https://www.boredpanda.com/doctor-portraits-on-protective-gear/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;healthcare workers on the frontline have attached smiley-faced pictures of themselves&lt;/a&gt; onto their medical gowns, trying to ease patient anxiety (Ong, 2020). That&amp;rsquo;s one practical and simple way to show your best emotion (happyness) when people around you need that. Especially when we can&amp;rsquo;t talk, I don&amp;rsquo;t see any better way than that.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/healthcare-workers.jpg&#34; alt=&#34;Healthcare workers with a smiley-faced picture.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/healthcare-workers.jpg&#34; alt=&#34;Healthcare workers with a smiley-faced picture.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;But when we can talk and move freely, it&amp;rsquo;s a whole different story. Psychologist Al Zayer suggests that, when wearing a mask, we should strive to over-communicate, use more words than we normally would, and ask more questions, to make sure we&amp;rsquo;re picking up on the other person’s emotions. Isn&amp;rsquo;t that what professional radio speakers or podcast creators do? They can convey very deep emotions and many shades of emotions by using their voice only. Normally, facial expressions form part of a coordinated set of features—including hand gestures, body language, words, pitch and tone, and even face colour (Benitez-Quiroz, Srinivasan, and Martinez, 2018). All of these features act together to convey message, intent, and emotions. And the best part is that, for some people, this is all natural. No training needed!&lt;/p&gt;
 &lt;p&gt;I want to close with a fun fact. There are 
 &lt;a href=&#34;https://archive.is/wip/SAyaJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;prototypes of a voice-activated mask, currently in the crowdfunding stages&lt;/a&gt; (Georgia Coggan, 2020). The mask uses LED lights to display emotion or words. The LED lights can mimic the mouth movements, with simple commands like “popping the lips” to display simple words, emojis or smiles.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/led-mask.jpg&#34; alt=&#34;LED mask&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/led-mask.jpg&#34; alt=&#34;LED mask&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The artificial mouth tracks the mouth of the user, emulating the physical action of the lips. It&amp;rsquo;s a matter of time and someone will make the flexible OLED version of that, showing a full, high-resolution picture of your mouth area recorded in real time from a micro-camera with IR illuminators positioned inside the mask.&lt;/p&gt;
 &lt;p&gt;For now, I&amp;rsquo;m sticking to the old-school approach.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;imgs/old-school.jpeg&#34; alt=&#34;Old school approach&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/masked-emotions/imgs/old-school.jpeg&#34; alt=&#34;Old school approach&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Baron-Cohen, Simon, Sally Wheelwright, Jacqueline Hill, Yogini Raste, and Ian Plumb. “The ‘Reading the Mind in the Eyes’ Test Revised Version: A Study with Normal Adults, and Adults with Asperger Syndrome or High-Functioning Autism.” The Journal of Child Psychology and Psychiatry and Allied Disciplines 42, no. 2 (February 2001): 241–51. 
@@ -663,9 +663,9 @@
 &lt;a href=&#34;https://www.ucl.ac.uk/pals/research/experimental-psychology/person/dr-tali-sharot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Tali Sharot&lt;/a&gt;, a cognitive neuroscientist at 
 &lt;a href=&#34;https://www.ucl.ac.uk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UCL&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/xp0O2vi8DX4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/xp0O2vi8DX4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Prof. Sharot summarizes that it&amp;rsquo;s hard to change our behavior because most of our incentive programs are designed to &lt;em&gt;threaten&lt;/em&gt; us by showing us all the bad things that could happen if we don&amp;rsquo;t adopt that behavior, while her experiments show that the opposite incentive program is much more powerful (we&amp;rsquo;re talking about 15% vs 90%!). So, instead of bombard our kids with things like &lt;em&gt;&amp;ldquo;if you don&amp;rsquo;t read enough you&amp;rsquo;ll get bad grades&amp;rdquo;&lt;/em&gt; (which is what I&amp;rsquo;ve been bombarded with), let&amp;rsquo;s tell them &lt;em&gt;&amp;ldquo;if you read you&amp;rsquo;ll become the fastest reader in the world&amp;rdquo;&lt;/em&gt;. It&amp;rsquo;s intuitive, I know, but if you think about it, it&amp;rsquo;s quite hard to implement. Why? Because you have to design a good reward system around it, which should show immediate positive rewards over time. And that&amp;rsquo;s not always practical.&lt;/p&gt;
 &lt;p&gt;So, the reason why I&amp;rsquo;m writing this piece is because Prof. Sharot&amp;rsquo;s talk enlightened me by showing all the ingredients that I already had on my plate, which were already at work to keep me motivated, but was quite nice to see them all condensed in that 15-minutes engaging talk, backed by scientific research!&lt;/p&gt;
@@ -712,9 +712,9 @@
 &lt;p&gt;In this video we start by taking a look at how a smart manufacturing system actually looks like, using the system that we have used during our research.
 Although it&amp;rsquo;s an educational lab, it uses the same equipment used in real modern factories.&lt;/p&gt;
 &lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/7q7eun--K30&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/7q7eun--K30?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;There are 7 stations, each controlled by a dedicated PLC and an HMI for the operator to interact with the system, for maintenance or troubleshooting for example. The goal of the plant is to produce cell phones (actually, toy cell phones) with a case and a printed circuit board inside. The whole system is controlled by a so-called MES (or manufacturing execution system) which is a scheduling software that make sure that each PLC receives the right control command at the right time, and that all the parts needed to produce an item are available.&lt;/p&gt;
 &lt;p&gt;The SIEMENS equipment (such as the HMIs and PLCs) communicate via S7, which is a proprietary control protocol by SIEMENS. The MES and other components communicate via Modbus and OPC Unified Architecture, which is an open machine-to-machine protocol for industrial automation
@@ -730,18 +730,18 @@ There&amp;rsquo;s a lot of &amp;ldquo;backstage&amp;rdquo; work done by the engi
 &lt;h2 id=&#34;ep-2-malicious-industrial-software-extensions&#34;&gt;Ep. 2: Malicious Industrial Software Extensions&lt;/h2&gt;
 &lt;p&gt;In this video we focus on the engineering workstation (EWS), which is a crucial endpoint used to program the logic of a smart manufacturing plant. It&amp;rsquo;s essential in any smart factory station, it should never be exposed or reachable from a public network, but we show that even if not directly reachable, an attacker can still find ways to access it.&lt;/p&gt;
 &lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/jiyb6BKx_TA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/jiyb6BKx_TA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;In this second episode I show you how future smart factories could be infected via malicious software extensions, a new way to deliver software for industrial automation. Malicious software extensions and future industrial &amp;ldquo;app stores&amp;rdquo; represent a relevant but overlooked attack vector for smart factory environments.&lt;/p&gt;
 &lt;p&gt;Thanks to our research ABB&amp;rsquo;s RobotApps Store has fixed an upload bypass vulnerability that would have allowed anyone to upload (malicious) software extensions that could cripple into the engineering workstation, a critical endpoint used to program industrial machines such as robots.&lt;/p&gt;
 &lt;h2 id=&#34;extra-episode-lateral-movements-via-industrial-automation-scripts&#34;&gt;Extra Episode: Lateral Movements via Industrial Automation Scripts&lt;/h2&gt;
 &lt;p&gt;In this video we focus on two questions: What if a perfectly patched industrial manufacturing machine can still harbor for vulnerabilities where no one is looking? What if the powerful programming languages used to program these machines can go beyond simple movement instructions, and actually allow threat actors to hide malware into the logic?&lt;/p&gt;
 &lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/g2h2EQWan3E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/g2h2EQWan3E?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;In this unplanned, extra episode you can see the entire picture, from entry point (already glanced at in the second episode) to vulnerability exploitation and complete system compromise.&lt;/p&gt;
 &lt;p&gt;And of course we conclude with an overview of the short-, medium-, and long-term remediation approaches.&lt;/p&gt;
@@ -879,533 +879,6 @@ There&amp;rsquo;s a lot of &amp;ldquo;backstage&amp;rdquo; work done by the engi
     </item>
     
     <item>
-      <title>Smart working, figli, tecnologia e didattica: il racconto e i consigli di un papà che lavora da casa da 4 anni e più</title>
-      <link>/post/smart-working-figli-tecnologia-didattica/</link>
-      <pubDate>Mon, 09 Mar 2020 07:13:29 +0200</pubDate>
-      <guid>/post/smart-working-figli-tecnologia-didattica/</guid>
-      <description>&lt;p&gt;Ci voleva il termine &lt;em&gt;&amp;ldquo;smart working,&amp;rdquo;&lt;/em&gt; perché &lt;em&gt;&amp;ldquo;lavoro da casa&amp;rdquo;&lt;/em&gt; in Italia, per molti, proprio non va giù. Sarà cultura, sarà mentalità, sarà la scarsa alfabetizzazione digitale, sta di fatto che è ancora guardato con sospetto da molti datori di lavoro, e con ammirazione e un pizzico di divertimento—quasi ironico (&amp;ldquo;ah ah ah, guardami lavoro dal divano!&amp;quot;)—da alcuni lavoratori. Non tutti, fortunatamente. Siamo tutti piacevolmente sorpresi da quanto velocemente molte realtà si siano riorganizzate. 👏👏👏&lt;/p&gt;
-&lt;p&gt;Fondamentale è stato il segnale forte dal Governo, che sin da subito ha consigliato—sempre più caldamente—di lavorare da casa; fino ad arrivare al DPCM firmato ieri: in soldoni, ci si può recare sul luogo di lavoro solo se non si può lavorare da casa. Ovviamente quel &amp;ldquo;solo se&amp;rdquo; cela un mondo di mail, messaggi, telefonate, gruppi WhatsApp tra colleghi, etc. In questi giorni ne ho viste di ogni: datori di lavoro che inviano video ai dipendenti per ricordare loro quanto sia (giustamente) importante mandare avanti il lavoro (e andare in ufficio), persone che correvano in ufficio per portarsi a casa il PC &lt;em&gt;fisso&lt;/em&gt;, mamme esauste che inoltravano GIF animate che le ritraevano come mostri mangiafigli, insegnanti che provano in qualsiasi modo ad organizzarsi, etc.&lt;/p&gt;
-&lt;p&gt;Fatto sta che ora chi può &amp;ldquo;deve&amp;rdquo; lavorare da casa. Io ho il privilegio di fare &amp;ldquo;smartworking&amp;rdquo; da oltre 4 anni, durante i quali ho sempre cercato di persuadere mia moglie a fare lo stesso ma, nonostante svolga un lavoro 100% di back office (le servono telefono, computer, stampante), non ha mai cambiato idea. Ora è diventato indispensabile. Il suo datore di lavoro non la obbliga, ma le da fortunatamente il permesso. È diventato indispensabile &lt;strong&gt;per noi&lt;/strong&gt;, per mantenere i vincoli che ci siamo posti per questo periodo:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;stare a casa&lt;/strong&gt; senza avere &lt;strong&gt;contatti con nessuno&lt;/strong&gt; (salvo telematici),&lt;/li&gt;
-&lt;li&gt;far vivere &lt;strong&gt;al meglio questa situazione&lt;/strong&gt; ai nostri due figli di 2 e 5 anni,&lt;/li&gt;
-&lt;li&gt;continuare a &lt;strong&gt;lavorare&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Dopo una settimana abbondante di rodaggio, il motore inizia a gira bene, quindi ecco il nostro racconto, qualche consiglio, e riferimenti.&lt;/p&gt;
-&lt;h2 id=&#34;consigli-in-breve&#34;&gt;Consigli in breve&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Separate il tempo&lt;/strong&gt; tra lavoro e famiglia: fare due cose insieme è frustrante per tutti.&lt;/li&gt;
-&lt;li&gt;Se possibile, &lt;strong&gt;separate i luoghi&lt;/strong&gt;: basta una stanza, dentro cui si lavora e basta, con la porta chiusa a chiave se serve.&lt;/li&gt;
-&lt;li&gt;Se possibile, fate &lt;strong&gt;i turni&lt;/strong&gt; (almeno 2 ore, idealmente 4): genitore uno lavora mentre genitore due si occupa dei figli, e viceversa.&lt;/li&gt;
-&lt;li&gt;Usate bene i &lt;strong&gt;ritagli di tempo&lt;/strong&gt; (sì, anche la &amp;ldquo;pausa pipì&amp;rdquo; :-) e fate una stima realistica di quanto ne avete a disposizione.&lt;/li&gt;
-&lt;li&gt;La &lt;strong&gt;tecnologia aiuta&lt;/strong&gt;: spesa online, cuffie, videoconferenze, chat, timer, reminder, calendari, liste, post-it.&lt;/li&gt;
-&lt;li&gt;Non dimenticate un &lt;strong&gt;minimo di decoro&lt;/strong&gt;: abbiamo tutti bisogno di vederci e avere contatti un po&amp;rsquo; umani, ma non a tutti piace vedere colleghi in pigiama.&lt;/li&gt;
-&lt;li&gt;Usate la &lt;strong&gt;fantasia&lt;/strong&gt; con i figli: dalle stupidaggini come una scatola di cartone può nascerne un gioco di ore.&lt;/li&gt;
-&lt;li&gt;Usate &lt;strong&gt;chiarezza&lt;/strong&gt; e comunicate tra voi adulti, senza aspettarsi che chi lavora possa &amp;ldquo;eccezionalmente&amp;rdquo; aiutarvi mentre gestite i figli.&lt;/li&gt;
-&lt;li&gt;Il &lt;strong&gt;tempo dei bambini&lt;/strong&gt; è estremamente &lt;strong&gt;dilatato&lt;/strong&gt;: fate fare a loro, come vogliono loro e nel tempo che necessitano, anche 10 minuti per lavare le mani (tanto, che fretta avete?)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Pianificate il giusto&lt;/strong&gt; e preparatevi a &lt;strong&gt;cambiare&lt;/strong&gt;, ma senza far predere ai vostri figli il controllo di casa.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;tempo-di-qualità&#34;&gt;Tempo di qualità&lt;/h2&gt;
-&lt;p&gt;Pensare di lavorare &amp;ldquo;mentre i figli fanno altro&amp;rdquo; è impensabile. Per chi ha figli piccoli, anche solo il pensiero che uno possa rompersi il collo non fa certo lavorare tranquilli. Siamo tutti d&amp;rsquo;accordo che gli incidenti domestici sono da evitare in questo periodo, no? Se si vuole lavorare &lt;strong&gt;davvero&lt;/strong&gt;, bastano anche &lt;strong&gt;poche ore&lt;/strong&gt;, ma devono essere di &lt;strong&gt;qualità,&lt;/strong&gt; ben definite, completamente a nostra disposizione. È proprio questo il concetto di smart working, no? Stabilire &lt;strong&gt;cosa&lt;/strong&gt; fare oggi, prendere coscienza del &lt;strong&gt;tempo&lt;/strong&gt; a disposizione e usarlo bene. Specialmente se siete abituati ad un &lt;strong&gt;ufficio ben frequentato&lt;/strong&gt;, sarete sorpresi di quanto &lt;strong&gt;più lavoro&lt;/strong&gt; riuscirete a fare nella stessa quantità di tempo.&lt;/p&gt;
-&lt;h2 id=&#34;turni-lavoro-e-gioco&#34;&gt;Turni: lavoro e gioco&lt;/h2&gt;
-&lt;p&gt;Può far sorridere, ma io e mia moglie &lt;strong&gt;ci diamo i turni&lt;/strong&gt;. Lei lavora al mattino mentre io mi occupo dei figli, pranziamo insieme e poi si cambia. Il pranzo lo preparo io, anche se il più delle volte riscaldo gli avanzi della cena—che mia moglie fa appositamente abbondante, perché non dureremmo 2 giorni se dovessi cucinare io. Non lasciate che sia il caso (o peggio, i vostri figli) a scandire il tempo: parlatene tra di voi, trovate un modo che funziona bene per voi e cercate di metterlo in pratica.&lt;/p&gt;
-&lt;p&gt;Siate &lt;strong&gt;da subito chiari e onesti con i vostri figli&lt;/strong&gt;: mamma/papà sta lavorando, papà/mamma gioca con voi. Inutile dire &amp;ldquo;andiamo a salutare mamma/papà mentre lavora,&amp;rdquo; perché si &lt;strong&gt;aggrapperebbero&lt;/strong&gt; a chi non possono avere in quel momento, rendendo un &lt;strong&gt;inferno&lt;/strong&gt; la vita di chi li deve gestire. Tanto meglio essere chiari e farli piangere per 5&amp;rsquo; piuttosto che uno &lt;strong&gt;stillicidio&lt;/strong&gt; che impedirebbe a loro di vivere con serenità il tempo con voi, e a chi deve lavorare di essere concentrato e lucido. Dopo qualche giorno &lt;strong&gt;lo impareranno&lt;/strong&gt;. Però la &lt;strong&gt;regola&lt;/strong&gt; deve essere semplice, chiara e sempre quella.&lt;/p&gt;
-&lt;p&gt;Ammetto che i primi 2-3gg sono stati difficili. Una mia amica mi ha scritto chiedendomi come andava e dicendo che lei si divertiva un sacco a casa a lavorare con i figli. La mia risposta è stata:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;ldquo;è una m****a totale, tutto è fuori controllo, come ca**o fai a divertirti?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Ma alla fine ho riflettuto: è così, il modo migliore per combattere questa &lt;strong&gt;grave emergenza&lt;/strong&gt; è stare tutti isolati il più possibile, tanto vale trovare il modo di rendere il tutto&amp;hellip;non direi &amp;ldquo;divertente&amp;rdquo; ma &lt;strong&gt;armonioso&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;sveglia-e-al-lavoro-quasi-come-sempre&#34;&gt;Sveglia, e al lavoro quasi come sempre&lt;/h2&gt;
-&lt;p&gt;Ci svegliamo come se dovessimo andare al lavoro, voglio dire con la sveglia. Mia moglie cerca di tenere gli orari di lavoro 9-13 che ha normalmente (part time). Ovviamente si è meno &amp;ldquo;fiscali&amp;rdquo; sul tempo in modalità smartworking, ma la quantità di lavoro è quella. Chiaramente non si smette di essere puntuali quando ci sono appuntamenti telefonici o video-chiamate.&lt;/p&gt;
-&lt;p&gt;Sulla formalità, per quanto possiate avere un buon rapporto con i propri colleghi, andreste mai in ufficio in pigiama o fareste una telefonata di lavoro con urla e strepiti di sottofondo?&lt;/p&gt;
-&lt;h2 id=&#34;trovare-tempo-nei-ritagli-di-tempo&#34;&gt;Trovare tempo nei ritagli di tempo&lt;/h2&gt;
-&lt;p&gt;Io lavoro nel pomeriggio, cercando di &lt;strong&gt;recuperare tempo&lt;/strong&gt; come possibile (da contratto lavoro 8 ore): lavoro fino alle 19:30; pausa pranzo di 30&amp;rsquo;; evito distrazioni; al mattino appena sveglio leggo immediatamente le email dal cellulare. Le email che richiedono 1-2 minuti le gestisco subito prima di prepararmi, quelle &amp;ldquo;un po&amp;rsquo; più lunghe&amp;rdquo; le leggo nei ritagli di 5–10&amp;rsquo; in cui i miei figli giocano autonomamente senza uccidersi a vicenda (non pensate di avere intervalli più lunghi con figli di 2 e 5 anni; barare con tablet + Netflix o YouTube non vale), mentre quelle più importanti le gestisco come prima cosa nel pomeriggio.&lt;/p&gt;
-&lt;p&gt;È &lt;strong&gt;pericoloso&lt;/strong&gt; pensare di avere &lt;strong&gt;tempo infinito&lt;/strong&gt; a disposizione, quindi il &amp;ldquo;lo faccio dopo nel ritaglio di tempo&amp;rdquo; non deve sfuggire di mano e non deve diventare una &lt;strong&gt;regola&lt;/strong&gt;. Se serve usare qualche mezz&amp;rsquo;ora dopo aver messo a letto i figli, fatelo, ma ricordatevi che c&amp;rsquo;è bisogno di un po&amp;rsquo; di decompressione. Non dico relax, perché se come noi vivete in Lombardia&amp;hellip;c&amp;rsquo;è poco da stare allegri e rilassati.&lt;/p&gt;
-&lt;h2 id=&#34;quando-non-è-urgente-scrivilo&#34;&gt;Quando non è urgente, scrivilo&lt;/h2&gt;
-&lt;p&gt;Sembra cinico, ma &amp;ldquo;vado un secondo a dire questa cosa a mio marito/moglie/compagno/a&amp;rdquo; può essere una pallina di neve che rotola da una cima innevata. Anche una cosa banale come &amp;ldquo;ricordiamoci che dobbiamo comprare XYZ&amp;rdquo; oppure &amp;ldquo;guarda che domani c&amp;rsquo;è da fare quello.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;Nella nostra esperienza può succedere di tutto:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;i figli si ricordano che esiste l&amp;rsquo;altro genitore, che avevano temporaneamente dimenticato perché intenti a giocare: da quel momento sarà difficile tornare a fare quello che stavate facendo;&lt;/li&gt;
-&lt;li&gt;inizia una conversazione lunga a partire da &amp;ldquo;questa cosa da un secondo&amp;rdquo;;&lt;/li&gt;
-&lt;li&gt;si decide di cambiare la giornata in base alla conversazione più lunga;&lt;/li&gt;
-&lt;li&gt;i figli si intromettono in una questione tra adulti richiamando attenzione;&lt;/li&gt;
-&lt;li&gt;si scoperchia il vaso di pandora pieno di altre &amp;ldquo;cose da un secondo&amp;rdquo; da dire/fare;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Noi preferiamo &lt;strong&gt;scriverci in chat&lt;/strong&gt; se veramente è urgente (ad es., &amp;ldquo;guarda che figlio 1 gratta sulla porta, scrostalo che non riesco a lavorare&amp;rdquo;), oppure, molto meglio, usiamo:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;lista della spesa&lt;/strong&gt; condivisa con 
-&lt;a href=&#34;https://todoist.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Todoist&lt;/a&gt;, ma un sistema vale l&amp;rsquo;altro purché permetta ad entrambi di scrivere indipendentemente sulla stessa lista senza dovervi parlare (altrimenti a che serve?);&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;calendario condiviso&lt;/strong&gt; che avverte quando uno aggiunge cosa al calendario, oltre ai classici reminder (usiamo 
-&lt;a href=&#34;https://slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slack&lt;/a&gt; integrato con Google Calendar); ma anche qui, usate quello che fa per voi, purché sia veloce aggiungere/spostare/togliere impegni;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Generalmente ci viene abbastanza naturale &lt;strong&gt;rispettare il tempo dell&amp;rsquo;altro/a&lt;/strong&gt;, che sia di lavoro o con i figli.&lt;/p&gt;
-&lt;h2 id=&#34;spazio-di-lavoro&#34;&gt;Spazio di lavoro&lt;/h2&gt;
-&lt;p&gt;I nostri figli hanno capito molto bene che &amp;ldquo;lo studio è un luogo di lavoro,&amp;rdquo; prima di tutto perché chi ci entra lavora e &lt;strong&gt;chiude la porta a chiave&lt;/strong&gt;, secondo perché quando ci entrano loro (e sanno che non dovrebbero), glielo si dice chiaramente: &amp;ldquo;sai che non puoi entrare qui, perché qui si lavora.&amp;rdquo; Ovviamente in quanto bambini sono &lt;strong&gt;molto creativi&lt;/strong&gt;, ed hanno imparato ad entrarci dicendo &amp;ldquo;devo lavorare,&amp;rdquo; ma si fa loro capire che non è tempo e luogo per giocare.&lt;/p&gt;
-&lt;p&gt;Avere una stanza dedicata, anche piccola, anche solo un &lt;strong&gt;angolo&lt;/strong&gt; adibito a scrivania è un grande vantaggio. È ovviamente fondamentale che quella stanza diventi il &amp;ldquo;luogo di lavoro&amp;rdquo; quando è usato come tale, quindi deve essere chiusa a chiave, altrimenti diventa immediatamente un bazar.&lt;/p&gt;
-&lt;h2 id=&#34;spazio-e-tempo-di-gioco&#34;&gt;Spazio e tempo di gioco&lt;/h2&gt;
-&lt;p&gt;Si gioca e si passa tempo con i figli nel resto della casa, che fortunatamente è la maggior parte. Non si esce se non quando si può stare da soli, ad esempio nel cortile privato del nostro condominio.&lt;/p&gt;
-&lt;p&gt;Di solito passo &lt;strong&gt;meno tempo&lt;/strong&gt; con i miei figli rispetto a mia moglie, ma ho imparato da lei diverse cose, che ora sono molto utili:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;coinvolgere&lt;/strong&gt; i figli nella &lt;strong&gt;preparazione&lt;/strong&gt; di pranzo, merenda, biscotti, qualsiasi cosa;&lt;/li&gt;
-&lt;li&gt;se si &lt;strong&gt;sporcano&lt;/strong&gt; o fanno &lt;strong&gt;danni&lt;/strong&gt;, fa niente: sistemare è comunque &lt;strong&gt;tempo&lt;/strong&gt; passato con loro, tanto in quelle 4-5 ore non ho fretta di tornare a fare quello che stavo facendo;&lt;/li&gt;
-&lt;li&gt;chiedere &lt;strong&gt;il loro aiuto&lt;/strong&gt; anche per le piccole cose &amp;ldquo;portami questo o porta quello&amp;rdquo;;&lt;/li&gt;
-&lt;li&gt;lasciarli fare.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Generalmente la nostra routine mattutina &lt;em&gt;in regime normale&lt;/em&gt; sarebbe questa:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ci svegliamo,&lt;/li&gt;
-&lt;li&gt;accendendo le luci e metto musica nella cameretta (con Amazon Echo e un paio di interruttori &amp;ldquo;intelligenti&amp;rdquo;) sperando che si sveglino autonomamente,&lt;/li&gt;
-&lt;li&gt;io e mia moglie ci prepariamo,&lt;/li&gt;
-&lt;li&gt;io preparo i figli e li porto a scuola,&lt;/li&gt;
-&lt;li&gt;mia moglie esce e va in ufficio,&lt;/li&gt;
-&lt;li&gt;torna e li va a prendere nel pomeriggio.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ora è un po&amp;rsquo; cambiata:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ci svegliamo poco prima dell&amp;rsquo;orario di lavoro, perché per mia moglie non c&amp;rsquo;è tempo di commuting,&lt;/li&gt;
-&lt;li&gt;ci prepariamo,&lt;/li&gt;
-&lt;li&gt;i figli si svegliano da soli e nel frattempo a volte ho anche il lusso di leggere le notizie,&lt;/li&gt;
-&lt;li&gt;spendo più tempo possibile per fare colazione con loro, perché alla fine a loro piace: di norma odiano avere fretta di dover finire per andare a scuola,&lt;/li&gt;
-&lt;li&gt;di norma loro finiscono colazione comunque prima di me, perché devo prepararla,&lt;/li&gt;
-&lt;li&gt;ovviamente appena finisco vogliono giocare con me, ma io cerco di essere chiaro: voi avete fatto colazione, ora devo farla io&amp;hellip;borbottano un po&amp;rsquo; ma accettano e si trovano qualcosa da fare,&lt;/li&gt;
-&lt;li&gt;li vesto e nel mentre mi chiedono &amp;ldquo;dov&amp;rsquo;è mamma?&amp;rdquo;, e io &amp;ldquo;mamma lavora&amp;rdquo;, e loro &amp;ldquo;ma è qui?&amp;rdquo;, e io: &amp;ldquo;sì, ma lavora&amp;rdquo;, &amp;hellip;, dopo qualche botta e risposta si va a convergenza e si rassegnano (ogni giorno è meglio),&lt;/li&gt;
-&lt;li&gt;ogni mattina cerco di inventarmi qualcosa di nuovo: biscotti, merenda da preparare insieme, giocare fuori, giocare in casa, costruzioni, disegni, colla, pongo, acquarelli, pastelli; anche qui il bello è che più li lascio fare più il tempo passa serenamente,&lt;/li&gt;
-&lt;li&gt;quando il tempo e le condizioni lo permettono li coinvolgo un po&amp;rsquo; nella preparazione del pranzo.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;tecnologia-e-didattica&#34;&gt;Tecnologia e didattica&lt;/h2&gt;
-&lt;p&gt;Non abbiamo figli in età scolare, nel senso che non devono seguire lezioni. Per questo però c&amp;rsquo;è una 
-&lt;a href=&#34;https://guerredirete.substack.com/p/guerre-di-rete-newsletter-strumenti&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;guida succinta e completa alla &amp;ldquo;didattica ai tempi del Coronavirus&amp;rdquo; messa a punto da Carola Frediani&lt;/a&gt; che parla di:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;iniziative di supporto,&lt;/li&gt;
-&lt;li&gt;piattaforme tecnologiche,&lt;/li&gt;
-&lt;li&gt;consigli pratici,&lt;/li&gt;
-&lt;li&gt;contenuti pronti.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A metà tra nido e scuola dell&amp;rsquo;infanzia non si può parlare di &amp;ldquo;didattica a distanza,&amp;rdquo; ma anche qui si può fare qualcosa, perché alla fine la cosa più triste per qualunque bambino è il non poter vedere i compagni. La prima preoccupazione di mio figlio è stata &amp;ldquo;non potrò mai più andare a scuola&amp;rdquo;. Quindi cerchiamo di utilizzare qualche strumento per tenere i contatti:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;stiamo organizzando delle &lt;strong&gt;assemblee in videoconferenza&lt;/strong&gt; con educatrici e compagni: al primo test nessuno ha parlato, ma come inizio va bene così;&lt;/li&gt;
-&lt;li&gt;ogni tanto le &lt;strong&gt;educatrici&lt;/strong&gt; inviano dei video in cui &lt;strong&gt;leggono brevi libri&lt;/strong&gt; &amp;ldquo;come se fossero a scuola,&amp;rdquo; mostrando le pagine in modo che i bambini che seguono possano vedere bene (attenzione: i video per i bambini 
-&lt;a href=&#34;https://contec.maggi.cc/dietro-lo-schermo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;possono essere &amp;ldquo;ipnotici,&amp;rdquo;&lt;/a&gt; quindi la cosa sfugge di mano velocemente e potreste ritrovarvi con le orecchie sanguinanti per aver sentito la stessa fiaba 10 volte di fila; mettete un limite).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Di questi tempi TV, YouTube, Netflix, etc., sono una valvola di sfogo oserei dire indispensabile, ma noi cerchiamo di &lt;strong&gt;limitarne l&amp;rsquo;utilizzo come si fa di solito&lt;/strong&gt;, altrimenti finiremmo con figli fisicamente non stanchi, mentalmente rinco&amp;hellip;, che ogni sera andrebbero a letto sempre più tardi, si sveglierebbero sempre più tardi, etc. Non serve che io prosegua :-)&lt;/p&gt;
-&lt;h2 id=&#34;riferimenti&#34;&gt;Riferimenti&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Guida super pratica con strumenti e trucchi per didattica a distanza: 
-&lt;a href=&#34;https://guerredirete.substack.com/p/guerre-di-rete-newsletter-strumenti&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://guerredirete.substack.com/p/guerre-di-rete-newsletter-strumenti&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Progetto di solidarietà digitale con elenco aziende partecipanti: 
-&lt;a href=&#34;https://solidarietadigitale.agid.gov.it&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://solidarietadigitale.agid.gov.it&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bisogni psicologici dei figli: 
-&lt;a href=&#34;https://www.agi.it/cronaca/news/2020-03-09/coronavirus-psicologo-figli-7383905/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.agi.it/cronaca/news/2020-03-09/coronavirus-psicologo-figli-7383905/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Non dimentichiamoci della sicurezza dei nostri dispositivi! 
-&lt;a href=&#34;https://www.ilsole24ore.com/art/smart-working-ecco-cosa-bisogna-sapere-tenere-sicuro-dati-ADsHL3C&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.ilsole24ore.com/art/smart-working-ecco-cosa-bisogna-sapere-tenere-sicuro-dati-ADsHL3C&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Al lupo, al lupo! Tutti gli smartphone (non) sono sotto attacco!</title>
-      <link>/post/al-lupo-al-lupo-tutti-gli-smartphone-non-sono-sotto-attacco/</link>
-      <pubDate>Tue, 01 Oct 2019 07:08:30 +0200</pubDate>
-      <guid>/post/al-lupo-al-lupo-tutti-gli-smartphone-non-sono-sotto-attacco/</guid>
-      <description>&lt;p&gt;È arrivato il momento di fare chiarezza sulle tante notizie che da circa un mese stiamo leggendo in materia di &lt;strong&gt;cellulari&lt;/strong&gt; vulnerabili, sotto attacco, con buchi irreparabili, e chi più ne ha più ne metta.&lt;/p&gt;
-&lt;p&gt;In breve: &lt;strong&gt;niente panico&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Sì, alcune ricerche hanno scoperto diversi buchi di sicurezza su SIM card e cellulari Apple, ma è importante non saltare a conclusioni sensazionalistiche: sediamoci con calma e cerchiamo di capirne di più!&lt;/p&gt;
-&lt;p&gt;Parlerò di:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;SIMJacker e WIBJacker: lo spettro delle SIM vulnerabili,&lt;/li&gt;
-&lt;li&gt;Attacchi contro gli iPhone scoperti da Google a fine agosto,&lt;/li&gt;
-&lt;li&gt;Checkm8, l’ottavo jailbreak exploit per dispositivi Apple.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;prima-puntata-lo-spettro-delle-sim-vulnerabili&#34;&gt;Prima puntata: lo spettro delle SIM vulnerabili&lt;/h2&gt;
-&lt;p&gt;Lo scorso 12 settembre AdaptiveMobile—azienda a me sconosciuta fino a tale data, specializzata in soluzioni di protezione per utenti finali e operatori cellulari—ha annunciato di aver trovato una &lt;strong&gt;vulnerabilità&lt;/strong&gt; (soprannominata SIMJacker). Si tratta di una &lt;strong&gt;falla di sicurezza&lt;/strong&gt;, in quasi tutte le SIM card esistenti. Sì, proprio quelle inserite nel nostro smartphone. Aspetta, continua a leggere.&lt;/p&gt;
-&lt;p&gt;AdaptiveMobile spiega di aver rilevato ripetuti attacchi che, per almeno due anni, avrebbero sfruttavano questa vulnerabilità ai fini di spionaggio. &lt;strong&gt;Spionaggio da parte di chi&lt;/strong&gt;, e contro chi? Anche se spiegherà al pubblico tutti i dettagli durante la conferenza internazionale Virus Bulletin 2019—che si terrà a Londra il prossimo 3 ottobre—AdaptiveMobile anticipa che si tratta di soggetti dotati di mezzi di intercettazione di un certo livello, e che operano in diversi paesi.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Nota terminologica (exploit):&lt;/strong&gt; Quando si rileva un attacco che sfrutta una specifica vulnerabilità, si dice che quell’attacco è (o contiene) un exploit per quella vulnerabilità. Si definisce &lt;strong&gt;exploitation&lt;/strong&gt; l’atto di sfruttare tale vulnerabilità.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Gli attacchi in questione sarebbero stati perpetrati da &lt;strong&gt;enti governativi&lt;/strong&gt; (o assimilati) contro &lt;strong&gt;soggetti di alto profilo&lt;/strong&gt;, sfruttando tale vulnerabilità per tracciarne la posizione o per inviare comandi al telefono. Tra questi comandi di attacco c’è anche la possibilità di aprire un sito web (eventualmente malevolo), senza il controllo dell’utente e senza che questo si accorga di nulla. AdaptiveMobile dice di aver rilevato, in una nazione, degli attacchi contro un centinaio di individui, oltre a picchi di attacco fino a 300 numeri di telefono tracciati in un giorno. Il tutto inviando alla vittima un “SMS silenzioso.”&lt;/p&gt;
-&lt;h3 id=&#34;software-nelle-sim&#34;&gt;Software nelle SIM&lt;/h3&gt;
-&lt;p&gt;Per quanto possa sembrare “un pezzo di plastica,” una SIM card è un &lt;strong&gt;piccolissimo “computer” all’interno di un altro computer&lt;/strong&gt; (il nostro smartphone). In quanto tale, una SIM funziona grazie al software presente nella sua memoria. Questo &lt;strong&gt;software&lt;/strong&gt; è un componente &lt;strong&gt;attivo&lt;/strong&gt;, ovvero che svolge funzioni di base, che fa da tramite tra la rete dell’operatore telefonico e il telefono. Operatore e telefono devo scambiarsi dati e comandi al fine di funzionare correttamente.&lt;/p&gt;
-&lt;p&gt;Avete presente quelle “applicazioni della SIM,” che di solito non considera nessuno, e che nei vecchi cellulari erano più visibili rispetto a quelli odierni, perché ci si trovava un’icona—da qualche parte sul telefono—con il &lt;strong&gt;nome dell’operatore&lt;/strong&gt;? Ecco, proprio quelle. Queste applicazioni sono basate su un &lt;strong&gt;set di comandi&lt;/strong&gt; che formano il cosiddetto SIM Application Toolkit (STK), che è parte dello standard GSM. Roba vecchia, &lt;strong&gt;vecchissima&lt;/strong&gt;, che si trova in varie forme nelle SIM da &lt;strong&gt;oltre 10 anni&lt;/strong&gt;. Io ricordo di aver provato ad utilizzare una di queste funzionalità per &lt;strong&gt;controllare il credito&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;vulnerabilità-non-così-nuove&#34;&gt;Vulnerabilità non così nuove&lt;/h3&gt;
-&lt;p&gt;Ma è davvero nuova la vulnerabilità scoperta da AdaptiveMobile? No. È nota dal 2013—e probabilmente anche prima. Nel 2013 infatti, SRLabs 
-&lt;a href=&#34;https://srlabs.de/bites/rooting-sim-cards/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pubblica i dettagli di queste vulnerabilità&lt;/a&gt; e li presenta a Black Hat USA, una delle principali conferenze di sicurezza informatica al mondo. Se ne è parlato anche 
-&lt;a href=&#34;https://www.slideshare.net/mobile/iazza/smau-luca-bongiornimobilenetworksecurityquantosonosicurelereticellulari&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;in Italia a SMAU, nell’inverno del 2013, dalla voce di Luca Bongiorni&lt;/a&gt;, che da sempre si occupa di queste tematiche.&lt;/p&gt;
-&lt;p&gt;Poco dopo l’annuncio del 12 settembre, &lt;strong&gt;ricercatori ben noti&lt;/strong&gt; nella scena hanno pubblicato 
-&lt;a href=&#34;https://ginnoslab.org/2019/09/21/wibattack-vulnerability-in-wib-sim-browser-can-let-attackers-globally-take-control-of-hundreds-of-millions-of-the-victim-mobile-phones-worldwide-to-make-a-phone-call-send-sms-to-any-phone-numbers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;una certa quantità di dettagli tecnici&lt;/a&gt; su altre &lt;strong&gt;vulnerabilità analoghe&lt;/strong&gt; a quelle rese note da AdaptiveMobile. La tecnica di exploitation si basa su degli SMS particolari, usati dall’operatore telefonico per inviare aggiornamenti alla SIM, ad esempio per aggiungere servizi. Chiameremo WIBJacker questa seconda vulnerabilità.&lt;/p&gt;
-&lt;p&gt;Insieme ai dettagli delle vulnerabilità, SRLabs rilascia 
-&lt;a href=&#34;https://opensource.srlabs.de/projects/simtester/wiki&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SIMTester, uno strumento gratuito di diagnostica&lt;/a&gt; in grado di rivelare se una SIM presenta questo tipo di vulnerabilità. Dal 2014, la stessa SRLabs rilascia 
-&lt;a href=&#34;https://opensource.srlabs.de/projects/snoopsnitch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SnoopSnitch&lt;/a&gt;, un’app per Android per monitorare il telefono su cui è installata e rilevare tentativi di attacco, notificando l’utente in tal caso. In altre parole, dal 2014 SRLabs riceve dati da circa 500,000 telefoni, raccogliendo informazioni utilissime a misurare l’entità di attacchi contro le SIM.&lt;/p&gt;
-&lt;p&gt;Proprio oggi, a 2 giorni dalla conferenza Virus Bulletin 2019, quando AdaptiveMobile spiegherà i dettagli della sua analisi, 
-&lt;a href=&#34;https://srlabs.de/bites/sim_attacks_demystified/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SRLabs ricorda che è dal 2014 che sta analizzando questo fenomeno&lt;/a&gt; e fa chiarezza.&lt;/p&gt;
-&lt;h3 id=&#34;quindi-quanto-è-grave-dati-alla-mano&#34;&gt;Quindi quanto è grave? Dati alla mano!&lt;/h3&gt;
-&lt;p&gt;Secondo i dati di SRLabs, raccolti da un campione di circa 800 SIM e 500,000 smartphone, la &lt;strong&gt;situazione è stata ingigantita&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Meno del 6%&lt;/strong&gt; delle 800 SIM analizzate sarebbe &lt;strong&gt;affetta da SIMJacker&lt;/strong&gt;, e solo il 3.5% da &lt;strong&gt;WIBJacker&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Il &lt;strong&gt;9.4%&lt;/strong&gt; delle 800 SIM analizzate avrebbe i &lt;strong&gt;pre-requisiti software&lt;/strong&gt; per essere vulnerabile a SIMJacker (ovvero, ha a bordo quel pezzo di software affetto da SIMJacker), mentre il 10.7% avrebbe i requisiti per essere vulnerabile a WIBJacker.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Quindi, anche &lt;strong&gt;solo guardando i pre-requisiti&lt;/strong&gt; necessari alla &lt;strong&gt;presenza&lt;/strong&gt; di una delle due vulnerabilità, si capisce che il &lt;strong&gt;fenomeno è limitato&lt;/strong&gt;. C’è da notare che SRLabs ha raccolto dati sugli attacchi da un &lt;em&gt;sottoinsieme&lt;/em&gt; non meglio specificato di 500,000 utenti. Gli operatori telefonici dovrebbero pronunciarsi, perché in grado di rilevare tentativi di invio di SMS di attacco, dato che hanno piena visibilità sulla propria rete.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nota curiosa:&lt;/strong&gt; Dopo queste replice, AdaptiveMobile aggiunge un aggiornamento datato 25/10/2019 (penso sia un refuso, e che volessero scrivere 25/&lt;strong&gt;09&lt;/strong&gt;/2019), in cui retificano la lista di comandi invocabili attraverso &amp;ldquo;SMS silenziosi.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;Infine, dato forse più importante, sono stati rilevati &lt;strong&gt;attacchi contro 8 cellulari&lt;/strong&gt;, di cui il primo nel 2016, inviati tramite 29 SMS in totale.&lt;/p&gt;
-&lt;h2 id=&#34;seconda-puntata-gli-attacchi-contro-gli-iphone&#34;&gt;Seconda puntata: gli attacchi contro gli iPhone&lt;/h2&gt;
-&lt;p&gt;Il 29 agosto 
-&lt;a href=&#34;https://googleprojectzero.blogspot.com/2019/08/a-very-deep-dive-into-ios-exploit.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Project Zero pubblica un lunghissimo blog post&lt;/a&gt;, molto tecnico, che spiega approfonditamente una serie di &lt;strong&gt;vulnerabilità&lt;/strong&gt;, in iOS. Carola Frediani 
-&lt;a href=&#34;https://guerredirete.substack.com/p/guerre-di-rete-newsletter-attacco-836&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nel N.42 della sua newsletter&lt;/a&gt; (che consiglio vivamente di seguire) e 
-&lt;a href=&#34;https://www.repubblica.it/tecnologia/sicurezza/2019/08/30/news/apple_dei_siti_malevoli_hanno_consentito_di_hackerare_per_anni_gli_iphone-234701181/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rosita Rijitano su Repubblica.it&lt;/a&gt; ne hanno fatto una bella ricostruzione, a cui vorrei aggiungere qualche dettaglio e approfondimento puramente nozionistico.&lt;/p&gt;
-&lt;p&gt;Se opportunamente sfruttate, le vulnerabilità permettevano parziale controllo di un iPhone, ad esempio per rubarne dati quali messaggi, email, foto, eccetera. Parlo al passato, perché sono vulnerabilità &lt;strong&gt;già gestite e risolte da Apple&lt;/strong&gt;, che prima del 29 agosto aveva rilasciato gli opportuni aggiornamenti di sicurezza. Sarebbe infatti stato estremamente irresponsabile se Google avesse parlato pubblicamente di queste vulnerabilità, perché avrebbe fornito a chiunque i dettagli necessari, prima di segnalarle ad Apple senza dargli il tempo di risolvere il problema.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Nota terminologica (responsible disclosure):&lt;/strong&gt; In gergo si dice che Google ha fatto “&lt;strong&gt;responsible disclosure&lt;/strong&gt;,” letteralmente “divulgazione responsabile.” È ormai pratica comune che chi trova una vulnerabilità e voglia parlarne pubblicamente debba prima seguire un iter ben preciso per informare il produttore e dargli il tempo (solitamente 90 giorni) di rilasciare eventuali aggiornamenti di sicurezza a tutela dei propri utenti. Tra parentesi: è proprio per questo che è importante applicare gli aggiornamenti di sicurezza, mica perché a noi informatici piace fare le prediche! Da quel momento in avanti si potrà parlare pubblicamente di quanto trovato. Non è sempre Tutto così liscio, ma prima di arrivarci vediamo come prosegue la storia.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;L’articolo di Google Project Zero spiega che le vulnerabilità siano state trovate a seguito di un’&lt;strong&gt;indagine iniziata da alcuni attacchi&lt;/strong&gt;, che Google stessa aveva notato tra il 2016 e il 2018.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Attacchi da dove?&lt;/strong&gt; Un altro team di ricerca di Google aveva notato che le &lt;strong&gt;pagine di alcuni siti Web&lt;/strong&gt; (di cui non sono stati dati né indirizzi né dettagli, per ovvie ragioni) “lanciavano” questi attacchi contro i visitatori. Significa che le pagine Web erano state &lt;strong&gt;preparate da chi conosceva i dettagli delle vulnerabilità&lt;/strong&gt; in questione, proprio per sfruttare tali errori al fine di bypassare le misure di sicurezza di iOS, ed accedere ai dati presenti sul telefono.&lt;/p&gt;
-&lt;p&gt;OK, ma &lt;strong&gt;chi erano i bersagli?&lt;/strong&gt; Una minoranza etnica musulmana, diciamo vista poco bene dal governo cinese. Poche settimane dopo sono stati rilevati 
-&lt;a href=&#34;https://citizenlab.ca/2019/09/poison-carp-tibetan-groups-targeted-with-1-click-mobile-exploits/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;altri attacchi, basati sulle stesse vulnerabilità, contro una minoranza Tibetana&lt;/a&gt;, anch’essa considerata “rischiosa” secondo la politica del governo cinese. Ma come si fa a sapere se un visitatore di un sito è o non è un bersaglio da attaccare? Esistono gli “attacchi informatici intelligenti”? Mhh, insomma: è un po’ come dire che esistono i “missili intelligenti perfetti.” Difatti bastava visitare i siti in questione con un iPhone vulnerabile—ossia senza gli aggiornamenti di sicurezza—per essere attaccati. Dalle informazioni a disposizione sembra che i siti “esca” erano spesso visitati dai bersagli. Il secondo gruppo di attacchi, pur basato sulle stesse vulnerabilità, partiva invece da un messaggio WhatsApp inviato ai bersagli da colpire. Tramite varie tecniche di persuasione, chi perpetrava gli attacchi cercava di convincere le vittime a cliccare un link, che portava a un sito Web contenente il “codice di attacco.”&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Attenzione però:&lt;/strong&gt; nei periodi in cui gli attacchi furono registrati &lt;strong&gt;non esistevano aggiornamenti di sicurezza&lt;/strong&gt;, perché le vulnerabilità non erano ancora state rese note ad Apple. Cosa significa?&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Nota terminologica (zero day):&lt;/strong&gt; In gergo si dice che questi attacchi sfruttavano vulnerabilità “zero day,” ovvero vulnerabilità “fresche di zero giorni,” note solo a chi ne conosceva i dettagli. Ma non era stata Google a scoprirle? Quasi! I ricercatori di Google si sono &lt;strong&gt;accorti che qualcuno le stava già usando da tempo per gli attacchi&lt;/strong&gt;, il che implica che qualcuno le aveva già scoperte e &lt;strong&gt;non divulgate ad Apple&lt;/strong&gt;.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Quando si vede una vulnerabilità 0-day usata in un attacco “in the wild”, le possibilità sono due:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;chi le ha scoperte &lt;strong&gt;se le è tenute per sé&lt;/strong&gt;: in tal caso si tratta quasi sicuramente dell’aggressore stesso, ossia chi ha preparato gli attacchi,&lt;/li&gt;
-&lt;li&gt;oppure &lt;strong&gt;chi le ha scoperte le ha poi vendute&lt;/strong&gt; più o meno direttamente a chi le ha infine usate per preparare l’attacco.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Questa dinamica può sembrare sconvolgente per chi non è del mestiere, ma funziona proprio così: le vulnerabilità sono &lt;strong&gt;informazioni strategiche&lt;/strong&gt;, con un valore commerciale e un mercato strutturato con diverse figure (ricercatori, venditori, intermediari, compratori), che danno a chi le possiede un chiaro vantaggio. Infatti, indipendentemente da chi le ha scoperte, nel momento stesso in cui si usa una vulnerabilità 0-day per preparare un attacco, la vulnerabilità non è più 0-day: è &lt;strong&gt;bruciata&lt;/strong&gt;, perché l’attacco ne è una sua espressione. L’evidenza tecnica raccolta quando si “registra” un attacco contiene infatti sufficienti informazioni per risalire ai dettagli della vulnerabilità.&lt;/p&gt;
-&lt;p&gt;Sull’&lt;strong&gt;etica della compravendita&lt;/strong&gt; e l’uso di vulnerabilità per fini diversi da quelli autorizzati dalla legge non mi pronuncio, altrimenti non finisco più—poi il mio fegato ne risente.&lt;/p&gt;
-&lt;h3 id=&#34;ricapitolando&#34;&gt;Ricapitolando&lt;/h3&gt;
-&lt;p&gt;Si tratta di vulnerabilità di un certo rilievo, a disposizione di aggressori statali o para-statali, con buone risorse finanziarie. Altro aspetto da sottolineare è che il primo gruppo di attacchi non era perpetrato direttamente—come il secondo—con dei messaggi diretti alle vittime. I siti in questione erano pubblici e indicizzati da Google, per cui chiunque avrebbe potuto visitarli nel periodo in cui erano attivi. Il che significa, tra parentesi, che chi ha preparato gli attacchi ha avuto modo di “installarli” sui siti in questione, perché ne aveva accesso.&lt;/p&gt;
-&lt;h3 id=&#34;la-questione-mi-riguarda&#34;&gt;La questione mi riguarda?&lt;/h3&gt;
-&lt;p&gt;Se stai leggendo questo articolo è perché la questione certamente ti interessa. Molto probabilmente non sei tra i bersagli. Sei tra le vittime accidentali? Solo se, usando un iPhone nel periodo di esposizione (settembre 2016 e inizio 2019), hai visitato i siti in questione o hai cliccato su un link ricevuto via WhatsApp da qualcuno che, scrivendoti in inglese, cercava di convincerti a visitare un sito (ecco 
-&lt;a href=&#34;https://citizenlab.ca/wp-content/uploads/2019/09/Missing-Link-Fig-1.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;alcuni esempi di conversazione&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Riprendendo un po’ di concetti base spiegati nella 
-&lt;a href=&#34;https://ggad.it&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GGAD&lt;/a&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;la &lt;strong&gt;minaccia&lt;/strong&gt; esisteva (e probabilmente sussiste) per dei soggetti ben definiti, in questo caso due minoranze etniche in Cina;&lt;/li&gt;
-&lt;li&gt;gli &lt;strong&gt;asset&lt;/strong&gt; sono i dati, le comunicazioni, le foto, etc., in possesso dei soggetti appartenenti alle due minoranze etniche;&lt;/li&gt;
-&lt;li&gt;la &lt;strong&gt;vulnerabilità&lt;/strong&gt; esisteva per tutti—noi compresi—i possessori di un iPhone nel periodo tra la scoperta (in mano di pochi) e l’aggiornamento di sicurezza rilasciato da Apple&lt;/li&gt;
-&lt;li&gt;la concretizzazione della minaccia è l’uso delle vulnerabilità in questione per produrre uno specifico &lt;strong&gt;attacco&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;terza-puntata-vulnerabilità-irrisolvibili-in-quasi-tutti-i-dispositivi-apple&#34;&gt;Terza puntata: vulnerabilità “irrisolvibili” in quasi tutti i dispositivi Apple&lt;/h2&gt;
-&lt;p&gt;Pochi giorni fa un ricercatore 
-&lt;a href=&#34;https://github.com/axi0mX/ipwndfu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ha pubblicato il codice di un exploit&lt;/a&gt; che sfrutta una &lt;strong&gt;vulnerabilità nello strato software più basso&lt;/strong&gt;, presente nella memoria “di sola lettura” di tutti i dispositivi mobili. Questa memoria, detta 
-&lt;a href=&#34;https://www.theiphonewiki.com/wiki/Bootrom&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bootrom&lt;/a&gt;, contiene il codice “di avvio,” che viene eseguito dal dispositivo all’accensione, prima del vero e proprio sistema operativo (iOS), che invece è lo strato software che governa gli iPhone, quello “sopra al quale” si installano le app.&lt;/p&gt;
-&lt;p&gt;I dispositivi Apple sono considerati “chiusi,” perché &lt;strong&gt;la casa madre non permette di eseguire altro software&lt;/strong&gt; al di fuori di quello da essa sviluppato (iOS) o autorizzato (app presenti nell’App Store). Il software contenuto nella memoria di avvio serve, tra le altre cose, per verificare l’autenticità del successivo “blocco” di software da caricare, e così via. In altre parole, se uno vuole installare una versione modificata di iOS, oppure vuole installare app senza passare dall’App Store, o installare app non ancora (o mai) presenti sull’App Store, allora dovrà aggirare questo meccanismo di verifica. Infatti, nessun sistema operativo o app al di fuori di quanto distribuito da Apple passerebbe mai questa verifica di autenticità.&lt;/p&gt;
-&lt;p&gt;Dato il ruolo cardine del codice contenuto nella bootrom, questa memoria &lt;strong&gt;deve essere di sola lettura&lt;/strong&gt;, ovvero non deve essere possibile scriverci sopra più di una volta. Se così fosse, allora uno potrebbe modificare le informazioni in essa contenute, alterando così la catena di “dipendenze crittografiche” necessarie per verificare l’autenticità del software da avviare. L’unico modo per modificare il contenuto della bootrom è &lt;strong&gt;sostituendo la bootrom stessa&lt;/strong&gt;, tramite un aggiornamento hardware (leggi: si sostituisce proprio il telefono).&lt;/p&gt;
-&lt;p&gt;L’exploit appena rilasciato, denominato checkm8 (“checkmate,” scacco), è un “jailbreak exploit,” perché permette di “uscire” dalle restrizioni sul software imposte da Apple. Si tratta di un attacco che sfrutta una vulnerabilità nel codice presente nella bootrom. &lt;strong&gt;Quindi Apple non può farci niente?&lt;/strong&gt; Non è vero: Apple non può rilasciare un aggiornamento software, ma le &lt;strong&gt;recenti versioni hardware non sono affette&lt;/strong&gt; da questa vulnerabilità, proprio perché dispongono di una bootrom aggiornata. I chip in questione sono tra l’A5 e l’A11 compresi. Per maggiori dettagli, qui c’è la 
-&lt;a href=&#34;https://www.theiphonewiki.com/wiki/Checkm8_Exploit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lista di tutte le versioni delle bootrom con i relativi exploit a cui sono vulnerabili&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;perché-è-rilevante&#34;&gt;Perché è rilevante?&lt;/h3&gt;
-&lt;p&gt;Innanzitutto l’&lt;strong&gt;exploit funziona solo localmente&lt;/strong&gt;, il che significa che un eventuale aggressore deve essere &lt;strong&gt;fisicamente in possesso del telefono&lt;/strong&gt;. C’è chi ha già ventilato l’ipotesi che, in un futuro non lontano, si riesca a sfruttare checkm8 da remoto: in quel caso, la situazione sarebbe veramente grave, perché basterebbe visitare ad esempio un sito, oppure ricevere un messaggio, etc. Inutile speculare: non abbiamo dettagli.&lt;/p&gt;
-&lt;p&gt;Ma allora &lt;strong&gt;a chi serve un exploit e una vulnerabilità del genere&lt;/strong&gt;? A tre soggetti, in particolare: forze dell’ordine, agenzie di intelligence e ricercatori.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Alle &lt;strong&gt;forze dell’ordine&lt;/strong&gt; perché, dato un cellulare che si suppone contenere informazioni relative ad un caso, sarà possibile sviluppare strumenti di recupero dati ai fini di raccolta prove.&lt;/li&gt;
-&lt;li&gt;Per motivi simili, ma sotto condizioni di utilizzo diverse, le &lt;strong&gt;agenzie di intelligence&lt;/strong&gt; a volte hanno bisogno di raccogliere informazioni su alcuni soggetti: con un exploit del genere si potranno sviluppare opportuni strumenti di attacco che, in pochi minuti, permetteranno di installare software spia.&lt;/li&gt;
-&lt;li&gt;Ai &lt;strong&gt;ricercatori&lt;/strong&gt;, perché come sappiamo il modello di business di Apple è basato su un sistema chiuso, mentre la ricerca di vulnerabilità è tanto più facile quante più informazioni si hanno a disposizione. Già pochi giorni dopo dal rilascio di checkm8 sono 
-&lt;a href=&#34;https://twitter.com/1nsane_dev/status/1177856941139337216?s=21&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;spuntate le prime ricerche&lt;/a&gt; che, molto probabilmente, porteranno alla scoperta di altre vulnerabilità, in porzioni del software non raggiungibili con le conoscenze attuali.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;conclusioni&#34;&gt;Conclusioni&lt;/h2&gt;
-&lt;p&gt;Da questo articolo abbiamo imparato che le &lt;strong&gt;considerazioni&lt;/strong&gt; da fare di fronte alla notizia di un attacco o vulnerabilità sono &lt;strong&gt;tutt’altro che semplici&lt;/strong&gt;: quando si legge o si sente parlare di un attacco, di una falla, è sempre bene &lt;strong&gt;chiedere a qualcuno&lt;/strong&gt; che considerate esperto a sufficienza per potervi &lt;strong&gt;spiegare con calma&lt;/strong&gt; cosa significa.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Prendetevi il tempo&lt;/strong&gt; per leggere un articolo in più, per riflettere sui 4 concetti fondamentali di cui sopra (minaccia, asset, vulnerabilità, attacco), senza farvi prendere dal panico. Nella maggior parte dei casi, &lt;strong&gt;qualcuno ha già risolto il problema per voi&lt;/strong&gt;, oppure &lt;strong&gt;non siete voi una vittima&lt;/strong&gt;, quindi è sufficiente restare informati, consapevolmente.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Da uno smart (Un)lock aperto in pochi secondi all&#39;importanza della visione d&#39;insieme</title>
-      <link>/post/smart-un-lock/</link>
-      <pubDate>Tue, 24 Sep 2019 07:06:04 +0200</pubDate>
-      <guid>/post/smart-un-lock/</guid>
-      <description>&lt;p&gt;Un ricercatore ha forzato l&amp;rsquo;ennesimo smart lock in pochi secondi. Non mi sorprende affatto, ma mi permette di fare una breve riflessione.&lt;/p&gt;
-&lt;p&gt;Non l&amp;rsquo;ha pagato tanto, ma neanche poco, quindi 
-&lt;a href=&#34;https://www.pentestpartners.com/security-blog/drilling-open-a-smart-door-lock-in-4-seconds/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;si aspettava una certa difficoltà&lt;/a&gt;. Invece, dopo averlo analizzato per qualche minuto, ha trovato una &lt;strong&gt;vulnerabilità nel meccanismo di sblocco&lt;/strong&gt;, che gli ha permesso di aprirlo in pochi secondi. In tutto questo il ricercatore non ha neanche toccato uno smartphone né messo mano a un computer.&lt;/p&gt;
-&lt;p&gt;Non si tratta di una notizia: non è il primo caso—e non sarà nemmeno l&amp;rsquo;ultimo—ma mi permette di fare una breve &lt;strong&gt;riflessione&lt;/strong&gt; sull&amp;rsquo;importanza di seguire un &lt;strong&gt;approccio &amp;ldquo;a tutto tondo&amp;rdquo;&lt;/strong&gt; quando pensiamo alla sicurezza: non fissiamoci su un solo punto da difendere, ma pensiamo che l&amp;rsquo;aggressore cercherà la strada più breve ed economica.&lt;/p&gt;
-&lt;h2 id=&#34;porta-blindata-per-una-tenda-da-campeggio&#34;&gt;Porta blindata per una tenda da campeggio&lt;/h2&gt;
-&lt;p&gt;Nel celebre libro 
-&lt;a href=&#34;https://www.amazon.it/Cryptography-Engineering-Principles-Practical-Applications-ebook/dp/B004NSW9JU/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;keywords=Niels&amp;#43;Ferguson%2C&amp;#43;Bruce&amp;#43;Schneier%2C&amp;#43;Tadayoshi&amp;#43;Kohno&amp;amp;qid=1569314388&amp;amp;s=gateway&amp;amp;sr=8-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cryptography Engineering&lt;/a&gt; (disponibile 
-&lt;a href=&#34;https://www.amazon.it/crittografia-Applicazioni-pratiche-protocolli-crittografici/dp/8850330650/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;keywords=Niels&amp;#43;Ferguson%2C&amp;#43;Bruce&amp;#43;Schneier%2C&amp;#43;Tadayoshi&amp;#43;Kohno&amp;amp;qid=1569314415&amp;amp;s=gateway&amp;amp;sr=8-2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;anche in italiano&lt;/a&gt;), gli autori (Ferguson, Schneier e Kohno) ricordano che spesso ci si sofferma a progettare una &lt;strong&gt;porta di sicurezza di acciaio rinforzato&lt;/strong&gt;, e gli esperti sono tutti intenti a decidere &lt;strong&gt;quanto debba essere spessa&lt;/strong&gt; la lastra di acciaio. Troppo intenti per accorgersi che quella porta verrà &lt;strong&gt;installata su una tenda da campeggio&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Ecco, l&amp;rsquo;esempio dello smart lock è piuttosto in linea con questa citazione. Soffermarsi sulla parte puramente informatica della serratura—magari anche ben fatta e piuttosto sicura, non lo so, non l&amp;rsquo;ho guardata—è solo una delle strade. In questo caso, il lucchetto (come tanti altri), può essere aperto con una &lt;strong&gt;tradizionale chiave di metallo&lt;/strong&gt;—in caso di emergenza. Questo meccanismo di emergenza è stato progettato male, perché basta praticare un piccolo foro sul lato della serratura per raggiungere con un cacciavite la leva che fa girare il cilindro che infine apre la serratura.&lt;/p&gt;
-&lt;p&gt;Allo stesso modo: investire risorse per proteggere un computer cifrandone il disco, impostando una password robusta, mai scritta da nessuna parte, etc., tutte le partiche che ormai sono da considerarsi &amp;ldquo;di buon senso,&amp;rdquo; sono solo i primi passi. Altrettanto essenziale però è &lt;strong&gt;essere consapevoli&lt;/strong&gt; che i nostri dati più preziosi magari sono su un disco di &lt;strong&gt;backup&lt;/strong&gt;, magari &lt;strong&gt;non cifrato&lt;/strong&gt;, oppure cifrato con la stessa password di sblocco del nostro computer, oppure con una più debole, oppure il backup lo facciamo su un servizio cloud, che un giorno verrà &lt;strong&gt;compromesso&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;cosa-vogliamo-proteggere&#34;&gt;Cosa vogliamo proteggere?&lt;/h2&gt;
-&lt;p&gt;È difficile, certo, ma &lt;strong&gt;non significa che non si debba fare nulla&lt;/strong&gt;. Credo però che la strada corretta da percorrere non debba passare immediatamente dallo strumento, dal &amp;ldquo;programmino.&amp;rdquo; Avere fretta di &amp;ldquo;metterci una pezza&amp;rdquo; o &amp;ldquo;pagare poco o niente&amp;rdquo; è esattamente il principio guida seguito da chi ha progettato lo smart lock di cui sopra. Avere fretta dire &amp;ldquo;ho tutti i dati sul mio disco di backup, sono al sicuro&amp;rdquo; senza fermarsi a chiedersi: dove resta questo disco? Chi vi ha accesso? Se lo perdo?&lt;/p&gt;
-&lt;p&gt;La strada corretta dovrebbe partire da &lt;strong&gt;riflessioni di questo tipo&lt;/strong&gt;. Lo strumento e la &amp;ldquo;best practice&amp;rdquo; devono venire dopo. Gli scaffali delle librerie e il Web sono pieni zeppi di &amp;ldquo;bigini&amp;rdquo; per &amp;ldquo;farti pensare come un hacker&amp;rdquo; o guide alla sicurezza informatica che altro non sono che un&amp;rsquo;accozzaglia di parole chiave, glossari, liste di strumenti da installare, eccetera. Gli &lt;strong&gt;strumenti sono importanti&lt;/strong&gt;, ma vanno governati e, soprattutto, &lt;strong&gt;diventano obsoleti&lt;/strong&gt; velocemente. Consigliare solo strumenti in modo diretto è &lt;strong&gt;deleterio&lt;/strong&gt;. Spiegarne solo i principi è sfuggente. Credo che il giusto equilibrio debba partire da una profonda riflessione sul valore che ognuno di noi vuole dare ai propri &amp;ldquo;averi digitali.&amp;rdquo; Insisto, avere consapevolezza di &lt;strong&gt;cosa&lt;/strong&gt; vogliamo proteggere è un primo, importantissimo passo.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Conferenze: dalle vulnerabilita nei protocolli di comunicazione via radio ai video pericolosi su YouTube</title>
-      <link>/post/conferenze-dalle-vulnerabilita-nei-protocolli-di-comunicazione-via-radio-ai-video-pericolosi-su-youtube/</link>
-      <pubDate>Wed, 11 Sep 2019 06:57:53 +0200</pubDate>
-      <guid>/post/conferenze-dalle-vulnerabilita-nei-protocolli-di-comunicazione-via-radio-ai-video-pericolosi-su-youtube/</guid>
-      <description>&lt;p&gt;Sabato mattina al Centro Congressi di &lt;strong&gt;Bergamo&lt;/strong&gt;, durante la &lt;strong&gt;conferenza&lt;/strong&gt; 
-&lt;a href=&#34;https://nohat.it&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;NoHat&lt;/strong&gt;&lt;/a&gt;, terrò una lezione tecnica—ma davvero accessibile a tutti—su come analizzare &lt;strong&gt;sistemi di comunicazione via radio&lt;/strong&gt;, pre-requisito fondamentale per poi farne un&amp;rsquo;analisi di sicurezza. Venerdì 25 ottobre a Milano invece parlerò ad un pubblico completamente diverso di un argomento che mi sta a cuore da un paio d&amp;rsquo;anni: &lt;strong&gt;i rischi &amp;ldquo;digitali&amp;rdquo; per i più piccoli&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;nohat-vulnerabilità-nelle-comunicazioni-via-radio&#34;&gt;NoHat: Vulnerabilità nelle comunicazioni via radio&lt;/h2&gt;
-&lt;p&gt;Intorno a noi ci sono tantissimi dispositivi &amp;ldquo;via radio&amp;rdquo;—dal semplice apri-cancello o antifurto alle più sofisticate automazioni industriali, e molto spesso i protocolli di comunicazione via radio non sono i classici Bluetooth, Zigbee, etc.—che sono oggetto di continuo scrutinio. Si tratta di sistemi &amp;ldquo;oscuri&amp;rdquo;, proprietari, sviluppati &amp;ldquo;in casa&amp;rdquo; dal produttore e forse mai aggiornati. Questi fattori li rendono l&amp;rsquo;anello più debole di un sistema di automazione. Ad esempio, se in casa abbiamo un antifurto &amp;ldquo;via radio&amp;rdquo; collegato al sistema di automazione gestito via Internet con l&amp;rsquo;immancabile app, il tutto protetto alla perfezione&amp;hellip;ovviamente un ladro punterà sull&amp;rsquo;antifurto via radio, non sul sistema di automazione. Stesso discorso per i sistemi più complessi che governano magari interi edifici o catene di montaggio. Data la diffusione delle comunicazioni via radio—tanto per convenienza economica quanto per rapidità d&amp;rsquo;installazione—è importante che gli esperti di sicurezza informatica abbiano conoscenze sufficienti per analizzare un sistema del genere. La mia breve lezione di sabato mattina coprirà gli aspetti essenziali per iniziare subito ad analizzare un sistema di comunicazione via radio—anche per chi è completamente a digiuno sull&amp;rsquo;argomento.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Only few days left to &lt;a href=&#34;https://twitter.com/hashtag/nohat?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#nohat&lt;/a&gt; and only few sits left to attend. Register here and join the party!&lt;a href=&#34;https://t.co/WPyUoE6EWw&#34;&gt;https://t.co/WPyUoE6EWw&lt;/a&gt;&lt;/p&gt;&amp;mdash; No Hat Con (@nohatcon) &lt;a href=&#34;https://twitter.com/nohatcon/status/1171404608293548033?ref_src=twsrc%5Etfw&#34;&gt;September 10, 2019&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Sul palco saliranno nomi illustri del panorama italiano, come 
-&lt;a href=&#34;https://twitter.com/raistolo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stefano Zanero&lt;/a&gt; e 
-&lt;a href=&#34;https://twitter.com/carolafrediani/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Carola Frediani&lt;/a&gt;, per cui sono davvero onorato di essere tra i relatori. Ci sono ancora 
-&lt;a href=&#34;https://www.nohat.it/register.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;alcuni posti&lt;/a&gt;, forza! Altrimenti potete seguire l&amp;rsquo;evento in diretta streaming—o guardarvi le registrazioni. Per istruzioni in merito e aggiornamenti sull&amp;rsquo;evento seguite 
-&lt;a href=&#34;https://twitter.com/nohatcon&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@nohatcon&lt;/a&gt; e 
-&lt;a href=&#34;https://twitter.com/hashtag/nohat&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#nohat&lt;/a&gt; o iscrivetevi alla 
-&lt;a href=&#34;https://www.nohat.it/register.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mailing list&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0m-Rjb5aWaM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;br /&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/gO0KPbXmqSY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;percorsi-formativi-rischi-e-possibilità-del-digitale-a-portata-dei-più-piccoli&#34;&gt;Percorsi Formativi: Rischi e possibilità del digitale a portata dei più piccoli&lt;/h2&gt;
-&lt;p&gt;Il 
-&lt;a href=&#34;https://percorsiformativi06.it/rischi-digitale/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;25 ottobre a Milano&lt;/a&gt;, presso il Centro Accoglienza Ambrosiano, in collaborazione con Percorsi Formativi 0-6 parlerò a genitori e formatori di come evitare gli errori educativi più comuni quando i più piccoli scoprono tablet e smartphone. In particolare spiegherò da dove provengono i fiumi di video auto-generati da avidi YouTuber, dei contenuti pericolosi che possono celare, concludendo con qualche breve cenno alle conseguenze su sicurezza e privacy personale.&lt;/p&gt;
-&lt;p&gt;Rispetto alla 
-&lt;a href=&#34;/post/dietro-lo-schermo/&#34;&gt;prima edizione&lt;/a&gt;, parlerò anche del caso di un canale YouTube (che non nomino direttamente) che 
-&lt;a href=&#34;https://www.nbcnews.com/tech/tech-news/hit-youtuber-ryan-toysreview-accused-deceiving-kids-watching-sponsored-content-n1052006&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;in questi giorni è stato accusato di &amp;ldquo;manipolare&amp;rdquo; i più piccoli&lt;/a&gt; mostrando loro pubblicità (neanche troppo) occulta. Secondo le accuse della Federal Trade Commission, i più piccoli non sarebbero in grado di distinguere un oggetto mostrato a fini pubblicitari da uno mostrato a fini di intrattenimento. Per la cronaca, il canale in questione ha raccimolato qualcosa come 22 milioni di dollari di guadagno. Tra le altre cose, sembra che YouTube dovrà pagare una sanzione di 170 milioni di dollari. Tracciando l&amp;rsquo;attività dei suoi visitatori per proporre pubblicità inerente ai video guardati, YouTube avrebbe violato il Children Online Privacy Protection Act (COPPA), avendo tracciato i dati indistintamente di adulti e minori.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Facebook trapelati numeri di telefono di 419 milioni di utenti</title>
-      <link>/post/facebook-trapelati-numeri-di-telefono-di-419-milioni-di-utenti/</link>
-      <pubDate>Thu, 05 Sep 2019 06:52:05 +0200</pubDate>
-      <guid>/post/facebook-trapelati-numeri-di-telefono-di-419-milioni-di-utenti/</guid>
-      <description>&lt;p&gt;Facebook conferma. C&amp;rsquo;era un server &amp;ldquo;esposto&amp;rdquo; da cui chiunque poteva recuperare i numeri di telefono di 419 milioni di utenti. Anche se la somma non fa 419 milioni, per ora si sa che c&amp;rsquo;erano 133 milioni numeri di telefono Statunitensi, 18 milioni dal Regno Unito e 50 milioni dal Vietnam.&lt;/p&gt;
-&lt;p&gt;Tralasciando il sensazionalismo e il fatto che non è il primo inciampo sulla privacy per Facebook, &lt;strong&gt;come accade una cosa del genere&lt;/strong&gt;? Dipende: a volte si tratta di una vulnerabilità (un errore nel software), a volte si tratta di un errore di configurazione, o più semplicemente di una svista. I sistemi di una piattaforma come Facebook sono estremamente complessi, sparsi ovunque, quindi non banali da gestire. La mia supposizione è che si tratti di un errore (umano?) di configurazione o che semplicemente uno dei server in questione sia stato &amp;ldquo;dimenticato acceso,&amp;rdquo; per così dire.&lt;/p&gt;
-&lt;p&gt;Cosa ci si può fare con un numero di telefono? Bhe, è un dato piuttosto sensibile, che ci identifica in qualche modo. Spesso—e troppo &amp;ldquo;volentieri&amp;rdquo;—è infatti usato per confermare la nostra identità.&lt;/p&gt;
-&lt;p&gt;E adesso? Facebook dichiara che l&amp;rsquo;archivio è vecchio, anche se non specifica di quanto: sicuramente risale a prima di Aprile 2018, dopo scandalo Cambrige Analytica (di cui abbiamo 
-&lt;a href=&#34;/post/stanford-internet-observatory/&#34;&gt;brevemente già parlato&lt;/a&gt;), a fronte del quale Facebook ha deciso di rimuovere la funzionalità di &amp;ldquo;ricerca per numero di telefono.&amp;rdquo; Inoltre, la versione di Facebook è che, nonostante questi 419 milioni di numeri di telefono siano trapelati, nessun account sia stato (ancora, aggiungo io) compromesso.&lt;/p&gt;
-&lt;p&gt;La 
-&lt;a href=&#34;https://techcrunch.com/2019/09/04/facebook-phone-numbers-exposed/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;notizia originale arriva da TechCrunch&lt;/a&gt; ed è già stata ripresa da diverse testate online. Avrei voluto parlare della decisione di Facebook di spegnere la funzionalità di riconoscimento facciale, ma è sembrata marginale non appena ho letto questa stamattina.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Guida Galattica di Autodifesa Digitale</title>
-      <link>/post/ggad/</link>
-      <pubDate>Thu, 29 Aug 2019 07:55:41 +0200</pubDate>
-      <guid>/post/ggad/</guid>
-      <description>&lt;p&gt;Un giorno decisi di fare un breve seminario divulgativo per raccontare la punta dell&amp;rsquo;iceberg del mondo in cui lavoro: ho parlato di video orribili autogenerati, pubblicati su YouTube solo per generare profitto, deepfake, dati rubati, bullismo e adescamento online, eccetera. Al termine del seminario, qualcuno dal pubblico mi chiede &lt;strong&gt;&lt;em&gt;&amp;ldquo;e quindi, cosa possiamo fare?&amp;rdquo;&lt;/em&gt;&lt;/strong&gt; Purtroppo non avevo una risposta breve. Non c&amp;rsquo;è una risposta breve, perché consapevolezza e sicurezza informatica sono un processo, un percorso. Sono un processo nelle aziende e nelle organizzazioni, ma anche per l&amp;rsquo;individuo. Io ho deciso di puntare sugli individui, notoriamente i più difficili da raggiungere. Questa guida è il mio primo passo concreto in questa direzione.&lt;/p&gt;
-&lt;p&gt;Buona lettura!&lt;/p&gt;
-&lt;div class=&#34;responsive-wrap&#34;&gt;
-	&lt;object data=&#34;./Guida%20Galattica%20di%20Autodifesa%20Digitale.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-		&lt;embed src=&#34;./Guida%20Galattica%20di%20Autodifesa%20Digitale.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;./Guida%20Galattica%20di%20Autodifesa%20Digitale.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
-			instead. Thanks!&lt;/em&gt;
-	&lt;/object&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&#34;paternità&#34;&gt;Paternità&lt;/h1&gt;
-&lt;p&gt;Questa prima versione guida è fortemente basata sulla 
-&lt;a href=&#34;https://ssd.eff.org/en/playlist/want-security-starter-pack#your-security-plan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Surveillance Self-Defense&lt;/a&gt; dell&amp;rsquo;EFF, un’ottima risorsa alla portata di tutti. Dopo un po&amp;rsquo; di ricerche sono venuto a conoscenza di 
-&lt;a href=&#34;https://selfence.altervista.org/elementi-di-autodifesa-digitale/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;varie&lt;/a&gt; 
-&lt;a href=&#34;https://numerique.noblogs.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;inziative&lt;/a&gt; di 
-&lt;a href=&#34;https://www.repubblica.it/tecnologia/social-network/2017/03/27/foto/manuale_autodifesa_digitale-161528909/1/#1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;traduzione&lt;/a&gt;, ma non esattamente in linea con quello che avevo in mente. Pertanto ho deciso di iniziare a tradurre e adattare all’italiano una selezione dei suoi contenuti. In questa prima versione ho arricchito solo con alcuni esempi, per velocizzare i tempi, ma in futuro aggiungerò altri contenuti e probabilmente stravolgerò completamente la struttura e la guida originale da cui sono partito.&lt;/p&gt;
-&lt;p&gt;Rispetto alla 
-&lt;a href=&#34;https://ssd.eff.org/en/playlist/want-security-starter-pack#your-security-plan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Surveillance Self-Defense&lt;/a&gt; dell&amp;rsquo;EFF ho aggiunto degli adattamenti per la lingua italiana e qualche esempio per chiarire ove necessario. L&amp;rsquo;opera originale è rilasciata con licenza 
-&lt;a href=&#34;https://creativecommons.org/licenses/by/3.0/it/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Creative Commons Attribution (CC-BY)&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Vulnerabilita non risolte (non gravi) in WhatsApp</title>
-      <link>/post/vulnerabilita-non-risolte-non-gravi-in-whatsapp/</link>
-      <pubDate>Fri, 09 Aug 2019 06:48:28 +0200</pubDate>
-      <guid>/post/vulnerabilita-non-risolte-non-gravi-in-whatsapp/</guid>
-      <description>&lt;p&gt;È ancora possibile &amp;ldquo;modificare&amp;rdquo; il mittente di un messaggio inviato ad un gruppo o modificare il testo di un messaggio di un altro in una conversazione a due. Ma è poi così grave?&lt;/p&gt;
-&lt;p&gt;Sebbene non si tratti di vulnerabilità gravi, come quelle che permettono, ad esempio, di &amp;ldquo;far fare al telefono qualcos&amp;rsquo;altro,&amp;rdquo; un uso creativo di queste vulnerabilità (che Facebook ha deciso di non risolvere) può senz&amp;rsquo;altro creare un po&amp;rsquo; di scompiglio.&lt;/p&gt;
-&lt;h2 id=&#34;esempio&#34;&gt;Esempio&lt;/h2&gt;
-&lt;p&gt;Il vostro capo vi invia un messaggio per dirvi che vi daranno un aumento di 1500EUR. Voi rispondete (usando la funzione &amp;ldquo;rispondi&amp;rdquo;) per ringraziare, ma nel mentre riuscite a modificare il testo del suo messaggio originale. Quasi! Non proprio del suo messaggio originale, ma del suo messaggio &amp;ldquo;quotato&amp;rdquo; nella vostra risposta. Certo, sicuramente chi abbocca e si fida di uno screenshot può tranquillamente cascarci, ma ad un&amp;rsquo;attenta occhiata si nota l&amp;rsquo;inganno.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Ybr7DdXkGLo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;altro-esempio&#34;&gt;Altro esempio&lt;/h2&gt;
-&lt;p&gt;Ad un certo punto in un gruppo arriva un messaggio scritto da tale Mario, che non appartiene al gruppo. In realtà il messaggio è stato scritto da un membro del gruppo e l&amp;rsquo;aggressore (appartenente al gruppo) ha sfruttato lo stesso giochetto di cui sopra, questa volta per modificare il mittente.&lt;/p&gt;
-&lt;h2 id=&#34;perché-non-sono-poi-così-gravi&#34;&gt;Perché non sono poi così gravi?&lt;/h2&gt;
-&lt;p&gt;Perché non sono sfruttabili &amp;ldquo;da remoto&amp;rdquo;, ovvero è necessario, almeno, che chi vuole effettuare un attacco sia membro di un gruppo (vero, nei gruppi numerosi è difficile tener traccia). Oppure, anche peggio, si richiede che voi stiate chattando con l&amp;rsquo;aggressore.&lt;/p&gt;
-&lt;p&gt;La comunicazione in WhatsApp è crittografata, cifrata, &amp;ldquo;end to end,&amp;rdquo; ovvero da un capo all&amp;rsquo;altro. Nemmeno WhatsApp (ehm, Facebook) ha le chiavi per decifrarle. Però, una volta che un messaggio arriva dall&amp;rsquo;altra parte (ossia a tutti i membri di un gruppo) sarà decifrato dall&amp;rsquo;app, che ovviamente conserverà sul dispositivo una copia dei messaggi. Quindi, quando voi selezionate un messaggio per rispondervi, state di fatto prendendo il testo (già decifrato) del messaggio originale e, sulla base di quello, ne state creando uno nuovo.&lt;/p&gt;
-&lt;h2 id=&#34;perché-facebook-non-le-risolve&#34;&gt;Perché Facebook non le risolve?&lt;/h2&gt;
-&lt;p&gt;Perché, personalissima opinione, non ne vale la pena. Si può senz&amp;rsquo;altro creare qualche scompiglio o scatenare dei pettegolezzi stratosferici a botte di screenshot, per non parlare delle catene di Sant&amp;rsquo;Antonio (che sicuramente contribuiscono alla diffusione di bufale e simili), ma in caso di reato, l&amp;rsquo;evidenza presente sui dispositivi sarà sufficiente per ricostruire il vero scambio di messaggi.&lt;/p&gt;
-&lt;p&gt;Queste vulnerabilità sono state 
-&lt;a href=&#34;https://research.checkpoint.com/fakesapp-a-vulnerability-in-whatsapp/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;riportate da CheckPoint a Facebook nel 2018&lt;/a&gt; e sono state 
-&lt;a href=&#34;https://research.checkpoint.com/black-hat-2019-whatsapp-protocol-decryption-for-chat-manipulation-and-more/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;presentate al pubblico di Black Hat questa settimana&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Nuove vulnerabilità (risolte) in iOS e Android</title>
-      <link>/post/nuove-vulnerabilita-in-ios-e-android/</link>
-      <pubDate>Wed, 07 Aug 2019 06:43:44 +0200</pubDate>
-      <guid>/post/nuove-vulnerabilita-in-ios-e-android/</guid>
-      <description>&lt;p&gt;A Black Hat US 2019 due ricercatori di Trend Micro raccontano come hanno 
-&lt;a href=&#34;https://www.blackhat.com/us-19/briefings/schedule/index.html#debug-for-bug-crack-and-hack-apple-core-by-itself---fun-and-profit-to-debug-and-fuzz-apple-kernel-by-lldb-script-15616&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;trovato dozzine di vulnerabilità in iOS&lt;/a&gt;, aiutando Apple a risolverle, mentre i ricercatori di Tencent presentano analoghe 
-&lt;a href=&#34;https://blade.tencent.com/en/advisories/qualpwn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vulnerabilità nei chip di Qualcomm&lt;/a&gt; usati nei dispositivi Android.&lt;/p&gt;
-&lt;p&gt;Cos&amp;rsquo;è &lt;em&gt;Black Hat&lt;/em&gt;? È la conferenza di sicurezza informatica per eccellenza, che conta decine di migliaia di partecipanti. Da oltre 20 anni si tiene a 
-&lt;a href=&#34;https://blackhat.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Las Vegas, Londra e Singapore ogni anno&lt;/a&gt;. È la stessa dove un paio d&amp;rsquo;anni fa abbiamo presentato la 
-&lt;a href=&#34;https://robosec.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nostra ricerca sui robot industriali&lt;/a&gt; e dove l&amp;rsquo;anno scorso ho presentato i risultati della 
-&lt;a href=&#34;https://www.blackhat.com/eu-18/briefings/schedule/#when-machines-cant-talk-security-and-privacy-issues-of-machine-to-machine-data-protocols-12722&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ricerca sulla sicurezza dei protocolli di rete IoT&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Cos&amp;rsquo;è una &lt;em&gt;vulnerabilità&lt;/em&gt;? È un errore, una falla in un software. È un fenomeno &amp;ldquo;naturale,&amp;rdquo; presente in qualsiasi prodotto, in questo caso software. Perché è un concetto rilevante? Una vulnerabilità, in opportune condizioni, permette ad un aggressore di far fare al software ciò che vuole. Un po&amp;rsquo; come se la serratura di casa si potesse aprire con la chiave giusta, ma anche con una graffetta fatta in un certo modo. È quindi fondamentale, oltre a minimizzare la presenza di vulnerabilità a monte—ovvero creando software (e serrature) ingengeristicamente di qualità—continuare la ricerca di vulnerabilità, al fine di permettere ai produttori di correggerle.&lt;/p&gt;
-&lt;p&gt;Una vulnerabilità importante può valere molto, e a tutti gli effetti è venduta e scambiata in un fitto mercato con diversi intermediari. Perché? Immaginate di essere un&amp;rsquo;agenzia governativa di intelligence che, per vari motivi, deve poter intercettare SMS, chat e telefonate. Una vulnerabilità su un dispositivo mobile può essere sfruttata per &amp;ldquo;entrare&amp;rdquo; o &amp;ldquo;mettersi in mezzo&amp;rdquo; e ascoltare. Il rovescio della medaglia è che esiste anche un mercato sommerso, nero, dove le vulnerabilità sono scambiate ed acquistate da persone e organizzazioni a fini criminali, o che violano i diritti civili fondamentali (pensate ai regimi repressivi).&lt;/p&gt;
-&lt;p&gt;In questo caso si parla del software di dispositivi mobili (Apple e Android), quindi decisamente diffusi e &amp;ldquo;tra le mani di tutti.&amp;rdquo; Vulnerabilità di questo genere possono valere decine o centinaia di migliaia di Euro.&lt;/p&gt;
-&lt;p&gt;Come possiamo essere sicuri che il nostro cellulare sia sicuro al 100% e non affetto da vulnerabilità? Non possiamo. È impossibile. Toglietevelo dalla testa. Le vulnerabilità sono parte del processo di ingegnerizzazione e, nonostante gli ingenti investimenti dei produttori, c&amp;rsquo;è sempre margine di errore (da un lato) e avanzamento tecnologico (dall&amp;rsquo;altro), che aprono nuove strade per vulnerabilità che fino a poco tempo prima erano difficili da trovare.&lt;/p&gt;
-&lt;p&gt;Ma se veramente vogliamo un telefono &amp;ldquo;il più sicuro possibile?&amp;rdquo;. Questa è già una richiesta più ragionevole. È indispensabile scegliere un produttore affidabile, ossia un produttore serio, con una storia solida, che rilasci regolarmente aggiornamenti di sicurezza. È fondamentale quindi non trascurare gli avvisi che ci chiedono di aggiornare il nostro dispositivo, perché non farlo può avere conseguenze anche per chi crede di non avere nulla da temere. Perché se il bersaglio non siamo noi, possiamo trovarci ad essere il mezzo inconsapevole per facilitare l&amp;rsquo;attacco di un altro bersaglio. Un po&amp;rsquo; come se ci rubano l&amp;rsquo;auto e la utilizzano in una rapina, e noi ci dimentichiamo di denunciarne il furto.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Rischi di sicurezza e reti Wi-Fi gratuite</title>
-      <link>/post/rischi-di-sicurezza-e-reti-wifi-gratuite/</link>
-      <pubDate>Fri, 02 Aug 2019 06:41:44 +0200</pubDate>
-      <guid>/post/rischi-di-sicurezza-e-reti-wifi-gratuite/</guid>
-      <description>&lt;p&gt;Reti wi-fi gratuite nei luoghi pubblici? Su 980 intervistati, l&#39;82% dice di usarle, e il 71% di non avere alcuna preoccupazione sui rischi di sicurezza derivanti. È quanto emerge da un&amp;rsquo;
-&lt;a href=&#34;https://decisiondata.org/news/report-82-of-people-say-they-connect-to-any-free-wifi-thats-available-in-a-public-place/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;analisi effettuata negli Stati Uniti da Decisiondata&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Salireste in un autobus urlando a tutti i presenti i nomi dei siti che visitate, le vostre credenziali, numeri di carta di credito etc? Forse non con troppa leggerezza.&lt;/p&gt;
-&lt;p&gt;Anche se normalmente questi dati sensibili non sono immediatamente visibili &amp;ldquo;in chiaro&amp;rdquo; a chi è sulla stessa rete, si sta comunque usando un mezzo condiviso. Con un po&amp;rsquo; di pazienza e capacità, un aggressore ben motivato può intercettare le comunicazioni o infettare indirettamente i computer connessi. Sto semplificando, ma il succo è questo. E i dati personali che spesso si devono lasciare prima di poter utilizzare la rete?&lt;/p&gt;
-&lt;p&gt;Almeno in Italia quasi tutti gli operatori offrono navigazione tramite l&amp;rsquo;hot-spot del cellulare. Per molto meno di un caffé al giorno è sciocco barattare la sicurezza dei propri dispositivi con un po&amp;rsquo; di &amp;ldquo;uai fai gratis&amp;rdquo;. No?&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Stanford Internet Observatory</title>
-      <link>/post/stanford-internet-observatory/</link>
-      <pubDate>Thu, 25 Jul 2019 06:38:34 +0200</pubDate>
-      <guid>/post/stanford-internet-observatory/</guid>
-      <description>&lt;p&gt;Con il progetto 
-&lt;a href=&#34;https://cyber.fsi.stanford.edu/io/news/stanford-internet-observatory-seeks-detect-internet-abuse-real-time&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanford Internet Observatory&lt;/a&gt;, l&amp;rsquo;ex CSO di Facebook, Alex Stamos, vuole facilitare l&amp;rsquo;accesso ai dati necessari per individuare abusi, frodi e altri attacchi informatici su larga scala. Si tratta molto spesso di dati raccolti dai fornitori di connettività e servizi digitali, molto preziosi, contenenti informazioni riservate. La sfida di Stamos sta nel riuscire a raccoglierli e conservarli opportunamente anonimizzati, in modo da non precludere la riservatezza delle informazioni in essi contenute.&lt;/p&gt;
-&lt;p&gt;Approdato a Stanford dopo aver 
-&lt;a href=&#34;https://www.theverge.com/2018/8/1/17640852/facebook-cso-alex-stamos-departing-no-replacement&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lasciato Facebook nel 2018&lt;/a&gt;, Stamos ha recentemente ricordato che 
-&lt;a href=&#34;https://www.vox.com/recode/2019/5/24/18637823/alex-stamos-facebook-mark-zuckerberg-ceo-kara-swisher-decode-podcast-interview-collision-conference&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mark Zuckerberg detiene troppo potere&lt;/a&gt; (leggi, troppi dati), e che dovrebbe lasciare se vuole salvare Facebook. Dietro alla decisione di Stamos, da sempre uno dei più rispettati esperti di sicurezza al mondo, pare ci siano le controversie riguardo all&amp;rsquo;abuso di account Facebook fasulli per influenzare l&amp;rsquo;opinione pubblica, e a quanto Facebook stessa abbia fatto per contrastare questo fenomeno, culminato con lo 
-&lt;a href=&#34;https://www.ilpost.it/2018/03/19/facebook-cambridge-analytica/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scandalo Cambridge Analytica&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Quella dello Stanford Internet Observatory è una sfida che finora nessuno ha ancora vinto, ma che ha un immenso potenziale di innovazione. Sorvegliare sulle attività malevole senza invadere la privacy è un perenne bilancio per chiunque operi nel settore.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ecco la mia faccia, fanne (quasi) tutto ciò che vuoi: FaceApp e privacy</title>
-      <link>/post/faceapp-e-privacy/</link>
-      <pubDate>Mon, 22 Jul 2019 06:36:01 +0200</pubDate>
-      <guid>/post/faceapp-e-privacy/</guid>
-      <description>&lt;p&gt;A chi non piacerebbe avere la macchina del tempo per rivedersi da giovanissimi o vedersi da vecchi?&lt;/p&gt;
-&lt;p&gt;Probabilmente è per questo che in molti non hanno pensato troppo a lungo e si sono fiondati a provare questa nuova app, che attraverso tecniche di intelligenza artificiale è in grado di &amp;ldquo;ringiovanire&amp;rdquo; e &amp;ldquo;invecchiare&amp;rdquo; la foto di un volto.&lt;/p&gt;
-&lt;p&gt;Vi invito però a riflettere: permettereste a degli sconosciuti incontrati per strada di scattare una foto al vostro volto? Forse no. E se questi sconosciuti vi dessero in cambio un foglio che vi spiega come verranno usate le foto?&lt;/p&gt;
-&lt;p&gt;I termini d&amp;rsquo;uso e la privacy policy di FaceApp spiegano, anche se non del tutto chiaramente, che le foto dei volti caricati spariscono dai propri server dopo 48 ore. È vero? È quanto dichiarato. C&amp;rsquo;è modo di verificarlo? Salvo un reato, molto difficile avere le autorizzazioni necessarie per indagare.&lt;/p&gt;
-&lt;p&gt;Questi erano i punti di mio interesse. Il resto lo trovate in questo articolo pubblicato da Open: 
-&lt;a href=&#34;https://www.open.online/2019/07/22/facepp-quali-sono-davvero-rischi-privacy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.open.online/2019/07/22/facepp-quali-sono-davvero-rischi-privacy/&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Telegram e Sorveglianza</title>
-      <link>/post/telegram-e-sorveglianza/</link>
-      <pubDate>Mon, 15 Jul 2019 06:28:36 +0200</pubDate>
-      <guid>/post/telegram-e-sorveglianza/</guid>
-      <description>&lt;p&gt;Una ricerca della George Washington University ha esaminato &lt;strong&gt;636 canali di Telegram&lt;/strong&gt;, alcuni &lt;strong&gt;adoperati dall’Isis&lt;/strong&gt; per distribuire materiale propagandistico e fare &lt;strong&gt;reclutamento&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Questa notizia è stata pubblicata in italiano il 
-&lt;a href=&#34;https://www.wired.it/internet/social-network/2019/07/15/telegram-isis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;15 luglio 2019 da Gabriele Porro su Wired&lt;/a&gt;, mentre se vi interessa il 
-&lt;a href=&#34;https://extremism.gwu.edu/sites/g/files/zaxdzs2191/f/EncryptedExtremism.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;report dettagliato della George Washington University, potete trovarlo qui&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Non c&amp;rsquo;è da stupirsi. Così come a noi interessa che le nostre conversazioni non siano spiate, lo stesso vale per criminali e terroristi—ovviamente loro hanno qualche motivo in più.&lt;/p&gt;
-&lt;p&gt;Sebbene vi siano alternative crittograficamente più robuste, come ad esempio 
-&lt;a href=&#34;https://signal.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Signal&lt;/a&gt;, Telegram ha alcune peculiarità che la rendono particolarmente adatta a comunicare con gruppi di persone, ad esempio senza dover rivelare il proprio numero di telefono. Anche se è ancora facile in alcuni paesi procurarsi un numero di telefono non legato ad un&amp;rsquo;identità verificata (ovvero, senza dover presentare un documento di identificazione all&amp;rsquo;atto dell&amp;rsquo;acquisto della SIM).&lt;/p&gt;
-&lt;p&gt;Questo significa che Telegram (e simili) dovrebbero essere messi al bando? Assolutamente no. Sarebbe un errore gravissimo, nonché un enorme passo indietro per i diritti civili. Vi piacerebbe poter parlare solo sapendo di essere spiati, perché le tecnologie di comunicazione sicura non sono più a disposizione?&lt;/p&gt;
-&lt;p&gt;Per approfondire, potete sfogliare 
-&lt;a href=&#34;https://ssd.eff.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Surveillance Self-Defense&lt;/a&gt;, la guida di auto-difesa contro le tecniche di sorveglianza dell&amp;rsquo;EFF (Electronic Frontier Foundation, no-profit che dal 1990 difende i nostri diritti fondamentali nel mondo digitale), anche se ancora non è stata tradotta in italiano.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Nazionale Italiana Sicurezza Informatica</title>
-      <link>/post/nazionale-italiana-sicurezza-informatica/</link>
-      <pubDate>Wed, 10 Jul 2019 06:26:08 +0200</pubDate>
-      <guid>/post/nazionale-italiana-sicurezza-informatica/</guid>
-      <description>&lt;p&gt;Lo sapevate che abbiamo una squadra nazionale di sicurezza informatica? Lo sapevate che i nostri si sono qualificati per la finale della &amp;ldquo;coppa del mondo&amp;rdquo; che si svolgerà a Las Vegas la prima settimana di agosto?&lt;/p&gt;
-&lt;p&gt;Ebbene sì!&lt;/p&gt;
-&lt;p&gt;I 
-&lt;a href=&#34;https://mhackeroni.it/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mHackeroni&lt;/a&gt;, così si chiamano, sono giovani studenti universitari che si battono e si batteranno a suon di attacchi informatici e difesa, tra le più prestigiose squadre al mondo. È una notizia fresca, quindi ancora non è stato scritto nulla dai giornalisti italiani.&lt;/p&gt;
-&lt;p&gt;Per chi è interessato può sfogliare 
-&lt;a href=&#34;https://www.repubblica.it/tecnologia/sicurezza/2018/08/10/news/difesa_e_attacco_a_las_vegas_la_mega_sfida_tra_hacker_italiani_favoriti-203843000/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;l&amp;rsquo;articolo dell&amp;rsquo;anno scorso&lt;/a&gt;. Eh sì, perché si sono qualificati anche l&amp;rsquo;anno scorso!&lt;/p&gt;
-&lt;p&gt;Seguiteli su 
-&lt;a href=&#34;https://twitter.com/mhackeroni&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter&lt;/a&gt;, 
-&lt;a href=&#34;https://www.instagram.com/mhackeroni/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Instagram&lt;/a&gt;, o 
-&lt;a href=&#34;https://ctftime.org/team/57788&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CTFtime&lt;/a&gt;, dove troverete anche i calendari delle &amp;ldquo;partite&amp;rdquo; e classifica di tutte le squadre del mondo.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sicurezza dei minori su YouTube</title>
-      <link>/post/sicurezza-dei-minori-su-youtube/</link>
-      <pubDate>Fri, 05 Jul 2019 06:23:34 +0200</pubDate>
-      <guid>/post/sicurezza-dei-minori-su-youtube/</guid>
-      <description>&lt;p&gt;Google pubblica delle linee guida sui contenuti che mettono in pericolo il benessere fisico ed emotivo dei minorenni, che non consentiti su YouTube.&lt;/p&gt;
-&lt;p&gt;Questi includono, ad esempio:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Sfruttamento a sfondo sessuale di minorenni&lt;/li&gt;
-&lt;li&gt;Azioni pericolose o dannose che coinvolgono minorenni&lt;/li&gt;
-&lt;li&gt;Azioni che causano stress emotivo nei minorenni&lt;/li&gt;
-&lt;li&gt;Finti contenuti per famiglie&lt;/li&gt;
-&lt;li&gt;Cyberbullismo e violenze che coinvolgono minorenni&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Più dettagli su: 
-&lt;a href=&#34;https://support.google.com/youtube/answer/2801999?hl=it&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://support.google.com/youtube/answer/2801999?hl=it&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Tuttavia è inerentemente molto difficile, anche per Google, individuare e rimuovere tempestivamente video di questo genere. In alcuni casi si tratta di contenuti piuttosto &amp;ldquo;borderline&amp;rdquo;, come ad esempio i succitati &amp;ldquo;finti contenuti per famiglie.&amp;rdquo; Come mostrato da una 
-&lt;a href=&#34;https://gizmodo.com/youtubes-nightmare-algorithm-exploited-children-by-reco-1835212766&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ricerca recente&lt;/a&gt;, l&amp;rsquo;algoritmo che suggerisce contenuti YouTube in base a quello che abbiamo guardato fa molto bene il suo lavoro, purtroppo anche per i pedofili.&lt;/p&gt;
-&lt;p&gt;Se trovate un video non adatto secondo queste linee guida, segnalatelo cliccando sull&amp;rsquo;apposita icona con la bandierina. In caso di video &amp;ldquo;estremi&amp;rdquo; contenenti chiare violazioni della legge, segnalatelo alla 
-&lt;a href=&#34;https://www.commissariatodips.it/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Polizia Postale e delle Comunicazioni&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dietro lo schermo: rischi e possibilità del digitale in mano ai più piccoli</title>
-      <link>/post/dietro-lo-schermo/</link>
-      <pubDate>Fri, 17 May 2019 06:09:03 +0200</pubDate>
-      <guid>/post/dietro-lo-schermo/</guid>
-      <description>&lt;p&gt;Questa sera io ed 
-&lt;a href=&#34;https://www.linkedin.com/in/gattianna/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anna Gatti&lt;/a&gt;, pedagogista di 
-&lt;a href=&#34;https://percorsiformativi06.it/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Percorsi Formativi 0-6&lt;/a&gt;, abbiamo parlato di come evitare gli errori educativi più comuni quando i più piccoli scoprono tablet e smartphone. In particolare io ho spiegato al pubblico da dove provengono i fiumi di video auto-generati da avidi produttori, dei contenuti pericolosi che possono celare, concludendo con qualche breve cenno alle conseguenze su sicurezza e privacy personale.&lt;/p&gt;
-&lt;p&gt;Per trattarsi di una serata con poche pretese, sono rimasto piacevolmente sorpreso nel trovare una sala piena e attenta, mentre parlavo di un argomento che mi sta molto a cuore. Mi sono state chieste più volte le slide che abbiamo usato durante la presentazione: preferisco condividere link e riferimenti bibliografici (che trovate in calce), perché le slide mute lasciano molto spazio all&amp;rsquo;interpretazione.&lt;/p&gt;
-&lt;p&gt;Per chi non avesse avuto occasione di partecipare alla serata del 17 maggio, il 25 Ottobre a replicheremo a Milano (
-&lt;a href=&#34;https://percorsiformativi06.it/rischi-digitale/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;info e registrazione&lt;/a&gt;). Magari mi ricorderò di video-registrare la presentazione.&lt;/p&gt;
-&lt;h2 id=&#34;di-cosa-abbiamo-parlato&#34;&gt;Di cosa abbiamo parlato?&lt;/h2&gt;
-&lt;p&gt;E di cosa parleremo in autunno? Di smartphone e tablet. Questi concentrati di tecnologia sono oggetti del desiderio, in particolare per i più piccoli. Secondo il pensiero di Jacques Lacan &lt;em&gt;&amp;ldquo;il desiderio [&amp;hellip;] è sempre desiderio dell&amp;rsquo;altro&amp;rdquo;&lt;/em&gt;. E il primo &lt;em&gt;&amp;ldquo;altro&amp;rdquo;&lt;/em&gt; per i nostri figli siamo chiaramente noi genitori: vogliono essere (come) noi. Sin dalla nascita, i nostri figli e nipoti ci vedono con un telefono tra le mani: per lavorare, comunicare, o anche solo per rilassarci e divertirci. &lt;em&gt;&amp;ldquo;Perché mamma, papà, zia, etc., maneggiano sempre questo dispositivo? Deve essere estremamente importante! Lo voglio!&amp;rdquo;&lt;/em&gt; Essi non possono ancora comprendere le nostre necessità professionali da un lato e il diletto personale, dall’altro.&lt;/p&gt;
-&lt;p&gt;Come succede alla maggior parte dei genitori—io e mia moglie in primis—arriva il giorno in cui i nostri figli scoprono le magie dello schermo: colori, forme, suoni, che possono toccare, modificare. Sempre senza capirne i motivi, da quel giorno ne hanno scoperto il piacere, il godimento che si prova nello stare a guardare questi piccoli schermi. Da quel momento cellulare e tablet sono esclusivamente una fonte inesauribile di intrattenimento, quasi ipnotico. Un’anestesia immediata e duratura, in grado di far passare tutto in secondo piano: energia, istinto, stanchezza, desideri, bisogno di giocare.&lt;/p&gt;
-&lt;h2 id=&#34;il-risultato&#34;&gt;Il risultato?&lt;/h2&gt;
-&lt;p&gt;Se l&amp;rsquo;accesso a questi strumenti è totalmente fuori controllo, questo “succhiotto” ipermoderno crea dipendenza. Una dipendenza che non è diversa dalla dipendenza da sostanze: a tutti gli effetti, il piacere e l&amp;rsquo;effetto ricompensa ( &lt;em&gt;&amp;ldquo;tho, sei stato bravo quindi puoi guardarti un video&amp;rdquo;&lt;/em&gt;) che si prova nel &lt;em&gt;&amp;ldquo;guardare il tablet&amp;rdquo;&lt;/em&gt; 
-&lt;a href=&#34;https://www.youtube.com/watch?v=xujQqNC05fk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;stimola il nostro cervello a produrre dopamina, come spiega la Prof.ssa Daniela Lucangeli&lt;/a&gt;, del 
-&lt;a href=&#34;https://www.dpss.unipd.it/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dipartimento di Psicologia dello sviluppo e dei processi di socializzazione&lt;/a&gt; dell&amp;rsquo; 
-&lt;a href=&#34;https://www.unipd.it&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Università degli Studi di Padova&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/xujQqNC05fk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Senza entrare nel merito: più si è piccoli e più rapidamente si sviluppa dipendenza da dopamina. È per questo che se a un bambino o una bambina in questa fascia di età viene &amp;ldquo;tolto il tablet&amp;rdquo;, le reazioni possono essere anche molto forti.&lt;/p&gt;
-&lt;h2 id=&#34;perché-siamo-arrivati-a-questo-punto&#34;&gt;Perché siamo arrivati a questo punto?&lt;/h2&gt;
-&lt;p&gt;Lungi da me il voler essere l&amp;rsquo;anti-tecnologico di turno, anche perché non lo sono e non potrei farlo: mi occupo di informatica da quando ho ricordi, ho avuto il mio primo computer a 5 anni se non prima e passo forse 12 ore al giorno usando ben più di uno schermo alla volta. La tecnologia che abbiamo oggi a disposizione offre opportunità fino a pochi anni fa inimmaginabili: stare in contatto &amp;ldquo;in tempo reale&amp;rdquo; con chiunque, archiviare fotografie, video, catalogare, pagare, votare, &amp;hellip;vivere! È innegabile che tutto questo sia parte del nostro mondo, e che la distinzione tra &amp;ldquo;fisico&amp;rdquo; e &amp;ldquo;digitale&amp;rdquo; sia sempre meno definita. Noi però sappiamo che c&amp;rsquo;è questa differenza. I nostri figli lo stanno imparando. Un videogioco non è realtà, ma ha impatto sulla realtà nel momento in cui si decide di volerlo imitare facendo una rapina, picchiando i coetanei, costringendoli al suicidio o chissà cos&amp;rsquo;altro. Un video pubblicato su YouTube da un programma &amp;ldquo;che genera profitto&amp;rdquo;&amp;hellip;non è realtà, ma il fatto di guardarlo per ore, cliccarci sopra, etc., convertono il loro tempo la loro &amp;ldquo;attenzione&amp;rdquo; in denaro. I nostri figli guardano video e qualcuno dall&amp;rsquo;altra parte del filo si arricchisce.&lt;/p&gt;
-&lt;h2 id=&#34;perché-è-rischioso&#34;&gt;Perché è rischioso?&lt;/h2&gt;
-&lt;p&gt;Oltre a quanto già detto sopra, YouTube è una giungla. Non tutto è adatto agli occhi di un pubblico 0-6 anni. Durante la conferenza ho fatto l&amp;rsquo;esempio di come si può trovare video autentici di un cartone animato, ma anche versioni modificate dello stesso cartone animato, che d&amp;rsquo;un tratto diventa estremamente violento: urla, armi, sangue. Ho visto facce inorridite dagli esempi che ho mostrato.&lt;/p&gt;
-&lt;p&gt;A lungo termine l&amp;rsquo;effetto che si rischia di ottenere è un aumento del &amp;ldquo;fattore fiducia&amp;rdquo; nei confronti del mezzo: &amp;ldquo;ho visto su YouTube che…&amp;rdquo;, &amp;ldquo;come no? L&amp;rsquo;ho visto su Facebook!&amp;rdquo; Lo facciamo ogni tanto anche noi, figuriamoci i nostri figli! Se la nostra generazione—che non è nata con queste tecnologie—è già abbastanza vulnerabile alle sue insidie (fake news in primis), cosa immaginiamo per i nostri figli? Dopo un&amp;rsquo;infanzia &amp;ldquo;immersa&amp;rdquo; nella tecnologia, nel digitale, &amp;hellip; saranno in grado di distinguere un video autentico da uno modificato? Che opinione si formeranno dopo aver ascoltato il video di un politico che spiega i prossimi passi della sua propaganda? Sapranno scegliere consapevolmente senza farsi influenzare artificialmente?&lt;/p&gt;
-&lt;h2 id=&#34;cosa-fare&#34;&gt;Cosa fare?&lt;/h2&gt;
-&lt;p&gt;A parte i consigli scontati su cui preferisco non esprimermi, molti genitori mi hanno chiesto se ci sono alternative a YouTube. Io di solito rispondo che l&amp;rsquo;alternativa a YouTube è &amp;ldquo;qualsiasi cosa, purché sia selezionata e non a libero accesso&amp;rdquo;. Se lasciamo libero accesso a YouTube4Kids ai nostri figli, non risolviamo niente. Sono comunque &amp;ldquo;suoni e immagini in movimento&amp;rdquo;, come le chiamo io.&lt;/p&gt;
-&lt;p&gt;Tolte di mezzo sporcizia e violenza in cui si può incappare su YouTube, il punto fondamentale è il libero accesso. Tra 0 e 6 anni non si ha consapevolezza di &amp;ldquo;quando smettere&amp;rdquo;. Detto questo, non sono nella posizione di dare consigli pratici, se non quello di far &amp;ldquo;prendere le distanze&amp;rdquo; (letteralmente! Meglio la TV del tablet!) e limitarne il tempo.&lt;/p&gt;
-&lt;h2 id=&#34;riferimenti&#34;&gt;Riferimenti&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Tiziana Metitieri, 
-&lt;a href=&#34;https://medium.com/@timetit/te-lo-buco-quel-cellulare-i-dispositivi-digitali-tra-soliti-allarmi-e-indicazioni-documentate-a17400f5bf34&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Te lo buco quel cellulare!” I dispositivi digitali: tra soliti allarmi e indicazioni documentate.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Nunzia Ciardi e Rosita Rjitano, 
-&lt;a href=&#34;https://www.sperling.it/libri/con-lo-smartphone-usa-la-testa-nunzia-ciardi&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Con lo smartphone usa la testa&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Silvia Iaccarino, 
-&lt;a href=&#34;https://percorsiformativi06.it/linee-guida-sulluso-del-digitale-0-6-anni/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linee guida sull’uso del digitale 0-6 anni&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Telefono Azzurro, 
-&lt;a href=&#34;https://www.azzurro.it/it/informazioni-e-consigli/consigli/bambini-e-media/chi-sono-i-nativi-digitali&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bambini e media&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Telefono Azzurro, 
-&lt;a href=&#34;https://www.azzurro.it/it/informazioni-e-consigli/consigli/cyberbullismo/cyberbullismo-cos%E2%80%99-%C3%A8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cyberbullismo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Radio Killed the Radio Stars: Security Analysis of RF Protocols for Industrial Applications</title>
       <link>/post/ir-security/</link>
       <pubDate>Wed, 16 Jan 2019 16:01:50 +0200</pubDate>
@@ -1428,7 +901,7 @@ mechanism? Like, if I push a button to make the load go down, and someone is
 under that load, what happens?&amp;rdquo; In the local dialect, he answered something
 that I could roughly translate as&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;ldquo;🤬  if you do that, you must have some serious problems.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;🤬  if you do that, you must have some serious problems.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This sounded like the perfect project idea to pitch to my colleagues! So I did.
 After some back and forth, brainstorming, and someone in the team having
@@ -1440,7 +913,7 @@ a challenging disclosure process, I&amp;rsquo;m very happy to share the results 
 my colleagues in Trend Micro Research and I have produced.&lt;/p&gt;
 &lt;p&gt;Meanwhile, the renovation work is done and we&amp;rsquo;re enjoying a shiny new stone
 paver.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;condo.jpg&#34; alt=&#34;End of the renovation work.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/ir-security/condo.jpg&#34; alt=&#34;End of the renovation work.&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;radio-frequency-technology&#34;&gt;Radio-frequency Technology&lt;/h2&gt;
 &lt;p&gt;Sub-gigaherz radio-frequency (RF) protocols are widely adopted for both
 consumer and &lt;strong&gt;industrial applications&lt;/strong&gt;. From simple garage-door openers to
@@ -1458,7 +931,7 @@ and a micro-controller that implements the actual application-level protocol
 (e.g., structure of messages, CRCs, pairing, addressing). Each transmitted
 message carries a distinct &lt;strong&gt;command&lt;/strong&gt; that the RX actuates, usually by
 triggering the relay switches in a given, configurable way.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;ir-system.jpg&#34; alt=&#34;Industrial Radio Remote Control System in a Nutshell&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/ir-security/ir-system.jpg&#34; alt=&#34;Industrial Radio Remote Control System in a Nutshell&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;security-angle&#34;&gt;Security Angle&lt;/h2&gt;
 &lt;p&gt;Despite the simplicity of these systems, &lt;strong&gt;there is no standardization&lt;/strong&gt; in the
 application-level protocol, nor security best practices that go beyond the use
@@ -1651,7 +1124,7 @@ academic paper, and (spoiler alert) another white paper coming soon.&lt;/p&gt;
 behind web defacement have evolved and mutated over the past ~20 years. From
 attackers interested in pointing their finger to vulnerable websites, to modern
 actors taking strong positions on real-world conflicts.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/real-world-timeline.jpg&#34; alt=&#34;Timeline of real world events for which we have found evidence in web-deface pages.&#34; title=&#34;Timeline of Real World Events&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/real-world-timeline.jpg&#34; alt=&#34;Timeline of real world events for which we have found evidence in web-deface pages.&#34; title=&#34;Timeline of Real World Events&#34;&gt;&lt;/p&gt;
 &lt;p&gt;How do we know what we know about this phenomenon? Let&amp;rsquo;s take a look!&lt;/p&gt;
 &lt;h2 id=&#34;the-tool&#34;&gt;The Tool&lt;/h2&gt;
 &lt;p&gt;Last year at 
@@ -1683,9 +1156,9 @@ interactivity aspect of the investigation.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/trendmicro/defplorex/blob/master/i/dpx-clusters-viz.png?raw=true&#34; alt=&#34;DefPloreX web app main screen&#34; title=&#34;DefPloreX web app main screen&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you want to see the web app in action, you can take yourself a 14 minutes coffee or tea break while watching this demo.&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/DILbSXYpiMU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/DILbSXYpiMU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 
 &lt;h3 id=&#34;distributed-data-processing&#34;&gt;Distributed Data Processing&lt;/h3&gt;
 &lt;p&gt;Normally, to take full advantage of Elastic&amp;rsquo;s distributed data-processing
@@ -1804,22 +1277,22 @@ particular, we look at 7 campaigns that have affected Israel, France,
 India, Syria, Kosovo, and countries surrounding the South China Sea. We dig
 into specific conflicts in those areas and the defacements that happened in the
 aftermath.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/wp.jpg&#34; alt=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34; title=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34;&gt;&lt;/p&gt;
-&lt;p&gt;To &lt;del&gt;feed our curiosity and&lt;/del&gt;~ help CERTs understand better the origin of these
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/wp.jpg&#34; alt=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34; title=&#34;A Deep Dive into Defacement: How Geopolitical Events Trigger Web Attacks&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To ~~feed our curiosity and~~~ help CERTs understand better the origin of these
 attacks and modus-operandi of the groups, we also look how they are organized
 (some are formed across continents, and some are a loose collection of local
 hackers), as well as how their recruitment tools and the methods adopt.&lt;/p&gt;
 &lt;h2 id=&#34;the-devil-answer-is-in-the-details&#34;&gt;The &lt;del&gt;Devil&lt;/del&gt; Answer is in the Details&lt;/h2&gt;
 &lt;p&gt;You might be wondering how exactly the data-mining workflow works, what
 features we use, what clustering algorithm and so on. For the impatient, here&amp;rsquo;s a quick overview of the data that we process and the features that we extract:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/data.jpg&#34; alt=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34; title=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/features.jpg&#34; alt=&#34;Clustering features that we extract from each deface page.&#34; title=&#34;Clustering features that we extract from each deface page.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/data.jpg&#34; alt=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34; title=&#34;Metadata and raw content available in our dataset, along with a description of the trustworthiness of each attribute.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/features.jpg&#34; alt=&#34;Clustering features that we extract from each deface page.&#34; title=&#34;Clustering features that we extract from each deface page.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;So, now, how do we use these features for clustering?&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m very thankful to Roberto Perdisci for the valuable insights that he
 provided on this work about the machine-learning and data-mining part. What I&amp;rsquo;m
 most thankful about, however, is the suggestion to use BIRCH, which I didn&amp;rsquo;t
 know before. I think this figure speaks by itself.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;i/dbscan-vs-birch.jpg&#34; alt=&#34;BIRCH vs. DBSCAN.&#34; title=&#34;BIRCH vs. DBSCAN.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/large-scale-deface-page-analysis/i/dbscan-vs-birch.jpg&#34; alt=&#34;BIRCH vs. DBSCAN.&#34; title=&#34;BIRCH vs. DBSCAN.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Impressive, huh?&lt;/p&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;p&gt;
@@ -1994,15 +1467,15 @@ impact of a single, simple vulnerability can grant attackers an easy entry
 point.&lt;/p&gt;
 &lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/BxHYtFlKruY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/BxHYtFlKruY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 
 &lt;br /&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ufLyfUnzZRY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ufLyfUnzZRY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 
 &lt;h2 id=&#34;read-more&#34;&gt;Read More&lt;/h2&gt;
 &lt;ul&gt;
@@ -2198,9 +1671,9 @@ audience. True fact: I&amp;rsquo;ve recorded this while preparing my talk for
 &lt;a href=&#34;https://itsec.cs.uni-bonn.de/dimva2017/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DIMVA
 2017&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/oajtDFw_t3Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/oajtDFw_t3Q?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 
 &lt;h2 id=&#34;additional-material&#34;&gt;Additional Material&lt;/h2&gt;
 &lt;p&gt;If you&amp;rsquo;re curious to know more:&lt;/p&gt;
@@ -2560,9 +2033,9 @@ I happily joined the hacker&amp;rsquo;s corner at the International Journalism F
 2017 in Perugia, a few months later, in a panel moderated by Carola. Here&amp;rsquo;s
 the recording of the panel.&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/icgJavQqICM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description>
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/icgJavQqICM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
     </item>
     
     <item>
@@ -2904,7 +2377,7 @@ co-authors have created a startup out of it!&lt;/p&gt;
     
 
   
-  &lt;span&gt;Alberto Coletta&lt;/span&gt;, &lt;span&gt;Victor Van der Veen&lt;/span&gt;, &lt;span&gt;Federico Maggi&lt;/span&gt;
+  &lt;span&gt;Alberto Coletta&lt;/span&gt;, &lt;span&gt;Victor Van Der Veen&lt;/span&gt;, &lt;span&gt;Federico Maggi&lt;/span&gt;
   &lt;/span&gt;
   (2016).
   &lt;a href=&#34;/publication/coletta_droydseuss_2016/&#34;&gt;DroydSeuss: A Mobile Banking Trojan Tracker - Short Paper&lt;/a&gt;.
@@ -3200,9 +2673,9 @@ keystrokes by aiming a camera at the target touchscreen while the victim is
 typing.&lt;/p&gt;
 &lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/t9BxB3dO0KQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/t9BxB3dO0KQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 
