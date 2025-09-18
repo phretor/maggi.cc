@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/talk/"
-to = "https://trustial.org/talks/"
+to = "/foo/"
 status = 301
