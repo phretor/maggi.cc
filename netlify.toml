@@ -2,3 +2,4 @@
 from = "/talk/"
 to = "/foo/"
 status = 301
+force = true
