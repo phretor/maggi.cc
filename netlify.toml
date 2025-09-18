@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/talk/"
-to = "/foo/"
+from = "/talk"
+to = "/foo"
 status = 301
 force = true
